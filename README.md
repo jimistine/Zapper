@@ -1,2 +1,0 @@
-# Zapper
-Tingly 
