@@ -22,14 +22,14 @@ public class movement : MonoBehaviour
 		pY = gameObject.transform.position.y;
 		pZ = gameObject.transform.position.z;
 		
-		List<Wire> wires = new List<Wire>();
+		//List<Wire> wires = new List<Wire>();
 
-		wires.Add(new Wire(wireTracker.w_Max_1));
-		wires.Add(new Wire(wireTracker.w_Max_2));
-		wires.Add(new Wire(wireTracker.w_Max_3));
-		wires.Add(new Wire(wireTracker.w_Max_4));
+		//wires.Add(new Wire(wireTracker.w_Max_1));
+		//wires.Add(new Wire(wireTracker.w_Max_2));
+		//wires.Add(new Wire(wireTracker.w_Max_3));
+		//wires.Add(new Wire(wireTracker.w_Max_4));
 
-		numWires = wires.Count;
+		//numWires = wires.Count;
 	}
 
 	// Update is called once per frame
@@ -38,13 +38,13 @@ public class movement : MonoBehaviour
 
 		if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
 			{
-			gameObject.transform.Translate( + 1);
+			//gameObject.transform.Translate( + 1);
 
 			//	Debug.Log("Player Y – " + pY);
 			}
 		if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
 			{
-				gameObject.transform.Translate(Wire - 1);
+				//gameObject.transform.Translate(Wire - 1);
 			//	Debug.Log("Player Y – " + pY);
 			}
 		}
