@@ -14,15 +14,51 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
     x: 0
+<<<<<<< refs/remotes/origin/master
     y: 45
     width: 2560
     height: 1391
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
+=======
+    y: 44
+    width: 1280
+    height: 756
+  m_ShowMode: 4
+  m_Title: 
+  m_RootView: {fileID: 8}
+>>>>>>> Commented my code and cleaned it up some
   m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+<<<<<<< refs/remotes/origin/master
+=======
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 508
+    y: 0
+    width: 495
+    height: 355
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
+  m_ActualView: {fileID: 19}
+  m_Panes:
+  - {fileID: 19}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -34,12 +70,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
+  - {fileID: 7}
+  - {fileID: 2}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 351
+    width: 1003
+    height: 355
+  m_MinSize: {x: 436, y: 271}
+  m_MaxSize: {x: 14006, y: 10021}
+  vertical: 0
+  controlID: 108
+--- !u!114 &4
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+>>>>>>> Commented my code and cleaned it up some
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
   - {fileID: 9}
   - {fileID: 3}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 30
+<<<<<<< refs/remotes/origin/master
     width: 2560
     height: 1341
   m_MinSize: {x: 683, y: 492}
@@ -47,6 +109,15 @@ MonoBehaviour:
   vertical: 0
   controlID: 615
 --- !u!114 &3
+=======
+    width: 1280
+    height: 706
+  m_MinSize: {x: 711, y: 492}
+  m_MaxSize: {x: 18006, y: 14042}
+  vertical: 0
+  controlID: 106
+--- !u!114 &5
+>>>>>>> Commented my code and cleaned it up some
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -60,6 +131,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< refs/remotes/origin/master
     x: 2041
     y: 0
     width: 519
@@ -67,6 +139,15 @@ MonoBehaviour:
   m_MinSize: {x: 277, y: 71}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
+=======
+    x: 1003
+    y: 0
+    width: 277
+    height: 706
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 16}
+>>>>>>> Commented my code and cleaned it up some
   m_Panes:
   - {fileID: 14}
   m_Selected: 0
@@ -87,8 +168,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< refs/remotes/origin/master
     width: 505
     height: 811
+=======
+    width: 248
+    height: 351
+>>>>>>> Commented my code and cleaned it up some
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 15}
@@ -111,6 +197,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< refs/remotes/origin/master
     y: 811
     width: 2041
     height: 530
@@ -123,6 +210,20 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &6
+=======
+    y: 0
+    width: 508
+    height: 355
+  m_MinSize: {x: 232, y: 271}
+  m_MaxSize: {x: 10002, y: 10021}
+  m_ActualView: {fileID: 15}
+  m_Panes:
+  - {fileID: 15}
+  - {fileID: 20}
+  m_Selected: 0
+  m_LastSelected: 1
+--- !u!114 &8
+>>>>>>> Commented my code and cleaned it up some
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -141,8 +242,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< refs/remotes/origin/master
     width: 2560
     height: 1391
+=======
+    width: 1280
+    height: 756
+>>>>>>> Commented my code and cleaned it up some
   m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
@@ -161,7 +267,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< refs/remotes/origin/master
     width: 2560
+=======
+    width: 1280
+>>>>>>> Commented my code and cleaned it up some
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -181,8 +291,13 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< refs/remotes/origin/master
     y: 1371
     width: 2560
+=======
+    y: 736
+    width: 1280
+>>>>>>> Commented my code and cleaned it up some
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -204,6 +319,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< refs/remotes/origin/master
     width: 2041
     height: 1341
   m_MinSize: {x: 406, y: 492}
@@ -211,6 +327,15 @@ MonoBehaviour:
   vertical: 1
   controlID: 547
 --- !u!114 &10
+=======
+    width: 1003
+    height: 706
+  m_MinSize: {x: 436, y: 492}
+  m_MaxSize: {x: 14006, y: 14042}
+  vertical: 1
+  controlID: 107
+--- !u!114 &12
+>>>>>>> Commented my code and cleaned it up some
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -228,6 +353,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< refs/remotes/origin/master
     width: 2041
     height: 811
   m_MinSize: {x: 406, y: 221}
@@ -235,6 +361,15 @@ MonoBehaviour:
   vertical: 0
   controlID: 548
 --- !u!114 &11
+=======
+    width: 1003
+    height: 351
+  m_MinSize: {x: 406, y: 221}
+  m_MaxSize: {x: 8006, y: 4021}
+  vertical: 0
+  controlID: 52
+--- !u!114 &13
+>>>>>>> Commented my code and cleaned it up some
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -248,10 +383,17 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< refs/remotes/origin/master
     x: 505
     y: 0
     width: 1536
     height: 811
+=======
+    x: 248
+    y: 0
+    width: 755
+    height: 351
+>>>>>>> Commented my code and cleaned it up some
   m_MinSize: {x: 204, y: 221}
   m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 16}
@@ -310,9 +452,16 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< refs/remotes/origin/master
     y: 905
     width: 2039
     height: 509
+=======
+    y: 444
+    width: 506
+    height: 334
+  m_PersistentViewDataDictionary: {fileID: 0}
+>>>>>>> Commented my code and cleaned it up some
   m_SearchFilter:
     m_NameFilter: 
     m_ClassNames: []
@@ -324,6 +473,7 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
+<<<<<<< refs/remotes/origin/master
     - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
@@ -337,6 +487,21 @@ MonoBehaviour:
     m_SelectedIDs: b0230000
     m_LastClickedID: 9136
     m_ExpandedIDs: 00000000b023000000ca9a3bffffff7f
+=======
+    - Assets/Scenes
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/Scenes
+  m_LastFoldersGridSize: -1
+  m_LastProjectPath: /Users/Jimi/Desktop/Zapper/Zapper/ZapperProject
+  m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 5a280000
+    m_LastClickedID: 10330
+    m_ExpandedIDs: 00000000ce27000000ca9a3bffffff7f
+>>>>>>> Commented my code and cleaned it up some
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -365,7 +530,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< refs/remotes/origin/master
     m_ExpandedIDs: 00000000b023000000ca9a3bffffff7f
+=======
+    m_ExpandedIDs: 00000000ce270000
+>>>>>>> Commented my code and cleaned it up some
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -393,7 +562,11 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
+<<<<<<< refs/remotes/origin/master
     m_HadKeyboardFocusLastEvent: 0
+=======
+    m_HadKeyboardFocusLastEvent: 1
+>>>>>>> Commented my code and cleaned it up some
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -443,10 +616,18 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
+<<<<<<< refs/remotes/origin/master
     x: 2043
     y: 94
     width: 517
     height: 1320
+=======
+    x: 1005
+    y: 93
+    width: 275
+    height: 685
+  m_PersistentViewDataDictionary: {fileID: 0}
+>>>>>>> Commented my code and cleaned it up some
   m_ScrollPosition: {x: 0, y: 0}
   m_InspectorMode: 0
   m_PreviewResizer:
@@ -477,6 +658,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< refs/remotes/origin/master
     y: 94
     width: 503
     height: 790
@@ -485,6 +667,17 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
     m_ExpandedIDs: 00000000
+=======
+    y: 93
+    width: 246
+    height: 330
+  m_PersistentViewDataDictionary: {fileID: 0}
+  m_TreeViewState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 42280000
+    m_LastClickedID: 0
+    m_ExpandedIDs: a8f3ffff10fbffff00000000
+>>>>>>> Commented my code and cleaned it up some
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -508,8 +701,13 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_SearchString: 
+<<<<<<< refs/remotes/origin/master
     m_ColumnWidths: []
   m_ExpandedScenes: []
+=======
+  m_ExpandedScenes:
+  - Main
+>>>>>>> Commented my code and cleaned it up some
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -535,10 +733,18 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
+<<<<<<< refs/remotes/origin/master
     x: 507
     y: 94
     width: 1532
     height: 790
+=======
+    x: 250
+    y: 93
+    width: 751
+    height: 330
+  m_PersistentViewDataDictionary: {fileID: 0}
+>>>>>>> Commented my code and cleaned it up some
   m_SceneLighting: 1
   lastFramingTime: 0
   m_2DMode: 0
@@ -608,10 +814,18 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
+<<<<<<< refs/remotes/origin/master
     x: 507
     y: 94
     width: 1532
     height: 790
+=======
+    x: 510
+    y: 444
+    width: 491
+    height: 334
+  m_PersistentViewDataDictionary: {fileID: 0}
+>>>>>>> Commented my code and cleaned it up some
   m_MaximizeOnPlay: 0
   m_Gizmos: 0
   m_Stats: 0
@@ -620,10 +834,17 @@ MonoBehaviour:
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
+<<<<<<< refs/remotes/origin/master
     m_HBaseRangeMin: -383
     m_HBaseRangeMax: 383
     m_VBaseRangeMin: -193.25
     m_VBaseRangeMax: 193.25
+=======
+    m_HBaseRangeMin: -122.75
+    m_HBaseRangeMax: 122.75
+    m_VBaseRangeMin: -79.25
+    m_VBaseRangeMax: 79.25
+>>>>>>> Commented my code and cleaned it up some
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -640,16 +861,24 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
+<<<<<<< refs/remotes/origin/master
       width: 1532
       height: 773
     m_Scale: {x: 2, y: 2}
     m_Translation: {x: 766, y: 386.5}
+=======
+      width: 491
+      height: 317
+    m_Scale: {x: 2, y: 2}
+    m_Translation: {x: 245.5, y: 158.5}
+>>>>>>> Commented my code and cleaned it up some
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< refs/remotes/origin/master
       x: -383
       y: -193.25
       width: 766
@@ -659,6 +888,17 @@ MonoBehaviour:
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 1
   m_LastWindowPixelSize: {x: 3064, y: 1580}
+=======
+      x: -122.75
+      y: -79.25
+      width: 245.5
+      height: 158.5
+    m_MinimalGUI: 1
+  m_defaultScale: 2
+  m_TargetTexture: {fileID: 0}
+  m_CurrentColorSpace: 0
+  m_LastWindowPixelSize: {x: 982, y: 668}
+>>>>>>> Commented my code and cleaned it up some
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 010000000001000001
@@ -684,7 +924,15 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
+<<<<<<< refs/remotes/origin/master
     x: 8
     y: 718
     width: 1366
     height: 308
+=======
+    x: 0
+    y: 444
+    width: 506
+    height: 334
+  m_PersistentViewDataDictionary: {fileID: 0}
+>>>>>>> Commented my code and cleaned it up some

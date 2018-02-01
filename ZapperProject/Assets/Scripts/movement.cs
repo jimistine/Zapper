@@ -22,6 +22,8 @@ public class movement : MonoBehaviour
 		pY = gameObject.transform.position.y;
 		pZ = gameObject.transform.position.z;
 		
+		//The idea with this list is to iterate through it as the player gives us inputs, pressing up iterates forward, 
+		//down iterates backwards, I've never really worked with this before though so it's a bit of a mess... jimi
 		//List<Wire> wires = new List<Wire>();
 
 		//wires.Add(new Wire(wireTracker.w_Max_1));

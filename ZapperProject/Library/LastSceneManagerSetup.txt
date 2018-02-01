@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< refs/remotes/origin/master
 - path: Assets/Scenes/levelSelect.unity
+=======
+- path: Assets/Scenes/Main.unity
+>>>>>>> Commented my code and cleaned it up some
   isLoaded: 1
   isActive: 1

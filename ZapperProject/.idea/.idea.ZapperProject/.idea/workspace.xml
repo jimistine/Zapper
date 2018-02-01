@@ -15,6 +15,7 @@
       <file leaf-file-name="movement.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/movement.cs">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< refs/remotes/origin/master
             <state relative-caret-position="555">
               <caret line="40" column="43" lean-forward="false" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
               <folding>
@@ -96,6 +97,22 @@
                 <marker date="1518453138161" expanded="true" signature="2165:2306" ph="{...}" />
                 <marker date="1518453138161" expanded="true" signature="2655:2930" ph="{...}" />
                 <marker date="1518453138161" expanded="true" signature="2989:3216" ph="{...}" />
+=======
+            <state relative-caret-position="171">
+              <caret line="25" column="115" lean-forward="false" selection-start-line="25" selection-start-column="115" selection-end-line="25" selection-end-column="115" />
+              <folding>
+                <marker date="1517454543142" expanded="false" signature="6:125" ph="..." />
+                <marker date="1517454543142" expanded="true" signature="164:2279" ph="{...}" />
+                <marker date="1517454543142" expanded="true" signature="358:970" ph="{...}" />
+                <marker date="1517454543142" expanded="true" signature="490:967" ph="/* The idea with this list is to iterate through it as the player gives us inputs, pressing up iterates forward, ... */" />
+                <marker date="1517454543142" expanded="true" signature="1022:1362" ph="{...}" />
+                <marker date="1517454543142" expanded="true" signature="1098:1189" ph="{...}" />
+                <marker date="1517454543142" expanded="true" signature="1107:1184" ph="/* gameObject.transform.Translate( + 1); ... */" />
+                <marker date="1517454543142" expanded="true" signature="1263:1358" ph="{...}" />
+                <marker date="1517454543142" expanded="true" signature="1273:1353" ph="/* gameObject.transform.Translate(Wire - 1); ... */" />
+                <marker date="1517454543142" expanded="true" signature="1363:2053" ph="/* else ... */" />
+                <marker date="1517454543142" expanded="true" signature="2055:2269" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
+>>>>>>> Commented my code and cleaned it up some
               </folding>
             </state>
           </provider>
@@ -104,19 +121,25 @@
       <file leaf-file-name="Wire.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Wire.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="45">
+              <caret line="5" column="60" lean-forward="false" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
               <folding>
+<<<<<<< refs/remotes/origin/master
                 <marker date="1518454523737" expanded="false" signature="6:58" ph="..." />
                 <marker date="1518454523737" expanded="true" signature="61:535" ph="/* public class Wire : IComparable&lt;Wire&gt; ... */" />
+=======
+                <marker date="1517454543149" expanded="false" signature="6:58" ph="..." />
+                <marker date="1517454543149" expanded="true" signature="61:684" ph="/* This is the class that defines a wire to be used in the list in the movement script ... */" />
+>>>>>>> Commented my code and cleaned it up some
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wireTracker.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="wireTracker.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/wireTracker.cs">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< refs/remotes/origin/master
             <state relative-caret-position="654">
               <caret line="52" column="27" lean-forward="false" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
               <folding>
@@ -124,6 +147,15 @@
                 <marker date="1518454523738" expanded="true" signature="120:1440" ph="{...}" />
                 <marker date="1518454523738" expanded="true" signature="517:917" ph="{...}" />
                 <marker date="1518454523738" expanded="true" signature="920:1436" ph="/* void OnTriggerEnter2D(Collider2D other) ... */" />
+=======
+            <state relative-caret-position="177">
+              <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+              <folding>
+                <marker date="1517454801235" expanded="false" signature="6:78" ph="..." />
+                <marker date="1517454801235" expanded="true" signature="120:1622" ph="{...}" />
+                <marker date="1517454801235" expanded="true" signature="517:1017" ph="{...}" />
+                <marker date="1517454801235" expanded="true" signature="1019:1618" ph="/* this was supposed to tell us where the player was but never really worked - jimi ... */" />
+>>>>>>> Commented my code and cleaned it up some
               </folding>
             </state>
           </provider>
@@ -227,13 +259,16 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/GM.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/wire.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/wireTracker.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Wire.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/movement.cs" />
+<<<<<<< refs/remotes/origin/master
         <option value="$PROJECT_DIR$/Assets/Scripts/Erik/Charge.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Erik/ChracterController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Erik/SceneController.cs" />
+=======
+        <option value="$PROJECT_DIR$/Assets/Scripts/Wire.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/wireTracker.cs" />
+>>>>>>> Commented my code and cleaned it up some
       </list>
     </option>
   </component>
@@ -245,7 +280,11 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="9" />
+<<<<<<< refs/remotes/origin/master
     <option name="y" value="53" />
+=======
+    <option name="y" value="77" />
+>>>>>>> Commented my code and cleaned it up some
     <option name="width" value="1271" />
     <option name="height" value="778" />
   </component>
@@ -384,13 +423,21 @@
       <workItem from="1516228890917" duration="1581000" />
       <workItem from="1516909973478" duration="215000" />
       <workItem from="1517279936229" duration="5264000" />
+<<<<<<< refs/remotes/origin/master
       <workItem from="1518383793912" duration="404000" />
       <workItem from="1518450865871" duration="2789000" />
+=======
+      <workItem from="1517454277612" duration="541000" />
+>>>>>>> Commented my code and cleaned it up some
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< refs/remotes/origin/master
     <option name="totallyTimeSpent" value="14503000" />
+=======
+    <option name="totallyTimeSpent" value="11855000" />
+>>>>>>> Commented my code and cleaned it up some
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -402,7 +449,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
+<<<<<<< refs/remotes/origin/master
     <frame x="9" y="53" width="1271" height="778" extended-state="0" />
+=======
+    <frame x="9" y="77" width="1271" height="778" extended-state="0" />
+>>>>>>> Commented my code and cleaned it up some
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -440,6 +491,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/movement.cs">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< refs/remotes/origin/master
         <state relative-caret-position="555">
           <caret line="40" column="43" lean-forward="false" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
           <folding>
@@ -454,12 +506,29 @@
             <marker date="1518454523736" expanded="true" signature="1048:1128" ph="/* gameObject.transform.Translate(Wire - 1); ... */" />
             <marker date="1518454523736" expanded="true" signature="1138:1828" ph="/* else ... */" />
             <marker date="1518454523736" expanded="true" signature="1830:2044" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
+=======
+        <state relative-caret-position="570">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <marker date="1517454543142" expanded="false" signature="6:125" ph="..." />
+            <marker date="1517454543142" expanded="true" signature="164:2279" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="358:970" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="490:967" ph="/* The idea with this list is to iterate through it as the player gives us inputs, pressing up iterates forward, ... */" />
+            <marker date="1517454543142" expanded="true" signature="1022:1362" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="1098:1189" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="1107:1184" ph="/* gameObject.transform.Translate( + 1); ... */" />
+            <marker date="1517454543142" expanded="true" signature="1263:1358" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="1273:1353" ph="/* gameObject.transform.Translate(Wire - 1); ... */" />
+            <marker date="1517454543142" expanded="true" signature="1363:2053" ph="/* else ... */" />
+            <marker date="1517454543142" expanded="true" signature="2055:2269" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
+>>>>>>> Commented my code and cleaned it up some
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Wire.cs">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< refs/remotes/origin/master
         <state relative-caret-position="135">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
@@ -514,6 +583,13 @@
             <marker date="1518453157863" expanded="true" signature="4283:4375" ph="{...}" />
             <marker date="1518453157863" expanded="true" signature="4526:4953" ph="{...}" />
             <marker date="1518453157863" expanded="true" signature="4638:4943" ph="{...}" />
+=======
+        <state relative-caret-position="390">
+          <caret line="26" column="3" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="3" />
+          <folding>
+            <marker date="1517454543149" expanded="false" signature="6:58" ph="..." />
+            <marker date="1517454543149" expanded="true" signature="61:684" ph="/* This is the class that defines a wire to be used in the list in the movement script ... */" />
+>>>>>>> Commented my code and cleaned it up some
           </folding>
         </state>
       </provider>
@@ -532,6 +608,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< refs/remotes/origin/master
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/movement.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
@@ -548,17 +625,56 @@
             <marker date="1518454523736" expanded="true" signature="1048:1128" ph="/* gameObject.transform.Translate(Wire - 1); ... */" />
             <marker date="1518454523736" expanded="true" signature="1138:1828" ph="/* else ... */" />
             <marker date="1518454523736" expanded="true" signature="1830:2044" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
+=======
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/wireTracker.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding>
+            <marker date="1517454801235" expanded="false" signature="6:78" ph="..." />
+            <marker date="1517454801235" expanded="true" signature="120:1622" ph="{...}" />
+            <marker date="1517454801235" expanded="true" signature="517:1017" ph="{...}" />
+            <marker date="1517454801235" expanded="true" signature="1019:1618" ph="/* this was supposed to tell us where the player was but never really worked - jimi ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/movement.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1517454543142" expanded="false" signature="6:125" ph="..." />
+            <marker date="1517454543142" expanded="true" signature="164:2279" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="358:970" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="490:967" ph="/* The idea with this list is to iterate through it as the player gives us inputs, pressing up iterates forward, ... */" />
+            <marker date="1517454543142" expanded="true" signature="1022:1362" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="1098:1189" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="1107:1184" ph="/* gameObject.transform.Translate( + 1); ... */" />
+            <marker date="1517454543142" expanded="true" signature="1263:1358" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="1273:1353" ph="/* gameObject.transform.Translate(Wire - 1); ... */" />
+            <marker date="1517454543142" expanded="true" signature="1363:2053" ph="/* else ... */" />
+            <marker date="1517454543142" expanded="true" signature="2055:2269" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
+>>>>>>> Commented my code and cleaned it up some
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Wire.cs">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< refs/remotes/origin/master
         <state relative-caret-position="165">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <marker date="1518454523737" expanded="false" signature="6:58" ph="..." />
             <marker date="1518454523737" expanded="true" signature="61:535" ph="/* public class Wire : IComparable&lt;Wire&gt; ... */" />
+=======
+        <state relative-caret-position="135">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <marker date="1517454543149" expanded="false" signature="6:58" ph="..." />
+            <marker date="1517454543149" expanded="true" signature="61:684" ph="/* This is the class that defines a wire to be used in the list in the movement script ... */" />
+>>>>>>> Commented my code and cleaned it up some
           </folding>
         </state>
       </provider>
@@ -568,10 +684,17 @@
         <state relative-caret-position="780">
           <caret line="52" column="27" lean-forward="false" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
           <folding>
+<<<<<<< refs/remotes/origin/master
             <marker date="1518454523738" expanded="false" signature="6:78" ph="..." />
             <marker date="1518454523738" expanded="true" signature="120:1440" ph="{...}" />
             <marker date="1518454523738" expanded="true" signature="517:917" ph="{...}" />
             <marker date="1518454523738" expanded="true" signature="920:1436" ph="/* void OnTriggerEnter2D(Collider2D other) ... */" />
+=======
+            <marker date="1517454801235" expanded="false" signature="6:78" ph="..." />
+            <marker date="1517454801235" expanded="true" signature="120:1622" ph="{...}" />
+            <marker date="1517454801235" expanded="true" signature="517:1017" ph="{...}" />
+            <marker date="1517454801235" expanded="true" signature="1019:1618" ph="/* this was supposed to tell us where the player was but never really worked - jimi ... */" />
+>>>>>>> Commented my code and cleaned it up some
           </folding>
         </state>
       </provider>
@@ -595,6 +718,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+<<<<<<< refs/remotes/origin/master
             <marker date="1518454523736" expanded="false" signature="6:125" ph="..." />
             <marker date="1518454523736" expanded="true" signature="164:2054" ph="{...}" />
             <marker date="1518454523736" expanded="true" signature="358:745" ph="{...}" />
@@ -606,6 +730,19 @@
             <marker date="1518454523736" expanded="true" signature="1048:1128" ph="/* gameObject.transform.Translate(Wire - 1); ... */" />
             <marker date="1518454523736" expanded="true" signature="1138:1828" ph="/* else ... */" />
             <marker date="1518454523736" expanded="true" signature="1830:2044" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
+=======
+            <marker date="1517454543142" expanded="false" signature="6:125" ph="..." />
+            <marker date="1517454543142" expanded="true" signature="164:2279" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="358:970" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="490:967" ph="/* The idea with this list is to iterate through it as the player gives us inputs, pressing up iterates forward, ... */" />
+            <marker date="1517454543142" expanded="true" signature="1022:1362" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="1098:1189" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="1107:1184" ph="/* gameObject.transform.Translate( + 1); ... */" />
+            <marker date="1517454543142" expanded="true" signature="1263:1358" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="1273:1353" ph="/* gameObject.transform.Translate(Wire - 1); ... */" />
+            <marker date="1517454543142" expanded="true" signature="1363:2053" ph="/* else ... */" />
+            <marker date="1517454543142" expanded="true" signature="2055:2269" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
+>>>>>>> Commented my code and cleaned it up some
           </folding>
         </state>
       </provider>
@@ -615,10 +752,17 @@
         <state relative-caret-position="300">
           <caret line="22" column="47" lean-forward="false" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
           <folding>
+<<<<<<< refs/remotes/origin/master
             <marker date="1518454523738" expanded="false" signature="6:78" ph="..." />
             <marker date="1518454523738" expanded="true" signature="120:1440" ph="{...}" />
             <marker date="1518454523738" expanded="true" signature="517:917" ph="{...}" />
             <marker date="1518454523738" expanded="true" signature="920:1436" ph="/* void OnTriggerEnter2D(Collider2D other) ... */" />
+=======
+            <marker date="1517454801235" expanded="false" signature="6:78" ph="..." />
+            <marker date="1517454801235" expanded="true" signature="120:1622" ph="{...}" />
+            <marker date="1517454801235" expanded="true" signature="517:1017" ph="{...}" />
+            <marker date="1517454801235" expanded="true" signature="1019:1618" ph="/* this was supposed to tell us where the player was but never really worked - jimi ... */" />
+>>>>>>> Commented my code and cleaned it up some
           </folding>
         </state>
       </provider>
@@ -656,10 +800,17 @@
         <state relative-caret-position="330">
           <caret line="22" column="47" lean-forward="true" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
           <folding>
+<<<<<<< refs/remotes/origin/master
             <marker date="1518454523738" expanded="false" signature="6:78" ph="..." />
             <marker date="1518454523738" expanded="true" signature="120:1440" ph="{...}" />
             <marker date="1518454523738" expanded="true" signature="517:917" ph="{...}" />
             <marker date="1518454523738" expanded="true" signature="920:1436" ph="/* void OnTriggerEnter2D(Collider2D other) ... */" />
+=======
+            <marker date="1517454801235" expanded="false" signature="6:78" ph="..." />
+            <marker date="1517454801235" expanded="true" signature="120:1622" ph="{...}" />
+            <marker date="1517454801235" expanded="true" signature="517:1017" ph="{...}" />
+            <marker date="1517454801235" expanded="true" signature="1019:1618" ph="/* this was supposed to tell us where the player was but never really worked - jimi ... */" />
+>>>>>>> Commented my code and cleaned it up some
           </folding>
         </state>
       </provider>
@@ -669,6 +820,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+<<<<<<< refs/remotes/origin/master
             <marker date="1518454523736" expanded="false" signature="6:125" ph="..." />
             <marker date="1518454523736" expanded="true" signature="164:2054" ph="{...}" />
             <marker date="1518454523736" expanded="true" signature="358:745" ph="{...}" />
@@ -680,6 +832,19 @@
             <marker date="1518454523736" expanded="true" signature="1048:1128" ph="/* gameObject.transform.Translate(Wire - 1); ... */" />
             <marker date="1518454523736" expanded="true" signature="1138:1828" ph="/* else ... */" />
             <marker date="1518454523736" expanded="true" signature="1830:2044" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
+=======
+            <marker date="1517454543142" expanded="false" signature="6:125" ph="..." />
+            <marker date="1517454543142" expanded="true" signature="164:2279" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="358:970" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="490:967" ph="/* The idea with this list is to iterate through it as the player gives us inputs, pressing up iterates forward, ... */" />
+            <marker date="1517454543142" expanded="true" signature="1022:1362" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="1098:1189" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="1107:1184" ph="/* gameObject.transform.Translate( + 1); ... */" />
+            <marker date="1517454543142" expanded="true" signature="1263:1358" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="1273:1353" ph="/* gameObject.transform.Translate(Wire - 1); ... */" />
+            <marker date="1517454543142" expanded="true" signature="1363:2053" ph="/* else ... */" />
+            <marker date="1517454543142" expanded="true" signature="2055:2269" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
+>>>>>>> Commented my code and cleaned it up some
           </folding>
         </state>
       </provider>
@@ -703,10 +868,17 @@
         <state relative-caret-position="375">
           <caret line="25" column="4" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
           <folding>
+<<<<<<< refs/remotes/origin/master
             <marker date="1518454523738" expanded="false" signature="6:78" ph="..." />
             <marker date="1518454523738" expanded="true" signature="120:1440" ph="{...}" />
             <marker date="1518454523738" expanded="true" signature="517:917" ph="{...}" />
             <marker date="1518454523738" expanded="true" signature="920:1436" ph="/* void OnTriggerEnter2D(Collider2D other) ... */" />
+=======
+            <marker date="1517454801235" expanded="false" signature="6:78" ph="..." />
+            <marker date="1517454801235" expanded="true" signature="120:1622" ph="{...}" />
+            <marker date="1517454801235" expanded="true" signature="517:1017" ph="{...}" />
+            <marker date="1517454801235" expanded="true" signature="1019:1618" ph="/* this was supposed to tell us where the player was but never really worked - jimi ... */" />
+>>>>>>> Commented my code and cleaned it up some
           </folding>
         </state>
       </provider>
@@ -716,6 +888,7 @@
         <state relative-caret-position="1185">
           <caret line="79" column="41" lean-forward="false" selection-start-line="79" selection-start-column="41" selection-end-line="79" selection-end-column="41" />
           <folding>
+<<<<<<< refs/remotes/origin/master
             <marker date="1518454523736" expanded="false" signature="6:125" ph="..." />
             <marker date="1518454523736" expanded="true" signature="164:2054" ph="{...}" />
             <marker date="1518454523736" expanded="true" signature="358:745" ph="{...}" />
@@ -727,6 +900,19 @@
             <marker date="1518454523736" expanded="true" signature="1048:1128" ph="/* gameObject.transform.Translate(Wire - 1); ... */" />
             <marker date="1518454523736" expanded="true" signature="1138:1828" ph="/* else ... */" />
             <marker date="1518454523736" expanded="true" signature="1830:2044" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
+=======
+            <marker date="1517454543142" expanded="false" signature="6:125" ph="..." />
+            <marker date="1517454543142" expanded="true" signature="164:2279" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="358:970" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="490:967" ph="/* The idea with this list is to iterate through it as the player gives us inputs, pressing up iterates forward, ... */" />
+            <marker date="1517454543142" expanded="true" signature="1022:1362" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="1098:1189" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="1107:1184" ph="/* gameObject.transform.Translate( + 1); ... */" />
+            <marker date="1517454543142" expanded="true" signature="1263:1358" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="1273:1353" ph="/* gameObject.transform.Translate(Wire - 1); ... */" />
+            <marker date="1517454543142" expanded="true" signature="1363:2053" ph="/* else ... */" />
+            <marker date="1517454543142" expanded="true" signature="2055:2269" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
+>>>>>>> Commented my code and cleaned it up some
           </folding>
         </state>
       </provider>
@@ -736,6 +922,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+<<<<<<< refs/remotes/origin/master
             <marker date="1518454523736" expanded="false" signature="6:125" ph="..." />
             <marker date="1518454523736" expanded="true" signature="164:2054" ph="{...}" />
             <marker date="1518454523736" expanded="true" signature="358:745" ph="{...}" />
@@ -747,6 +934,19 @@
             <marker date="1518454523736" expanded="true" signature="1048:1128" ph="/* gameObject.transform.Translate(Wire - 1); ... */" />
             <marker date="1518454523736" expanded="true" signature="1138:1828" ph="/* else ... */" />
             <marker date="1518454523736" expanded="true" signature="1830:2044" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
+=======
+            <marker date="1517454543142" expanded="false" signature="6:125" ph="..." />
+            <marker date="1517454543142" expanded="true" signature="164:2279" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="358:970" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="490:967" ph="/* The idea with this list is to iterate through it as the player gives us inputs, pressing up iterates forward, ... */" />
+            <marker date="1517454543142" expanded="true" signature="1022:1362" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="1098:1189" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="1107:1184" ph="/* gameObject.transform.Translate( + 1); ... */" />
+            <marker date="1517454543142" expanded="true" signature="1263:1358" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="1273:1353" ph="/* gameObject.transform.Translate(Wire - 1); ... */" />
+            <marker date="1517454543142" expanded="true" signature="1363:2053" ph="/* else ... */" />
+            <marker date="1517454543142" expanded="true" signature="2055:2269" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
+>>>>>>> Commented my code and cleaned it up some
           </folding>
         </state>
       </provider>
@@ -754,6 +954,7 @@
     <entry file="file://$PROJECT_DIR$/../../School/Year 3/Spring/Programming for Games/E.C.No.257/Assets/Scripts/GM.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/movement.cs">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< refs/remotes/origin/master
         <state relative-caret-position="555">
           <caret line="40" column="43" lean-forward="false" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
           <folding>
@@ -768,10 +969,27 @@
             <marker date="1518454523736" expanded="true" signature="1048:1128" ph="/* gameObject.transform.Translate(Wire - 1); ... */" />
             <marker date="1518454523736" expanded="true" signature="1138:1828" ph="/* else ... */" />
             <marker date="1518454523736" expanded="true" signature="1830:2044" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
+=======
+        <state relative-caret-position="570">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <marker date="1517454543142" expanded="false" signature="6:125" ph="..." />
+            <marker date="1517454543142" expanded="true" signature="164:2279" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="358:970" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="490:967" ph="/* The idea with this list is to iterate through it as the player gives us inputs, pressing up iterates forward, ... */" />
+            <marker date="1517454543142" expanded="true" signature="1022:1362" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="1098:1189" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="1107:1184" ph="/* gameObject.transform.Translate( + 1); ... */" />
+            <marker date="1517454543142" expanded="true" signature="1263:1358" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="1273:1353" ph="/* gameObject.transform.Translate(Wire - 1); ... */" />
+            <marker date="1517454543142" expanded="true" signature="1363:2053" ph="/* else ... */" />
+            <marker date="1517454543142" expanded="true" signature="2055:2269" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
+>>>>>>> Commented my code and cleaned it up some
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< refs/remotes/origin/master
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/wireTracker.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="654">
@@ -781,6 +999,15 @@
             <marker date="1518454523738" expanded="true" signature="120:1440" ph="{...}" />
             <marker date="1518454523738" expanded="true" signature="517:917" ph="{...}" />
             <marker date="1518454523738" expanded="true" signature="920:1436" ph="/* void OnTriggerEnter2D(Collider2D other) ... */" />
+=======
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Wire.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="3" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="3" />
+          <folding>
+            <marker date="1517454543149" expanded="false" signature="6:58" ph="..." />
+            <marker date="1517454543149" expanded="true" signature="61:684" ph="/* This is the class that defines a wire to be used in the list in the movement script ... */" />
+>>>>>>> Commented my code and cleaned it up some
           </folding>
         </state>
       </provider>
@@ -799,19 +1026,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Wire.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/wireTracker.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="480">
+          <caret line="34" column="57" lean-forward="true" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
           <folding>
+            <marker date="1517454801235" expanded="false" signature="6:78" ph="..." />
+            <marker date="1517454801235" expanded="true" signature="120:1622" ph="{...}" />
+            <marker date="1517454801235" expanded="true" signature="517:1017" ph="{...}" />
+            <marker date="1517454801235" expanded="true" signature="1019:1618" ph="/* this was supposed to tell us where the player was but never really worked - jimi ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/movement.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+<<<<<<< refs/remotes/origin/master
             <marker date="1518454523737" expanded="false" signature="6:58" ph="..." />
             <marker date="1518454523737" expanded="true" signature="61:535" ph="/* public class Wire : IComparable&lt;Wire&gt; ... */" />
+=======
+            <marker date="1517454543142" expanded="false" signature="6:125" ph="..." />
+            <marker date="1517454543142" expanded="true" signature="164:2279" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="358:970" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="490:967" ph="/* The idea with this list is to iterate through it as the player gives us inputs, pressing up iterates forward, ... */" />
+            <marker date="1517454543142" expanded="true" signature="1022:1362" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="1098:1189" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="1107:1184" ph="/* gameObject.transform.Translate( + 1); ... */" />
+            <marker date="1517454543142" expanded="true" signature="1263:1358" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="1273:1353" ph="/* gameObject.transform.Translate(Wire - 1); ... */" />
+            <marker date="1517454543142" expanded="true" signature="1363:2053" ph="/* else ... */" />
+            <marker date="1517454543142" expanded="true" signature="2055:2269" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
+>>>>>>> Commented my code and cleaned it up some
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Erik/ChracterController.cs">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< refs/remotes/origin/master
         <state relative-caret-position="2070">
           <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
           <folding>
@@ -842,12 +1097,110 @@
             <marker date="1518453157863" expanded="true" signature="4283:4375" ph="{...}" />
             <marker date="1518453157863" expanded="true" signature="4526:4953" ph="{...}" />
             <marker date="1518453157863" expanded="true" signature="4638:4943" ph="{...}" />
+=======
+        <state relative-caret-position="300">
+          <caret line="22" column="47" lean-forward="false" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+          <folding>
+            <marker date="1517454801235" expanded="false" signature="6:78" ph="..." />
+            <marker date="1517454801235" expanded="true" signature="120:1622" ph="{...}" />
+            <marker date="1517454801235" expanded="true" signature="517:1017" ph="{...}" />
+            <marker date="1517454801235" expanded="true" signature="1019:1618" ph="/* this was supposed to tell us where the player was but never really worked - jimi ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GM.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1516224493459" expanded="false" signature="6:78" ph="..." />
+            <marker date="1516224493459" expanded="true" signature="111:320" ph="{...}" />
+            <marker date="1516224493459" expanded="true" signature="180:199" ph="{...}" />
+            <marker date="1516224493459" expanded="true" signature="249:256" ph="{...}" />
+            <marker date="1516224493459" expanded="true" signature="311:318" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GM.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1516224493459" expanded="false" signature="6:78" ph="..." />
+            <marker date="1516224493459" expanded="true" signature="111:320" ph="{...}" />
+            <marker date="1516224493459" expanded="true" signature="180:199" ph="{...}" />
+            <marker date="1516224493459" expanded="true" signature="249:256" ph="{...}" />
+            <marker date="1516224493459" expanded="true" signature="311:318" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/wireTracker.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="47" lean-forward="true" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+          <folding>
+            <marker date="1517454801235" expanded="false" signature="6:78" ph="..." />
+            <marker date="1517454801235" expanded="true" signature="120:1622" ph="{...}" />
+            <marker date="1517454801235" expanded="true" signature="517:1017" ph="{...}" />
+            <marker date="1517454801235" expanded="true" signature="1019:1618" ph="/* this was supposed to tell us where the player was but never really worked - jimi ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/movement.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1517454543142" expanded="false" signature="6:125" ph="..." />
+            <marker date="1517454543142" expanded="true" signature="164:2279" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="358:970" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="490:967" ph="/* The idea with this list is to iterate through it as the player gives us inputs, pressing up iterates forward, ... */" />
+            <marker date="1517454543142" expanded="true" signature="1022:1362" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="1098:1189" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="1107:1184" ph="/* gameObject.transform.Translate( + 1); ... */" />
+            <marker date="1517454543142" expanded="true" signature="1263:1358" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="1273:1353" ph="/* gameObject.transform.Translate(Wire - 1); ... */" />
+            <marker date="1517454543142" expanded="true" signature="1363:2053" ph="/* else ... */" />
+            <marker date="1517454543142" expanded="true" signature="2055:2269" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GM.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding>
+            <marker date="1516224493459" expanded="false" signature="6:78" ph="..." />
+            <marker date="1516224493459" expanded="true" signature="111:320" ph="{...}" />
+            <marker date="1516224493459" expanded="true" signature="180:199" ph="{...}" />
+            <marker date="1516224493459" expanded="true" signature="249:256" ph="{...}" />
+            <marker date="1516224493459" expanded="true" signature="311:318" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/wireTracker.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="4" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+          <folding>
+            <marker date="1517454801235" expanded="false" signature="6:78" ph="..." />
+            <marker date="1517454801235" expanded="true" signature="120:1622" ph="{...}" />
+            <marker date="1517454801235" expanded="true" signature="517:1017" ph="{...}" />
+            <marker date="1517454801235" expanded="true" signature="1019:1618" ph="/* this was supposed to tell us where the player was but never really worked - jimi ... */" />
+>>>>>>> Commented my code and cleaned it up some
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Erik/Charge.cs">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< refs/remotes/origin/master
         <state relative-caret-position="444">
           <caret line="82" column="8" lean-forward="false" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
           <folding>
@@ -869,10 +1222,27 @@
             <marker date="1518453138161" expanded="true" signature="2165:2306" ph="{...}" />
             <marker date="1518453138161" expanded="true" signature="2655:2930" ph="{...}" />
             <marker date="1518453138161" expanded="true" signature="2989:3216" ph="{...}" />
+=======
+        <state relative-caret-position="1185">
+          <caret line="79" column="41" lean-forward="false" selection-start-line="79" selection-start-column="41" selection-end-line="79" selection-end-column="41" />
+          <folding>
+            <marker date="1517454543142" expanded="false" signature="6:125" ph="..." />
+            <marker date="1517454543142" expanded="true" signature="164:2279" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="358:970" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="490:967" ph="/* The idea with this list is to iterate through it as the player gives us inputs, pressing up iterates forward, ... */" />
+            <marker date="1517454543142" expanded="true" signature="1022:1362" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="1098:1189" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="1107:1184" ph="/* gameObject.transform.Translate( + 1); ... */" />
+            <marker date="1517454543142" expanded="true" signature="1263:1358" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="1273:1353" ph="/* gameObject.transform.Translate(Wire - 1); ... */" />
+            <marker date="1517454543142" expanded="true" signature="1363:2053" ph="/* else ... */" />
+            <marker date="1517454543142" expanded="true" signature="2055:2269" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
+>>>>>>> Commented my code and cleaned it up some
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< refs/remotes/origin/master
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -882,10 +1252,61 @@
             <marker date="1518454842027" expanded="true" signature="121:556" ph="{...}" />
             <marker date="1518454842027" expanded="true" signature="453:492" ph="{...}" />
             <marker date="1518454842027" expanded="true" signature="547:554" ph="{...}" />
+=======
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/movement.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1517454543142" expanded="false" signature="6:125" ph="..." />
+            <marker date="1517454543142" expanded="true" signature="164:2279" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="358:970" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="490:967" ph="/* The idea with this list is to iterate through it as the player gives us inputs, pressing up iterates forward, ... */" />
+            <marker date="1517454543142" expanded="true" signature="1022:1362" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="1098:1189" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="1107:1184" ph="/* gameObject.transform.Translate( + 1); ... */" />
+            <marker date="1517454543142" expanded="true" signature="1263:1358" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="1273:1353" ph="/* gameObject.transform.Translate(Wire - 1); ... */" />
+            <marker date="1517454543142" expanded="true" signature="1363:2053" ph="/* else ... */" />
+            <marker date="1517454543142" expanded="true" signature="2055:2269" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../School/Year 3/Spring/Programming for Games/E.C.No.257/Assets/Scripts/GM.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/movement.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="25" column="115" lean-forward="false" selection-start-line="25" selection-start-column="115" selection-end-line="25" selection-end-column="115" />
+          <folding>
+            <marker date="1517454543142" expanded="false" signature="6:125" ph="..." />
+            <marker date="1517454543142" expanded="true" signature="164:2279" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="358:970" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="490:967" ph="/* The idea with this list is to iterate through it as the player gives us inputs, pressing up iterates forward, ... */" />
+            <marker date="1517454543142" expanded="true" signature="1022:1362" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="1098:1189" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="1107:1184" ph="/* gameObject.transform.Translate( + 1); ... */" />
+            <marker date="1517454543142" expanded="true" signature="1263:1358" ph="{...}" />
+            <marker date="1517454543142" expanded="true" signature="1273:1353" ph="/* gameObject.transform.Translate(Wire - 1); ... */" />
+            <marker date="1517454543142" expanded="true" signature="1363:2053" ph="/* else ... */" />
+            <marker date="1517454543142" expanded="true" signature="2055:2269" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Wire.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="5" column="60" lean-forward="false" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
+          <folding>
+            <marker date="1517454543149" expanded="false" signature="6:58" ph="..." />
+            <marker date="1517454543149" expanded="true" signature="61:684" ph="/* This is the class that defines a wire to be used in the list in the movement script ... */" />
+>>>>>>> Commented my code and cleaned it up some
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< refs/remotes/origin/master
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/June/crowSpawner.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-279">
@@ -909,10 +1330,23 @@
             <marker date="1518378792931" expanded="true" signature="2505:2564" ph="{...}" />
             <marker date="1518378792931" expanded="true" signature="2596:2654" ph="{...}" />
             <marker date="1518378792931" expanded="true" signature="2654:2684" ph="{...}" />
+=======
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GM.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1516224493459" expanded="false" signature="6:78" ph="..." />
+            <marker date="1516224493459" expanded="true" signature="111:320" ph="{...}" />
+            <marker date="1516224493459" expanded="true" signature="180:199" ph="{...}" />
+            <marker date="1516224493459" expanded="true" signature="249:256" ph="{...}" />
+            <marker date="1516224493459" expanded="true" signature="311:318" ph="{...}" />
+>>>>>>> Commented my code and cleaned it up some
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< refs/remotes/origin/master
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Erik/SceneController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="489">
@@ -927,6 +1361,17 @@
             <marker date="1518455085856" expanded="true" signature="1230:1303" ph="{...}" />
             <marker date="1518455085856" expanded="true" signature="1396:1469" ph="{...}" />
             <marker date="1518455085856" expanded="true" signature="1571:1624" ph="{...}" />
+=======
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/wireTracker.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+          <folding>
+            <marker date="1517454801235" expanded="false" signature="6:78" ph="..." />
+            <marker date="1517454801235" expanded="true" signature="120:1622" ph="{...}" />
+            <marker date="1517454801235" expanded="true" signature="517:1017" ph="{...}" />
+            <marker date="1517454801235" expanded="true" signature="1019:1618" ph="/* this was supposed to tell us where the player was but never really worked - jimi ... */" />
+>>>>>>> Commented my code and cleaned it up some
           </folding>
         </state>
       </provider>
