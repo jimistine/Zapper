@@ -2,6 +2,9 @@
 using System.Collections;
 using System; 
 
+// This is the class that defines a wire to be used in the list in the movement script
+// it stores a vector3 called start_pos and that's about it.
+
 //public class Wire : IComparable<Wire>
 //{
 //	public string name;

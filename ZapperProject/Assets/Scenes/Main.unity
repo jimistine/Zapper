@@ -123,7 +123,6 @@ GameObject:
   - component: {fileID: 289165936}
   - component: {fileID: 289165935}
   - component: {fileID: 289165938}
-  - component: {fileID: 289165937}
   m_Layer: 0
   m_Name: Wire_3
   m_TagString: Untagged
@@ -188,18 +187,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &289165937
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 289165934}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4a35fd0c8e114fc1b8747a150341453, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wireEnd: 0
 --- !u!61 &289165938
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -307,6 +294,7 @@ GameObject:
   m_Component:
   - component: {fileID: 495810359}
   - component: {fileID: 495810358}
+  - component: {fileID: 495810360}
   m_Layer: 0
   m_Name: GM
   m_TagString: Untagged
@@ -339,6 +327,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &495810360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 495810357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4a35fd0c8e114fc1b8747a150341453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Wire_1: {fileID: 1523626343}
+  Wire_2: {fileID: 1810955064}
+  Wire_3: {fileID: 289165934}
+  Wire_4: {fileID: 1427421068}
 --- !u!1 &878312921
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,6 +420,7 @@ MonoBehaviour:
   pX: 0
   pY: 0
   pZ: 0
+  wireEnd: 0
 --- !u!212 &878312925
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -644,6 +648,7 @@ MonoBehaviour:
   pX: 0
   pY: 0
   pZ: 0
+  wireEnd: 0
 --- !u!61 &1404234722
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -679,7 +684,6 @@ GameObject:
   - component: {fileID: 1427421070}
   - component: {fileID: 1427421069}
   - component: {fileID: 1427421072}
-  - component: {fileID: 1427421071}
   m_Layer: 0
   m_Name: Wire_4
   m_TagString: Untagged
@@ -744,18 +748,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1427421071
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1427421068}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4a35fd0c8e114fc1b8747a150341453, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wireEnd: 0
 --- !u!61 &1427421072
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -791,7 +783,6 @@ GameObject:
   - component: {fileID: 1523626345}
   - component: {fileID: 1523626344}
   - component: {fileID: 1523626347}
-  - component: {fileID: 1523626346}
   m_Layer: 0
   m_Name: Wire_1
   m_TagString: Untagged
@@ -856,18 +847,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1523626346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1523626343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4a35fd0c8e114fc1b8747a150341453, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wireEnd: 0
 --- !u!61 &1523626347
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -903,7 +882,6 @@ GameObject:
   - component: {fileID: 1810955066}
   - component: {fileID: 1810955065}
   - component: {fileID: 1810955068}
-  - component: {fileID: 1810955067}
   m_Layer: 0
   m_Name: Wire_2
   m_TagString: Untagged
@@ -968,18 +946,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1810955067
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1810955064}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4a35fd0c8e114fc1b8747a150341453, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wireEnd: 0
 --- !u!61 &1810955068
 BoxCollider2D:
   m_ObjectHideFlags: 0
