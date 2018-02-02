@@ -12,6 +12,8 @@ public class Wires : MonoBehaviour {
     public float StartPositionRight;
     public float PlayerPositionOffsetY;
 
+    public float ChargesPositionOffsetY;
+
     // Use this for initialization
     void Start () {
 
