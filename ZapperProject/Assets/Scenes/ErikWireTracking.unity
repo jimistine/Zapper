@@ -150,6 +150,7 @@ MonoBehaviour:
   StartPositionLeft: -6
   StartPositionRight: 6
   PlayerPositionOffsetY: 0
+  ChargesPositionOffsetY: 0.5
 --- !u!61 &235468870
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -269,6 +270,7 @@ MonoBehaviour:
   StartPositionLeft: -6
   StartPositionRight: 6
   PlayerPositionOffsetY: 0
+  ChargesPositionOffsetY: 0.5
 --- !u!61 &560653870
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -388,6 +390,7 @@ MonoBehaviour:
   StartPositionLeft: -6
   StartPositionRight: 6
   PlayerPositionOffsetY: 0
+  ChargesPositionOffsetY: 0.5
 --- !u!61 &883947135
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -504,6 +507,8 @@ MonoBehaviour:
   PlayerHorizontalSpeed: 1
   CurrentWirePositionY: 0
   PlayerCurrentWire: {fileID: 0}
+  ChargeObjects: {fileID: 1539209488794968, guid: 8b7af593d418c204abe229c38e624b15,
+    type: 2}
   CanShoot: 1
   ChargingAmount: 0
   ChargingSpeed: 1
@@ -642,6 +647,7 @@ MonoBehaviour:
   StartPositionLeft: -6
   StartPositionRight: 6
   PlayerPositionOffsetY: 0
+  ChargesPositionOffsetY: 0.5
 --- !u!61 &1071027962
 BoxCollider2D:
   m_ObjectHideFlags: 0

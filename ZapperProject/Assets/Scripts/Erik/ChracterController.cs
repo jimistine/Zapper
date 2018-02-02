@@ -16,6 +16,7 @@ public class ChracterController : MonoBehaviour {
     int MinWirePosition = 1;
 
     public GameObject PlayerCurrentWire;
+    public GameObject ChargeObjects;
 
     public bool CanShoot = true;
     public float ChargingAmount;
@@ -60,9 +61,15 @@ public class ChracterController : MonoBehaviour {
         Wires currentWireScrpt = PlayerCurrentWire.GetComponent<Wires>();
         transform.position = new Vector3(currentWireScrpt.PlayersStartPositionX, currentWireScrpt.PlayersStartPositionY);
     }
-	
-	// Update is called once per frame
-	void Update () {
+    void CreateChargeObject()
+    {
+        GameObject NewChargeObject = Instantiate(ChargeObjects,new Vector3(transform.position.x, transform.position.y+PlayerCurrentWire.GetComponent<Wires>().ChargesPositionOffsetY, 0), Quaternion.identity ) as GameObject;
+        Charge NewChargeScrpt = NewChargeObject.GetComponent<Charge>();
+        NewChargeScrpt.ChargesCurrentWire = PlayerCurrentWire;
+    }
+
+    // Update is called once per frame
+    void Update () {
 
         if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
         {
@@ -123,6 +130,8 @@ public class ChracterController : MonoBehaviour {
                 //release the charge to move, wont move if not charged, cancle charge if move
                 Debug.Log("Fire Charge");
                 ChargingAmount = 0;
+
+                CreateChargeObject();
             }
         }
     }
