@@ -21,9 +21,10 @@ GameObject:
   - component: {fileID: 4184520605829138}
   - component: {fileID: 212837277238727454}
   - component: {fileID: 114030995648838728}
+  - component: {fileID: 61001041885006268}
   m_Layer: 0
   m_Name: fastCrow
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35,12 +36,37 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1292509844192062}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.0913, y: 0.055, z: -9.266244}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.5920832, y: 1.5122519, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &61001041885006268
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1292509844192062}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.32, y: 0.32}
+  m_EdgeRadius: 0
 --- !u!114 &114030995648838728
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52,12 +78,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 185348d106d154ec2afbd711f46afa73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CurrentWire: {fileID: 0}
   crowSpeed: 0.03
   startWait: 0
-  pauseTime: 0
+  pauseTimeMax: 1
+  pauseTimeMin: 3
   stopSpeed: 0
-  goSpeed: 0
-  randomTime: 0
+  randomTimeUntilPauseMax: 1
+  randomTimeUntilPauseMin: 4
+  CanReflectCharge: 0
 --- !u!212 &212837277238727454
 SpriteRenderer:
   m_ObjectHideFlags: 1
