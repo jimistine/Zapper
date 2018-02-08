@@ -3,17 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class crowMove : MonoBehaviour {
-
+    public GameObject CurrentWire;
 	public float crowSpeed; 
 	public float startWait; 
-	public float pauseTime; 
-	public float stopSpeed = 0; 
-	public float goSpeed; 
-	public int randomTime; 
- 
+	public float pauseTimeMax;
+    public float pauseTimeMin;
+    float pauseTime;
+    public float stopSpeed = 0; 
+	float goSpeed; 
+	int randomTimeUntilPause;
+    public int randomTimeUntilPauseMax;
+    public int randomTimeUntilPauseMin;
 
-	// Use this for initialization
-	void Start () {
+    public bool CanReflectCharge = false;
+
+
+    // Use this for initialization
+    void Start () {
 
 		StartCoroutine (wait()); 
 		
@@ -22,11 +28,24 @@ public class crowMove : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		randomTime = Random.Range (2, 4); 
-		pauseTime = Random.Range (1, 3);
+		randomTimeUntilPause = Random.Range (randomTimeUntilPauseMin, randomTimeUntilPauseMax); 
+		pauseTime = Random.Range (pauseTimeMin, pauseTimeMax);
 
+        if(CurrentWire.GetComponent<Wires>().PlayerStartRight == false)
+        {
+            goSpeed = crowSpeed * (-1);
+            //flip prefab
+            gameObject.GetComponent<SpriteRenderer>().flipX = false;
+        }
 
 		transform.Translate (goSpeed, 0, 0); 
+
+        if (transform.position.x < CurrentWire.GetComponent<Wires>().AnchorLeft || transform.position.x > CurrentWire.GetComponent<Wires>().AnchorRight)
+        {
+            FailStateCrow();
+            //Destory bird for now will need a fail state animation for birds hittitng fuze box
+            Destroy(gameObject);
+        }
 		
 	}
 
@@ -36,20 +55,22 @@ public class crowMove : MonoBehaviour {
 		yield return new WaitForSeconds (1); 
 		goSpeed = crowSpeed; 
 		StartCoroutine (pause ()); 
-
-
-
 	}
 
 	IEnumerator pause() {
 	
-		yield return new WaitForSeconds (randomTime); 
+		yield return new WaitForSeconds (randomTimeUntilPause); 
 		goSpeed = 0; 
 		yield return new WaitForSeconds (pauseTime); 
 		goSpeed = crowSpeed; 
 		StartCoroutine (pause ()); 
-
 	}
+    void FailStateCrow()
+    {
+        Debug.Log("Crows fail state");
+
+    }
+ 
 
 
 }
