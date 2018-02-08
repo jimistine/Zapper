@@ -46,10 +46,29 @@ public class Charge : MonoBehaviour {
             ChargeFailState();
         }
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("collision");
+
+        if (collision.gameObject.tag == "Target" && isReturningCharge == false)
+        {
+            if (collision.gameObject.GetComponent<crowMove>().CanReflectCharge == true)
+            {
+                isReturningCharge = true;
+            }else { Destroy(gameObject); }
+            //currently destroying birds on collisions may need to run a function for them to leave scene or some other score behaviours
+            Destroy(collision.gameObject);
+        }
+        else if(isReturningCharge == true && collision.gameObject.tag == "Player")
+        {
+            // destroy returinging charge on collision with player, may have to change function depending on hwo we want return charges to behave.
+            Destroy(gameObject);
+        }
+    }
     public void ChargeFailState()
     {
         Debug.Log("Charge Fail State");
-        //destroy for now will have to change things depeneding on hwo we record fail states
+        //destroy for now will have to change things depeneding on how we record fail states
         Destroy(gameObject);
     }
 }
