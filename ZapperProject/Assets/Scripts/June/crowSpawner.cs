@@ -17,64 +17,61 @@ public class crowSpawner : MonoBehaviour {
     public int TotalCrowsForLevel;
     public float BeginingDelay;
 
+    public float DelayBeforeStart;
+
 	// Use this for initialization
 	void Start () {
 
 		SC = FindObjectOfType<SceneController>();
+        Debug.Log("Start");
 
-
+        DelayBeforeStart = SC.DelayBeforeStartTime;
 	}
 
 	// Update is called once per frame
 	void Update () {
+        if (Time.time > DelayBeforeStart)
+        {
+            getRandY = Random.Range(1, 5);
 
-		getRandY = Random.Range (1, 5); 
-
-		if (getRandY == 1) {
-
-			randY = SC.WireOneObject.transform.position.y;
-            WireToSpawn = SC.WireOneObject;
-        }
-
-		if (getRandY == 2) {
-
-			randY = SC.WireTwoObject.transform.position.y;
-            WireToSpawn = SC.WireTwoObject;
-        }
-
-		if (getRandY == 3) {
-
-			randY = SC.WireThreeObject.transform.position.y;
-            WireToSpawn = SC.WireThreeObject;
-        }
-
-		if (getRandY == 4) {
-
-			randY = SC.WireFourObject.transform.position.y;
-            WireToSpawn = SC.WireFourObject;
-        }
-
-
-		if (Time.time > nextSpawn) {
-
-
-			nextSpawn = Time.time + spawnRate; 
-
-            if (WireToSpawn.GetComponent<Wires>().PlayerStartRight == false)
+            if (getRandY == 1)
             {
-                whereToSpawn = new Vector2(WireToSpawn.GetComponent<Wires>().AnchorRight, randY + gapSpace);
+                randY = SC.WireOneObject.transform.position.y;
+                WireToSpawn = SC.WireOneObject;
             }
-            else if (WireToSpawn.GetComponent<Wires>().PlayerStartRight == true)
+            if (getRandY == 2)
             {
-                whereToSpawn = new Vector2(WireToSpawn.GetComponent<Wires>().AnchorLeft, randY + gapSpace);
+                randY = SC.WireTwoObject.transform.position.y;
+                WireToSpawn = SC.WireTwoObject;
+            }
+            if (getRandY == 3)
+            {
+                randY = SC.WireThreeObject.transform.position.y;
+                WireToSpawn = SC.WireThreeObject;
+            }
+            if (getRandY == 4)
+            {
+                randY = SC.WireFourObject.transform.position.y;
+                WireToSpawn = SC.WireFourObject;
             }
 
-            GameObject NewBird = Instantiate (enemies[Random.Range(0,enemies.Length)], whereToSpawn, Quaternion.identity);
-            NewBird.GetComponent<crowMove>().CurrentWire = SetBirdWire();
-            
-		}
-        
+            if (Time.time > nextSpawn)
+            {
+                nextSpawn = Time.time + spawnRate;
 
+                if (WireToSpawn.GetComponent<Wires>().PlayerStartRight == false)
+                {
+                    whereToSpawn = new Vector2(WireToSpawn.GetComponent<Wires>().AnchorRight, randY + gapSpace);
+                }
+                else if (WireToSpawn.GetComponent<Wires>().PlayerStartRight == true)
+                {
+                    whereToSpawn = new Vector2(WireToSpawn.GetComponent<Wires>().AnchorLeft, randY + gapSpace);
+                }
+
+                GameObject NewBird = Instantiate(enemies[Random.Range(0, enemies.Length)], whereToSpawn, Quaternion.identity);
+                NewBird.GetComponent<crowMove>().CurrentWire = SetBirdWire();
+            }
+        }
     }
     GameObject SetBirdWire()
     {

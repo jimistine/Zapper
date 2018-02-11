@@ -23,7 +23,7 @@ public class ChracterController : MonoBehaviour {
     public float ChargingSpeed = 1;
     public int ChargingLimit = 100;
 
-    void Start () {
+    public void Start () {
 
         SC = FindObjectOfType<SceneController>();
         CurrentWirePositionY = 1;
@@ -31,9 +31,9 @@ public class ChracterController : MonoBehaviour {
 
         if (SC.WireOneObject.GetComponent<Wires>().PlayerStartRight == true)
         {
-            transform.position = new Vector3(6f, SC.WireOneObject.transform.position.y);
+			transform.position = new Vector3(5.0f, SC.WireOneObject.transform.position.y);
         }
-        else { transform.position = new Vector3(-6f, SC.WireOneObject.transform.position.y); }
+		else { transform.position = new Vector3(-5.0f, SC.WireOneObject.transform.position.y); }
 
 	}
     void FindCurrentWire()
