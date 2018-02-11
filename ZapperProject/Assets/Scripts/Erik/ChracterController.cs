@@ -23,7 +23,7 @@ public class ChracterController : MonoBehaviour {
     public float ChargingSpeed = 1;
     public int ChargingLimit = 100;
 
-    void Start () {
+    public void Start () {
 
         SC = FindObjectOfType<SceneController>();
         CurrentWirePositionY = 1;

@@ -78,8 +78,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 185348d106d154ec2afbd711f46afa73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SC: {fileID: 0}
   CurrentWire: {fileID: 0}
-  crowSpeed: 0.03
+  crowSpeed: 0.05
   startWait: 0
   pauseTimeMax: 1
   pauseTimeMin: 3

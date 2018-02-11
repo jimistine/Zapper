@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class crowMove : MonoBehaviour {
+    public SceneController SC;
     public GameObject CurrentWire;
 	public float crowSpeed; 
 	public float startWait; 
@@ -21,7 +22,8 @@ public class crowMove : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
-		StartCoroutine (wait()); 
+		StartCoroutine (wait());
+        SC = FindObjectOfType<SceneController>();
 		
 	}
 	
@@ -68,6 +70,7 @@ public class crowMove : MonoBehaviour {
     void FailStateCrow()
     {
         Debug.Log("Crows fail state");
+        SC.RestartLevel();
 
     }
  
