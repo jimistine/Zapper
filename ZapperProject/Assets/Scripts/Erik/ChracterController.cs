@@ -31,9 +31,9 @@ public class ChracterController : MonoBehaviour {
 
         if (SC.WireOneObject.GetComponent<Wires>().PlayerStartRight == true)
         {
-            transform.position = new Vector3(6f, SC.WireOneObject.transform.position.y);
+			transform.position = new Vector3(5.0f, SC.WireOneObject.transform.position.y);
         }
-        else { transform.position = new Vector3(-6f, SC.WireOneObject.transform.position.y); }
+		else { transform.position = new Vector3(-5.0f, SC.WireOneObject.transform.position.y); }
 
 	}
     void FindCurrentWire()
