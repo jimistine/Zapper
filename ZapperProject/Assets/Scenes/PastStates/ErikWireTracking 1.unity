@@ -839,7 +839,6 @@ MonoBehaviour:
   gapSpace: 0.2
   TotalCrowsForLevel: 0
   BeginingDelay: 0
-  DelayBeforeStart: 0
 --- !u!4 &1761539916
 Transform:
   m_ObjectHideFlags: 0
@@ -886,11 +885,6 @@ MonoBehaviour:
   WireThreeObject: {fileID: 560653868}
   WireFourObject: {fileID: 883947133}
   PlayerObject: {fileID: 1039467704}
-  PlayerControl: {fileID: 0}
-  Spawner: {fileID: 0}
-  Player: {fileID: 0}
-  DelayBeforeStartTime: 5
-  TotalLevelTime: 0
 --- !u!114 &1984350833
 MonoBehaviour:
   m_ObjectHideFlags: 0
