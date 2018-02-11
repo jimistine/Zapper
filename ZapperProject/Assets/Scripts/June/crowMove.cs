@@ -65,7 +65,8 @@ public class crowMove : MonoBehaviour {
 		goSpeed = crowSpeed; 
 		StartCoroutine (pause ()); 
 	}
-    void FailStateCrow()
+   
+	void FailStateCrow()
     {
         Debug.Log("Crows fail state");
 
