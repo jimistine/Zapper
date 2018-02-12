@@ -18,17 +18,17 @@
             <state relative-caret-position="555">
               <caret line="40" column="43" lean-forward="false" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
               <folding>
-                <marker date="1517514271590" expanded="false" signature="6:125" ph="..." />
-                <marker date="1517514271590" expanded="true" signature="164:2054" ph="{...}" />
-                <marker date="1517514271590" expanded="true" signature="358:745" ph="{...}" />
-                <marker date="1517514271590" expanded="true" signature="490:742" ph="/* List&lt;Wire&gt; wires = new List&lt;Wire&gt;(); ... */" />
-                <marker date="1517514271590" expanded="true" signature="797:1137" ph="{...}" />
-                <marker date="1517514271590" expanded="true" signature="873:964" ph="{...}" />
-                <marker date="1517514271590" expanded="true" signature="882:959" ph="/* gameObject.transform.Translate( + 1); ... */" />
-                <marker date="1517514271590" expanded="true" signature="1038:1133" ph="{...}" />
-                <marker date="1517514271590" expanded="true" signature="1048:1128" ph="/* gameObject.transform.Translate(Wire - 1); ... */" />
-                <marker date="1517514271590" expanded="true" signature="1138:1828" ph="/* else ... */" />
-                <marker date="1517514271590" expanded="true" signature="1830:2044" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
+                <marker date="1518454523736" expanded="false" signature="6:125" ph="..." />
+                <marker date="1518454523736" expanded="true" signature="164:2054" ph="{...}" />
+                <marker date="1518454523736" expanded="true" signature="358:745" ph="{...}" />
+                <marker date="1518454523736" expanded="true" signature="490:742" ph="/* List&lt;Wire&gt; wires = new List&lt;Wire&gt;(); ... */" />
+                <marker date="1518454523736" expanded="true" signature="797:1137" ph="{...}" />
+                <marker date="1518454523736" expanded="true" signature="873:964" ph="{...}" />
+                <marker date="1518454523736" expanded="true" signature="882:959" ph="/* gameObject.transform.Translate( + 1); ... */" />
+                <marker date="1518454523736" expanded="true" signature="1038:1133" ph="{...}" />
+                <marker date="1518454523736" expanded="true" signature="1048:1128" ph="/* gameObject.transform.Translate(Wire - 1); ... */" />
+                <marker date="1518454523736" expanded="true" signature="1138:1828" ph="/* else ... */" />
+                <marker date="1518454523736" expanded="true" signature="1830:2044" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
               </folding>
             </state>
           </provider>
@@ -38,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Erik/ChracterController.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2070">
-              <caret line="140" column="0" lean-forward="true" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+              <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
               <folding>
                 <marker date="1518453157863" expanded="false" signature="6:78" ph="..." />
                 <marker date="1518453157863" expanded="true" signature="128:4963" ph="{...}" />
@@ -72,7 +72,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Charge.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Charge.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Erik/Charge.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="444">
@@ -107,8 +107,8 @@
             <state relative-caret-position="135">
               <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
-                <marker date="1517514271590" expanded="false" signature="6:58" ph="..." />
-                <marker date="1517514271590" expanded="true" signature="61:535" ph="/* public class Wire : IComparable&lt;Wire&gt; ... */" />
+                <marker date="1518454523737" expanded="false" signature="6:58" ph="..." />
+                <marker date="1518454523737" expanded="true" signature="61:535" ph="/* public class Wire : IComparable&lt;Wire&gt; ... */" />
               </folding>
             </state>
           </provider>
@@ -120,10 +120,10 @@
             <state relative-caret-position="654">
               <caret line="52" column="27" lean-forward="false" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
               <folding>
-                <marker date="1517514271591" expanded="false" signature="6:78" ph="..." />
-                <marker date="1517514271591" expanded="true" signature="120:1440" ph="{...}" />
-                <marker date="1517514271591" expanded="true" signature="517:917" ph="{...}" />
-                <marker date="1517514271591" expanded="true" signature="920:1436" ph="/* void OnTriggerEnter2D(Collider2D other) ... */" />
+                <marker date="1518454523738" expanded="false" signature="6:78" ph="..." />
+                <marker date="1518454523738" expanded="true" signature="120:1440" ph="{...}" />
+                <marker date="1518454523738" expanded="true" signature="517:917" ph="{...}" />
+                <marker date="1518454523738" expanded="true" signature="920:1436" ph="/* void OnTriggerEnter2D(Collider2D other) ... */" />
               </folding>
             </state>
           </provider>
@@ -148,33 +148,62 @@
       <file leaf-file-name="AudioManager.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+            <state relative-caret-position="285">
+              <caret line="21" column="38" lean-forward="false" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
               <folding>
-                <marker date="1518453046538" expanded="false" signature="6:78" ph="..." />
-                <marker date="1518453046538" expanded="true" signature="121:448" ph="{...}" />
-                <marker date="1518453046538" expanded="true" signature="377:384" ph="{...}" />
-                <marker date="1518453046538" expanded="true" signature="439:446" ph="{...}" />
+                <marker date="1518454842027" expanded="false" signature="6:78" ph="..." />
+                <marker date="1518454842027" expanded="true" signature="121:556" ph="{...}" />
+                <marker date="1518454842027" expanded="true" signature="453:492" ph="{...}" />
+                <marker date="1518454842027" expanded="true" signature="547:554" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SceneController.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Erik/SceneController.cs">
+      <file leaf-file-name="crowSpawner.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/June/crowSpawner.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="-279">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <marker date="1518378792931" expanded="true" signature="6:78" ph="..." />
-                <marker date="1518378792931" expanded="true" signature="125:1952" ph="{...}" />
-                <marker date="1518378792931" expanded="true" signature="131:284" ph="/* find and store the four wires positions, (Y) ... */" />
-                <marker date="1518378792931" expanded="true" signature="685:805" ph="{...}" />
-                <marker date="1518378792931" expanded="true" signature="860:873" ph="{...}" />
-                <marker date="1518378792931" expanded="true" signature="904:1950" ph="{...}" />
-                <marker date="1518378792931" expanded="true" signature="1230:1303" ph="{...}" />
-                <marker date="1518378792931" expanded="true" signature="1396:1469" ph="{...}" />
-                <marker date="1518378792931" expanded="true" signature="1571:1624" ph="{...}" />
+                <marker date="1518378792931" expanded="false" signature="6:78" ph="..." />
+                <marker date="1518378792931" expanded="true" signature="121:2693" ph="{...}" />
+                <marker date="1518378792931" expanded="true" signature="493:623" ph="{...}" />
+                <marker date="1518378792931" expanded="true" signature="677:2265" ph="{...}" />
+                <marker date="1518378792931" expanded="true" signature="720:2259" ph="{...}" />
+                <marker date="1518378792931" expanded="true" signature="805:944" ph="{...}" />
+                <marker date="1518378792931" expanded="true" signature="975:1114" ph="{...}" />
+                <marker date="1518378792931" expanded="true" signature="1145:1288" ph="{...}" />
+                <marker date="1518378792931" expanded="true" signature="1319:1460" ph="{...}" />
+                <marker date="1518378792931" expanded="true" signature="1500:2249" ph="{...}" />
+                <marker date="1518378792931" expanded="true" signature="1647:1796" ph="{...}" />
+                <marker date="1518378792931" expanded="true" signature="1881:2029" ph="{...}" />
+                <marker date="1518378792931" expanded="true" signature="2294:2690" ph="{...}" />
+                <marker date="1518378792931" expanded="true" signature="2327:2384" ph="{...}" />
+                <marker date="1518378792931" expanded="true" signature="2416:2473" ph="{...}" />
+                <marker date="1518378792931" expanded="true" signature="2505:2564" ph="{...}" />
+                <marker date="1518378792931" expanded="true" signature="2596:2654" ph="{...}" />
+                <marker date="1518378792931" expanded="true" signature="2654:2684" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SceneController.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Erik/SceneController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="489">
+              <caret line="59" column="71" lean-forward="false" selection-start-line="59" selection-start-column="71" selection-end-line="59" selection-end-column="71" />
+              <folding>
+                <marker date="1518455085856" expanded="true" signature="6:78" ph="..." />
+                <marker date="1518455085856" expanded="true" signature="125:1952" ph="{...}" />
+                <marker date="1518455085856" expanded="true" signature="131:284" ph="/* find and store the four wires positions, (Y) ... */" />
+                <marker date="1518455085856" expanded="true" signature="685:805" ph="{...}" />
+                <marker date="1518455085856" expanded="true" signature="860:873" ph="{...}" />
+                <marker date="1518455085856" expanded="true" signature="904:1950" ph="{...}" />
+                <marker date="1518455085856" expanded="true" signature="1230:1303" ph="{...}" />
+                <marker date="1518455085856" expanded="true" signature="1396:1469" ph="{...}" />
+                <marker date="1518455085856" expanded="true" signature="1571:1624" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -187,6 +216,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Erik/SceneController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GM.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Wire.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/June/crowSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/wireTracker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Erik/ChracterController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -200,9 +230,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/wireTracker.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Wire.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/movement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Erik/Charge.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Erik/ChracterController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Erik/SceneController.cs" />
       </list>
     </option>
   </component>
@@ -354,12 +385,12 @@
       <workItem from="1516909973478" duration="215000" />
       <workItem from="1517279936229" duration="5264000" />
       <workItem from="1518383793912" duration="404000" />
-      <workItem from="1518450865871" duration="2205000" />
+      <workItem from="1518450865871" duration="2789000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13919000" />
+    <option name="totallyTimeSpent" value="14503000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -412,17 +443,17 @@
         <state relative-caret-position="555">
           <caret line="40" column="43" lean-forward="false" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
           <folding>
-            <marker date="1517514271590" expanded="false" signature="6:125" ph="..." />
-            <marker date="1517514271590" expanded="true" signature="164:2054" ph="{...}" />
-            <marker date="1517514271590" expanded="true" signature="358:745" ph="{...}" />
-            <marker date="1517514271590" expanded="true" signature="490:742" ph="/* List&lt;Wire&gt; wires = new List&lt;Wire&gt;(); ... */" />
-            <marker date="1517514271590" expanded="true" signature="797:1137" ph="{...}" />
-            <marker date="1517514271590" expanded="true" signature="873:964" ph="{...}" />
-            <marker date="1517514271590" expanded="true" signature="882:959" ph="/* gameObject.transform.Translate( + 1); ... */" />
-            <marker date="1517514271590" expanded="true" signature="1038:1133" ph="{...}" />
-            <marker date="1517514271590" expanded="true" signature="1048:1128" ph="/* gameObject.transform.Translate(Wire - 1); ... */" />
-            <marker date="1517514271590" expanded="true" signature="1138:1828" ph="/* else ... */" />
-            <marker date="1517514271590" expanded="true" signature="1830:2044" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
+            <marker date="1518454523736" expanded="false" signature="6:125" ph="..." />
+            <marker date="1518454523736" expanded="true" signature="164:2054" ph="{...}" />
+            <marker date="1518454523736" expanded="true" signature="358:745" ph="{...}" />
+            <marker date="1518454523736" expanded="true" signature="490:742" ph="/* List&lt;Wire&gt; wires = new List&lt;Wire&gt;(); ... */" />
+            <marker date="1518454523736" expanded="true" signature="797:1137" ph="{...}" />
+            <marker date="1518454523736" expanded="true" signature="873:964" ph="{...}" />
+            <marker date="1518454523736" expanded="true" signature="882:959" ph="/* gameObject.transform.Translate( + 1); ... */" />
+            <marker date="1518454523736" expanded="true" signature="1038:1133" ph="{...}" />
+            <marker date="1518454523736" expanded="true" signature="1048:1128" ph="/* gameObject.transform.Translate(Wire - 1); ... */" />
+            <marker date="1518454523736" expanded="true" signature="1138:1828" ph="/* else ... */" />
+            <marker date="1518454523736" expanded="true" signature="1830:2044" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
           </folding>
         </state>
       </provider>
@@ -432,8 +463,8 @@
         <state relative-caret-position="135">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
-            <marker date="1517514271590" expanded="false" signature="6:58" ph="..." />
-            <marker date="1517514271590" expanded="true" signature="61:535" ph="/* public class Wire : IComparable&lt;Wire&gt; ... */" />
+            <marker date="1518454523737" expanded="false" signature="6:58" ph="..." />
+            <marker date="1518454523737" expanded="true" signature="61:535" ph="/* public class Wire : IComparable&lt;Wire&gt; ... */" />
           </folding>
         </state>
       </provider>
@@ -443,10 +474,10 @@
         <state relative-caret-position="750">
           <caret line="52" column="27" lean-forward="false" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
           <folding>
-            <marker date="1517514271591" expanded="false" signature="6:78" ph="..." />
-            <marker date="1517514271591" expanded="true" signature="120:1440" ph="{...}" />
-            <marker date="1517514271591" expanded="true" signature="517:917" ph="{...}" />
-            <marker date="1517514271591" expanded="true" signature="920:1436" ph="/* void OnTriggerEnter2D(Collider2D other) ... */" />
+            <marker date="1518454523738" expanded="false" signature="6:78" ph="..." />
+            <marker date="1518454523738" expanded="true" signature="120:1440" ph="{...}" />
+            <marker date="1518454523738" expanded="true" signature="517:917" ph="{...}" />
+            <marker date="1518454523738" expanded="true" signature="920:1436" ph="/* void OnTriggerEnter2D(Collider2D other) ... */" />
           </folding>
         </state>
       </provider>
@@ -506,17 +537,17 @@
         <state relative-caret-position="600">
           <caret line="40" column="43" lean-forward="false" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
           <folding>
-            <marker date="1517514271590" expanded="false" signature="6:125" ph="..." />
-            <marker date="1517514271590" expanded="true" signature="164:2054" ph="{...}" />
-            <marker date="1517514271590" expanded="true" signature="358:745" ph="{...}" />
-            <marker date="1517514271590" expanded="true" signature="490:742" ph="/* List&lt;Wire&gt; wires = new List&lt;Wire&gt;(); ... */" />
-            <marker date="1517514271590" expanded="true" signature="797:1137" ph="{...}" />
-            <marker date="1517514271590" expanded="true" signature="873:964" ph="{...}" />
-            <marker date="1517514271590" expanded="true" signature="882:959" ph="/* gameObject.transform.Translate( + 1); ... */" />
-            <marker date="1517514271590" expanded="true" signature="1038:1133" ph="{...}" />
-            <marker date="1517514271590" expanded="true" signature="1048:1128" ph="/* gameObject.transform.Translate(Wire - 1); ... */" />
-            <marker date="1517514271590" expanded="true" signature="1138:1828" ph="/* else ... */" />
-            <marker date="1517514271590" expanded="true" signature="1830:2044" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
+            <marker date="1518454523736" expanded="false" signature="6:125" ph="..." />
+            <marker date="1518454523736" expanded="true" signature="164:2054" ph="{...}" />
+            <marker date="1518454523736" expanded="true" signature="358:745" ph="{...}" />
+            <marker date="1518454523736" expanded="true" signature="490:742" ph="/* List&lt;Wire&gt; wires = new List&lt;Wire&gt;(); ... */" />
+            <marker date="1518454523736" expanded="true" signature="797:1137" ph="{...}" />
+            <marker date="1518454523736" expanded="true" signature="873:964" ph="{...}" />
+            <marker date="1518454523736" expanded="true" signature="882:959" ph="/* gameObject.transform.Translate( + 1); ... */" />
+            <marker date="1518454523736" expanded="true" signature="1038:1133" ph="{...}" />
+            <marker date="1518454523736" expanded="true" signature="1048:1128" ph="/* gameObject.transform.Translate(Wire - 1); ... */" />
+            <marker date="1518454523736" expanded="true" signature="1138:1828" ph="/* else ... */" />
+            <marker date="1518454523736" expanded="true" signature="1830:2044" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
           </folding>
         </state>
       </provider>
@@ -526,8 +557,8 @@
         <state relative-caret-position="165">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
-            <marker date="1517514271590" expanded="false" signature="6:58" ph="..." />
-            <marker date="1517514271590" expanded="true" signature="61:535" ph="/* public class Wire : IComparable&lt;Wire&gt; ... */" />
+            <marker date="1518454523737" expanded="false" signature="6:58" ph="..." />
+            <marker date="1518454523737" expanded="true" signature="61:535" ph="/* public class Wire : IComparable&lt;Wire&gt; ... */" />
           </folding>
         </state>
       </provider>
@@ -537,10 +568,10 @@
         <state relative-caret-position="780">
           <caret line="52" column="27" lean-forward="false" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
           <folding>
-            <marker date="1517514271591" expanded="false" signature="6:78" ph="..." />
-            <marker date="1517514271591" expanded="true" signature="120:1440" ph="{...}" />
-            <marker date="1517514271591" expanded="true" signature="517:917" ph="{...}" />
-            <marker date="1517514271591" expanded="true" signature="920:1436" ph="/* void OnTriggerEnter2D(Collider2D other) ... */" />
+            <marker date="1518454523738" expanded="false" signature="6:78" ph="..." />
+            <marker date="1518454523738" expanded="true" signature="120:1440" ph="{...}" />
+            <marker date="1518454523738" expanded="true" signature="517:917" ph="{...}" />
+            <marker date="1518454523738" expanded="true" signature="920:1436" ph="/* void OnTriggerEnter2D(Collider2D other) ... */" />
           </folding>
         </state>
       </provider>
@@ -564,17 +595,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1517514271590" expanded="false" signature="6:125" ph="..." />
-            <marker date="1517514271590" expanded="true" signature="164:2054" ph="{...}" />
-            <marker date="1517514271590" expanded="true" signature="358:745" ph="{...}" />
-            <marker date="1517514271590" expanded="true" signature="490:742" ph="/* List&lt;Wire&gt; wires = new List&lt;Wire&gt;(); ... */" />
-            <marker date="1517514271590" expanded="true" signature="797:1137" ph="{...}" />
-            <marker date="1517514271590" expanded="true" signature="873:964" ph="{...}" />
-            <marker date="1517514271590" expanded="true" signature="882:959" ph="/* gameObject.transform.Translate( + 1); ... */" />
-            <marker date="1517514271590" expanded="true" signature="1038:1133" ph="{...}" />
-            <marker date="1517514271590" expanded="true" signature="1048:1128" ph="/* gameObject.transform.Translate(Wire - 1); ... */" />
-            <marker date="1517514271590" expanded="true" signature="1138:1828" ph="/* else ... */" />
-            <marker date="1517514271590" expanded="true" signature="1830:2044" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
+            <marker date="1518454523736" expanded="false" signature="6:125" ph="..." />
+            <marker date="1518454523736" expanded="true" signature="164:2054" ph="{...}" />
+            <marker date="1518454523736" expanded="true" signature="358:745" ph="{...}" />
+            <marker date="1518454523736" expanded="true" signature="490:742" ph="/* List&lt;Wire&gt; wires = new List&lt;Wire&gt;(); ... */" />
+            <marker date="1518454523736" expanded="true" signature="797:1137" ph="{...}" />
+            <marker date="1518454523736" expanded="true" signature="873:964" ph="{...}" />
+            <marker date="1518454523736" expanded="true" signature="882:959" ph="/* gameObject.transform.Translate( + 1); ... */" />
+            <marker date="1518454523736" expanded="true" signature="1038:1133" ph="{...}" />
+            <marker date="1518454523736" expanded="true" signature="1048:1128" ph="/* gameObject.transform.Translate(Wire - 1); ... */" />
+            <marker date="1518454523736" expanded="true" signature="1138:1828" ph="/* else ... */" />
+            <marker date="1518454523736" expanded="true" signature="1830:2044" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
           </folding>
         </state>
       </provider>
@@ -584,10 +615,10 @@
         <state relative-caret-position="300">
           <caret line="22" column="47" lean-forward="false" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
           <folding>
-            <marker date="1517514271591" expanded="false" signature="6:78" ph="..." />
-            <marker date="1517514271591" expanded="true" signature="120:1440" ph="{...}" />
-            <marker date="1517514271591" expanded="true" signature="517:917" ph="{...}" />
-            <marker date="1517514271591" expanded="true" signature="920:1436" ph="/* void OnTriggerEnter2D(Collider2D other) ... */" />
+            <marker date="1518454523738" expanded="false" signature="6:78" ph="..." />
+            <marker date="1518454523738" expanded="true" signature="120:1440" ph="{...}" />
+            <marker date="1518454523738" expanded="true" signature="517:917" ph="{...}" />
+            <marker date="1518454523738" expanded="true" signature="920:1436" ph="/* void OnTriggerEnter2D(Collider2D other) ... */" />
           </folding>
         </state>
       </provider>
@@ -625,10 +656,10 @@
         <state relative-caret-position="330">
           <caret line="22" column="47" lean-forward="true" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
           <folding>
-            <marker date="1517514271591" expanded="false" signature="6:78" ph="..." />
-            <marker date="1517514271591" expanded="true" signature="120:1440" ph="{...}" />
-            <marker date="1517514271591" expanded="true" signature="517:917" ph="{...}" />
-            <marker date="1517514271591" expanded="true" signature="920:1436" ph="/* void OnTriggerEnter2D(Collider2D other) ... */" />
+            <marker date="1518454523738" expanded="false" signature="6:78" ph="..." />
+            <marker date="1518454523738" expanded="true" signature="120:1440" ph="{...}" />
+            <marker date="1518454523738" expanded="true" signature="517:917" ph="{...}" />
+            <marker date="1518454523738" expanded="true" signature="920:1436" ph="/* void OnTriggerEnter2D(Collider2D other) ... */" />
           </folding>
         </state>
       </provider>
@@ -638,17 +669,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1517514271590" expanded="false" signature="6:125" ph="..." />
-            <marker date="1517514271590" expanded="true" signature="164:2054" ph="{...}" />
-            <marker date="1517514271590" expanded="true" signature="358:745" ph="{...}" />
-            <marker date="1517514271590" expanded="true" signature="490:742" ph="/* List&lt;Wire&gt; wires = new List&lt;Wire&gt;(); ... */" />
-            <marker date="1517514271590" expanded="true" signature="797:1137" ph="{...}" />
-            <marker date="1517514271590" expanded="true" signature="873:964" ph="{...}" />
-            <marker date="1517514271590" expanded="true" signature="882:959" ph="/* gameObject.transform.Translate( + 1); ... */" />
-            <marker date="1517514271590" expanded="true" signature="1038:1133" ph="{...}" />
-            <marker date="1517514271590" expanded="true" signature="1048:1128" ph="/* gameObject.transform.Translate(Wire - 1); ... */" />
-            <marker date="1517514271590" expanded="true" signature="1138:1828" ph="/* else ... */" />
-            <marker date="1517514271590" expanded="true" signature="1830:2044" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
+            <marker date="1518454523736" expanded="false" signature="6:125" ph="..." />
+            <marker date="1518454523736" expanded="true" signature="164:2054" ph="{...}" />
+            <marker date="1518454523736" expanded="true" signature="358:745" ph="{...}" />
+            <marker date="1518454523736" expanded="true" signature="490:742" ph="/* List&lt;Wire&gt; wires = new List&lt;Wire&gt;(); ... */" />
+            <marker date="1518454523736" expanded="true" signature="797:1137" ph="{...}" />
+            <marker date="1518454523736" expanded="true" signature="873:964" ph="{...}" />
+            <marker date="1518454523736" expanded="true" signature="882:959" ph="/* gameObject.transform.Translate( + 1); ... */" />
+            <marker date="1518454523736" expanded="true" signature="1038:1133" ph="{...}" />
+            <marker date="1518454523736" expanded="true" signature="1048:1128" ph="/* gameObject.transform.Translate(Wire - 1); ... */" />
+            <marker date="1518454523736" expanded="true" signature="1138:1828" ph="/* else ... */" />
+            <marker date="1518454523736" expanded="true" signature="1830:2044" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
           </folding>
         </state>
       </provider>
@@ -672,10 +703,10 @@
         <state relative-caret-position="375">
           <caret line="25" column="4" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
           <folding>
-            <marker date="1517514271591" expanded="false" signature="6:78" ph="..." />
-            <marker date="1517514271591" expanded="true" signature="120:1440" ph="{...}" />
-            <marker date="1517514271591" expanded="true" signature="517:917" ph="{...}" />
-            <marker date="1517514271591" expanded="true" signature="920:1436" ph="/* void OnTriggerEnter2D(Collider2D other) ... */" />
+            <marker date="1518454523738" expanded="false" signature="6:78" ph="..." />
+            <marker date="1518454523738" expanded="true" signature="120:1440" ph="{...}" />
+            <marker date="1518454523738" expanded="true" signature="517:917" ph="{...}" />
+            <marker date="1518454523738" expanded="true" signature="920:1436" ph="/* void OnTriggerEnter2D(Collider2D other) ... */" />
           </folding>
         </state>
       </provider>
@@ -685,17 +716,17 @@
         <state relative-caret-position="1185">
           <caret line="79" column="41" lean-forward="false" selection-start-line="79" selection-start-column="41" selection-end-line="79" selection-end-column="41" />
           <folding>
-            <marker date="1517514271590" expanded="false" signature="6:125" ph="..." />
-            <marker date="1517514271590" expanded="true" signature="164:2054" ph="{...}" />
-            <marker date="1517514271590" expanded="true" signature="358:745" ph="{...}" />
-            <marker date="1517514271590" expanded="true" signature="490:742" ph="/* List&lt;Wire&gt; wires = new List&lt;Wire&gt;(); ... */" />
-            <marker date="1517514271590" expanded="true" signature="797:1137" ph="{...}" />
-            <marker date="1517514271590" expanded="true" signature="873:964" ph="{...}" />
-            <marker date="1517514271590" expanded="true" signature="882:959" ph="/* gameObject.transform.Translate( + 1); ... */" />
-            <marker date="1517514271590" expanded="true" signature="1038:1133" ph="{...}" />
-            <marker date="1517514271590" expanded="true" signature="1048:1128" ph="/* gameObject.transform.Translate(Wire - 1); ... */" />
-            <marker date="1517514271590" expanded="true" signature="1138:1828" ph="/* else ... */" />
-            <marker date="1517514271590" expanded="true" signature="1830:2044" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
+            <marker date="1518454523736" expanded="false" signature="6:125" ph="..." />
+            <marker date="1518454523736" expanded="true" signature="164:2054" ph="{...}" />
+            <marker date="1518454523736" expanded="true" signature="358:745" ph="{...}" />
+            <marker date="1518454523736" expanded="true" signature="490:742" ph="/* List&lt;Wire&gt; wires = new List&lt;Wire&gt;(); ... */" />
+            <marker date="1518454523736" expanded="true" signature="797:1137" ph="{...}" />
+            <marker date="1518454523736" expanded="true" signature="873:964" ph="{...}" />
+            <marker date="1518454523736" expanded="true" signature="882:959" ph="/* gameObject.transform.Translate( + 1); ... */" />
+            <marker date="1518454523736" expanded="true" signature="1038:1133" ph="{...}" />
+            <marker date="1518454523736" expanded="true" signature="1048:1128" ph="/* gameObject.transform.Translate(Wire - 1); ... */" />
+            <marker date="1518454523736" expanded="true" signature="1138:1828" ph="/* else ... */" />
+            <marker date="1518454523736" expanded="true" signature="1830:2044" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
           </folding>
         </state>
       </provider>
@@ -705,17 +736,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1517514271590" expanded="false" signature="6:125" ph="..." />
-            <marker date="1517514271590" expanded="true" signature="164:2054" ph="{...}" />
-            <marker date="1517514271590" expanded="true" signature="358:745" ph="{...}" />
-            <marker date="1517514271590" expanded="true" signature="490:742" ph="/* List&lt;Wire&gt; wires = new List&lt;Wire&gt;(); ... */" />
-            <marker date="1517514271590" expanded="true" signature="797:1137" ph="{...}" />
-            <marker date="1517514271590" expanded="true" signature="873:964" ph="{...}" />
-            <marker date="1517514271590" expanded="true" signature="882:959" ph="/* gameObject.transform.Translate( + 1); ... */" />
-            <marker date="1517514271590" expanded="true" signature="1038:1133" ph="{...}" />
-            <marker date="1517514271590" expanded="true" signature="1048:1128" ph="/* gameObject.transform.Translate(Wire - 1); ... */" />
-            <marker date="1517514271590" expanded="true" signature="1138:1828" ph="/* else ... */" />
-            <marker date="1517514271590" expanded="true" signature="1830:2044" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
+            <marker date="1518454523736" expanded="false" signature="6:125" ph="..." />
+            <marker date="1518454523736" expanded="true" signature="164:2054" ph="{...}" />
+            <marker date="1518454523736" expanded="true" signature="358:745" ph="{...}" />
+            <marker date="1518454523736" expanded="true" signature="490:742" ph="/* List&lt;Wire&gt; wires = new List&lt;Wire&gt;(); ... */" />
+            <marker date="1518454523736" expanded="true" signature="797:1137" ph="{...}" />
+            <marker date="1518454523736" expanded="true" signature="873:964" ph="{...}" />
+            <marker date="1518454523736" expanded="true" signature="882:959" ph="/* gameObject.transform.Translate( + 1); ... */" />
+            <marker date="1518454523736" expanded="true" signature="1038:1133" ph="{...}" />
+            <marker date="1518454523736" expanded="true" signature="1048:1128" ph="/* gameObject.transform.Translate(Wire - 1); ... */" />
+            <marker date="1518454523736" expanded="true" signature="1138:1828" ph="/* else ... */" />
+            <marker date="1518454523736" expanded="true" signature="1830:2044" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
           </folding>
         </state>
       </provider>
@@ -726,35 +757,17 @@
         <state relative-caret-position="555">
           <caret line="40" column="43" lean-forward="false" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
           <folding>
-            <marker date="1517514271590" expanded="false" signature="6:125" ph="..." />
-            <marker date="1517514271590" expanded="true" signature="164:2054" ph="{...}" />
-            <marker date="1517514271590" expanded="true" signature="358:745" ph="{...}" />
-            <marker date="1517514271590" expanded="true" signature="490:742" ph="/* List&lt;Wire&gt; wires = new List&lt;Wire&gt;(); ... */" />
-            <marker date="1517514271590" expanded="true" signature="797:1137" ph="{...}" />
-            <marker date="1517514271590" expanded="true" signature="873:964" ph="{...}" />
-            <marker date="1517514271590" expanded="true" signature="882:959" ph="/* gameObject.transform.Translate( + 1); ... */" />
-            <marker date="1517514271590" expanded="true" signature="1038:1133" ph="{...}" />
-            <marker date="1517514271590" expanded="true" signature="1048:1128" ph="/* gameObject.transform.Translate(Wire - 1); ... */" />
-            <marker date="1517514271590" expanded="true" signature="1138:1828" ph="/* else ... */" />
-            <marker date="1517514271590" expanded="true" signature="1830:2044" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Erik/SceneController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1518378792931" expanded="true" signature="6:78" ph="..." />
-            <marker date="1518378792931" expanded="true" signature="125:1952" ph="{...}" />
-            <marker date="1518378792931" expanded="true" signature="131:284" ph="/* find and store the four wires positions, (Y) ... */" />
-            <marker date="1518378792931" expanded="true" signature="685:805" ph="{...}" />
-            <marker date="1518378792931" expanded="true" signature="860:873" ph="{...}" />
-            <marker date="1518378792931" expanded="true" signature="904:1950" ph="{...}" />
-            <marker date="1518378792931" expanded="true" signature="1230:1303" ph="{...}" />
-            <marker date="1518378792931" expanded="true" signature="1396:1469" ph="{...}" />
-            <marker date="1518378792931" expanded="true" signature="1571:1624" ph="{...}" />
+            <marker date="1518454523736" expanded="false" signature="6:125" ph="..." />
+            <marker date="1518454523736" expanded="true" signature="164:2054" ph="{...}" />
+            <marker date="1518454523736" expanded="true" signature="358:745" ph="{...}" />
+            <marker date="1518454523736" expanded="true" signature="490:742" ph="/* List&lt;Wire&gt; wires = new List&lt;Wire&gt;(); ... */" />
+            <marker date="1518454523736" expanded="true" signature="797:1137" ph="{...}" />
+            <marker date="1518454523736" expanded="true" signature="873:964" ph="{...}" />
+            <marker date="1518454523736" expanded="true" signature="882:959" ph="/* gameObject.transform.Translate( + 1); ... */" />
+            <marker date="1518454523736" expanded="true" signature="1038:1133" ph="{...}" />
+            <marker date="1518454523736" expanded="true" signature="1048:1128" ph="/* gameObject.transform.Translate(Wire - 1); ... */" />
+            <marker date="1518454523736" expanded="true" signature="1138:1828" ph="/* else ... */" />
+            <marker date="1518454523736" expanded="true" signature="1830:2044" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
           </folding>
         </state>
       </provider>
@@ -764,10 +777,10 @@
         <state relative-caret-position="654">
           <caret line="52" column="27" lean-forward="false" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
           <folding>
-            <marker date="1517514271591" expanded="false" signature="6:78" ph="..." />
-            <marker date="1517514271591" expanded="true" signature="120:1440" ph="{...}" />
-            <marker date="1517514271591" expanded="true" signature="517:917" ph="{...}" />
-            <marker date="1517514271591" expanded="true" signature="920:1436" ph="/* void OnTriggerEnter2D(Collider2D other) ... */" />
+            <marker date="1518454523738" expanded="false" signature="6:78" ph="..." />
+            <marker date="1518454523738" expanded="true" signature="120:1440" ph="{...}" />
+            <marker date="1518454523738" expanded="true" signature="517:917" ph="{...}" />
+            <marker date="1518454523738" expanded="true" signature="920:1436" ph="/* void OnTriggerEnter2D(Collider2D other) ... */" />
           </folding>
         </state>
       </provider>
@@ -791,21 +804,8 @@
         <state relative-caret-position="135">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
-            <marker date="1517514271590" expanded="false" signature="6:58" ph="..." />
-            <marker date="1517514271590" expanded="true" signature="61:535" ph="/* public class Wire : IComparable&lt;Wire&gt; ... */" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-          <folding>
-            <marker date="1518453046538" expanded="false" signature="6:78" ph="..." />
-            <marker date="1518453046538" expanded="true" signature="121:448" ph="{...}" />
-            <marker date="1518453046538" expanded="true" signature="377:384" ph="{...}" />
-            <marker date="1518453046538" expanded="true" signature="439:446" ph="{...}" />
+            <marker date="1518454523737" expanded="false" signature="6:58" ph="..." />
+            <marker date="1518454523737" expanded="true" signature="61:535" ph="/* public class Wire : IComparable&lt;Wire&gt; ... */" />
           </folding>
         </state>
       </provider>
@@ -813,7 +813,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Erik/ChracterController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2070">
-          <caret line="140" column="0" lean-forward="true" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+          <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
           <folding>
             <marker date="1518453157863" expanded="false" signature="6:78" ph="..." />
             <marker date="1518453157863" expanded="true" signature="128:4963" ph="{...}" />
@@ -869,6 +869,64 @@
             <marker date="1518453138161" expanded="true" signature="2165:2306" ph="{...}" />
             <marker date="1518453138161" expanded="true" signature="2655:2930" ph="{...}" />
             <marker date="1518453138161" expanded="true" signature="2989:3216" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="21" column="38" lean-forward="false" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+          <folding>
+            <marker date="1518454842027" expanded="false" signature="6:78" ph="..." />
+            <marker date="1518454842027" expanded="true" signature="121:556" ph="{...}" />
+            <marker date="1518454842027" expanded="true" signature="453:492" ph="{...}" />
+            <marker date="1518454842027" expanded="true" signature="547:554" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/June/crowSpawner.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-279">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1518378792931" expanded="false" signature="6:78" ph="..." />
+            <marker date="1518378792931" expanded="true" signature="121:2693" ph="{...}" />
+            <marker date="1518378792931" expanded="true" signature="493:623" ph="{...}" />
+            <marker date="1518378792931" expanded="true" signature="677:2265" ph="{...}" />
+            <marker date="1518378792931" expanded="true" signature="720:2259" ph="{...}" />
+            <marker date="1518378792931" expanded="true" signature="805:944" ph="{...}" />
+            <marker date="1518378792931" expanded="true" signature="975:1114" ph="{...}" />
+            <marker date="1518378792931" expanded="true" signature="1145:1288" ph="{...}" />
+            <marker date="1518378792931" expanded="true" signature="1319:1460" ph="{...}" />
+            <marker date="1518378792931" expanded="true" signature="1500:2249" ph="{...}" />
+            <marker date="1518378792931" expanded="true" signature="1647:1796" ph="{...}" />
+            <marker date="1518378792931" expanded="true" signature="1881:2029" ph="{...}" />
+            <marker date="1518378792931" expanded="true" signature="2294:2690" ph="{...}" />
+            <marker date="1518378792931" expanded="true" signature="2327:2384" ph="{...}" />
+            <marker date="1518378792931" expanded="true" signature="2416:2473" ph="{...}" />
+            <marker date="1518378792931" expanded="true" signature="2505:2564" ph="{...}" />
+            <marker date="1518378792931" expanded="true" signature="2596:2654" ph="{...}" />
+            <marker date="1518378792931" expanded="true" signature="2654:2684" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Erik/SceneController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="59" column="71" lean-forward="false" selection-start-line="59" selection-start-column="71" selection-end-line="59" selection-end-column="71" />
+          <folding>
+            <marker date="1518455085856" expanded="true" signature="6:78" ph="..." />
+            <marker date="1518455085856" expanded="true" signature="125:1952" ph="{...}" />
+            <marker date="1518455085856" expanded="true" signature="131:284" ph="/* find and store the four wires positions, (Y) ... */" />
+            <marker date="1518455085856" expanded="true" signature="685:805" ph="{...}" />
+            <marker date="1518455085856" expanded="true" signature="860:873" ph="{...}" />
+            <marker date="1518455085856" expanded="true" signature="904:1950" ph="{...}" />
+            <marker date="1518455085856" expanded="true" signature="1230:1303" ph="{...}" />
+            <marker date="1518455085856" expanded="true" signature="1396:1469" ph="{...}" />
+            <marker date="1518455085856" expanded="true" signature="1571:1624" ph="{...}" />
           </folding>
         </state>
       </provider>
