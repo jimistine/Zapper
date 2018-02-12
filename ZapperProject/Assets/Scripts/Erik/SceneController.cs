@@ -57,7 +57,7 @@ public class SceneController : MonoBehaviour {
         //reset players position
         PlayerControl.Start();
         //reset the delay before play timer
-        Spawner.DelayBeforeStart = DelayBeforeStartTime + Time.time + 2;
+        Spawner.DelayBeforeStart = DelayBeforeStartTime + Time.time + 1;
 
         //(for now reset level timer will change once we have a VO)
         PlayerControl.enabled = true;
