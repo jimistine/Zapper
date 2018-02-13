@@ -11,3 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 98f905bb2c3504a99b1666b55605061f
+  - enabled: 1
+    path: Assets/Scenes/levelSelect.unity
+    guid: abefa19936c3044d18fbde01dca0e181
+  - enabled: 1
+    path: Assets/Scenes/ErikWireTracking.unity
+    guid: b86b7e2a7950cbc41ba5339ee16189e7
