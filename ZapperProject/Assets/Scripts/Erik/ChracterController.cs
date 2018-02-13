@@ -9,6 +9,7 @@ public class ChracterController : MonoBehaviour {
     //When player collides with return charge destroy
     // Use this for initialization
     public SceneController SC;
+    public AudioManager AM;
     public float PlayerHorizontalSpeed = 1;
     public int CurrentWirePositionY;
 
@@ -26,14 +27,16 @@ public class ChracterController : MonoBehaviour {
     public void Start () {
 
         SC = FindObjectOfType<SceneController>();
+        AM = FindObjectOfType<AudioManager>();
+        
         CurrentWirePositionY = 1;
         ChangeWire();
 
         if (SC.WireOneObject.GetComponent<Wires>().PlayerStartRight == true)
         {
-			transform.position = new Vector3(5.5f, SC.WireOneObject.transform.position.y);
+			transform.position = new Vector3(5.5f, SC.WireOneObject.transform.position.y + 0.5f);
         }
-		else { transform.position = new Vector3(-5.5f, SC.WireOneObject.transform.position.y); }
+		else { transform.position = new Vector3(-5.5f, SC.WireOneObject.transform.position.y + 0.5f); }
 
 	}
     void FindCurrentWire()
@@ -130,7 +133,7 @@ public class ChracterController : MonoBehaviour {
                 //release the charge to move, wont move if not charged, cancle charge if move
                 Debug.Log("Fire Charge");
                 ChargingAmount = 0;
-
+                AM.ShootCharge_source.PlayOneShot(AM.ShootCharge);
                 CreateChargeObject();
             }
         }

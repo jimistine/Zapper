@@ -5,6 +5,7 @@ using UnityEngine;
 public class Charge : MonoBehaviour {
 
     public SceneController SC;
+    public AudioManager AM;
     public float ChargeMoveSpeed = 1;
     public bool isReturningCharge = false;
     public GameObject ChargesCurrentWire;
@@ -15,6 +16,7 @@ public class Charge : MonoBehaviour {
     void Start () {
 
         SC = FindObjectOfType<SceneController>();
+        AM = FindObjectOfType<AudioManager>();
     }
 	
 	// Update is called once per frame
@@ -62,14 +64,20 @@ public class Charge : MonoBehaviour {
                 {
                     isReturningCharge = true;
                 }
-                else { Destroy(gameObject); }
+                else
+                {
+                    Destroy(gameObject); 
+                    AM.HitCrow_source.PlayOneShot(AM.HitCrow);
+                }
                 //currently destroying birds on collisions may need to run a function for them to leave scene or some other score behaviours
                 Destroy(collision.gameObject);
+                AM.HitCrow_source.PlayOneShot(AM.HitCrow);
             }
             else if (isReturningCharge == true && collision.gameObject.tag == "Player")
             {
                 // destroy returinging charge on collision with player, may have to change function depending on hwo we want return charges to behave.
                 Destroy(gameObject);
+                AM.HitCrow_source.PlayOneShot(AM.HitCrow);
             }
         }
         
@@ -77,6 +85,7 @@ public class Charge : MonoBehaviour {
     public void ChargeFailState()
     {
         Debug.Log("Charge Fail State");
+        AM.Explosion_source.PlayOneShot(AM.Explosion);
         //destroy for now will have to change things depeneding on how we record fail states
         SC.RestartLevel();
     }
