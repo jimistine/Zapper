@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
 <<<<<<< refs/remotes/origin/master
 <<<<<<< refs/remotes/origin/master
 <<<<<<< HEAD
@@ -16,5 +17,12 @@
 =======
 	"process_id" : 68532,
 >>>>>>> Tuned feel and added score,
+=======
+<<<<<<< HEAD
+	"process_id" : 68532,
+=======
+	"process_id" : 33815,
+>>>>>>> jimi
+>>>>>>> jimi
 	"version" : "2017.3.0f3"
 }

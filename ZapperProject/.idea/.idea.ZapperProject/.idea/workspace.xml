@@ -79,6 +79,7 @@
             <state relative-caret-position="654">
               <caret line="69" column="62" lean-forward="false" selection-start-line="69" selection-start-column="62" selection-end-line="69" selection-end-column="62" />
               <folding>
+<<<<<<< HEAD
 <<<<<<< refs/remotes/origin/master
                 <marker date="1518453138161" expanded="false" signature="6:78" ph="..." />
                 <marker date="1518453138161" expanded="true" signature="116:3218" ph="{...}" />
@@ -115,6 +116,8 @@
                 <marker date="1517454543142" expanded="true" signature="2055:2269" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
 >>>>>>> Commented my code and cleaned it up some
 =======
+=======
+>>>>>>> jimi
                 <marker date="1518543714148" expanded="false" signature="6:78" ph="..." />
                 <marker date="1518543714148" expanded="true" signature="116:3246" ph="{...}" />
                 <marker date="1518543714148" expanded="true" signature="387:492" ph="{...}" />
@@ -133,7 +136,10 @@
                 <marker date="1518543714148" expanded="true" signature="2165:2306" ph="{...}" />
                 <marker date="1518543714148" expanded="true" signature="2683:2958" ph="{...}" />
                 <marker date="1518543714148" expanded="true" signature="3017:3244" ph="{...}" />
+<<<<<<< HEAD
 >>>>>>> Tuned feel and added score,
+=======
+>>>>>>> jimi
               </folding>
             </state>
           </provider>
@@ -160,18 +166,23 @@
       <file leaf-file-name="wireTracker.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/wireTracker.cs">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< refs/remotes/origin/master
 <<<<<<< refs/remotes/origin/master
             <state relative-caret-position="654">
 =======
             <state relative-caret-position="750">
 >>>>>>> Tuned feel and added score,
+=======
+            <state relative-caret-position="750">
+>>>>>>> jimi
               <caret line="52" column="27" lean-forward="false" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
               <folding>
                 <marker date="1518454523738" expanded="false" signature="6:78" ph="..." />
                 <marker date="1518454523738" expanded="true" signature="120:1440" ph="{...}" />
                 <marker date="1518454523738" expanded="true" signature="517:917" ph="{...}" />
                 <marker date="1518454523738" expanded="true" signature="920:1436" ph="/* void OnTriggerEnter2D(Collider2D other) ... */" />
+<<<<<<< HEAD
 =======
             <state relative-caret-position="177">
               <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
@@ -181,6 +192,8 @@
                 <marker date="1517454801235" expanded="true" signature="517:1017" ph="{...}" />
                 <marker date="1517454801235" expanded="true" signature="1019:1618" ph="/* this was supposed to tell us where the player was but never really worked - jimi ... */" />
 >>>>>>> Commented my code and cleaned it up some
+=======
+>>>>>>> jimi
               </folding>
             </state>
           </provider>
@@ -239,12 +252,20 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/GM.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/wire.cs" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/Assets/Scripts/movement.cs" />
 <<<<<<< refs/remotes/origin/master
 <<<<<<< refs/remotes/origin/master
         <option value="$PROJECT_DIR$/Assets/Scripts/Erik/Charge.cs" />
 =======
 >>>>>>> Tuned feel and added score,
+=======
+        <option value="$PROJECT_DIR$/Assets/Scripts/movement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Wire.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/wireTracker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Wire.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/movement.cs" />
+>>>>>>> jimi
         <option value="$PROJECT_DIR$/Assets/Scripts/Erik/ChracterController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Erik/Charge.cs" />
@@ -264,6 +285,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="9" />
+<<<<<<< HEAD
 <<<<<<< refs/remotes/origin/master
 <<<<<<< refs/remotes/origin/master
     <option name="y" value="53" />
@@ -273,6 +295,9 @@
 =======
     <option name="y" value="22" />
 >>>>>>> Tuned feel and added score,
+=======
+    <option name="y" value="22" />
+>>>>>>> jimi
     <option name="width" value="1271" />
     <option name="height" value="778" />
   </component>
@@ -413,6 +438,7 @@
       <workItem from="1517279936229" duration="5264000" />
 <<<<<<< refs/remotes/origin/master
       <workItem from="1518383793912" duration="404000" />
+<<<<<<< HEAD
 <<<<<<< refs/remotes/origin/master
       <workItem from="1518450865871" duration="2789000" />
 =======
@@ -423,10 +449,16 @@
       <workItem from="1518543071648" duration="1107000" />
       <workItem from="1518548960751" duration="328000" />
 >>>>>>> Tuned feel and added score,
+=======
+      <workItem from="1518450865871" duration="3101000" />
+      <workItem from="1518543071648" duration="1107000" />
+      <workItem from="1518548960751" duration="328000" />
+>>>>>>> jimi
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
 <<<<<<< refs/remotes/origin/master
 <<<<<<< refs/remotes/origin/master
     <option name="totallyTimeSpent" value="14503000" />
@@ -436,6 +468,9 @@
 =======
     <option name="totallyTimeSpent" value="16250000" />
 >>>>>>> Tuned feel and added score,
+=======
+    <option name="totallyTimeSpent" value="16250000" />
+>>>>>>> jimi
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -447,6 +482,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
 <<<<<<< refs/remotes/origin/master
 <<<<<<< refs/remotes/origin/master
     <frame x="9" y="53" width="1271" height="778" extended-state="0" />
@@ -456,6 +492,9 @@
 =======
     <frame x="9" y="22" width="1271" height="778" extended-state="6" />
 >>>>>>> Tuned feel and added score,
+=======
+    <frame x="9" y="22" width="1271" height="778" extended-state="6" />
+>>>>>>> jimi
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -524,6 +563,69 @@
             <marker date="1517454543142" expanded="true" signature="1363:2053" ph="/* else ... */" />
             <marker date="1517454543142" expanded="true" signature="2055:2269" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
 >>>>>>> Commented my code and cleaned it up some
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Erik/ChracterController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2070">
+          <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+          <folding>
+            <marker date="1518455388776" expanded="false" signature="6:78" ph="..." />
+            <marker date="1518455388776" expanded="true" signature="128:4963" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="134:372" ph="/* Allow player to move between wire positions (Y) ... */" />
+            <marker date="1518455388776" expanded="true" signature="892:1345" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="1134:1243" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="1243:1341" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="1372:1823" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="1417:1487" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="1526:1596" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="1635:1707" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="1746:1817" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="1845:2080" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="2110:2480" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="2540:4959" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="2628:3399" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="2731:2799" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="2898:2982" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="3078:3146" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="3247:3331" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="3521:3659" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="3783:3922" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="4006:4055" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="4086:4138" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="4198:4463" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="4283:4375" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="4526:4953" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="4638:4943" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Erik/Charge.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1005">
+          <caret line="69" column="62" lean-forward="false" selection-start-line="69" selection-start-column="62" selection-end-line="69" selection-end-column="62" />
+          <folding>
+            <marker date="1518543714148" expanded="false" signature="6:78" ph="..." />
+            <marker date="1518543714148" expanded="true" signature="116:3246" ph="{...}" />
+            <marker date="1518543714148" expanded="true" signature="387:492" ph="{...}" />
+            <marker date="1518543714148" expanded="true" signature="547:1693" ph="{...}" />
+            <marker date="1518543714148" expanded="true" signature="587:1003" ph="{...}" />
+            <marker date="1518543714148" expanded="true" signature="680:795" ph="{...}" />
+            <marker date="1518543714148" expanded="true" signature="879:993" ph="{...}" />
+            <marker date="1518543714148" expanded="true" signature="1043:1459" ph="{...}" />
+            <marker date="1518543714148" expanded="true" signature="1136:1250" ph="{...}" />
+            <marker date="1518543714148" expanded="true" signature="1334:1449" ph="{...}" />
+            <marker date="1518543714148" expanded="true" signature="1636:1687" ph="{...}" />
+            <marker date="1518543714148" expanded="true" signature="1749:2983" ph="{...}" />
+            <marker date="1518543714148" expanded="true" signature="1790:2968" ph="{...}" />
+            <marker date="1518543714148" expanded="true" signature="1956:2595" ph="{...}" />
+            <marker date="1518543714148" expanded="true" signature="2062:2144" ph="{...}" />
+            <marker date="1518543714148" expanded="true" signature="2165:2306" ph="{...}" />
+            <marker date="1518543714148" expanded="true" signature="2683:2958" ph="{...}" />
+            <marker date="1518543714148" expanded="true" signature="3017:3244" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -671,6 +773,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2070">
           <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+<<<<<<< HEAD
           <folding>
             <marker date="1518455388776" expanded="false" signature="6:78" ph="..." />
             <marker date="1518455388776" expanded="true" signature="128:4963" ph="{...}" />
@@ -782,11 +885,91 @@
         <state relative-caret-position="750">
           <caret line="52" column="27" lean-forward="false" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
           <folding>
+=======
+          <folding>
+            <marker date="1518455388776" expanded="false" signature="6:78" ph="..." />
+            <marker date="1518455388776" expanded="true" signature="128:4963" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="134:372" ph="/* Allow player to move between wire positions (Y) ... */" />
+            <marker date="1518455388776" expanded="true" signature="892:1345" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="1134:1243" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="1243:1341" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="1372:1823" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="1417:1487" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="1526:1596" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="1635:1707" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="1746:1817" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="1845:2080" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="2110:2480" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="2540:4959" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="2628:3399" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="2731:2799" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="2898:2982" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="3078:3146" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="3247:3331" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="3521:3659" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="3783:3922" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="4006:4055" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="4086:4138" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="4198:4463" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="4283:4375" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="4526:4953" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="4638:4943" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Erik/Charge.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="82" column="8" lean-forward="false" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
+          <folding>
+            <marker date="1518543714148" expanded="false" signature="6:78" ph="..." />
+            <marker date="1518543714148" expanded="true" signature="116:3246" ph="{...}" />
+            <marker date="1518543714148" expanded="true" signature="387:492" ph="{...}" />
+            <marker date="1518543714148" expanded="true" signature="547:1693" ph="{...}" />
+            <marker date="1518543714148" expanded="true" signature="587:1003" ph="{...}" />
+            <marker date="1518543714148" expanded="true" signature="680:795" ph="{...}" />
+            <marker date="1518543714148" expanded="true" signature="879:993" ph="{...}" />
+            <marker date="1518543714148" expanded="true" signature="1043:1459" ph="{...}" />
+            <marker date="1518543714148" expanded="true" signature="1136:1250" ph="{...}" />
+            <marker date="1518543714148" expanded="true" signature="1334:1449" ph="{...}" />
+            <marker date="1518543714148" expanded="true" signature="1636:1687" ph="{...}" />
+            <marker date="1518543714148" expanded="true" signature="1749:2983" ph="{...}" />
+            <marker date="1518543714148" expanded="true" signature="1790:2968" ph="{...}" />
+            <marker date="1518543714148" expanded="true" signature="1956:2595" ph="{...}" />
+            <marker date="1518543714148" expanded="true" signature="2062:2144" ph="{...}" />
+            <marker date="1518543714148" expanded="true" signature="2165:2306" ph="{...}" />
+            <marker date="1518543714148" expanded="true" signature="2683:2958" ph="{...}" />
+            <marker date="1518543714148" expanded="true" signature="3017:3244" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Wire.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <marker date="1518454523737" expanded="false" signature="6:58" ph="..." />
+            <marker date="1518454523737" expanded="true" signature="61:535" ph="/* public class Wire : IComparable&lt;Wire&gt; ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/wireTracker.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="52" column="27" lean-forward="false" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
+          <folding>
+>>>>>>> jimi
             <marker date="1518454523738" expanded="false" signature="6:78" ph="..." />
             <marker date="1518454523738" expanded="true" signature="120:1440" ph="{...}" />
             <marker date="1518454523738" expanded="true" signature="517:917" ph="{...}" />
             <marker date="1518454523738" expanded="true" signature="920:1436" ph="/* void OnTriggerEnter2D(Collider2D other) ... */" />
+<<<<<<< HEAD
 >>>>>>> Tuned feel and added score,
+=======
+>>>>>>> jimi
           </folding>
         </state>
       </provider>
@@ -822,6 +1005,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="885">
           <caret line="59" column="71" lean-forward="false" selection-start-line="59" selection-start-column="71" selection-end-line="59" selection-end-column="71" />
+<<<<<<< HEAD
           <folding>
             <marker date="1518548984135" expanded="false" signature="6:78" ph="..." />
             <marker date="1518548984135" expanded="true" signature="125:2025" ph="{...}" />
@@ -873,10 +1057,63 @@
         <state relative-caret-position="750">
           <caret line="52" column="27" lean-forward="false" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
           <folding>
+=======
+          <folding>
+            <marker date="1518548984135" expanded="false" signature="6:78" ph="..." />
+            <marker date="1518548984135" expanded="true" signature="125:2025" ph="{...}" />
+            <marker date="1518548984135" expanded="true" signature="131:284" ph="/* find and store the four wires positions, (Y) ... */" />
+            <marker date="1518548984135" expanded="true" signature="702:822" ph="{...}" />
+            <marker date="1518548984135" expanded="true" signature="841:922" ph="{...}" />
+            <marker date="1518548984135" expanded="true" signature="958:2023" ph="{...}" />
+            <marker date="1518548984135" expanded="true" signature="1284:1357" ph="{...}" />
+            <marker date="1518548984135" expanded="true" signature="1450:1523" ph="{...}" />
+            <marker date="1518548984135" expanded="true" signature="1625:1678" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/movement.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="40" column="43" lean-forward="false" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+          <folding>
+            <marker date="1518454523736" expanded="false" signature="6:125" ph="..." />
+            <marker date="1518454523736" expanded="true" signature="164:2054" ph="{...}" />
+            <marker date="1518454523736" expanded="true" signature="358:745" ph="{...}" />
+            <marker date="1518454523736" expanded="true" signature="490:742" ph="/* List&lt;Wire&gt; wires = new List&lt;Wire&gt;(); ... */" />
+            <marker date="1518454523736" expanded="true" signature="797:1137" ph="{...}" />
+            <marker date="1518454523736" expanded="true" signature="873:964" ph="{...}" />
+            <marker date="1518454523736" expanded="true" signature="882:959" ph="/* gameObject.transform.Translate( + 1); ... */" />
+            <marker date="1518454523736" expanded="true" signature="1038:1133" ph="{...}" />
+            <marker date="1518454523736" expanded="true" signature="1048:1128" ph="/* gameObject.transform.Translate(Wire - 1); ... */" />
+            <marker date="1518454523736" expanded="true" signature="1138:1828" ph="/* else ... */" />
+            <marker date="1518454523736" expanded="true" signature="1830:2044" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Wire.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <marker date="1518454523737" expanded="false" signature="6:58" ph="..." />
+            <marker date="1518454523737" expanded="true" signature="61:535" ph="/* public class Wire : IComparable&lt;Wire&gt; ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/wireTracker.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="52" column="27" lean-forward="false" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
+          <folding>
+>>>>>>> jimi
             <marker date="1518454523738" expanded="false" signature="6:78" ph="..." />
             <marker date="1518454523738" expanded="true" signature="120:1440" ph="{...}" />
             <marker date="1518454523738" expanded="true" signature="517:917" ph="{...}" />
             <marker date="1518454523738" expanded="true" signature="920:1436" ph="/* void OnTriggerEnter2D(Collider2D other) ... */" />
+<<<<<<< HEAD
           </folding>
         </state>
       </provider>
@@ -913,10 +1150,51 @@
             <marker date="1518455388776" expanded="true" signature="4283:4375" ph="{...}" />
             <marker date="1518455388776" expanded="true" signature="4526:4953" ph="{...}" />
             <marker date="1518455388776" expanded="true" signature="4638:4943" ph="{...}" />
+=======
+>>>>>>> jimi
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Erik/ChracterController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="35" column="52" lean-forward="false" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
+          <folding>
+            <marker date="1518455388776" expanded="false" signature="6:78" ph="..." />
+            <marker date="1518455388776" expanded="true" signature="128:4963" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="134:372" ph="/* Allow player to move between wire positions (Y) ... */" />
+            <marker date="1518455388776" expanded="true" signature="892:1345" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="1134:1243" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="1243:1341" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="1372:1823" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="1417:1487" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="1526:1596" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="1635:1707" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="1746:1817" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="1845:2080" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="2110:2480" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="2540:4959" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="2628:3399" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="2731:2799" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="2898:2982" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="3078:3146" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="3247:3331" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="3521:3659" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="3783:3922" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="4006:4055" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="4086:4138" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="4198:4463" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="4283:4375" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="4526:4953" ph="{...}" />
+            <marker date="1518455388776" expanded="true" signature="4638:4943" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+>>>>>>> jimi
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/GM.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1303,6 +1581,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
         </state>
       </provider>
     </entry>
@@ -1323,6 +1602,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/wireTracker.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="34" column="57" lean-forward="true" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
+>>>>>>> jimi
           <folding>
 <<<<<<< refs/remotes/origin/master
             <marker date="1518454523737" expanded="false" signature="6:58" ph="..." />
@@ -1346,6 +1634,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/June/crowSpawner.cs">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< refs/remotes/origin/master
 <<<<<<< refs/remotes/origin/master
         <state relative-caret-position="2070">
@@ -1528,25 +1817,45 @@
         <state relative-caret-position="285">
           <caret line="21" column="38" lean-forward="false" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
           <folding>
+=======
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="21" column="38" lean-forward="false" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+          <folding>
+>>>>>>> jimi
             <marker date="1518455388773" expanded="false" signature="6:78" ph="..." />
             <marker date="1518455388773" expanded="true" signature="121:556" ph="{...}" />
             <marker date="1518455388773" expanded="true" signature="453:492" ph="{...}" />
             <marker date="1518455388773" expanded="true" signature="547:554" ph="{...}" />
+<<<<<<< HEAD
 >>>>>>> Tuned feel and added score,
+=======
+>>>>>>> jimi
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< refs/remotes/origin/master
 <<<<<<< refs/remotes/origin/master
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs">
 =======
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Erik/ChracterController.cs">
 >>>>>>> Tuned feel and added score,
+=======
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Erik/ChracterController.cs">
+>>>>>>> jimi
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2070">
           <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
           <folding>
+<<<<<<< HEAD
 <<<<<<< refs/remotes/origin/master
             <marker date="1518454842027" expanded="false" signature="6:78" ph="..." />
             <marker date="1518454842027" expanded="true" signature="121:556" ph="{...}" />
@@ -1570,6 +1879,8 @@
             <marker date="1517454543142" expanded="true" signature="1363:2053" ph="/* else ... */" />
             <marker date="1517454543142" expanded="true" signature="2055:2269" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
 =======
+=======
+>>>>>>> jimi
             <marker date="1518455388776" expanded="false" signature="6:78" ph="..." />
             <marker date="1518455388776" expanded="true" signature="128:4963" ph="{...}" />
             <marker date="1518455388776" expanded="true" signature="134:372" ph="/* Allow player to move between wire positions (Y) ... */" />
@@ -1597,6 +1908,7 @@
             <marker date="1518455388776" expanded="true" signature="4283:4375" ph="{...}" />
             <marker date="1518455388776" expanded="true" signature="4526:4953" ph="{...}" />
             <marker date="1518455388776" expanded="true" signature="4638:4943" ph="{...}" />
+<<<<<<< HEAD
 >>>>>>> Tuned feel and added score,
           </folding>
         </state>
@@ -1620,10 +1932,13 @@
             <marker date="1517454543142" expanded="true" signature="1273:1353" ph="/* gameObject.transform.Translate(Wire - 1); ... */" />
             <marker date="1517454543142" expanded="true" signature="1363:2053" ph="/* else ... */" />
             <marker date="1517454543142" expanded="true" signature="2055:2269" ph="/* if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) ... */" />
+=======
+>>>>>>> jimi
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Wire.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -1641,10 +1956,14 @@
 =======
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Erik/Charge.cs">
 >>>>>>> Tuned feel and added score,
+=======
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Erik/Charge.cs">
+>>>>>>> jimi
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="654">
           <caret line="69" column="62" lean-forward="false" selection-start-line="69" selection-start-column="62" selection-end-line="69" selection-end-column="62" />
           <folding>
+<<<<<<< HEAD
 <<<<<<< refs/remotes/origin/master
             <marker date="1518378792931" expanded="false" signature="6:78" ph="..." />
             <marker date="1518378792931" expanded="true" signature="121:2693" ph="{...}" />
@@ -1677,6 +1996,8 @@
             <marker date="1516224493459" expanded="true" signature="311:318" ph="{...}" />
 >>>>>>> Commented my code and cleaned it up some
 =======
+=======
+>>>>>>> jimi
             <marker date="1518543714148" expanded="false" signature="6:78" ph="..." />
             <marker date="1518543714148" expanded="true" signature="116:3246" ph="{...}" />
             <marker date="1518543714148" expanded="true" signature="387:492" ph="{...}" />
@@ -1695,7 +2016,10 @@
             <marker date="1518543714148" expanded="true" signature="2165:2306" ph="{...}" />
             <marker date="1518543714148" expanded="true" signature="2683:2958" ph="{...}" />
             <marker date="1518543714148" expanded="true" signature="3017:3244" ph="{...}" />
+<<<<<<< HEAD
 >>>>>>> Tuned feel and added score,
+=======
+>>>>>>> jimi
           </folding>
         </state>
       </provider>
@@ -1706,6 +2030,7 @@
         <state relative-caret-position="381">
           <caret line="35" column="4" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
           <folding>
+<<<<<<< HEAD
 <<<<<<< refs/remotes/origin/master
             <marker date="1518455085856" expanded="true" signature="6:78" ph="..." />
             <marker date="1518455085856" expanded="true" signature="125:1952" ph="{...}" />
@@ -1728,6 +2053,8 @@
             <marker date="1517454801235" expanded="true" signature="1019:1618" ph="/* this was supposed to tell us where the player was but never really worked - jimi ... */" />
 >>>>>>> Commented my code and cleaned it up some
 =======
+=======
+>>>>>>> jimi
             <marker date="1518548984135" expanded="false" signature="6:78" ph="..." />
             <marker date="1518548984135" expanded="true" signature="125:2025" ph="{...}" />
             <marker date="1518548984135" expanded="true" signature="131:284" ph="/* find and store the four wires positions, (Y) ... */" />
@@ -1737,7 +2064,10 @@
             <marker date="1518548984135" expanded="true" signature="1284:1357" ph="{...}" />
             <marker date="1518548984135" expanded="true" signature="1450:1523" ph="{...}" />
             <marker date="1518548984135" expanded="true" signature="1625:1678" ph="{...}" />
+<<<<<<< HEAD
 >>>>>>> Tuned feel and added score,
+=======
+>>>>>>> jimi
           </folding>
         </state>
       </provider>
