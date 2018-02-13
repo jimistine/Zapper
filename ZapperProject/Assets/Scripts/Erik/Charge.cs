@@ -72,6 +72,7 @@ public class Charge : MonoBehaviour {
                 //currently destroying birds on collisions may need to run a function for them to leave scene or some other score behaviours
                 Destroy(collision.gameObject);
                 AM.HitCrow_source.PlayOneShot(AM.HitCrow);
+                SC.Score++;
             }
             else if (isReturningCharge == true && collision.gameObject.tag == "Player")
             {

@@ -19,7 +19,7 @@ public class SceneController : MonoBehaviour {
     public float DelayBeforeStartTime;
     public float TotalLevelTime;
 
-    
+    public int Score;
 
 
     // Use this for initialization
@@ -29,10 +29,11 @@ public class SceneController : MonoBehaviour {
         Spawner = FindObjectOfType<crowSpawner>();
 	}
 	
-	// Update is called once per frame
-	void Update () {
-        
-	}
+    void OnGUI()
+    {
+        GUI.Label(new Rect(10,10,200,90), "Birds Zapped: " + Score);
+    }
+    
     public void RestartLevel()
     {
         //stop the spawner and player
@@ -57,10 +58,11 @@ public class SceneController : MonoBehaviour {
         //reset players position
         PlayerControl.Start();
         //reset the delay before play timer
-        Spawner.DelayBeforeStart = DelayBeforeStartTime + Time.time + 1;
+        Spawner.DelayBeforeStart = DelayBeforeStartTime + Time.time - 1;
 
         //(for now reset level timer will change once we have a VO)
         PlayerControl.enabled = true;
         Spawner.enabled = true;
+        Score = 0;
     }
 }
