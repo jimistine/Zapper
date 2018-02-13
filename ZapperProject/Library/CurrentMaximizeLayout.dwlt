@@ -25,6 +25,7 @@ MonoBehaviour:
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
   controlID: 51
 =======
     width: 1280
@@ -37,6 +38,9 @@ MonoBehaviour:
 =======
   controlID: 3683
 >>>>>>> 2/13
+=======
+  controlID: 6345
+>>>>>>> Uploading my level select scene
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -207,6 +211,7 @@ MonoBehaviour:
   m_MaxSize: {x: 14006, y: 14042}
   vertical: 1
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
   controlID: 52
 =======
     width: 991
@@ -219,6 +224,9 @@ MonoBehaviour:
 =======
   controlID: 3684
 >>>>>>> 2/13
+=======
+  controlID: 6165
+>>>>>>> Uploading my level select scene
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -244,6 +252,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
+<<<<<<< refs/remotes/origin/master
   controlID: 53
 =======
     width: 991
@@ -261,6 +270,9 @@ MonoBehaviour:
   vertical: 0
   controlID: 3685
 >>>>>>> 2/13
+=======
+  controlID: 6166
+>>>>>>> Uploading my level select scene
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -329,6 +341,7 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< refs/remotes/origin/master
     m_SelectedIDs: 
     m_LastClickedID: 0
     m_ExpandedIDs: 9efbffff00000000
@@ -354,6 +367,11 @@ MonoBehaviour:
     m_LastClickedID: 0
     m_ExpandedIDs: 9efbffff000000008e280000d2280000f02800001a290000
 >>>>>>> 2/13
+=======
+    m_SelectedIDs: dc290000
+    m_LastClickedID: 10716
+    m_ExpandedIDs: 96f7ffff5cfbffff00000000b6290000fa290000182a0000302a0000
+>>>>>>> Uploading my level select scene
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -446,6 +464,7 @@ MonoBehaviour:
     height: 316
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
+<<<<<<< refs/remotes/origin/master
   lastFramingTime: 2510.462502002716
 =======
     x: 252
@@ -465,10 +484,14 @@ MonoBehaviour:
   m_SceneLighting: 1
   lastFramingTime: 497.90067994594574
 >>>>>>> 2/13
+=======
+  lastFramingTime: 2366.867964029312
+>>>>>>> Uploading my level select scene
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< refs/remotes/origin/master
 <<<<<<< refs/remotes/origin/master
 <<<<<<< HEAD
     m_Target: {x: -3.3920555, y: 3.8867297, z: -10.480904}
@@ -484,6 +507,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 248.08875, y: 122.90381, z: -2.1205997}
 >>>>>>> 2/13
+=======
+    m_Target: {x: 380.16913, y: 163.48242, z: -3.0476184}
+    speed: 2
+    m_Value: {x: 380.16913, y: 163.48242, z: -3.0476184}
+>>>>>>> Uploading my level select scene
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -512,6 +540,7 @@ MonoBehaviour:
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
 <<<<<<< HEAD
     m_Target: 70.13967
     speed: 2
@@ -526,6 +555,11 @@ MonoBehaviour:
     speed: 2
     m_Value: 485.49924
 >>>>>>> 2/13
+=======
+    m_Target: 449.99478
+    speed: 2
+    m_Value: 449.99478
+>>>>>>> Uploading my level select scene
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -594,6 +628,7 @@ MonoBehaviour:
   m_MaxSize: {x: 14006, y: 10021}
   vertical: 0
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
   controlID: 74
 =======
     y: 355
@@ -607,6 +642,9 @@ MonoBehaviour:
 =======
   controlID: 3777
 >>>>>>> 2/13
+=======
+  controlID: 6278
+>>>>>>> Uploading my level select scene
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -698,6 +736,7 @@ MonoBehaviour:
     m_SearchArea: 0
     m_Folders:
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
 <<<<<<< HEAD
     - Assets/Scripts/June
 =======
@@ -706,20 +745,28 @@ MonoBehaviour:
 =======
     - Assets/Sprites
 >>>>>>> 2/13
+=======
+    - Assets/Scripts/Erik
+>>>>>>> Uploading my level select scene
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
+<<<<<<< refs/remotes/origin/master
 <<<<<<< refs/remotes/origin/master
 <<<<<<< HEAD
   - Assets/Scripts/June
 =======
   - Assets/Sprites
 >>>>>>> 2/13
+=======
+  - Assets/Scripts/Erik
+>>>>>>> Uploading my level select scene
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/junegehong/Desktop/Zapper/ZapperProject
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< refs/remotes/origin/master
 <<<<<<< refs/remotes/origin/master
     m_SelectedIDs: be270000
     m_LastClickedID: 10174
@@ -740,6 +787,11 @@ MonoBehaviour:
     m_LastClickedID: 10132
     m_ExpandedIDs: 000000005e2700001828000020280000ffffff7f
 >>>>>>> 2/13
+=======
+    m_SelectedIDs: 5c280000
+    m_LastClickedID: 10332
+    m_ExpandedIDs: 0000000090270000442800004c280000ffffff7f
+>>>>>>> Uploading my level select scene
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -768,6 +820,7 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
 <<<<<<< HEAD
     m_ExpandedIDs: 000000005e2700001828000020280000
 =======
@@ -776,6 +829,9 @@ MonoBehaviour:
 =======
     m_ExpandedIDs: 000000005e2700001828000020280000ffffff7f
 >>>>>>> 2/13
+=======
+    m_ExpandedIDs: 0000000090270000442800004c280000ffffff7f
+>>>>>>> Uploading my level select scene
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -801,6 +857,7 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
 <<<<<<< HEAD
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
@@ -812,6 +869,10 @@ MonoBehaviour:
     m_SelectedInstanceIDs: be280000
     m_LastClickedInstanceID: 10430
 >>>>>>> 2/13
+=======
+    m_SelectedInstanceIDs: dc290000
+    m_LastClickedInstanceID: 10716
+>>>>>>> Uploading my level select scene
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
