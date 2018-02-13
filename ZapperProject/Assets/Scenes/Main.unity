@@ -862,7 +862,6 @@ GameObject:
   - component: {fileID: 289165936}
   - component: {fileID: 289165935}
   - component: {fileID: 289165938}
-  - component: {fileID: 289165937}
   m_Layer: 0
   m_Name: Wire_3
   m_TagString: Untagged
@@ -3424,7 +3423,6 @@ GameObject:
   - component: {fileID: 1427421070}
   - component: {fileID: 1427421069}
   - component: {fileID: 1427421072}
-  - component: {fileID: 1427421071}
   m_Layer: 0
   m_Name: Wire_4
   m_TagString: Untagged
@@ -3837,7 +3835,6 @@ GameObject:
   - component: {fileID: 1523626345}
   - component: {fileID: 1523626344}
   - component: {fileID: 1523626347}
-  - component: {fileID: 1523626346}
   m_Layer: 0
   m_Name: Wire_1
   m_TagString: Untagged
@@ -4394,7 +4391,6 @@ GameObject:
   - component: {fileID: 1810955066}
   - component: {fileID: 1810955065}
   - component: {fileID: 1810955068}
-  - component: {fileID: 1810955067}
   m_Layer: 0
   m_Name: Wire_2
   m_TagString: Untagged

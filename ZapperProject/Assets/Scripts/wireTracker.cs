@@ -23,21 +23,22 @@ public class wireTracker : MonoBehaviour
 	
 	void Start()
 	{
-		w_Collider_1 = GetComponent<Collider2D>();
+	//This gets the upper right corner of the collider on each wire - jimi
+		w_Collider_1 = Wire_1.GetComponent<Collider2D>();
 		w_Max_1 = w_Collider_1.bounds.max;
 		
-		w_Collider_2 = GetComponent<Collider2D>();
+		w_Collider_2 = Wire_2.GetComponent<Collider2D>();
 		w_Max_2 = w_Collider_2.bounds.max;
 		
-		w_Collider_3 = GetComponent<Collider2D>();
+		w_Collider_3 = Wire_3.GetComponent<Collider2D>();
 		w_Max_3 = w_Collider_3.bounds.max;
 		
-		w_Collider_4 = GetComponent<Collider2D>();
+		w_Collider_4 = Wire_4.GetComponent<Collider2D>();
 		w_Max_4 = w_Collider_4.bounds.max;
 		
 	//	Debug.Log(gameObject.name + " | Max – " + w_Max);
 	}
-	
+	//this was supposed to tell us where the player was but never really worked - jimi
 //	void OnTriggerEnter2D(Collider2D other)
 //	{
 //		if (gameObject.name == "Wire_1"){
