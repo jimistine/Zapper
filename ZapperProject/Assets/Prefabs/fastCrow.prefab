@@ -87,7 +87,7 @@ MonoBehaviour:
   stopSpeed: 0
   randomTimeUntilPauseMax: 1
   randomTimeUntilPauseMin: 4
-  CanReflectCharge: 0
+  CanReflectCharge: 1
 --- !u!212 &212837277238727454
 SpriteRenderer:
   m_ObjectHideFlags: 1

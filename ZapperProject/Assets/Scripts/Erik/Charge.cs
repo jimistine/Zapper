@@ -25,11 +25,11 @@ public class Charge : MonoBehaviour {
         {
             if (ChargesCurrentWire.GetComponent<Wires>().PlayerStartRight == true)
             {
-                transform.Translate(Vector3.right * Time.deltaTime * ChargeMoveSpeed);
+                transform.Translate(Vector3.right * Time.deltaTime * (ChargeMoveSpeed/4));
             }
             if (ChargesCurrentWire.GetComponent<Wires>().PlayerStartRight == false)
             {
-                transform.Translate(Vector3.left * Time.deltaTime * ChargeMoveSpeed);
+                transform.Translate(Vector3.left * Time.deltaTime * (ChargeMoveSpeed/4));
             }
         }
         if (isReturningCharge == false)
