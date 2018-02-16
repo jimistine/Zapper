@@ -19,7 +19,7 @@ public class TextFollow : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
-		panelAnchorPos = new Vector2(CC.playerX * 500, CC.playerY);
+		panelAnchorPos = new Vector2(CC.playerX * 100, CC.playerY * 100 + 600);
 
 		this_rectTransform.anchoredPosition = panelAnchorPos;
 	}

@@ -65,4 +65,26 @@ public class SceneController : MonoBehaviour {
         Spawner.enabled = true;
         Score = 0;
     }
+    
+    
+    // FUN FUNGUS FUNCTIONS
+
+    public void MiscCharacterLine()
+    {
+        
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }

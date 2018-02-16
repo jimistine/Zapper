@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Fungus;
 
 public class AudioManager : MonoBehaviour
 {
@@ -15,15 +16,13 @@ public class AudioManager : MonoBehaviour
 	public AudioClip ShootCharge;
 	public AudioClip Explosion;
 	public AudioClip HitCrow;
-	public AudioClip VO;
+	public AudioClip VO_Intro1;
+	public AudioClip VO_Intro2;
 	
-	// Use this for initialization
-	void Start () {
-		VO_source.PlayDelayed(VO_Delay);
-	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+	public void VO_1()
+	{ VO_source.PlayOneShot(VO_Intro1);}
+	
+	public void VO_2()
+	{ VO_source.PlayOneShot(VO_Intro2);}
 }
