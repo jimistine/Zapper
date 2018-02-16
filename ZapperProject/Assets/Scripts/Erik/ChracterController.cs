@@ -24,6 +24,9 @@ public class ChracterController : MonoBehaviour {
     public float ChargingSpeed = 1;
     public int ChargingLimit = 100;
 
+    public float playerY;
+    public float playerX;
+    
     public void Start () {
 
         SC = FindObjectOfType<SceneController>();
@@ -74,6 +77,9 @@ public class ChracterController : MonoBehaviour {
     // Update is called once per frame
     void Update () {
 
+        playerX = gameObject.transform.position.x;
+        playerY = gameObject.transform.position.y;
+        
         if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
         {
             if (Input.GetKeyDown(KeyCode.UpArrow) && CurrentWirePositionY < MaxWirePosition)

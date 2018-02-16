@@ -20,7 +20,11 @@ public class Charge : MonoBehaviour {
     }
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+	{
+
+	  
+	    
         if (isReturningCharge == true)
         {
             if (ChargesCurrentWire.GetComponent<Wires>().PlayerStartRight == true)
