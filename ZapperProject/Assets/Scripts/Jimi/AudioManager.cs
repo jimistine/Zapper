@@ -8,21 +8,27 @@ public class AudioManager : MonoBehaviour
 
 	public int VO_Delay;
 	
-	public AudioSource HitCrow_source;
-	public AudioSource ShootCharge_source;
-	public AudioSource Explosion_source;
+	public AudioSource Hit_source;
+	public AudioSource Shoot_source;
+	public AudioSource FailSound_source;
 	public AudioSource VO_source;
 
-	public AudioClip ShootCharge;
-	public AudioClip Explosion;
-	public AudioClip HitCrow;
-	public AudioClip VO_Intro1;
-	public AudioClip VO_Intro2;
-	
+	public AudioClip Shoot;
+	public AudioClip Fail;
+	public AudioClip Hit;
+	public AudioClip VOClip_1;
+	public AudioClip VOClip_2;
+	public AudioClip VOClip_3;
+	public AudioClip VOClip_4;
+	public AudioClip VOClip_5;
+	public AudioClip VOClip_6;
+	public AudioClip VOClip_7;
+	public AudioClip VOClip_8;
+	public AudioClip VOClip_9;
 	
 	public void VO_1()
-	{ VO_source.PlayOneShot(VO_Intro1);}
+	{ VO_source.PlayOneShot(VOClip_1);}
 	
 	public void VO_2()
-	{ VO_source.PlayOneShot(VO_Intro2);}
+	{ VO_source.PlayOneShot(VOClip_2);}
 }

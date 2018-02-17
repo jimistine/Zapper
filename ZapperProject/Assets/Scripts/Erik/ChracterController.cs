@@ -139,7 +139,7 @@ public class ChracterController : MonoBehaviour {
                 //release the charge to move, wont move if not charged, cancle charge if move
                 Debug.Log("Fire Charge");
                 ChargingAmount = 0;
-                AM.ShootCharge_source.PlayOneShot(AM.ShootCharge);
+                AM.Shoot_source.PlayOneShot(AM.Shoot);
                 CreateChargeObject();
             }
         }

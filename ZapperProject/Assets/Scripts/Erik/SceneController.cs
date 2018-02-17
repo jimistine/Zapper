@@ -1,6 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using Fungus;
+
 
 public class SceneController : MonoBehaviour {
     // find and store the four wires positions, (Y) 
@@ -21,6 +24,7 @@ public class SceneController : MonoBehaviour {
 
     public int Score;
 
+    public bool LevelSelectGateOpen;
 
     // Use this for initialization
     void Start () {
@@ -36,6 +40,12 @@ public class SceneController : MonoBehaviour {
     
     public void RestartLevel()
     {
+
+        if (LevelSelectGateOpen)
+        {
+            Flowchart.BroadcastFungusMessage ("Load level select");
+        }
+        
         //stop the spawner and player
         Spawner.enabled = false;
         PlayerControl.enabled = false;
@@ -69,10 +79,11 @@ public class SceneController : MonoBehaviour {
     
     // FUN FUNGUS FUNCTIONS
 
-    public void MiscCharacterLine()
+    public void OpenFailGate()
     {
-        
-        
+        // on end of last VO run this function
+        // On next restart, load the level select instead of resetting
+        LevelSelectGateOpen = true;
     }
     
     

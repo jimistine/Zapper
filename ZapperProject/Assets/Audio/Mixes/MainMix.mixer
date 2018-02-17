@@ -20,6 +20,7 @@ AudioMixerController:
     - ea3c2206ce55a45dcb8a890c9a2ac323
     - 4e49d298956364d1d84d46dc7994115b
     - 20d459f9d2a2c4aa8b51b54567bc2e08
+    - 2560742ffea2d44b6a9032584df7c483
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -34,6 +35,7 @@ AudioMixerGroupController:
   m_Children:
   - {fileID: 243586202683911828}
   - {fileID: 243395208255712686}
+  - {fileID: 243012120754093406}
   m_Volume: de55f8fee8d5048faae7d797a18efda8
   m_Pitch: 4ca7ca18358ec410084be28a383ffd20
   m_Effects:
@@ -65,6 +67,23 @@ AudioMixerSnapshotController:
   m_SnapshotID: 83f29790621fb4cadbe886123c63a108
   m_FloatValues: {}
   m_TransitionOverrides: {}
+--- !u!243 &243012120754093406
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Clyde
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 2560742ffea2d44b6a9032584df7c483
+  m_Children: []
+  m_Volume: a7751fb9fcd9947b5aaaa1877945f566
+  m_Pitch: 9dd29998b2b2d4377b15347f335d3fcf
+  m_Effects:
+  - {fileID: 244125871031135202}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
 --- !u!243 &243395208255712686
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
@@ -99,6 +118,19 @@ AudioMixerGroupController:
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
+--- !u!244 &244125871031135202
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 0efdf987aa75448d18f01e3c6c2caf78
+  m_EffectName: Attenuation
+  m_MixLevel: 7430fea036a3e4dac958a15a0b993e34
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!244 &244425639283963884
 AudioMixerEffectController:
   m_ObjectHideFlags: 3

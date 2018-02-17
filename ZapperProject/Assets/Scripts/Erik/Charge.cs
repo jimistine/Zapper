@@ -71,18 +71,18 @@ public class Charge : MonoBehaviour {
                 else
                 {
                     Destroy(gameObject); 
-                    AM.HitCrow_source.PlayOneShot(AM.HitCrow);
+                    AM.Hit_source.PlayOneShot(AM.Hit);
                 }
                 //currently destroying birds on collisions may need to run a function for them to leave scene or some other score behaviours
                 Destroy(collision.gameObject);
-                AM.HitCrow_source.PlayOneShot(AM.HitCrow);
+                AM.Hit_source.PlayOneShot(AM.Hit);
                 SC.Score++;
             }
             else if (isReturningCharge == true && collision.gameObject.tag == "Player")
             {
                 // destroy returinging charge on collision with player, may have to change function depending on hwo we want return charges to behave.
                 Destroy(gameObject);
-                AM.HitCrow_source.PlayOneShot(AM.HitCrow);
+                AM.Hit_source.PlayOneShot(AM.Hit);
             }
         }
         
@@ -90,7 +90,7 @@ public class Charge : MonoBehaviour {
     public void ChargeFailState()
     {
         Debug.Log("Charge Fail State");
-        AM.Explosion_source.PlayOneShot(AM.Explosion);
+        AM.FailSound_source.PlayOneShot(AM.Fail);
         //destroy for now will have to change things depeneding on how we record fail states
         SC.RestartLevel();
     }
