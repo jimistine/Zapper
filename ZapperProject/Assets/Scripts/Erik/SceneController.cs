@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SceneController : MonoBehaviour {
     // find and store the four wires positions, (Y) 
@@ -12,6 +13,8 @@ public class SceneController : MonoBehaviour {
     public GameObject WireThreeObject;
     public GameObject WireFourObject;
     public GameObject PlayerObject;
+
+    public GameObject ScoreUI;
 
     public ChracterController PlayerControl;
     public crowSpawner Spawner;
@@ -27,11 +30,13 @@ public class SceneController : MonoBehaviour {
 
         PlayerControl = FindObjectOfType<ChracterController>();
         Spawner = FindObjectOfType<crowSpawner>();
+        ScoreUpdate();
 	}
 	
-    void OnGUI()
+    public void ScoreUpdate()
     {
-        GUI.Label(new Rect(10,10,200,90), "Birds Zapped: " + Score);
+        //GUI.Label(new Rect(10,10,200,90), "Birds Zapped: " + Score);
+        ScoreUI.GetComponent<Text>().text = ("Score "+Score);
     }
     
     public void RestartLevel()
@@ -59,10 +64,13 @@ public class SceneController : MonoBehaviour {
         PlayerControl.Start();
         //reset the delay before play timer
         Spawner.DelayBeforeStart = DelayBeforeStartTime + Time.time - 1;
+        Spawner.StoreAddedTime = 0;
+        Spawner.spawnRate = Spawner.spawnRateMin;
+        Spawner.TimeSinceFailLevels = 1;
 
         //(for now reset level timer will change once we have a VO)
         PlayerControl.enabled = true;
         Spawner.enabled = true;
-        Score = 0;
+        //Score = 0;
     }
 }

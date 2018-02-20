@@ -84,9 +84,11 @@ MonoBehaviour:
   startWait: 0
   pauseTimeMax: 1
   pauseTimeMin: 3
+  ChancetoSpawn: 1
   stopSpeed: 0
   randomTimeUntilPauseMax: 1
   randomTimeUntilPauseMin: 4
+  ScoreForBird: 1
   CanReflectCharge: 1
 --- !u!212 &212837277238727454
 SpriteRenderer:
