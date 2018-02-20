@@ -9,13 +9,14 @@ public class crowMove : MonoBehaviour {
 	public float startWait; 
 	public float pauseTimeMax;
     public float pauseTimeMin;
+    public float ChancetoSpawn;
     float pauseTime;
     public float stopSpeed = 0; 
 	float goSpeed; 
 	int randomTimeUntilPause;
     public int randomTimeUntilPauseMax;
     public int randomTimeUntilPauseMin;
-
+    public int ScoreForBird;
     public bool CanReflectCharge = false;
 
 
@@ -71,7 +72,7 @@ public class crowMove : MonoBehaviour {
 	void FailStateCrow()
     {
         Debug.Log("Crows fail state");
-        SC.RestartLevel();
+        //SC.RestartLevel();
 
     }
  
