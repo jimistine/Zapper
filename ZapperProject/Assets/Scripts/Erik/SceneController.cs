@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Fungus;
+using UnityEngine.UI;
 
 
 public class SceneController : MonoBehaviour {

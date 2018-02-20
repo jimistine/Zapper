@@ -70,7 +70,7 @@ public class Charge : MonoBehaviour {
                 }
                 else
                 {
-                    AM.HitCrow_source.PlayOneShot(AM.HitCrow);
+                    AM.Hit_source.PlayOneShot(AM.Hit);
                     
                     Destroy(gameObject); 
                     AM.Hit_source.PlayOneShot(AM.Hit);
@@ -85,7 +85,7 @@ public class Charge : MonoBehaviour {
             else if (isReturningCharge == true && collision.gameObject.tag == "Player")
             {
                 // destroy returinging charge on collision with player, may have to change function depending on hwo we want return charges to behave.
-                AM.HitCrow_source.PlayOneShot(AM.HitCrow);
+                AM.Hit_source.PlayOneShot(AM.Hit);
                 //SC.Score++;
                 //SC.ScoreUpdate();
                 Destroy(gameObject);
