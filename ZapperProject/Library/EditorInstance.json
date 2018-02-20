@@ -1,28 +1,4 @@
 {
-<<<<<<< HEAD
-<<<<<<< refs/remotes/origin/master
-<<<<<<< refs/remotes/origin/master
-<<<<<<< HEAD
-<<<<<<< refs/remotes/origin/master
-	"process_id" : 2933,
-=======
-	"process_id" : 2221,
->>>>>>> Uploading my level select scene
-=======
-	"process_id" : 2221,
->>>>>>> June
-=======
-	"process_id" : 33815,
->>>>>>> Commented my code and cleaned it up some
-=======
-	"process_id" : 68532,
->>>>>>> Tuned feel and added score,
-=======
-<<<<<<< HEAD
-	"process_id" : 68532,
-=======
-	"process_id" : 33815,
->>>>>>> jimi
->>>>>>> jimi
+	"process_id" : 19971,
 	"version" : "2017.3.0f3"
 }

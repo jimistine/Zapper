@@ -1,16 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-<<<<<<< refs/remotes/origin/master
-- path: Assets/Scenes/levelSelect.unity
-=======
-- path: Assets/Scenes/Main.unity
->>>>>>> Commented my code and cleaned it up some
-=======
-<<<<<<< HEAD
-- path: Assets/Scenes/ErikWireTracking.unity
-=======
-- path: Assets/Scenes/Main.unity
->>>>>>> jimi
->>>>>>> jimi
+- path: Assets/Scenes/Jimi_CRUNCH.unity
   isLoaded: 1
   isActive: 1

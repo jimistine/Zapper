@@ -24,6 +24,9 @@ public class ChracterController : MonoBehaviour {
     public float ChargingSpeed = 1;
     public int ChargingLimit = 100;
 
+    public float playerY;
+    public float playerX;
+    
     public void Start () {
 
         SC = FindObjectOfType<SceneController>();
@@ -74,6 +77,9 @@ public class ChracterController : MonoBehaviour {
     // Update is called once per frame
     void Update () {
 
+        playerX = gameObject.transform.position.x;
+        playerY = gameObject.transform.position.y;
+        
         if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
         {
             if (Input.GetKeyDown(KeyCode.UpArrow) && CurrentWirePositionY < MaxWirePosition)
@@ -133,7 +139,7 @@ public class ChracterController : MonoBehaviour {
                 //release the charge to move, wont move if not charged, cancle charge if move
                 Debug.Log("Fire Charge");
                 ChargingAmount = 0;
-                AM.ShootCharge_source.PlayOneShot(AM.ShootCharge);
+                AM.Shoot_source.PlayOneShot(AM.Shoot);
                 CreateChargeObject();
             }
         }

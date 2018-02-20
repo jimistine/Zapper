@@ -17,3 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ErikWireTracking.unity
     guid: b86b7e2a7950cbc41ba5339ee16189e7
+  - enabled: 1
+    path: Assets/Scenes/jimi_intro.unity
+    guid: 119773fcd721144719c1a5374faf18db
