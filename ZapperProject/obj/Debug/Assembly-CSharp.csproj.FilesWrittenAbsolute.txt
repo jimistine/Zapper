@@ -50,3 +50,4 @@
 /Users/junegehong/Desktop/Zapper/ZapperProject/Temp/bin/Debug/Assembly-CSharp.dll
 /Users/junegehong/Desktop/Zapper/ZapperProject/obj/Debug/Assembly-CSharp.dll
 /Users/junegehong/Desktop/Zapper/ZapperProject/obj/Debug/Assembly-CSharp.dll.mdb
+/Users/junegehong/Desktop/Zapper/ZapperProject/Temp/bin/Debug/Editor.ReorderableList.dll

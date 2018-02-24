@@ -26,8 +26,14 @@ public class ChracterController : MonoBehaviour {
 
     public float playerY;
     public float playerX;
+
+	public Animator anim; 
+
     
     public void Start () {
+
+
+		anim = GetComponent<Animator> (); 
 
         SC = FindObjectOfType<SceneController>();
         AM = FindObjectOfType<AudioManager>();
@@ -79,6 +85,7 @@ public class ChracterController : MonoBehaviour {
 
         playerX = gameObject.transform.position.x;
         playerY = gameObject.transform.position.y;
+	
         
         if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
         {
@@ -102,16 +109,21 @@ public class ChracterController : MonoBehaviour {
             ChangeWire();
             ChargingAmount = 0;
         }
-        if (Input.GetKey(KeyCode.LeftArrow) && transform.position.x > PlayerCurrentWire.GetComponent<Wires>().AnchorLeft)
-        {
-            transform.Translate(Vector3.left * Time.deltaTime * PlayerHorizontalSpeed);
-            CanShoot = false;
-        }
+		if (Input.GetKey (KeyCode.LeftArrow) && transform.position.x > PlayerCurrentWire.GetComponent<Wires> ().AnchorLeft) {
+			transform.Translate (Vector3.left * Time.deltaTime * PlayerHorizontalSpeed);
+			CanShoot = false;
+			anim.SetTrigger ("Run_Trigger"); 
+
+
+		} 
         if (Input.GetKey(KeyCode.RightArrow) && transform.position.x < PlayerCurrentWire.GetComponent<Wires>().AnchorRight)
         {
             transform.Translate(Vector3.right * Time.deltaTime * PlayerHorizontalSpeed);
             CanShoot = false;
-        }
+			anim.SetTrigger ("Run_Trigger"); 
+			 
+			} 
+			
         if (Input.GetKeyUp(KeyCode.LeftArrow)|| Input.GetKeyUp(KeyCode.RightArrow))
         {
             CanShoot = true;
@@ -124,13 +136,21 @@ public class ChracterController : MonoBehaviour {
         {
             ChangeWire();
 
+
             if (ChargingAmount < ChargingLimit)
             {
                 ChargingAmount += ChargingSpeed*Time.deltaTime;
             }
             //instantiate a "Charge" object, Should it take  apress and hold?
         }
-        if (Input.GetKeyUp(KeyCode.Space) && CanShoot == true)
+       
+		if(Input.GetKeyDown(KeyCode.Space)) {
+
+		anim.SetTrigger ("Shoot_Trigger"); 
+
+		}
+
+		if (Input.GetKeyUp(KeyCode.Space) && CanShoot == true)
         {
             Debug.Log("Charged to"+ChargingAmount);
 
@@ -141,6 +161,7 @@ public class ChracterController : MonoBehaviour {
                 ChargingAmount = 0;
                 AM.Shoot_source.PlayOneShot(AM.Shoot);
                 CreateChargeObject();
+
             }
         }
     }

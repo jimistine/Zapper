@@ -15,7 +15,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Clock
   - 
   - 
   - 
@@ -42,6 +42,15 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Chute
+    uniqueID: 784847367
+    locked: 0
+  - name: Clock
+    uniqueID: 708394593
+    locked: 0
+  - name: Conveyor
+    uniqueID: 1741813989
     locked: 0
   - name: Trees0
     uniqueID: 2027860283
