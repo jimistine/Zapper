@@ -82,11 +82,14 @@ MonoBehaviour:
   CurrentWire: {fileID: 0}
   crowSpeed: 0.01
   startWait: 0
-  pauseTimeMax: 2
+  pauseTimeMax: 3
   pauseTimeMin: 1
+  ChancetoSpawnCurrent: 1
+  ChancetoSpawnStart: 1
   stopSpeed: 0
-  randomTimeUntilPauseMax: 1
+  randomTimeUntilPauseMax: 2
   randomTimeUntilPauseMin: 5
+  ScoreForBird: 0
   CanReflectCharge: 0
 --- !u!212 &212096574482255758
 SpriteRenderer:

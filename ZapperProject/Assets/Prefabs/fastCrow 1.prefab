@@ -80,13 +80,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SC: {fileID: 0}
   CurrentWire: {fileID: 0}
-  crowSpeed: 0.05
+  crowSpeed: 0.03
   startWait: 0
-  pauseTimeMax: 1
-  pauseTimeMin: 3
+  pauseTimeMax: 3
+  pauseTimeMin: 1
+  ChancetoSpawnCurrent: 0
+  ChancetoSpawnStart: 0
   stopSpeed: 0
   randomTimeUntilPauseMax: 1
-  randomTimeUntilPauseMin: 4
+  randomTimeUntilPauseMin: 3
+  ScoreForBird: 0
   CanReflectCharge: 1
 --- !u!212 &212139938306110868
 SpriteRenderer:

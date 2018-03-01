@@ -9,7 +9,8 @@ public class crowMove : MonoBehaviour {
 	public float startWait; 
 	public float pauseTimeMax;
     public float pauseTimeMin;
-    public float ChancetoSpawn;
+    public float ChancetoSpawnCurrent = 0f;
+    public float ChancetoSpawnStart = 1f;
     float pauseTime;
     public float stopSpeed = 0; 
 	float goSpeed; 
@@ -22,8 +23,9 @@ public class crowMove : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        ChancetoSpawnCurrent = ChancetoSpawnStart;
 
-		StartCoroutine (wait());
+        StartCoroutine(wait());
         SC = FindObjectOfType<SceneController>();
 		
 	}
@@ -45,7 +47,7 @@ public class crowMove : MonoBehaviour {
 
         if (transform.position.x < CurrentWire.GetComponent<Wires>().AnchorLeft || transform.position.x > CurrentWire.GetComponent<Wires>().AnchorRight)
         {
-            FailStateCrow();
+            //FailStateCrow();
             //Destory bird for now will need a fail state animation for birds hittitng fuze box
             Destroy(gameObject);
         }
@@ -72,7 +74,7 @@ public class crowMove : MonoBehaviour {
 	void FailStateCrow()
     {
         Debug.Log("Crows fail state");
-        //SC.RestartLevel();
+        SC.RestartLevel();
 
     }
  

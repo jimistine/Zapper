@@ -84,7 +84,8 @@ MonoBehaviour:
   startWait: 0
   pauseTimeMax: 1
   pauseTimeMin: 3
-  ChancetoSpawn: 1
+  ChancetoSpawnCurrent: 0
+  ChancetoSpawnStart: 0
   stopSpeed: 0
   randomTimeUntilPauseMax: 1
   randomTimeUntilPauseMin: 4

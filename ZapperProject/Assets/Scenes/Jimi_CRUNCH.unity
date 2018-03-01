@@ -4786,11 +4786,12 @@ MonoBehaviour:
   PlayerHorizontalSpeed: 1
   CurrentWirePositionY: 0
   PlayerCurrentWire: {fileID: 0}
-  ChargeObjects: {fileID: 0}
+  ChargeObjects: {fileID: 1539209488794968, guid: 8b7af593d418c204abe229c38e624b15,
+    type: 2}
   CanShoot: 1
   ChargingAmount: 0
-  ChargingSpeed: 1
-  ChargingLimit: 100
+  ChargingSpeed: 100
+  ChargingLimit: 1
   playerY: 0
   playerX: 0
 --- !u!61 &1039467706
@@ -9021,18 +9022,20 @@ MonoBehaviour:
   enemies:
   - {fileID: 1428170752368740, guid: 9756f49466963478ab45e6dd2e10bb96, type: 2}
   - {fileID: 1385436911645900, guid: 2dfcc68a19d334bad98afe57b724ef53, type: 2}
+  - {fileID: 1292509844192062, guid: 991c8688f6bd74b2aac7a92fde3e22af, type: 2}
+  - {fileID: 1292509844192062, guid: 991c8688f6bd74b2aac7a92fde3e22af, type: 2}
   WireToSpawn: {fileID: 0}
-  spawnRate: 1.6
-  spawnRateMin: 0
-  spawnRateMax: 0
+  spawnRate: 1.1
+  spawnRateMin: 2.5
+  spawnRateMax: 0.5
   gapSpace: 0.2
   TotalCrowsForLevel: 0
   BeginingDelay: 3
   DelayBeforeStart: 0
   TimeSinceFail: 0
   TimeSinceFailLevels: 1
-  TimeSinceFailLevelsCapMin: 4
-  TimeSinceFailLevelsCapMax: 12
+  TimeSinceFailLevelsCapMin: 1
+  TimeSinceFailLevelsCapMax: 7
   StoreAddedTime: 0
 --- !u!4 &1761539916
 Transform:
