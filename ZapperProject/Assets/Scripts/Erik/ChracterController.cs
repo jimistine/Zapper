@@ -72,6 +72,14 @@ public class ChracterController : MonoBehaviour {
         FindCurrentWire();
         Wires currentWireScrpt = PlayerCurrentWire.GetComponent<Wires>();
         transform.position = new Vector3(currentWireScrpt.PlayersStartPositionX, currentWireScrpt.PlayersStartPositionY);
+        if (PlayerCurrentWire.GetComponent<Wires>().PlayerStartRight == true)
+        {
+            gameObject.GetComponent<SpriteRenderer>().flipX = false;
+        }
+        if (PlayerCurrentWire.GetComponent<Wires>().PlayerStartRight == false)
+        {
+            gameObject.GetComponent<SpriteRenderer>().flipX = true;
+        }
     }
     void CreateChargeObject()
     {

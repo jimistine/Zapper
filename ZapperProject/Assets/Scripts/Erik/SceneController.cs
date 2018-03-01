@@ -70,6 +70,10 @@ public class SceneController : MonoBehaviour {
         {
             Destroy(deleteThis);
         }
+        foreach(GameObject x in Spawner.enemies)
+        {
+            x.GetComponent<crowMove>().ChancetoSpawnCurrent = x.GetComponent<crowMove>().ChancetoSpawnStart;
+        }
         //reset players position
         PlayerControl.Start();
         //reset the delay before play timer

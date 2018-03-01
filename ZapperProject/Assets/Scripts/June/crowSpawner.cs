@@ -27,6 +27,8 @@ public class crowSpawner : MonoBehaviour {
     public int TimeSinceFailLevelsCapMax = 12;
     public float StoreAddedTime;
 
+    public bool IsSpawning =  true;
+
     // Use this for initialization
     void Start () {
 
@@ -35,6 +37,11 @@ public class crowSpawner : MonoBehaviour {
 
         DelayBeforeStart = SC.DelayBeforeStartTime;
         spawnRate = spawnRateMin;
+
+        foreach(GameObject x in enemies)
+        {
+            x.GetComponent<crowMove>().ChancetoSpawnCurrent = x.GetComponent<crowMove>().ChancetoSpawnStart;
+        }
 	}
 
 	// Update is called once per frame
@@ -64,7 +71,7 @@ public class crowSpawner : MonoBehaviour {
                 WireToSpawn = SC.WireFourObject;
             }
 
-            if (Time.time > nextSpawn)
+            if (Time.time > nextSpawn && IsSpawning)
             {
                 nextSpawn = Time.time + spawnRate;
 
@@ -83,7 +90,7 @@ public class crowSpawner : MonoBehaviour {
 
         //add in function of escalating spawns and changing type chance over time.
         //need to track time since last reset/begining 
-        TimeSinceFail = Time.time - DelayBeforeStart;
+        TimeSinceFail = Time.time - (BeginingDelay - 1);
         //develop an increment to allow escalation
         if (TimeSinceFail> StoreAddedTime + (DelayBeforeStart + ((TimeSinceFailLevelsCapMax-(TimeSinceFailLevels-1)))))
         {
@@ -92,8 +99,8 @@ public class crowSpawner : MonoBehaviour {
             if (TimeSinceFailLevels < TimeSinceFailLevelsCapMax - (TimeSinceFailLevelsCapMin-1))
             {
                 TimeSinceFailLevels+=1;
-                spawnRate = spawnRate - 0.1f;
-                enemies[1].GetComponent<crowMove>().ChancetoSpawn += .33f;
+                spawnRate = spawnRate - 0.25f;
+                enemies[1].GetComponent<crowMove>().ChancetoSpawnCurrent += .33f;
             }
             // Edit Spawn Rates for spawner / Edit Odds of enemy types
             //Debug.Log("Time"+TimeSinceFail);
@@ -130,15 +137,20 @@ public class crowSpawner : MonoBehaviour {
         float ShouldSpawnStore = new float();
         int enemyNum = 0;
         Dictionary<float, int> WhatEnemyToSpawn = new Dictionary<float, int>();
+        List<GameObject> enemiesToUse = new List<GameObject>();
 
         foreach(GameObject x in enemies)
         {
-            TotalSpawnNum += x.GetComponent<crowMove>().ChancetoSpawn;
+            if (x.GetComponent<crowMove>().ChancetoSpawnCurrent != 0)
+            {
+                enemiesToUse.Add(x);
+                TotalSpawnNum += x.GetComponent<crowMove>().ChancetoSpawnCurrent;
+            }
         }
-        foreach (GameObject x in enemies)
+        foreach (GameObject x in enemiesToUse)
         {
             enemyNum += 1;
-            ShouldSpawnThisBird = x.GetComponent<crowMove>().ChancetoSpawn / TotalSpawnNum;
+            ShouldSpawnThisBird = x.GetComponent<crowMove>().ChancetoSpawnCurrent / TotalSpawnNum;
             ShouldSpawnStore += ShouldSpawnThisBird;
 
             WhatEnemyToSpawn.Add(ShouldSpawnStore, enemyNum);

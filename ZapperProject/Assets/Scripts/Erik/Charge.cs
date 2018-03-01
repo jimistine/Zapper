@@ -13,6 +13,7 @@ public class Charge : MonoBehaviour {
 
 	public Sprite new_Sprite; 
 
+
     // Use this for initialization
     void Start () {
 
@@ -23,19 +24,25 @@ public class Charge : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
-
-	  
-	    
         if (isReturningCharge == true)
         {
             if (ChargesCurrentWire.GetComponent<Wires>().PlayerStartRight == true)
             {
-                transform.Translate(Vector3.right * Time.deltaTime * (ChargeMoveSpeed/4));
+                transform.Translate(Vector3.right * Time.deltaTime * (ChargeMoveSpeed/3));
             }
             if (ChargesCurrentWire.GetComponent<Wires>().PlayerStartRight == false)
             {
-                transform.Translate(Vector3.left * Time.deltaTime * (ChargeMoveSpeed/4));
+                transform.Translate(Vector3.left * Time.deltaTime * (ChargeMoveSpeed/3));
             }
+            //
+            if(ChargesCurrentWire = SC.PlayerObject.GetComponent<ChracterController>().PlayerCurrentWire)
+            {
+                if (gameObject.transform.position.x < (SC.PlayerObject.transform.position.x) + 0.2f && gameObject.transform.position.x > (SC.PlayerObject.transform.position.x) - 0.2f)
+                {
+                    Destroy(gameObject);
+                }
+            }
+            
         }
         if (isReturningCharge == false)
         {
@@ -48,9 +55,7 @@ public class Charge : MonoBehaviour {
                 transform.Translate(Vector3.right * Time.deltaTime * ChargeMoveSpeed);
             }
         }
-        
-
-        if (transform.position.x > ChargesCurrentWire.GetComponent<Wires>().AnchorRight || transform.position.x < ChargesCurrentWire.GetComponent<Wires>().AnchorLeft)
+        if (transform.position.x > ChargesCurrentWire.GetComponent<Wires>().AnchorRight+0.5f || transform.position.x < ChargesCurrentWire.GetComponent<Wires>().AnchorLeft-0.5f)
         {
             ChargeFailState();
         }
@@ -59,8 +64,6 @@ public class Charge : MonoBehaviour {
     {
         if (hasTriggered == false)
         {
-            hasTriggered = false;
-
             Debug.Log("collision");
 
             if (collision.gameObject.tag == "Target" && isReturningCharge == false)
@@ -73,7 +76,6 @@ public class Charge : MonoBehaviour {
                 else
                 {
                     AM.Hit_source.PlayOneShot(AM.Hit);
-                    
                     Destroy(gameObject); 
                     AM.Hit_source.PlayOneShot(AM.Hit);
                 }
@@ -87,6 +89,7 @@ public class Charge : MonoBehaviour {
             else if (isReturningCharge == true && collision.gameObject.tag == "Player")
             {
                 // destroy returinging charge on collision with player, may have to change function depending on hwo we want return charges to behave.
+                hasTriggered = true;
                 AM.Hit_source.PlayOneShot(AM.Hit);
                 //SC.Score++;
                 //SC.ScoreUpdate();
@@ -94,7 +97,6 @@ public class Charge : MonoBehaviour {
                 AM.Hit_source.PlayOneShot(AM.Hit);
             }
         }
-        
     }
     public void ChargeFailState()
     {
