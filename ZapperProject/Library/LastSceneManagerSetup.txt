@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/ErikTriesToBuildThings/IntroRound1.unity
+- path: Assets/Scenes/ErikWireTracking.unity
   isLoaded: 1
   isActive: 1
