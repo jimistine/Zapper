@@ -94,6 +94,7 @@ MonoBehaviour:
   ChargeMoveSpeed: 7
   isReturningCharge: 0
   ChargesCurrentWire: {fileID: 0}
+  new_Sprite: {fileID: 0}
 --- !u!212 &212767769928290188
 SpriteRenderer:
   m_ObjectHideFlags: 1

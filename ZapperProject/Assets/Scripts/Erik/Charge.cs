@@ -11,6 +11,7 @@ public class Charge : MonoBehaviour {
     public GameObject ChargesCurrentWire;
     bool hasTriggered = false;
 
+	public Sprite new_Sprite; 
 
 
     // Use this for initialization
@@ -70,6 +71,7 @@ public class Charge : MonoBehaviour {
                 if (collision.gameObject.GetComponent<crowMove>().CanReflectCharge == true)
                 {
                     isReturningCharge = true;
+					ChangeSprite (); 
                 }
                 else
                 {
@@ -103,4 +105,9 @@ public class Charge : MonoBehaviour {
         //destroy for now will have to change things depeneding on how we record fail states
         SC.RestartLevel();
     }
+
+	public void ChangeSprite() {
+
+		this.GetComponent<SpriteRenderer>().sprite = new_Sprite;
+	}
 }

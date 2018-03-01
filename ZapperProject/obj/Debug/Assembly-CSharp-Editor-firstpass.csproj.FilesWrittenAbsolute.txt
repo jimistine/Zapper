@@ -50,3 +50,4 @@
 /Users/junegehong/Desktop/Zapper/ZapperProject/Temp/bin/Debug/UnityEditor.iOS.Extensions.Xcode.xml
 /Users/junegehong/Desktop/Zapper/ZapperProject/Temp/bin/Debug/UnityEditor.iOS.Extensions.Common.dll
 /Users/junegehong/Desktop/Zapper/ZapperProject/Temp/bin/Debug/UnityEditor.iOS.Extensions.Common.dll.mdb
+/Users/junegehong/Desktop/Zapper/ZapperProject/Temp/bin/Debug/Editor.ReorderableList.dll
