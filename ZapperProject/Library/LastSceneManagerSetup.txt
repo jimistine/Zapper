@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/ErikWireTracking.unity
-=======
-- path: Assets/Scenes/3D_Test.unity
->>>>>>> jimi
+- path: Assets/Scenes/BUILD SCENES/6_Crunch_New.unity
   isLoaded: 1
   isActive: 1
