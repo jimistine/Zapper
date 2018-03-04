@@ -14,6 +14,8 @@ public class Choreographer : MonoBehaviour {
     public float [] BeatTime;
     public float[] RateOfSpawn;
     public int[] SpawnAtATime;
+    public bool[] WillCancleNormalSpawn;
+    Dictionary<int, bool> BeatsBoolTotalControl = new Dictionary<int, bool>();
     Dictionary<int, float> BeatTimeNum = new Dictionary<int, float>();
     Dictionary<int, int> BeatsValueType = new Dictionary<int, int>();
     Dictionary<int, int> BeatsValueNum = new Dictionary<int, int>();
@@ -45,11 +47,9 @@ public class Choreographer : MonoBehaviour {
         AssignBeatsValuesType();
         AssignBeatsSpawnRate();
         AssignBeatsAtATime();
+        AssignBoolControl();
         SetWireNum();
 
-        DissableArcadeSpawner();
-        
-		
 	}
 	
 	// Update is called once per frame
@@ -177,4 +177,13 @@ public class Choreographer : MonoBehaviour {
             BeatsAtATime.Add(X, SpawnAtATime[X]);
         }
     }
+    public void AssignBoolControl()
+    {
+        BeatsBoolTotalControl.Clear();
+        foreach (int X in BeatNum)
+        {
+            BeatsBoolTotalControl.Add(X, WillCancleNormalSpawn[X]);
+        }
+    }
+
 }
