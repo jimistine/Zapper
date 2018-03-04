@@ -303,14 +303,22 @@ MonoBehaviour:
   Spawner: {fileID: 0}
   PlayerObj: {fileID: 0}
   currentBeatNum: 0
-  BeatNum: 
-  SpawnNum: 
-  SpawnType: 
-  BeatTime: []
-  RateOfSpawn: []
-  SpawnAtATime: 
-  WillCancleNormalSpawn: 
-  WireCoreographer: {fileID: 0}
+  BeatNum: 00000000010000000200000003000000
+  SpawnNum: 00000000000000000000000000000000
+  SpawnType: 00000000000000000000000000000000
+  BeatTime:
+  - 0
+  - 0
+  - 0
+  - 0
+  RateOfSpawn:
+  - 0
+  - 0
+  - 0
+  - 0
+  SpawnAtATime: 00000000000000000000000000000000
+  WillCancleNormalSpawn: 00000000
+  WireCoreographer: {fileID: 883947133}
   WireNum: 0
 --- !u!1 &76909121
 GameObject:
@@ -2148,14 +2156,22 @@ MonoBehaviour:
   Spawner: {fileID: 0}
   PlayerObj: {fileID: 0}
   currentBeatNum: 0
-  BeatNum: 
-  SpawnNum: 
-  SpawnType: 
-  BeatTime: []
-  RateOfSpawn: []
-  SpawnAtATime: 
-  WillCancleNormalSpawn: 
-  WireCoreographer: {fileID: 0}
+  BeatNum: 00000000010000000200000003000000
+  SpawnNum: 00000000000000000000000000000000
+  SpawnType: 00000000000000000000000000000000
+  BeatTime:
+  - 0
+  - 0
+  - 0
+  - 0
+  RateOfSpawn:
+  - 0
+  - 0
+  - 0
+  - 0
+  SpawnAtATime: 00000000000000000000000000000000
+  WillCancleNormalSpawn: 00000000
+  WireCoreographer: {fileID: 560653868}
   WireNum: 0
 --- !u!1 &383881129
 GameObject:
@@ -7246,14 +7262,22 @@ MonoBehaviour:
   Spawner: {fileID: 0}
   PlayerObj: {fileID: 0}
   currentBeatNum: 0
-  BeatNum: 
-  SpawnNum: 
-  SpawnType: 
-  BeatTime: []
-  RateOfSpawn: []
-  SpawnAtATime: 
-  WillCancleNormalSpawn: 
-  WireCoreographer: {fileID: 0}
+  BeatNum: 00000000010000000200000003000000
+  SpawnNum: 00000000000000000000000000000000
+  SpawnType: 00000000000000000000000000000000
+  BeatTime:
+  - 0
+  - 0
+  - 0
+  - 0
+  RateOfSpawn:
+  - 0
+  - 0
+  - 0
+  - 0
+  SpawnAtATime: 00000000000000000000000000000000
+  WillCancleNormalSpawn: 00000000
+  WireCoreographer: {fileID: 235468868}
   WireNum: 0
 --- !u!1 &1414302622
 GameObject:
@@ -7372,14 +7396,22 @@ MonoBehaviour:
   Spawner: {fileID: 0}
   PlayerObj: {fileID: 0}
   currentBeatNum: 0
-  BeatNum: 
-  SpawnNum: 
-  SpawnType: 
-  BeatTime: []
-  RateOfSpawn: []
-  SpawnAtATime: 
-  WillCancleNormalSpawn: 
-  WireCoreographer: {fileID: 0}
+  BeatNum: 00000000010000000200000003000000
+  SpawnNum: 00000000000000000000000000000000
+  SpawnType: 00000000000000000000000000000000
+  BeatTime:
+  - 0
+  - 0
+  - 0
+  - 0
+  RateOfSpawn:
+  - 0
+  - 0
+  - 0
+  - 0
+  SpawnAtATime: 00000000000000000000000000000000
+  WillCancleNormalSpawn: 00000000
+  WireCoreographer: {fileID: 1071027960}
   WireNum: 0
 --- !u!1 &1442698799
 GameObject:
