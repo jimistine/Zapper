@@ -107,8 +107,9 @@ public class Charge : MonoBehaviour {
 	{
 		Debug.Log("Charge Fail State");
 		AM.FailSound_source.PlayOneShot(AM.Fail);
-		//destroy for now will have to change things depeneding on how we record fail states
-		SC.RestartLevel();
+        //destroy for now will have to change things depeneding on how we record fail states
+        SC.CurrentHealth--;
+        SC.RestartLevel();
 	}
 
 	public void ChangeSprite() {

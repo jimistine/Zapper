@@ -38,26 +38,21 @@ public class crowMove : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-
 		randomTimeUntilPause = Random.Range (randomTimeUntilPauseMin, randomTimeUntilPauseMax); 
 		pauseTime = Random.Range (pauseTimeMin, pauseTimeMax);
-
 		if(CurrentWire.GetComponent<Wires>().PlayerStartRight == false)
 		{
 			goSpeed = crowSpeed * (-1);
 			//flip prefab
 			gameObject.GetComponent<SpriteRenderer>().flipX = false;
 		}
-
 		transform.Translate (goSpeed, 0, 0); 
-
 		if (transform.position.x < CurrentWire.GetComponent<Wires>().AnchorLeft || transform.position.x > CurrentWire.GetComponent<Wires>().AnchorRight)
 		{
-			//FailStateCrow();
+			FailStateCrow();
 			//Destroy bird for now will need a fail state animation for birds hittitng fuze box
 			Destroy(gameObject);
 		}
-
 	}
 
 	IEnumerator wait () {
@@ -80,8 +75,8 @@ public class crowMove : MonoBehaviour {
 	void FailStateCrow()
 	{
 		Debug.Log("Crows fail state");
+        SC.CurrentHealth--;
 		SC.RestartLevel();
-
 	}
 
 	public void CrowZap() {

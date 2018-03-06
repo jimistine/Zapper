@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Target
   - charge
+  - Health
   layers:
   - Default
   - TransparentFX

@@ -29,12 +29,17 @@ public class SceneController : MonoBehaviour {
 
     public bool LevelSelectGateOpen;
 
+    public int CurrentHealth;
+    public GameObject HealthObject;
+    public Vector2 HealthOjectOnePos;
+
     // Use this for initialization
     void Start () {
 
         PlayerControl = FindObjectOfType<ChracterController>();
         Spawner = FindObjectOfType<crowSpawner>();
         ScoreUpdate();
+        UpdateHealth();
 	}
 	
     public void ScoreUpdate()
@@ -45,18 +50,15 @@ public class SceneController : MonoBehaviour {
     
     public void RestartLevel()
     {
-
         if (LevelSelectGateOpen)
         {
             Flowchart.BroadcastFungusMessage ("Load level select");
         }
-        
         //stop the spawner and player
         Spawner.enabled = false;
         PlayerControl.enabled = false;
         //list all game objects to be destroyed
         List<GameObject> DeleteGameObjects = new List<GameObject>();
-
         foreach(GameObject deleteGameObject in GameObject.FindGameObjectsWithTag("charge"))
         {
             DeleteGameObjects.Add(deleteGameObject);
@@ -74,20 +76,41 @@ public class SceneController : MonoBehaviour {
         {
             x.GetComponent<crowMove>().ChancetoSpawnCurrent = x.GetComponent<crowMove>().ChancetoSpawnStart;
         }
-        //reset players position
+        //reset players position and health
         PlayerControl.Start();
+        UpdateHealth();
         //reset the delay before play timer
         Spawner.DelayBeforeStart = DelayBeforeStartTime + Time.time - 1;
         Spawner.StoreAddedTime = 0;
         Spawner.spawnRate = Spawner.spawnRateMin;
         Spawner.TimeSinceFailLevels = 1;
-
         //(for now reset level timer will change once we have a VO)
         PlayerControl.enabled = true;
         Spawner.enabled = true;
         //Score = 0;
     }
-    
+    public void UpdateHealth()
+    {
+        // clear all health objects
+        foreach(GameObject x in GameObject.FindGameObjectsWithTag("Health"))
+        {
+            Destroy(x);
+        }
+        //instantiate in new health objects
+        int CurrentHealthStore = new int();
+        int CurrentHealthNum = new int();
+        Vector2 CurrentHealthPosStore = new Vector2();
+        CurrentHealthStore = CurrentHealth;
+
+        while (CurrentHealthStore > 0)
+        {
+            CurrentHealthPosStore.x= HealthOjectOnePos.x + CurrentHealthNum;
+            CurrentHealthPosStore.y = HealthOjectOnePos.y;
+            Instantiate(HealthObject, (CurrentHealthPosStore), Quaternion.identity);
+            CurrentHealthNum++;
+            CurrentHealthStore--;
+        }
+    }
     
     // FUN FUNGUS FUNCTIONS
 

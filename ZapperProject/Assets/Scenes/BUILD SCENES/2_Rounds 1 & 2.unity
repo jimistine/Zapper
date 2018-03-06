@@ -303,14 +303,22 @@ MonoBehaviour:
   Spawner: {fileID: 0}
   PlayerObj: {fileID: 0}
   currentBeatNum: 0
-  BeatNum: 
-  SpawnNum: 
-  SpawnType: 
-  BeatTime: []
-  RateOfSpawn: []
-  SpawnAtATime: 
-  WillCancleNormalSpawn: 
-  WireCoreographer: {fileID: 0}
+  BeatNum: 00000000010000000200000003000000
+  SpawnNum: 00000000000000000000000000000000
+  SpawnType: 00000000000000000000000000000000
+  BeatTime:
+  - 0
+  - 0
+  - 0
+  - 0
+  RateOfSpawn:
+  - 0
+  - 0
+  - 0
+  - 0
+  SpawnAtATime: 00000000000000000000000000000000
+  WillCancleNormalSpawn: 00000000
+  WireCoreographer: {fileID: 883947133}
   WireNum: 0
 --- !u!1 &76909121
 GameObject:
@@ -2148,14 +2156,22 @@ MonoBehaviour:
   Spawner: {fileID: 0}
   PlayerObj: {fileID: 0}
   currentBeatNum: 0
-  BeatNum: 
-  SpawnNum: 
-  SpawnType: 
-  BeatTime: []
-  RateOfSpawn: []
-  SpawnAtATime: 
-  WillCancleNormalSpawn: 
-  WireCoreographer: {fileID: 0}
+  BeatNum: 00000000010000000200000003000000
+  SpawnNum: 00000000000000000000000000000000
+  SpawnType: 00000000000000000000000000000000
+  BeatTime:
+  - 0
+  - 0
+  - 0
+  - 0
+  RateOfSpawn:
+  - 0
+  - 0
+  - 0
+  - 0
+  SpawnAtATime: 00000000000000000000000000000000
+  WillCancleNormalSpawn: 00000000
+  WireCoreographer: {fileID: 560653868}
   WireNum: 0
 --- !u!1 &383881129
 GameObject:
@@ -5244,8 +5260,8 @@ MonoBehaviour:
     type: 2}
   CanShoot: 1
   ChargingAmount: 0
-  ChargingSpeed: 1
-  ChargingLimit: 100
+  ChargingSpeed: 50
+  ChargingLimit: 1
   playerY: 0
   playerX: 0
   anim: {fileID: 0}
@@ -7246,14 +7262,22 @@ MonoBehaviour:
   Spawner: {fileID: 0}
   PlayerObj: {fileID: 0}
   currentBeatNum: 0
-  BeatNum: 
-  SpawnNum: 
-  SpawnType: 
-  BeatTime: []
-  RateOfSpawn: []
-  SpawnAtATime: 
-  WillCancleNormalSpawn: 
-  WireCoreographer: {fileID: 0}
+  BeatNum: 00000000010000000200000003000000
+  SpawnNum: 00000000000000000000000000000000
+  SpawnType: 00000000000000000000000000000000
+  BeatTime:
+  - 0
+  - 0
+  - 0
+  - 0
+  RateOfSpawn:
+  - 0
+  - 0
+  - 0
+  - 0
+  SpawnAtATime: 00000000000000000000000000000000
+  WillCancleNormalSpawn: 00000000
+  WireCoreographer: {fileID: 235468868}
   WireNum: 0
 --- !u!1 &1414302622
 GameObject:
@@ -7372,14 +7396,22 @@ MonoBehaviour:
   Spawner: {fileID: 0}
   PlayerObj: {fileID: 0}
   currentBeatNum: 0
-  BeatNum: 
-  SpawnNum: 
-  SpawnType: 
-  BeatTime: []
-  RateOfSpawn: []
-  SpawnAtATime: 
-  WillCancleNormalSpawn: 
-  WireCoreographer: {fileID: 0}
+  BeatNum: 00000000010000000200000003000000
+  SpawnNum: 00000000000000000000000000000000
+  SpawnType: 00000000000000000000000000000000
+  BeatTime:
+  - 0
+  - 0
+  - 0
+  - 0
+  RateOfSpawn:
+  - 0
+  - 0
+  - 0
+  - 0
+  SpawnAtATime: 00000000000000000000000000000000
+  WillCancleNormalSpawn: 00000000
+  WireCoreographer: {fileID: 1071027960}
   WireNum: 0
 --- !u!1 &1442698799
 GameObject:
@@ -9391,17 +9423,17 @@ MonoBehaviour:
   - {fileID: 1697413447292782, guid: 9756f49466963478ab45e6dd2e10bb96, type: 2}
   - {fileID: 1697413447292782, guid: 9756f49466963478ab45e6dd2e10bb96, type: 2}
   WireToSpawn: {fileID: 0}
-  spawnRate: 1
-  spawnRateMin: 1
-  spawnRateMax: 1
+  spawnRate: 1.1
+  spawnRateMin: 2.25
+  spawnRateMax: 0.5
   gapSpace: 0.2
   TotalCrowsForLevel: 0
-  BeginingDelay: 0
+  BeginingDelay: 3
   DelayBeforeStart: 0
   TimeSinceFail: 0
   TimeSinceFailLevels: 1
-  TimeSinceFailLevelsCapMin: 4
-  TimeSinceFailLevelsCapMax: 12
+  TimeSinceFailLevelsCapMin: 1
+  TimeSinceFailLevelsCapMax: 7
   StoreAddedTime: 0
   IsSpawning: 1
 --- !u!4 &1761539916
@@ -10373,6 +10405,10 @@ MonoBehaviour:
   TotalLevelTime: 0
   Score: 0
   LevelSelectGateOpen: 0
+  CurrentHealth: 3
+  HealthObject: {fileID: 1994362926857720, guid: a8ce6daca3bafe24a8aff749fbd7e9e0,
+    type: 2}
+  HealthOjectOnePos: {x: -7, y: 6}
 --- !u!114 &1984350833
 MonoBehaviour:
   m_ObjectHideFlags: 0
