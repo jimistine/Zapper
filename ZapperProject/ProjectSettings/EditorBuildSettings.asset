@@ -21,11 +21,17 @@ EditorBuildSettings:
     path: Assets/Scenes/PastStates/Jimi_CRUNCH.unity
     guid: 119773fcd721144719c1a5374faf18db
   - enabled: 1
-    path: Assets/Scenes/BUILD SCENES/1_TempTitleScreen.unity
+    path: Assets/Scenes/BUILD SCENES/0_TempTitleScreen.unity
     guid: 13ba53d61692b4b068888ce089cd44f2
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/BUILD SCENES/1_Round 1.unity
+    guid: 877e1403402ed40e09dd74cc521f1414
+  - enabled: 1
+    path: Assets/Scenes/BUILD SCENES/2_Round 2.unity
+    guid: c46151220cb09424486def5acebb689b
   - enabled: 1
     path: Assets/Scenes/BUILD SCENES/3_Round 3.unity
     guid: 31382a044cf994c3f9acb8af79ac43f7
