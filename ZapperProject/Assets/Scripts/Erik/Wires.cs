@@ -14,6 +14,8 @@ public class Wires : MonoBehaviour {
 
     public float ChargesPositionOffsetY;
 
+    public bool canSpawn;
+
     // Use this for initialization
     void Start () {
 

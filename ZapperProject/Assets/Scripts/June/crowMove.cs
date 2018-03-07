@@ -81,7 +81,8 @@ public class crowMove : MonoBehaviour {
 
 	public void CrowZap() {
 
-		boxCol.enabled = false; 
+		boxCol.enabled = false;
+        goSpeed = 0;
 		anim.SetBool ("Zap_Bool", true); 
 		StartCoroutine (ZapAnim()); 
 

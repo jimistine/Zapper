@@ -4,27 +4,29 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Fungus;
 using UnityEngine.UI;
+using UnityEditor.SceneManagement;
 
 
 public class SceneController : MonoBehaviour {
     // find and store the four wires positions, (Y) 
     // Use wire positions to controll player Movment (Y)
     // Use wire positions to inform bird spawns
+    public int RoundNum;
 
     public GameObject WireOneObject;
     public GameObject WireTwoObject;
     public GameObject WireThreeObject;
     public GameObject WireFourObject;
     public GameObject PlayerObject;
-
+    public GameObject MemoryObj;
     public GameObject ScoreUI;
 
     public ChracterController PlayerControl;
     public crowSpawner Spawner;
+    public GameObject SpawnerObject;
 
     public float DelayBeforeStartTime;
     public float TotalLevelTime;
-
     public int Score;
 
     public bool LevelSelectGateOpen;
@@ -41,7 +43,20 @@ public class SceneController : MonoBehaviour {
         ScoreUpdate();
         UpdateHealth();
 	}
-	
+    private void Update()
+    {
+        if(WireOneObject.GetComponent<Wires>().canSpawn == false && WireTwoObject.GetComponent<Wires>().canSpawn == false && WireThreeObject.GetComponent<Wires>().canSpawn == false&& WireFourObject.GetComponent<Wires>().canSpawn == false)
+        {
+            Debug.Log("Done");
+            
+            if (FindBirds() == false)
+            {
+                WinLevel();
+            }
+
+        }
+    }
+
     public void ScoreUpdate()
     {
         //GUI.Label(new Rect(10,10,200,90), "Birds Zapped: " + Score);
@@ -55,7 +70,7 @@ public class SceneController : MonoBehaviour {
             Flowchart.BroadcastFungusMessage ("Load level select");
         }
         //stop the spawner and player
-        Spawner.enabled = false;
+        SpawnerObject.SetActive(false);
         PlayerControl.enabled = false;
         //list all game objects to be destroyed
         List<GameObject> DeleteGameObjects = new List<GameObject>();
@@ -84,10 +99,43 @@ public class SceneController : MonoBehaviour {
         Spawner.StoreAddedTime = 0;
         Spawner.spawnRate = Spawner.spawnRateMin;
         Spawner.TimeSinceFailLevels = 1;
+        Spawner.validChoices.Clear();
+        Spawner.validChoices.Add(1);
+        Spawner.validChoices.Add(2);
+        Spawner.validChoices.Add(3);
+        Spawner.validChoices.Add(4);
+
         //(for now reset level timer will change once we have a VO)
         PlayerControl.enabled = true;
         Spawner.enabled = true;
+        SpawnerObject.SetActive(true);
         //Score = 0;
+    }
+    public void WinLevel()
+    {
+        //grab score
+        //freeze spawning, arcade/coreography
+        //freeze movment
+        SpawnerObject.SetActive(false);
+        ////Freeze Time?
+        //load the win screen overlay
+        //track previous wins, losses?
+        MemoryObj.GetComponent<Memory>().StoreMemory(RoundNum, true);
+        //each round needs a unique value
+        SceneManager.LoadScene("GameOver+Win");
+    }
+    void LoseLevel()
+    {
+        //grab score
+        //freeze spawning, arcade/coreography
+        //freeze movment
+        SpawnerObject.SetActive(false);
+        ////Freeze Time?
+        //load the lose screen overlay
+        //track previous wins, losses?
+        MemoryObj.GetComponent<Memory>().StoreMemory(RoundNum, false);
+        //each round needs a unique value
+        SceneManager.LoadScene("GameOver+Lose");
     }
     public void UpdateHealth()
     {
@@ -110,7 +158,25 @@ public class SceneController : MonoBehaviour {
             CurrentHealthNum++;
             CurrentHealthStore--;
         }
+        if (CurrentHealth == 0)
+        {
+            LoseLevel();
+        }
     }
+    public bool FindBirds()
+    {
+        List<GameObject> oldTargets = new List<GameObject>();
+        foreach(GameObject x in GameObject.FindGameObjectsWithTag("Target"))
+        {
+            oldTargets.Add(x);
+        }
+        if (oldTargets.Count == 0)
+        {
+            return false;
+        }
+        else { return true; }
+    }
+    
     
     // FUN FUNGUS FUNCTIONS
 

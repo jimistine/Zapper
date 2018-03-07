@@ -69,6 +69,17 @@ public class Choreographer : MonoBehaviour {
         ///
         if (currentBeatNum > 0 && IsCoreographerEnding == false && BeatsValueNum[currentBeatNum] != 0)
         {
+            if (BeatsBoolTotalControl[currentBeatNum])
+            {
+                Debug.Log("There true");
+                DissableArcadeSpawner(WireNum);
+            }
+            if (BeatsBoolTotalControl[currentBeatNum])
+            {
+                Debug.Log("There false");
+                EnableArcadeSpawner(WireNum);
+            }
+
             TimeOfBeat = BeatTimeNum[currentBeatNum] - BeatTimeNum[currentBeatNum-1];
             //Debug.Log("Time of wire " + WireNum + " Time " + TimeOfBeat);
             //how to do spawn rate?
@@ -81,7 +92,6 @@ public class Choreographer : MonoBehaviour {
                 //begin spawning; type, at rate, at a time.
                 float CurrentTimeInBeat = Time.time - BeatTimeNum[currentBeatNum - 1];
                 //Debug.Log(CurrentTimeInBeat);
-
                 if (CurrentTimeInBeat >= BeatsValueRate[currentBeatNum]*MicroBeatNum)
                 {
                     Debug.Log("Instantiate Wire " + WireNum);
@@ -111,12 +121,47 @@ public class Choreographer : MonoBehaviour {
         {
             Debug.Log("Ending coreography" + " Wire " + WireNum);
             IsCoreographerEnding = true;
+            DissableArcadeSpawner(WireNum);
         }
 
     }
-    public void DissableArcadeSpawner()
+    public void DissableArcadeSpawner(int x)
     {
-        Spawner.IsSpawning = false;
+        if (x == 1)
+        {
+            SC.WireOneObject.GetComponent<Wires>().canSpawn = false;
+        }
+        if (x == 2)
+        {
+            SC.WireTwoObject.GetComponent<Wires>().canSpawn = false;
+        }
+        if (x == 3)
+        {
+            SC.WireThreeObject.GetComponent<Wires>().canSpawn = false;
+        }
+        if (x == 4)
+        {
+            SC.WireFourObject.GetComponent<Wires>().canSpawn = false;
+        }
+    }
+    public void EnableArcadeSpawner(int x)
+    {
+        if (x == 1)
+        {
+            SC.WireOneObject.GetComponent<Wires>().canSpawn = true;
+        }
+        if (x == 2)
+        {
+            SC.WireTwoObject.GetComponent<Wires>().canSpawn = true;
+        }
+        if (x == 3)
+        {
+            SC.WireThreeObject.GetComponent<Wires>().canSpawn = true;
+        }
+        if (x == 4)
+        {
+            SC.WireFourObject.GetComponent<Wires>().canSpawn = true;
+        }
     }
     public void SetWireNum()
     {

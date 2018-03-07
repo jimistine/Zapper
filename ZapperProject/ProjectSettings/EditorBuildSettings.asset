@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/PastStates/Main.unity
     guid: 98f905bb2c3504a99b1666b55605061f
   - enabled: 1
-    path: Assets/Scenes/levelSelect.unity
+    path: Assets/Scenes/PastStates/levelSelect.unity
     guid: abefa19936c3044d18fbde01dca0e181
   - enabled: 1
     path: Assets/Scenes/ErikWireTracking.unity
@@ -23,14 +23,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BUILD SCENES/1_TempTitleScreen.unity
     guid: 13ba53d61692b4b068888ce089cd44f2
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/BUILD SCENES/2_Round 1.unity
-    guid: 718b439593666461183f61c901e599aa
-  - enabled: 1
-    path: Assets/Scenes/BUILD SCENES/3_Round 2.unity
+    path: Assets/Scenes/BUILD SCENES/3_Round 3.unity
     guid: 31382a044cf994c3f9acb8af79ac43f7
   - enabled: 1
-    path: Assets/Scenes/BUILD SCENES/4_Round 3.unity
+    path: Assets/Scenes/BUILD SCENES/4_Round 4.unity
     guid: 4cf9acda35f75416c8776ebab44646ac
   - enabled: 1
     path: Assets/Scenes/BUILD SCENES/5_Prototype.unity
@@ -41,3 +41,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BUILD SCENES/GameOver+Win.unity
     guid: f0abb2790273949ab9fe798c743a8c86
+  - enabled: 1
+    path: Assets/Scenes/BUILD SCENES/GameOver+Lose.unity
+    guid: a8123d035599f3e49a2b36e3b8078ce6
