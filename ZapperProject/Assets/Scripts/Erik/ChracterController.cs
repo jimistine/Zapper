@@ -13,8 +13,8 @@ public class ChracterController : MonoBehaviour {
 	public float PlayerHorizontalSpeed = 1;
 	public int CurrentWirePositionY;
 
-	int MaxWirePosition = 4;//May need to change max and min wires depending on chages to be implemented
-	int MinWirePosition = 1;
+	public int MaxWirePosition = 4;//May need to change max and min wires depending on chages to be implemented
+	public int MinWirePosition = 1;
 
 	public GameObject PlayerCurrentWire;
 	public GameObject ChargeObjects;
