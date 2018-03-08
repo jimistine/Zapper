@@ -90,7 +90,7 @@ public class Choreographer : MonoBehaviour {
             else
             {
                 //begin spawning; type, at rate, at a time.
-                float CurrentTimeInBeat = Time.time - BeatTimeNum[currentBeatNum - 1];
+                float CurrentTimeInBeat = Time.timeSinceLevelLoad - BeatTimeNum[currentBeatNum - 1];
                 //Debug.Log(CurrentTimeInBeat);
                 if (CurrentTimeInBeat >= BeatsValueRate[currentBeatNum]*MicroBeatNum)
                 {
@@ -111,7 +111,7 @@ public class Choreographer : MonoBehaviour {
                 }
             }
         }
-        if (Time.time > BeatTimeNum[currentBeatNum] && BeatTimeNum.Count > currentBeatNum+1)
+        if (Time.timeSinceLevelLoad > BeatTimeNum[currentBeatNum] && BeatTimeNum.Count > currentBeatNum+1)
         {
             currentBeatNum++;
             MicroBeatNum = 1;

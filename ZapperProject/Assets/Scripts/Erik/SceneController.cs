@@ -18,8 +18,10 @@ public class SceneController : MonoBehaviour {
     public GameObject WireThreeObject;
     public GameObject WireFourObject;
     public GameObject PlayerObject;
-    public GameObject MemoryObj;
     public GameObject ScoreUI;
+
+    public bool CannotLose;
+    public bool CannotWin;
 
     public ChracterController PlayerControl;
     public crowSpawner Spawner;
@@ -41,7 +43,11 @@ public class SceneController : MonoBehaviour {
         PlayerControl = FindObjectOfType<ChracterController>();
         Spawner = FindObjectOfType<crowSpawner>();
         ScoreUpdate();
-        UpdateHealth();
+        UpdateHealth(); 
+        
+        GameObject MemoryObj = GameObject.Find("Memory");
+
+        
 	}
     private void Update()
     {
@@ -49,7 +55,7 @@ public class SceneController : MonoBehaviour {
         {
             Debug.Log("Done");
             
-            if (FindBirds() == false)
+            if (FindBirds() == false && CannotWin == false)
             {
                 WinLevel();
             }
@@ -74,19 +80,25 @@ public class SceneController : MonoBehaviour {
         PlayerControl.enabled = false;
         //list all game objects to be destroyed
         List<GameObject> DeleteGameObjects = new List<GameObject>();
-        foreach(GameObject deleteGameObject in GameObject.FindGameObjectsWithTag("charge"))
-        {
-            DeleteGameObjects.Add(deleteGameObject);
-        }
-        foreach (GameObject deleteGameObject in GameObject.FindGameObjectsWithTag("Target"))
-        {
-            DeleteGameObjects.Add(deleteGameObject);
-        }
-        // delete all clone game objects
+       
+       
+            foreach (GameObject deleteGameObject in GameObject.FindGameObjectsWithTag("charge"))
+            {
+                DeleteGameObjects.Add(deleteGameObject);
+            }
+            foreach (GameObject deleteGameObject in GameObject.FindGameObjectsWithTag("Target"))
+            {
+                DeleteGameObjects.Add(deleteGameObject);
+            }
+            // delete all clone game objects
+          
         foreach (GameObject deleteThis in DeleteGameObjects)
-        {
-            Destroy(deleteThis);
-        }
+            {
+//            if()
+                Destroy(deleteThis);
+            }
+        
+        
         foreach(GameObject x in Spawner.enemies)
         {
             x.GetComponent<crowMove>().ChancetoSpawnCurrent = x.GetComponent<crowMove>().ChancetoSpawnStart;
@@ -120,7 +132,7 @@ public class SceneController : MonoBehaviour {
         ////Freeze Time?
         //load the win screen overlay
         //track previous wins, losses?
-        MemoryObj.GetComponent<Memory>().StoreMemory(RoundNum, true);
+        GameObject.Find("Memory").GetComponent<Memory>().StoreMemory(RoundNum, true);
         //each round needs a unique value
         SceneManager.LoadScene("GameOver+Win");
     }
@@ -133,7 +145,8 @@ public class SceneController : MonoBehaviour {
         ////Freeze Time?
         //load the lose screen overlay
         //track previous wins, losses?
-        MemoryObj.GetComponent<Memory>().StoreMemory(RoundNum, false);
+        //MemoryObj.GetComponent<Memory>().StoreMemory(RoundNum, false);
+        GameObject.Find("Memory").GetComponent<Memory>().StoreMemory(RoundNum, false);
         //each round needs a unique value
         SceneManager.LoadScene("GameOver+Lose");
     }
@@ -158,7 +171,7 @@ public class SceneController : MonoBehaviour {
             CurrentHealthNum++;
             CurrentHealthStore--;
         }
-        if (CurrentHealth == 0)
+        if (CurrentHealth == 0 && CannotLose == false)
         {
             LoseLevel();
         }

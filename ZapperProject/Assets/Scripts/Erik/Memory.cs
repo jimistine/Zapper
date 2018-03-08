@@ -6,6 +6,11 @@ public class Memory : MonoBehaviour {
     public bool WonFirstRound;
     public bool WonSecondRound;
     public bool WonThirdRound;
+    
+    public bool PlayedFirstRound;
+    public bool PlayedSecondRound;
+    public bool PlayedThirdRound;
+
 
     // Use this for initialization
     void Start () {
@@ -22,14 +27,17 @@ public class Memory : MonoBehaviour {
         if (x == 1)
         {
             WonFirstRound = y;
+            PlayedFirstRound = true;
         }
         if (x == 2)
         {
-            WonFirstRound = y;
+            WonSecondRound= y;
+            PlayedSecondRound= true;
         }
         if (x == 3)
         {
-            WonFirstRound = y;
+            WonThirdRound = y;
+            PlayedThirdRound= true;
         }
     }
 }
