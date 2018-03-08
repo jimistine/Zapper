@@ -803,7 +803,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &128518106
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1842,7 +1842,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &260646078
 Transform:
   m_ObjectHideFlags: 0
@@ -2996,7 +2996,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &560653869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3621,7 +3621,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &710327381
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3986,7 +3986,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &793257708
 Transform:
   m_ObjectHideFlags: 0
@@ -4280,7 +4280,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &883947134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5085,7 +5085,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1037954068
 Transform:
   m_ObjectHideFlags: 0
@@ -6573,9 +6573,10 @@ GameObject:
   - component: {fileID: 1268022665}
   - component: {fileID: 1268022661}
   - component: {fileID: 1268022663}
-  - component: {fileID: 1268022664}
   - component: {fileID: 1268022666}
   - component: {fileID: 1268022659}
+  - component: {fileID: 1268022669}
+  - component: {fileID: 1268022668}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -6610,7 +6611,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1268022660}
   selectedCommands:
-  - {fileID: 1268022664}
+  - {fileID: 1268022661}
   variables: []
   description: 
   stepPause: 0
@@ -6665,9 +6666,10 @@ MonoBehaviour:
   eventHandler: {fileID: 1268022666}
   commandList:
   - {fileID: 1268022665}
-  - {fileID: 1268022664}
   - {fileID: 1268022663}
   - {fileID: 1268022661}
+  - {fileID: 1268022669}
+  - {fileID: 1268022668}
   - {fileID: 1268022659}
 --- !u!114 &1268022661
 MonoBehaviour:
@@ -6682,8 +6684,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 2
   indentLevel: 0
-  soundClip: {fileID: 8300000, guid: e85d13aa031ae4da5aad6ceeb21deecd, type: 3}
-  volume: 1
+  soundClip: {fileID: 8300000, guid: 4e46f60605cb44b47ae0b7d04b70abd5, type: 3}
+  volume: 0.788
   waitUntilFinished: 1
 --- !u!4 &1268022662
 Transform:
@@ -6715,22 +6717,6 @@ MonoBehaviour:
     floatRef: {fileID: 0}
     floatVal: 2
   durationOLD: 0
---- !u!114 &1268022664
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1268022657}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 4
-  indentLevel: 0
-  soundClip: {fileID: 8300000, guid: f8821be20e213416dbb968aeaa3e1b52, type: 3}
-  volume: 0.063
-  waitUntilFinished: 0
 --- !u!114 &1268022665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6761,6 +6747,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 1268022660}
   waitForFrames: 1
+--- !u!114 &1268022668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1268022657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 10
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  durationOLD: 0
+--- !u!114 &1268022669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1268022657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207aecf668a0345388087ccf522f9957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 9
+  indentLevel: 0
+  duration: 0
+  targetAlpha: 1
+  waitUntilFinished: 1
+  fadeColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 1}
+  fadeTexture: {fileID: 0}
 --- !u!1 &1269346506
 GameObject:
   m_ObjectHideFlags: 0
@@ -8642,7 +8663,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1637360858
 Transform:
   m_ObjectHideFlags: 0
@@ -9340,8 +9361,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2027860283
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4c3858e0576f3429aa6b3decaa24720c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

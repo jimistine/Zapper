@@ -4755,13 +4755,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VO_Delay: 0
-  Hit_source: {fileID: 0}
-  Shoot_source: {fileID: 0}
-  FailSound_source: {fileID: 0}
+  Hit_source: {fileID: 1504388195}
+  Shoot_source: {fileID: 1986085758}
+  FailSound_source: {fileID: 2080914984}
   VO_source: {fileID: 0}
-  Shoot: {fileID: 0}
-  Fail: {fileID: 0}
-  Hit: {fileID: 0}
+  Shoot: {fileID: 8300000, guid: d9c57a9112493498799157d96964bb3f, type: 3}
+  Fail: {fileID: 8300000, guid: a5daa1eb9be1d4229ae0a3510483d049, type: 3}
+  Hit: {fileID: 8300000, guid: 04d5b3fe5a8004086a53aeec8ae15e3f, type: 3}
   VOClip_1: {fileID: 0}
   VOClip_2: {fileID: 0}
   VOClip_3: {fileID: 0}
@@ -6686,7 +6686,7 @@ MonoBehaviour:
   scrollPos: {x: 51.144386, y: 34.02683}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 400
+  blockViewHeight: 328
   zoom: 0.80797905
   scrollViewRect:
     serializedVersion: 2
@@ -6722,10 +6722,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
-  musicClip: {fileID: 8300000, guid: 417717377a08641c5afe48a49928abf2, type: 3}
+  musicClip: {fileID: 8300000, guid: 404f0e34936fb4be6b331225ece85a17, type: 3}
   atTime: 0
   loop: 1
-  fadeDuration: 1
+  fadeDuration: 2
 --- !u!114 &1268022660
 MonoBehaviour:
   m_ObjectHideFlags: 0

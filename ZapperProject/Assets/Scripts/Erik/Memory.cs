@@ -31,12 +31,12 @@ public class Memory : MonoBehaviour {
         }
         if (x == 2)
         {
-            WonFirstRound = y;
+            WonSecondRound= y;
             PlayedSecondRound= true;
         }
         if (x == 3)
         {
-            WonFirstRound = y;
+            WonThirdRound = y;
             PlayedThirdRound= true;
         }
     }

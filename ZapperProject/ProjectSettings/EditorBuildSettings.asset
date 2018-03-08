@@ -36,6 +36,9 @@ EditorBuildSettings:
     path: Assets/Scenes/BUILD SCENES/3_Round 3 Won.unity
     guid: e35a3b2a22cd2479cb7d74484904372c
   - enabled: 1
+    path: Assets/Scenes/BUILD SCENES/3_Round 3 Lost.unity
+    guid: 433eedee86b734c13bf335d85891841a
+  - enabled: 1
     path: Assets/Scenes/BUILD SCENES/4_Round 4 Won 3.unity
     guid: 6d3d58d55794647c99211888b613fcdd
   - enabled: 1
@@ -49,7 +52,7 @@ EditorBuildSettings:
     guid: 50f66b1a365a54996ae45f3163c5c90e
   - enabled: 1
     path: Assets/Scenes/BUILD SCENES/5_Prototype.unity
-    guid: 723c41f663d333c48a7fa4fe04cdf871
+    guid: c18a8127823354879b9d847730c95d0a
   - enabled: 1
     path: Assets/Scenes/BUILD SCENES/6_Crunch_New.unity
     guid: d34e63ef31b734b90a6d63f156e82651

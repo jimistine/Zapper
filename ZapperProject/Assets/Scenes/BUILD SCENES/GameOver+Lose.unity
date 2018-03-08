@@ -762,9 +762,7 @@ GameObject:
   - component: {fileID: 1411999122}
   - component: {fileID: 1411999121}
   - component: {fileID: 1411999120}
-  - component: {fileID: 1411999119}
   - component: {fileID: 1411999118}
-  - component: {fileID: 1411999117}
   - component: {fileID: 1411999112}
   - component: {fileID: 1411999107}
   - component: {fileID: 1411999106}
@@ -795,7 +793,6 @@ GameObject:
   - component: {fileID: 1411999132}
   - component: {fileID: 1411999131}
   - component: {fileID: 1411999130}
-  - component: {fileID: 1411999129}
   - component: {fileID: 1411999151}
   - component: {fileID: 1411999150}
   - component: {fileID: 1411999149}
@@ -816,6 +813,11 @@ GameObject:
   - component: {fileID: 1411999158}
   - component: {fileID: 1411999157}
   - component: {fileID: 1411999156}
+  - component: {fileID: 1411999161}
+  - component: {fileID: 1411999160}
+  - component: {fileID: 1411999117}
+  - component: {fileID: 1411999129}
+  - component: {fileID: 1411999119}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1093,7 +1095,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 2
+  itemId: 77
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
@@ -1121,18 +1123,17 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &1411999119
 MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 11462346, guid: 5e7fbc8d4eb714b279eeeef2262c1e1a,
-    type: 2}
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1411999102}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d7d417659cd54a6787f70f763950c34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentBlock: {fileID: 1411999120}
-  waitForFrames: 1
+  parentBlock: {fileID: 1411999138}
+  message: Play music fail (Lost)
 --- !u!114 &1411999120
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1147,7 +1148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -78.96111
+    x: -76.66027
     y: 86.95545
     width: 132.83014
     height: 40
@@ -1156,9 +1157,11 @@ MonoBehaviour:
   itemId: 0
   blockName: Activate Canvas
   description: 
-  eventHandler: {fileID: 1411999119}
+  eventHandler: {fileID: 1411999129}
   commandList:
+  - {fileID: 1411999161}
   - {fileID: 1411999141}
+  - {fileID: 1411999160}
   - {fileID: 1411999117}
   - {fileID: 1411999118}
   - {fileID: 1411999114}
@@ -1199,7 +1202,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 1411999120}
   selectedCommands: []
   variables: []
   description: 
@@ -1349,17 +1353,17 @@ MonoBehaviour:
   - {fileID: 1411999127}
 --- !u!114 &1411999129
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1411999102}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d7d417659cd54a6787f70f763950c34, type: 3}
+  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentBlock: {fileID: 1411999138}
-  message: Play music fail (Lost)
+  parentBlock: {fileID: 1411999120}
+  waitForFrames: 1
 --- !u!114 &1411999130
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1375,7 +1379,7 @@ MonoBehaviour:
   indentLevel: 0
   _sceneName:
     stringRef: {fileID: 0}
-    stringVal: 3_Round 3 Won
+    stringVal: 3_Round 3 Lost
   loadingImage: {fileID: 0}
   sceneNameOLD: 
 --- !u!114 &1411999131
@@ -1515,7 +1519,7 @@ MonoBehaviour:
   itemId: 33
   blockName: Muisc fail and VO (Lost)
   description: 
-  eventHandler: {fileID: 1411999129}
+  eventHandler: {fileID: 1411999119}
   commandList:
   - {fileID: 1411999137}
   - {fileID: 1411999136}
@@ -1571,7 +1575,7 @@ MonoBehaviour:
   indentLevel: 0
   soundClip: {fileID: 8300000, guid: 1b7a844ba09b04becadf3f4995c9449d, type: 3}
   volume: 1
-  waitUntilFinished: 0
+  waitUntilFinished: 1
 --- !u!114 &1411999142
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1905,6 +1909,36 @@ MonoBehaviour:
     floatRef: {fileID: 0}
     floatVal: 2
   durationOLD: 0
+--- !u!114 &1411999160
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1411999102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 76
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: 404f0e34936fb4be6b331225ece85a17, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
+--- !u!114 &1411999161
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1411999102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b359b09a7ba2e4af981f07c07f8af85a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 75
+  indentLevel: 0
 --- !u!1 &1447769011
 GameObject:
   m_ObjectHideFlags: 1
