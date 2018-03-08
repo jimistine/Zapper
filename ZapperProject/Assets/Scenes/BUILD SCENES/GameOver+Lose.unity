@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872716, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -818,6 +818,9 @@ GameObject:
   - component: {fileID: 1411999161}
   - component: {fileID: 1411999160}
   - component: {fileID: 1411999119}
+  - component: {fileID: 1411999164}
+  - component: {fileID: 1411999163}
+  - component: {fileID: 1411999162}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1133,7 +1136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 1411999138}
-  message: Play music fail (Lose)
+  message: Play music fail (Lost)
 --- !u!114 &1411999120
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1201,7 +1204,10 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1411999128}
+  - {fileID: 1411999142}
+  - {fileID: 1411999145}
+  - {fileID: 1411999148}
+  - {fileID: 1411999151}
   selectedCommands: []
   variables: []
   description: 
@@ -1589,8 +1595,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 428.77676
-    y: 240.40201
+    x: 590.98413
+    y: 242.70285
     width: 162.74101
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1647,8 +1653,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 422.58182
-    y: 187.48276
+    x: 584.7893
+    y: 189.7836
     width: 198.40399
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1705,8 +1711,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 419.8381
-    y: 135.71387
+    x: 582.0457
+    y: 138.01471
     width: 198.40399
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1763,8 +1769,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 420.54565
-    y: 85.09551
+    x: 582.75323
+    y: 87.396355
     width: 163.31622
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1949,6 +1955,62 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 0
   targetGameObjectOLD: {fileID: 0}
+--- !u!114 &1411999162
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1411999102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 81
+  indentLevel: 0
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: 3_Round 3 Lost
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
+--- !u!114 &1411999163
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1411999102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d7d417659cd54a6787f70f763950c34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 1411999164}
+  message: Reload Round 3
+--- !u!114 &1411999164
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1411999102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 419.39536
+    y: 88.54674
+    width: 132.25491
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 80
+  blockName: Reload round 3
+  description: 
+  eventHandler: {fileID: 1411999163}
+  commandList:
+  - {fileID: 1411999162}
 --- !u!1 &1447769011
 GameObject:
   m_ObjectHideFlags: 1

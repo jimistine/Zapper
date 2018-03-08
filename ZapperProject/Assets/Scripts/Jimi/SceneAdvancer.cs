@@ -30,7 +30,8 @@ public class SceneAdvancer : MonoBehaviour
 			Flowchart.BroadcastFungusMessage("Load round 4 (Won 2 Lost 1)");
 		}
 		//
-		if (MemoryOBJ.GetComponent<Memory>().WonSecondRound == false &&
+		if (MemoryOBJ.GetComponent<Memory>().WonFirstRound == false &&
+			MemoryOBJ.GetComponent<Memory>().WonSecondRound == false &&
 		    MemoryOBJ.GetComponent<Memory>().WonThirdRound)
 		{
 			Flowchart.BroadcastFungusMessage("Load round 4 (Won 1 Lost 2)");
@@ -65,6 +66,15 @@ public class SceneAdvancer : MonoBehaviour
 		    MemoryOBJ.GetComponent<Memory>().WonSecondRound == false)
 		{
 			Flowchart.BroadcastFungusMessage ("Play music fail (Lost)");
+		}
+
+		if (MemoryOBJ.GetComponent<Memory>().PlayedFirstRound &&
+			MemoryOBJ.GetComponent<Memory>().PlayedSecondRound &&
+			MemoryOBJ.GetComponent<Memory>().PlayedThirdRound &&
+			MemoryOBJ.GetComponent<Memory>().WonSecondRound == false &&
+			MemoryOBJ.GetComponent<Memory>().WonThirdRound == false)
+		{
+			Flowchart.BroadcastFungusMessage ("Reload Round 3");
 		}
 //		if (MemoryOBJ.GetComponent<Memory>().PlayedFirstRound &&
 //		    MemoryOBJ.GetComponent<Memory>().PlayedSecondRound &&
