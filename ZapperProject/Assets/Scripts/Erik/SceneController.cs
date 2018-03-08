@@ -18,8 +18,8 @@ public class SceneController : MonoBehaviour {
     public GameObject WireThreeObject;
     public GameObject WireFourObject;
     public GameObject PlayerObject;
-    public GameObject MemoryObj;
     public GameObject ScoreUI;
+
 
     public ChracterController PlayerControl;
     public crowSpawner Spawner;
@@ -41,7 +41,11 @@ public class SceneController : MonoBehaviour {
         PlayerControl = FindObjectOfType<ChracterController>();
         Spawner = FindObjectOfType<crowSpawner>();
         ScoreUpdate();
-        UpdateHealth();
+        UpdateHealth(); 
+        
+        GameObject MemoryObj = GameObject.Find("Memory");
+
+        
 	}
     private void Update()
     {
@@ -120,7 +124,7 @@ public class SceneController : MonoBehaviour {
         ////Freeze Time?
         //load the win screen overlay
         //track previous wins, losses?
-        MemoryObj.GetComponent<Memory>().StoreMemory(RoundNum, true);
+        GameObject.Find("Memory").GetComponent<Memory>().StoreMemory(RoundNum, true);
         //each round needs a unique value
         SceneManager.LoadScene("GameOver+Win");
     }
@@ -133,7 +137,8 @@ public class SceneController : MonoBehaviour {
         ////Freeze Time?
         //load the lose screen overlay
         //track previous wins, losses?
-        MemoryObj.GetComponent<Memory>().StoreMemory(RoundNum, false);
+        //MemoryObj.GetComponent<Memory>().StoreMemory(RoundNum, false);
+        GameObject.Find("Memory").GetComponent<Memory>().StoreMemory(RoundNum, false);
         //each round needs a unique value
         SceneManager.LoadScene("GameOver+Lose");
     }

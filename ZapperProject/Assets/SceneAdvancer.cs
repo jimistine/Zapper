@@ -15,6 +15,35 @@ public class SceneAdvancer : MonoBehaviour
 		MemoryOBJ = GameObject.FindGameObjectWithTag("Memory");
 	}
 
+	void Update()
+	{
+		// TO ROUND 4
+		if (MemoryOBJ.GetComponent<Memory>().WonFirstRound &&
+		    MemoryOBJ.GetComponent<Memory>().WonSecondRound &&
+		    MemoryOBJ.GetComponent<Memory>().WonThirdRound)
+		{
+			Flowchart.BroadcastFungusMessage("Load round 4 (Won 3)");
+		}
+		if (MemoryOBJ.GetComponent<Memory>().WonFirstRound &&
+		    MemoryOBJ.GetComponent<Memory>().WonSecondRound &&
+		    MemoryOBJ.GetComponent<Memory>().WonThirdRound == false)
+		{
+			Flowchart.BroadcastFungusMessage("Load round 4 (Won 2 Lost 1)");
+		}
+		if (MemoryOBJ.GetComponent<Memory>().WonFirstRound &&
+		    MemoryOBJ.GetComponent<Memory>().WonSecondRound == false &&
+		    MemoryOBJ.GetComponent<Memory>().WonThirdRound == false)
+		{
+			Flowchart.BroadcastFungusMessage("Load round 4 (Won 1 Lost 2)");
+		}
+		if (MemoryOBJ.GetComponent<Memory>().WonFirstRound == false &&
+		    MemoryOBJ.GetComponent<Memory>().WonSecondRound == false &&
+		    MemoryOBJ.GetComponent<Memory>().WonThirdRound == false)
+		{
+			Flowchart.BroadcastFungusMessage("Load round 4 (Lost 3)");
+		}
+	}
+	
 	public void CheckStateToLoad()
 	{
 		if (MemoryOBJ.GetComponent<Memory>().PlayedFirstRound &&
@@ -22,5 +51,35 @@ public class SceneAdvancer : MonoBehaviour
 		{
 			Flowchart.BroadcastFungusMessage ("Load Round 2");
 		}
+		if (MemoryOBJ.GetComponent<Memory>().PlayedFirstRound &&
+		    MemoryOBJ.GetComponent<Memory>().PlayedSecondRound &&
+		    MemoryOBJ.GetComponent<Memory>().PlayedThirdRound == false &&
+		    MemoryOBJ.GetComponent<Memory>().WonSecondRound)
+		{
+			Flowchart.BroadcastFungusMessage ("Play music fail (Won)");
+		}
+		if (MemoryOBJ.GetComponent<Memory>().PlayedFirstRound &&
+		    MemoryOBJ.GetComponent<Memory>().PlayedSecondRound &&
+		    MemoryOBJ.GetComponent<Memory>().PlayedThirdRound == false &&
+		    MemoryOBJ.GetComponent<Memory>().WonSecondRound == false)
+		{
+			Flowchart.BroadcastFungusMessage ("Play music fail (Lost)");
+		}
+		if (MemoryOBJ.GetComponent<Memory>().PlayedFirstRound &&
+		    MemoryOBJ.GetComponent<Memory>().PlayedSecondRound &&
+		    MemoryOBJ.GetComponent<Memory>().PlayedThirdRound)
+		{
+			Flowchart.BroadcastFungusMessage ("Load Prototype Scene");
+		}
 	}
+
+//	public void CheckOther()
+//	{
+//		if (MemoryOBJ.GetComponent<Memory>().PlayedFirstRound &&
+//		    MemoryOBJ.GetComponent<Memory>().PlayedSecondRound
+//			MemoryOBJ.GetComponent<Memory>().PlayedThirdRound == false)
+//		{
+//			Flowchart.BroadcastFungusMessage("Play music fail");
+//		}
+//	}
 }
