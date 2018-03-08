@@ -138,9 +138,9 @@ Transform:
   m_LocalPosition: {x: -6.17, y: -4.52, z: 0}
   m_LocalScale: {x: 7, y: 7, z: 1}
   m_Children:
-  - {fileID: 1999722902}
-  - {fileID: 1637360858}
   - {fileID: 260646078}
+  - {fileID: 1637360858}
+  - {fileID: 1999722902}
   - {fileID: 1567024760}
   m_Father: {fileID: 0}
   m_RootOrder: 10
@@ -1842,7 +1842,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &260646078
 Transform:
   m_ObjectHideFlags: 0
@@ -1854,7 +1854,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 21149635}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &260646079
 SpriteRenderer:
@@ -3621,7 +3621,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &710327381
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4280,7 +4280,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &883947134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5085,7 +5085,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1037954068
 Transform:
   m_ObjectHideFlags: 0
@@ -5097,7 +5097,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1905656804}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1037954069
 SpriteRenderer:
@@ -5963,7 +5963,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1905656804}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1149912755
 SpriteRenderer:
@@ -9971,9 +9971,9 @@ Transform:
   m_LocalPosition: {x: -6.17, y: -4.52, z: 0}
   m_LocalScale: {x: 7, y: 7, z: 1}
   m_Children:
-  - {fileID: 1149912754}
-  - {fileID: 793257708}
   - {fileID: 1037954068}
+  - {fileID: 793257708}
+  - {fileID: 1149912754}
   - {fileID: 1910310157}
   m_Father: {fileID: 0}
   m_RootOrder: 11
@@ -10408,7 +10408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62415bf0f3c9cd145ae8f794c35cc27b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RoundNum: 3
+  RoundNum: 4
   WireOneObject: {fileID: 235468868}
   WireTwoObject: {fileID: 1071027960}
   WireThreeObject: {fileID: 560653868}
@@ -10588,7 +10588,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 21149635}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1999722903
 SpriteRenderer:
