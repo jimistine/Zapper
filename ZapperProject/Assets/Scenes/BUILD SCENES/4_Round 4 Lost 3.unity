@@ -335,19 +335,21 @@ MonoBehaviour:
   Spawner: {fileID: 0}
   PlayerObj: {fileID: 0}
   currentBeatNum: 0
-  BeatNum: 000000000100000002000000
-  SpawnNum: 000000000000000000000000
-  SpawnType: 000000000000000000000000
+  BeatNum: 00000000010000000200000003000000
+  SpawnNum: 00000000000000005e1a000000000000
+  SpawnType: 00000000000000000200000000000000
   BeatTime:
   - 0
+  - 15
   - 60
   - 60
   RateOfSpawn:
   - 0
   - 0
+  - 0.1
   - 0
-  SpawnAtATime: 000000000000000000000000
-  WillCancleNormalSpawn: 000000
+  SpawnAtATime: 01000000010000000100000001000000
+  WillCancleNormalSpawn: 01010101
   WireCoreographer: {fileID: 883947133}
   WireNum: 4
 --- !u!1 &76909121
@@ -2228,19 +2230,21 @@ MonoBehaviour:
   Spawner: {fileID: 0}
   PlayerObj: {fileID: 0}
   currentBeatNum: 0
-  BeatNum: 000000000100000002000000
-  SpawnNum: 000000000000000000000000
-  SpawnType: 000000000000000000000000
+  BeatNum: 00000000010000000200000003000000
+  SpawnNum: 00000000000000005e1a000000000000
+  SpawnType: 00000000000000000200000000000000
   BeatTime:
   - 0
+  - 15
   - 60
   - 60
   RateOfSpawn:
   - 0
   - 0
+  - 0.1
   - 0
-  SpawnAtATime: 000000000000000000000000
-  WillCancleNormalSpawn: 000000
+  SpawnAtATime: 01000000010000000100000001000000
+  WillCancleNormalSpawn: 01010101
   WireCoreographer: {fileID: 560653868}
   WireNum: 3
 --- !u!1 &383881129
@@ -6572,7 +6576,6 @@ GameObject:
   - component: {fileID: 1268022660}
   - component: {fileID: 1268022665}
   - component: {fileID: 1268022661}
-  - component: {fileID: 1268022663}
   - component: {fileID: 1268022666}
   - component: {fileID: 1268022659}
   - component: {fileID: 1268022669}
@@ -6608,10 +6611,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1268022660}
-  selectedCommands:
-  - {fileID: 1268022661}
+  selectedBlocks: []
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -6625,7 +6626,7 @@ MonoBehaviour:
   luaBindingName: flowchart
 --- !u!114 &1268022659
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -6643,7 +6644,7 @@ MonoBehaviour:
   sceneNameOLD: 
 --- !u!114 &1268022660
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -6666,14 +6667,13 @@ MonoBehaviour:
   eventHandler: {fileID: 1268022666}
   commandList:
   - {fileID: 1268022665}
-  - {fileID: 1268022663}
   - {fileID: 1268022661}
   - {fileID: 1268022669}
   - {fileID: 1268022668}
   - {fileID: 1268022659}
 --- !u!114 &1268022661
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -6685,7 +6685,7 @@ MonoBehaviour:
   itemId: 2
   indentLevel: 0
   soundClip: {fileID: 8300000, guid: 4e46f60605cb44b47ae0b7d04b70abd5, type: 3}
-  volume: 0.788
+  volume: 0.6
   waitUntilFinished: 1
 --- !u!4 &1268022662
 Transform:
@@ -6700,9 +6700,9 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1268022663
+--- !u!114 &1268022665
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -6711,32 +6711,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 3
-  indentLevel: 0
-  _duration:
-    floatRef: {fileID: 0}
-    floatVal: 2
-  durationOLD: 0
---- !u!114 &1268022665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1268022657}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 30
+    floatVal: 15
   durationOLD: 0
 --- !u!114 &1268022666
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -6749,7 +6732,7 @@ MonoBehaviour:
   waitForFrames: 1
 --- !u!114 &1268022668
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -6766,7 +6749,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &1268022669
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -7410,19 +7393,21 @@ MonoBehaviour:
   Spawner: {fileID: 0}
   PlayerObj: {fileID: 0}
   currentBeatNum: 0
-  BeatNum: 000000000100000002000000
-  SpawnNum: 000000000000000000000000
-  SpawnType: 000000000000000000000000
+  BeatNum: 00000000010000000200000003000000
+  SpawnNum: 00000000000000005e1a000000000000
+  SpawnType: 00000000000000000200000000000000
   BeatTime:
   - 0
+  - 15
   - 60
   - 60
   RateOfSpawn:
   - 0
   - 0
+  - 0.1
   - 0
-  SpawnAtATime: 000000000000000000000000
-  WillCancleNormalSpawn: 000000
+  SpawnAtATime: 01000000010000000100000001000000
+  WillCancleNormalSpawn: 00000000
   WireCoreographer: {fileID: 235468868}
   WireNum: 1
 --- !u!1 &1414302622
@@ -7542,19 +7527,21 @@ MonoBehaviour:
   Spawner: {fileID: 0}
   PlayerObj: {fileID: 0}
   currentBeatNum: 0
-  BeatNum: 000000000100000002000000
-  SpawnNum: 000000000000000000000000
-  SpawnType: 000000000000000000000000
+  BeatNum: 00000000010000000200000003000000
+  SpawnNum: 00000000000000005e1a000000000000
+  SpawnType: 00000000000000000200000000000000
   BeatTime:
   - 0
+  - 15
   - 60
   - 60
   RateOfSpawn:
   - 0
   - 0
+  - 0.1
   - 0
-  SpawnAtATime: 000000000000000000000000
-  WillCancleNormalSpawn: 000000
+  SpawnAtATime: 01000000010000000100000001000000
+  WillCancleNormalSpawn: 00000000
   WireCoreographer: {fileID: 1071027960}
   WireNum: 2
 --- !u!1 &1442698799
@@ -9562,7 +9549,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemies:
   - {fileID: 1697413447292782, guid: 9756f49466963478ab45e6dd2e10bb96, type: 2}
-  - {fileID: 1697413447292782, guid: 9756f49466963478ab45e6dd2e10bb96, type: 2}
+  - {fileID: 1697413447292782, guid: af9a10b32d76440ae9429fb6084380ed, type: 2}
+  - {fileID: 1697413447292782, guid: 47264807c969c405183675a3e5528c39, type: 2}
   WireToSpawn: {fileID: 0}
   spawnRate: 1.1
   spawnRateMin: 2.25

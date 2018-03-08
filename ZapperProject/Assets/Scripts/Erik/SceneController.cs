@@ -20,6 +20,8 @@ public class SceneController : MonoBehaviour {
     public GameObject PlayerObject;
     public GameObject ScoreUI;
 
+    public bool CannotLose;
+    public bool CannotWin;
 
     public ChracterController PlayerControl;
     public crowSpawner Spawner;
@@ -53,7 +55,7 @@ public class SceneController : MonoBehaviour {
         {
             Debug.Log("Done");
             
-            if (FindBirds() == false)
+            if (FindBirds() == false && CannotWin == false)
             {
                 WinLevel();
             }
@@ -78,19 +80,25 @@ public class SceneController : MonoBehaviour {
         PlayerControl.enabled = false;
         //list all game objects to be destroyed
         List<GameObject> DeleteGameObjects = new List<GameObject>();
-        foreach(GameObject deleteGameObject in GameObject.FindGameObjectsWithTag("charge"))
-        {
-            DeleteGameObjects.Add(deleteGameObject);
-        }
-        foreach (GameObject deleteGameObject in GameObject.FindGameObjectsWithTag("Target"))
-        {
-            DeleteGameObjects.Add(deleteGameObject);
-        }
-        // delete all clone game objects
+       
+       
+            foreach (GameObject deleteGameObject in GameObject.FindGameObjectsWithTag("charge"))
+            {
+                DeleteGameObjects.Add(deleteGameObject);
+            }
+            foreach (GameObject deleteGameObject in GameObject.FindGameObjectsWithTag("Target"))
+            {
+                DeleteGameObjects.Add(deleteGameObject);
+            }
+            // delete all clone game objects
+          
         foreach (GameObject deleteThis in DeleteGameObjects)
-        {
-            Destroy(deleteThis);
-        }
+            {
+//            if()
+                Destroy(deleteThis);
+            }
+        
+        
         foreach(GameObject x in Spawner.enemies)
         {
             x.GetComponent<crowMove>().ChancetoSpawnCurrent = x.GetComponent<crowMove>().ChancetoSpawnStart;
@@ -163,7 +171,7 @@ public class SceneController : MonoBehaviour {
             CurrentHealthNum++;
             CurrentHealthStore--;
         }
-        if (CurrentHealth == 0)
+        if (CurrentHealth == 0 && CannotLose == false)
         {
             LoseLevel();
         }

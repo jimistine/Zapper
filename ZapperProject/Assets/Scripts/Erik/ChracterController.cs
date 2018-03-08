@@ -161,7 +161,7 @@ public class ChracterController : MonoBehaviour {
 			ChargingAmount = 0;
 		}
 
-		if (Input.GetKey(KeyCode.Space)&& CanShoot == true)
+		if (Input.GetKey(KeyCode.Space)&& CanShoot == true && Time.timeSinceLevelLoad > 2)
 		{
 			ChangeWire();
 
@@ -173,7 +173,7 @@ public class ChracterController : MonoBehaviour {
 		} //instantiate a "Charge" object
 
 
-		if (Input.GetKeyUp(KeyCode.Space) && CanShoot == true)
+		if (Input.GetKeyUp(KeyCode.Space) && CanShoot == true && Time.timeSinceLevelLoad >2)
 
 		{
 

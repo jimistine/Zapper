@@ -3093,7 +3093,7 @@ MonoBehaviour:
   StartPositionRight: 0
   PlayerPositionOffsetY: 0
   ChargesPositionOffsetY: 0
-  canSpawn: 0
+  canSpawn: 1
 --- !u!61 &560653870
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4377,7 +4377,7 @@ MonoBehaviour:
   StartPositionRight: 0
   PlayerPositionOffsetY: 0
   ChargesPositionOffsetY: 0
-  canSpawn: 0
+  canSpawn: 1
 --- !u!61 &883947135
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5254,7 +5254,7 @@ MonoBehaviour:
   AM: {fileID: 0}
   PlayerHorizontalSpeed: 1
   CurrentWirePositionY: 0
-  MaxWirePosition: 2
+  MaxWirePosition: 4
   MinWirePosition: 1
   PlayerCurrentWire: {fileID: 0}
   ChargeObjects: {fileID: 1902694361661754, guid: 6285e976f16384ae99ccac31a82d5112,
@@ -6680,6 +6680,7 @@ GameObject:
   - component: {fileID: 1268022664}
   - component: {fileID: 1268022683}
   - component: {fileID: 1268022661}
+  - component: {fileID: 1268022695}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -6713,8 +6714,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1268022660}
-  selectedCommands:
-  - {fileID: 1268022659}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -6768,6 +6768,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 1268022663}
   commandList:
+  - {fileID: 1268022695}
   - {fileID: 1268022667}
   - {fileID: 1268022659}
   - {fileID: 1268022694}
@@ -6914,7 +6915,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 3
+    floatVal: 2
   durationOLD: 0
 --- !u!114 &1268022668
 MonoBehaviour:
@@ -7413,6 +7414,19 @@ MonoBehaviour:
   soundClip: {fileID: 8300000, guid: a2a8ab35102314b22a47d0ebf50f1dc7, type: 3}
   volume: 1
   waitUntilFinished: 0
+--- !u!114 &1268022695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1268022657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b359b09a7ba2e4af981f07c07f8af85a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 37
+  indentLevel: 0
 --- !u!1 &1269346506
 GameObject:
   m_ObjectHideFlags: 0
@@ -10192,8 +10206,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: 1697413447292782, guid: 9756f49466963478ab45e6dd2e10bb96, type: 2}
-  - {fileID: 1697413447292782, guid: 9756f49466963478ab45e6dd2e10bb96, type: 2}
+  - {fileID: 1697413447292782, guid: 2ae2cabbe9ae94fcb984c20926dd9852, type: 2}
+  - {fileID: 1697413447292782, guid: 2ae2cabbe9ae94fcb984c20926dd9852, type: 2}
   WireToSpawn: {fileID: 0}
   spawnRate: 1.1
   spawnRateMin: 2.25
@@ -11311,6 +11325,8 @@ MonoBehaviour:
   WireFourObject: {fileID: 883947133}
   PlayerObject: {fileID: 0}
   ScoreUI: {fileID: 235144138}
+  CannotLose: 1
+  CannotWin: 1
   PlayerControl: {fileID: 0}
   Spawner: {fileID: 0}
   SpawnerObject: {fileID: 1761539914}

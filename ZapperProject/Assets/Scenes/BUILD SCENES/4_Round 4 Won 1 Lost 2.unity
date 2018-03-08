@@ -335,19 +335,21 @@ MonoBehaviour:
   Spawner: {fileID: 0}
   PlayerObj: {fileID: 0}
   currentBeatNum: 0
-  BeatNum: 000000000100000002000000
-  SpawnNum: 000000000000000000000000
-  SpawnType: 000000000000000000000000
+  BeatNum: 00000000010000000200000003000000
+  SpawnNum: 00000000000000005e1a000000000000
+  SpawnType: 00000000000000000200000000000000
   BeatTime:
   - 0
+  - 15
   - 60
   - 60
   RateOfSpawn:
   - 0
   - 0
+  - 0.1
   - 0
-  SpawnAtATime: 000000000000000000000000
-  WillCancleNormalSpawn: 000000
+  SpawnAtATime: 01000000010000000100000001000000
+  WillCancleNormalSpawn: 00000000
   WireCoreographer: {fileID: 883947133}
   WireNum: 4
 --- !u!1 &76909121
@@ -2228,19 +2230,21 @@ MonoBehaviour:
   Spawner: {fileID: 0}
   PlayerObj: {fileID: 0}
   currentBeatNum: 0
-  BeatNum: 000000000100000002000000
-  SpawnNum: 000000000000000000000000
-  SpawnType: 000000000000000000000000
+  BeatNum: 00000000010000000200000003000000
+  SpawnNum: 00000000000000005e1a000000000000
+  SpawnType: 00000000000000000200000000000000
   BeatTime:
   - 0
+  - 15
   - 60
   - 60
   RateOfSpawn:
   - 0
   - 0
+  - 0.1
   - 0
-  SpawnAtATime: 000000000000000000000000
-  WillCancleNormalSpawn: 000000
+  SpawnAtATime: 01000000010000000100000001000000
+  WillCancleNormalSpawn: 00000000
   WireCoreographer: {fileID: 560653868}
   WireNum: 3
 --- !u!1 &383881129
@@ -3017,7 +3021,7 @@ MonoBehaviour:
   StartPositionRight: 0
   PlayerPositionOffsetY: 0
   ChargesPositionOffsetY: 0
-  canSpawn: 0
+  canSpawn: 1
 --- !u!61 &560653870
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4301,7 +4305,7 @@ MonoBehaviour:
   StartPositionRight: 0
   PlayerPositionOffsetY: 0
   ChargesPositionOffsetY: 0
-  canSpawn: 0
+  canSpawn: 1
 --- !u!61 &883947135
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4665,7 +4669,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VO_Delay: 0
   Hit_source: {fileID: 1504388195}
-  Shoot_source: {fileID: 1947654310}
+  Shoot_source: {fileID: 1986085758}
   FailSound_source: {fileID: 2080914984}
   VO_source: {fileID: 0}
   Shoot: {fileID: 8300000, guid: d9c57a9112493498799157d96964bb3f, type: 3}
@@ -5178,7 +5182,7 @@ MonoBehaviour:
   AM: {fileID: 0}
   PlayerHorizontalSpeed: 1
   CurrentWirePositionY: 0
-  MaxWirePosition: 2
+  MaxWirePosition: 4
   MinWirePosition: 1
   PlayerCurrentWire: {fileID: 0}
   ChargeObjects: {fileID: 1902694361661754, guid: be122bce40d3b4352b8bf462feaea202,
@@ -6570,15 +6574,12 @@ GameObject:
   - component: {fileID: 1268022662}
   - component: {fileID: 1268022658}
   - component: {fileID: 1268022659}
-  - component: {fileID: 1268022668}
-  - component: {fileID: 1268022667}
-  - component: {fileID: 1268022666}
   - component: {fileID: 1268022665}
   - component: {fileID: 1268022664}
   - component: {fileID: 1268022663}
   - component: {fileID: 1268022661}
   - component: {fileID: 1268022660}
-  - component: {fileID: 1268022669}
+  - component: {fileID: 1268022666}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -6612,7 +6613,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1268022659}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1268022664}
   variables: []
   description: 
   stepPause: 0
@@ -6646,11 +6648,8 @@ MonoBehaviour:
   itemId: 0
   blockName: Oh no... (Copy)
   description: 
-  eventHandler: {fileID: 1268022669}
+  eventHandler: {fileID: 1268022666}
   commandList:
-  - {fileID: 1268022668}
-  - {fileID: 1268022667}
-  - {fileID: 1268022666}
   - {fileID: 1268022665}
   - {fileID: 1268022664}
   - {fileID: 1268022663}
@@ -6667,7 +6666,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 8
+  itemId: 5
   indentLevel: 0
   _sceneName:
     stringRef: {fileID: 0}
@@ -6685,7 +6684,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 7
+  itemId: 4
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
@@ -6715,7 +6714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 207aecf668a0345388087ccf522f9957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 6
+  itemId: 3
   indentLevel: 0
   duration: 0
   targetAlpha: 1
@@ -6730,64 +6729,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1268022657}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4015e84616cc45cfb498561373899d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 5
-  indentLevel: 0
-  volume: 0
-  fadeDuration: 0
-  waitUntilFinished: 1
---- !u!114 &1268022665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1268022657}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 4
-  indentLevel: 0
-  soundClip: {fileID: 8300000, guid: e85d13aa031ae4da5aad6ceeb21deecd, type: 3}
-  volume: 1
-  waitUntilFinished: 1
---- !u!114 &1268022666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1268022657}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 3
-  indentLevel: 0
-  _duration:
-    floatRef: {fileID: 0}
-    floatVal: 2
-  durationOLD: 0
---- !u!114 &1268022667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1268022657}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 2
   indentLevel: 0
-  soundClip: {fileID: 8300000, guid: f8821be20e213416dbb968aeaa3e1b52, type: 3}
-  volume: 0.05
-  waitUntilFinished: 0
---- !u!114 &1268022668
+  soundClip: {fileID: 8300000, guid: 4e46f60605cb44b47ae0b7d04b70abd5, type: 3}
+  volume: 0.5
+  waitUntilFinished: 1
+--- !u!114 &1268022665
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -6802,9 +6752,9 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 30
+    floatVal: 15
   durationOLD: 0
---- !u!114 &1268022669
+--- !u!114 &1268022666
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -7445,19 +7395,21 @@ MonoBehaviour:
   Spawner: {fileID: 0}
   PlayerObj: {fileID: 0}
   currentBeatNum: 0
-  BeatNum: 000000000100000002000000
-  SpawnNum: 000000000000000000000000
-  SpawnType: 000000000000000000000000
+  BeatNum: 00000000010000000200000003000000
+  SpawnNum: 00000000000000005e1a000000000000
+  SpawnType: 00000000000000000200000000000000
   BeatTime:
   - 0
+  - 15
   - 60
   - 60
   RateOfSpawn:
   - 0
   - 0
+  - 0.1
   - 0
-  SpawnAtATime: 000000000000000000000000
-  WillCancleNormalSpawn: 000000
+  SpawnAtATime: 01000000010000000100000001000000
+  WillCancleNormalSpawn: 00010000
   WireCoreographer: {fileID: 235468868}
   WireNum: 1
 --- !u!1 &1414302622
@@ -7577,19 +7529,21 @@ MonoBehaviour:
   Spawner: {fileID: 0}
   PlayerObj: {fileID: 0}
   currentBeatNum: 0
-  BeatNum: 000000000100000002000000
-  SpawnNum: 000000000000000000000000
-  SpawnType: 000000000000000000000000
+  BeatNum: 00000000010000000200000003000000
+  SpawnNum: 00000000000000005e1a000000000000
+  SpawnType: 00000000000000000200000000000000
   BeatTime:
   - 0
+  - 15
   - 60
   - 60
   RateOfSpawn:
   - 0
   - 0
+  - 0.1
   - 0
-  SpawnAtATime: 000000000000000000000000
-  WillCancleNormalSpawn: 000000
+  SpawnAtATime: 01000000010000000100000001000000
+  WillCancleNormalSpawn: 00000000
   WireCoreographer: {fileID: 1071027960}
   WireNum: 2
 --- !u!1 &1442698799
@@ -9597,7 +9551,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemies:
   - {fileID: 1697413447292782, guid: 9756f49466963478ab45e6dd2e10bb96, type: 2}
-  - {fileID: 1697413447292782, guid: 9756f49466963478ab45e6dd2e10bb96, type: 2}
+  - {fileID: 1697413447292782, guid: af9a10b32d76440ae9429fb6084380ed, type: 2}
+  - {fileID: 1697413447292782, guid: 47264807c969c405183675a3e5528c39, type: 2}
   WireToSpawn: {fileID: 0}
   spawnRate: 1.1
   spawnRateMin: 2.25

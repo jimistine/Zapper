@@ -7259,8 +7259,8 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 60
-  - 60
+  - 30
+  - 30
   RateOfSpawn:
   - 0
   - 0
@@ -7391,8 +7391,8 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 60
-  - 60
+  - 30
+  - 30
   RateOfSpawn:
   - 0
   - 0
@@ -9406,10 +9406,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemies:
   - {fileID: 1697413447292782, guid: 9756f49466963478ab45e6dd2e10bb96, type: 2}
-  - {fileID: 1697413447292782, guid: 9756f49466963478ab45e6dd2e10bb96, type: 2}
+  - {fileID: 1697413447292782, guid: af9a10b32d76440ae9429fb6084380ed, type: 2}
   WireToSpawn: {fileID: 0}
   spawnRate: 1.1
-  spawnRateMin: 2.25
+  spawnRateMin: 2
   spawnRateMax: 0.5
   gapSpace: 0.2
   TotalCrowsForLevel: 0

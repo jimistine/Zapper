@@ -5267,7 +5267,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SC: {fileID: 0}
   AM: {fileID: 0}
-  PlayerHorizontalSpeed: 1
+  PlayerHorizontalSpeed: 0
   CurrentWirePositionY: 0
   MaxWirePosition: 2
   MinWirePosition: 1
@@ -6722,7 +6722,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
-  musicClip: {fileID: 8300000, guid: 404f0e34936fb4be6b331225ece85a17, type: 3}
+  musicClip: {fileID: 8300000, guid: b9823917fac124845b565fa6710091f6, type: 3}
   atTime: 0
   loop: 1
   fadeDuration: 2
@@ -10566,6 +10566,8 @@ MonoBehaviour:
   WireFourObject: {fileID: 883947133}
   PlayerObject: {fileID: 0}
   ScoreUI: {fileID: 464300737}
+  CannotLose: 0
+  CannotWin: 0
   PlayerControl: {fileID: 0}
   Spawner: {fileID: 0}
   SpawnerObject: {fileID: 1761539914}

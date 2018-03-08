@@ -3017,7 +3017,7 @@ MonoBehaviour:
   StartPositionRight: 0
   PlayerPositionOffsetY: 0
   ChargesPositionOffsetY: 0
-  canSpawn: 0
+  canSpawn: 1
 --- !u!61 &560653870
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4301,7 +4301,7 @@ MonoBehaviour:
   StartPositionRight: 0
   PlayerPositionOffsetY: 0
   ChargesPositionOffsetY: 0
-  canSpawn: 0
+  canSpawn: 1
 --- !u!61 &883947135
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4664,13 +4664,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VO_Delay: 0
-  Hit_source: {fileID: 0}
-  Shoot_source: {fileID: 0}
-  FailSound_source: {fileID: 0}
+  Hit_source: {fileID: 1504388195}
+  Shoot_source: {fileID: 1986085758}
+  FailSound_source: {fileID: 2080914984}
   VO_source: {fileID: 0}
-  Shoot: {fileID: 0}
-  Fail: {fileID: 0}
-  Hit: {fileID: 0}
+  Shoot: {fileID: 8300000, guid: d9c57a9112493498799157d96964bb3f, type: 3}
+  Fail: {fileID: 8300000, guid: a5daa1eb9be1d4229ae0a3510483d049, type: 3}
+  Hit: {fileID: 8300000, guid: 04d5b3fe5a8004086a53aeec8ae15e3f, type: 3}
   VOClip_1: {fileID: 0}
   VOClip_2: {fileID: 0}
   VOClip_3: {fileID: 0}
@@ -5178,7 +5178,7 @@ MonoBehaviour:
   AM: {fileID: 0}
   PlayerHorizontalSpeed: 1
   CurrentWirePositionY: 0
-  MaxWirePosition: 2
+  MaxWirePosition: 4
   MinWirePosition: 1
   PlayerCurrentWire: {fileID: 0}
   ChargeObjects: {fileID: 1902694361661754, guid: be122bce40d3b4352b8bf462feaea202,
@@ -9406,10 +9406,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemies:
   - {fileID: 1697413447292782, guid: 9756f49466963478ab45e6dd2e10bb96, type: 2}
-  - {fileID: 1697413447292782, guid: 9756f49466963478ab45e6dd2e10bb96, type: 2}
+  - {fileID: 1697413447292782, guid: af9a10b32d76440ae9429fb6084380ed, type: 2}
   WireToSpawn: {fileID: 0}
   spawnRate: 1.1
-  spawnRateMin: 2.25
+  spawnRateMin: 2
   spawnRateMax: 0.5
   gapSpace: 0.2
   TotalCrowsForLevel: 0
