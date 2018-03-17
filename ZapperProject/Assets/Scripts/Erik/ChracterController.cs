@@ -27,7 +27,7 @@ public class ChracterController : MonoBehaviour {
 	public float playerY;
 	public float playerX;
 
-	public Animator anim; 
+	public static Animator anim; 
 
 
 	public void Start () {
@@ -51,7 +51,7 @@ public class ChracterController : MonoBehaviour {
 		else { transform.position = new Vector3(-5.5f, SC.WireOneObject.transform.position.y + 0.5f); }
 
 	}
-	void FindCurrentWire()
+	public void FindCurrentWire()
 	{
 		if (CurrentWirePositionY == 1)
 		{
@@ -187,6 +187,12 @@ public class ChracterController : MonoBehaviour {
 
 			Debug.Log("Charged to"+ChargingAmount);
 		}
+
+		if (Input.GetKeyDown (KeyCode.A)) {
+
+
+			anim.SetBool ("Zap_Bool", true); 
+		}
 	}
 
 	IEnumerator Anim_shoot () {
@@ -200,6 +206,15 @@ public class ChracterController : MonoBehaviour {
 
 	}
 
+	public void Clyde_zap () {
+
+		anim.SetBool ("Zap_Bool", true); 
+	}
+
+	public void Clyde_normal () {
+
+		anim.SetBool ("Zap_Bool", false); 
+	}
 
 
 }

@@ -53,6 +53,7 @@ public class crowMove : MonoBehaviour {
 			//Destroy bird for now will need a fail state animation for birds hittitng fuze box
 			Destroy(gameObject);
 		}
+			
 	}
 
 	IEnumerator wait () {
@@ -97,5 +98,9 @@ public class crowMove : MonoBehaviour {
 		yield return null; 
 
 	}
+
+
+
+		
 
 }
