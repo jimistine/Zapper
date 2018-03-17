@@ -13,12 +13,29 @@ public class Charge : MonoBehaviour {
 
 	public Sprite new_Sprite; 
 
+	public GameObject player;  
+	public GameObject fusebox1; 
+
+	public GameObject wire1;
+	public GameObject wire2;
+	public GameObject wire3;
+	public GameObject wire4; 
+
 
 	// Use this for initialization
 	void Start () {
 
 		SC = FindObjectOfType<SceneController>();
 		AM = FindObjectOfType<AudioManager>();
+		player = GameObject.FindWithTag ("Player"); 
+		fusebox1 = GameObject.Find ("fusebox"); 
+
+		wire1 = GameObject.Find ("Wire_1"); 
+		wire2 = GameObject.Find ("Wire_2"); 
+		wire3 = GameObject.Find ("Wire_3"); 
+		wire4 = GameObject.Find ("Wire_4"); 
+	
+		 
 	}
 
 	// Update is called once per frame
@@ -57,7 +74,7 @@ public class Charge : MonoBehaviour {
 		}
 		if (transform.position.x > ChargesCurrentWire.GetComponent<Wires>().AnchorRight+0.5f || transform.position.x < ChargesCurrentWire.GetComponent<Wires>().AnchorLeft-0.5f)
 		{
-			ChargeFailState();
+			gameObject.GetComponent<Charge>().ChargeFailState();
 		}
 	}
 	private void OnTriggerEnter2D(Collider2D collision)
@@ -83,7 +100,9 @@ public class Charge : MonoBehaviour {
 
 				SC.Score += collision.gameObject.GetComponent<crowMove>().ScoreForBird;
 				SC.ScoreUpdate();
+
 				collision.gameObject.GetComponent<crowMove>().CrowZap();  //run the function on the crowScript 
+
 				//Destroy(collision.gameObject);
 				AM.Hit_source.PlayOneShot(AM.Hit);
 				SC.Score++;
@@ -103,13 +122,45 @@ public class Charge : MonoBehaviour {
 			}
 		}
 	}
+
 	public void ChargeFailState()
+
 	{
 		Debug.Log("Charge Fail State");
+		Debug.Log (ChargesCurrentWire); 
 		AM.FailSound_source.PlayOneShot(AM.Fail);
         //destroy for now will have to change things depeneding on how we record fail states
-        SC.CurrentHealth--;
-        SC.RestartLevel();
+
+		//fusebox1.GetComponent<fusebox_script> ().fusebox_zap ();
+
+		if (SC.WireOneObject != null) {
+			if (ChargesCurrentWire == SC.WireOneObject) { 
+				wire1.GetComponent<Wires> ().wire_1_zap (); 
+			}
+		}
+
+		if (SC.WireTwoObject != null) {	
+			if (ChargesCurrentWire == SC.WireTwoObject) {
+				wire2.GetComponent<Wires> ().wire_2_zap (); 
+			}
+		}
+
+		if (SC.WireThreeObject != null) {
+			if (ChargesCurrentWire == SC.WireThreeObject) {
+				wire3.GetComponent<Wires> ().wire_3_zap (); 
+			}
+		}
+
+		if (SC.WireFourObject != null) {
+			if (ChargesCurrentWire == SC.WireFourObject) {
+				wire4.GetComponent<Wires> ().wire_4_zap (); 
+			}
+		}
+
+		player.GetComponent<ChracterController> ().Clyde_zap ();
+
+		StartCoroutine (RestartLevel ());  
+
 	}
 
 	public void ChangeSprite() {
@@ -122,4 +173,21 @@ public class Charge : MonoBehaviour {
 		yield return new WaitForSeconds (1f); 
 
 	}
+
+	IEnumerator RestartLevel () { 
+		
+		yield return new WaitForSeconds (1.2f); 
+		SC.CurrentHealth--;
+		SC.RestartLevel();
+
+		player.GetComponent<ChracterController> ().Clyde_normal (); 
+		fusebox1.GetComponent<fusebox_script> ().fusebox_normal ();
+		wire1.GetComponent<Wires> ().wire_1_normal (); 
+		wire2.GetComponent<Wires> ().wire_2_normal (); 
+		wire3.GetComponent<Wires> ().wire_3_normal (); 
+		wire4.GetComponent<Wires> ().wire_4_normal (); 
+	
+
+	}
+
 }
