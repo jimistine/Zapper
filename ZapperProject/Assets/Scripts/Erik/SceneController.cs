@@ -22,6 +22,7 @@ public class SceneController : MonoBehaviour {
 
     public bool CannotLose;
     public bool CannotWin;
+    public bool isMountainLevel;
 
     public ChracterController PlayerControl;
     public crowSpawner Spawner;
@@ -29,7 +30,7 @@ public class SceneController : MonoBehaviour {
 
     public float DelayBeforeStartTime;
     public float TotalLevelTime;
-    public int Score;
+    public int Score = 0;
 
     public bool LevelSelectGateOpen;
 

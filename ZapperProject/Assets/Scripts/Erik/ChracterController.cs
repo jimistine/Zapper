@@ -12,6 +12,7 @@ public class ChracterController : MonoBehaviour {
 	public AudioManager AM;
 	public float PlayerHorizontalSpeed = 1;
 	public int CurrentWirePositionY;
+    public int CurrentWirePositionX;
 
 	public int MaxWirePosition = 4;//May need to change max and min wires depending on chages to be implemented
 	public int MinWirePosition = 1;
@@ -20,6 +21,7 @@ public class ChracterController : MonoBehaviour {
 	public GameObject ChargeObjects;
 
 	public bool CanShoot = true;
+    public bool CanMoveLeftRight = true;
 	public float ChargingAmount;
 	public float ChargingSpeed = 1;
 	public int ChargingLimit = 100;
@@ -27,7 +29,8 @@ public class ChracterController : MonoBehaviour {
 	public float playerY;
 	public float playerX;
 
-	public static Animator anim; 
+	public static Animator anim;
+    bool IsinStartPosition = false;
 
 
 	public void Start () {
@@ -35,54 +38,77 @@ public class ChracterController : MonoBehaviour {
 
 		anim = GetComponent<Animator> (); 
 
-
 		SC = FindObjectOfType<SceneController>();
 		AM = FindObjectOfType<AudioManager>();
 
-
-
 		CurrentWirePositionY = 1;
-		ChangeWire();
-
-		if (SC.WireOneObject.GetComponent<Wires>().PlayerStartRight == true)
-		{
-			transform.position = new Vector3(5.5f, SC.WireOneObject.transform.position.y + 0.5f);
-		}
-		else { transform.position = new Vector3(-5.5f, SC.WireOneObject.transform.position.y + 0.5f); }
+        CurrentWirePositionX = 1;
 
 	}
 	public void FindCurrentWire()
 	{
-		if (CurrentWirePositionY == 1)
-		{
-			PlayerCurrentWire = SC.WireOneObject;
-		}
-		if (CurrentWirePositionY == 2)
-		{
-			PlayerCurrentWire = SC.WireTwoObject;
-		}
-		if (CurrentWirePositionY == 3)
-		{
-			PlayerCurrentWire = SC.WireThreeObject;
-		}
-		if (CurrentWirePositionY == 4)
-		{
-			PlayerCurrentWire = SC.WireFourObject;
-		}
-	}
+        if (SC.isMountainLevel == false)
+        {
+            if (CurrentWirePositionY == 1)
+            {
+                PlayerCurrentWire = SC.WireOneObject;
+            }
+            if (CurrentWirePositionY == 2)
+            {
+                PlayerCurrentWire = SC.WireTwoObject;
+            }
+            if (CurrentWirePositionY == 3)
+            {
+                PlayerCurrentWire = SC.WireThreeObject;
+            }
+            if (CurrentWirePositionY == 4)
+            {
+                PlayerCurrentWire = SC.WireFourObject;
+            }
+        }
+        if (SC.isMountainLevel == true)
+        {
+            if (CurrentWirePositionX == 1)
+            {
+                PlayerCurrentWire = SC.WireOneObject;
+            }
+            if (CurrentWirePositionX == 2)
+            {
+                PlayerCurrentWire = SC.WireTwoObject;
+            }
+            if (CurrentWirePositionX == 3)
+            {
+                PlayerCurrentWire = SC.WireThreeObject;
+            }
+            if (CurrentWirePositionX == 4)
+            {
+                PlayerCurrentWire = SC.WireFourObject;
+            }
+        }
+
+    }
 	void ChangeWire()
 	{
 		FindCurrentWire();
 		Wires currentWireScrpt = PlayerCurrentWire.GetComponent<Wires>();
-		transform.position = new Vector3(currentWireScrpt.PlayersStartPositionX, currentWireScrpt.PlayersStartPositionY);
-		if (PlayerCurrentWire.GetComponent<Wires>().PlayerStartRight == true)
-		{
-			gameObject.GetComponent<SpriteRenderer>().flipX = false;
-		}
-		if (PlayerCurrentWire.GetComponent<Wires>().PlayerStartRight == false)
-		{
-			gameObject.GetComponent<SpriteRenderer>().flipX = true;
-		}
+
+        if (SC.isMountainLevel == false)
+        {
+            transform.position = new Vector3(currentWireScrpt.PlayersStartPositionX, currentWireScrpt.PlayersStartPositionY);
+            if (PlayerCurrentWire.GetComponent<Wires>().PlayerStartRight == true)
+            {
+                gameObject.GetComponent<SpriteRenderer>().flipX = false;
+            }
+            if (PlayerCurrentWire.GetComponent<Wires>().PlayerStartRight == false)
+            {
+                gameObject.GetComponent<SpriteRenderer>().flipX = true;
+            }
+        }
+        else if (SC.isMountainLevel == true)
+        {
+            transform.position = new Vector3(currentWireScrpt.PlayersStartPositionX, currentWireScrpt.PlayersStartPositionY);
+        }
+		
 	}
 	void CreateChargeObject()
 	{
@@ -93,6 +119,11 @@ public class ChracterController : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+        if(IsinStartPosition == false)
+        {
+            ChangeWire();
+            IsinStartPosition = true;
+        }
 
 		playerX = gameObject.transform.position.x;
 		playerY = gameObject.transform.position.y;
@@ -100,63 +131,97 @@ public class ChracterController : MonoBehaviour {
 		anim.SetBool ("Run_Bool", false); 
 		//		anim.SetBool ("Shoot_Bool", false); 
 
+        if(SC.isMountainLevel == false)
+        {
+            if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                if (Input.GetKeyDown(KeyCode.UpArrow) && CurrentWirePositionY < MaxWirePosition)
+                {
+                    CurrentWirePositionY++;
+                }
+                else if (Input.GetKeyDown(KeyCode.UpArrow) && CurrentWirePositionY == MaxWirePosition)
+                {
+                    CurrentWirePositionY = MinWirePosition;
+                }
 
-		if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
-		{
-			if (Input.GetKeyDown(KeyCode.UpArrow) && CurrentWirePositionY < MaxWirePosition)
-			{
-				CurrentWirePositionY++;
-			}
-			else if (Input.GetKeyDown(KeyCode.UpArrow) && CurrentWirePositionY == MaxWirePosition)
-			{
-				CurrentWirePositionY = MinWirePosition;
-			}
-
-			if (Input.GetKeyDown(KeyCode.DownArrow) && CurrentWirePositionY > MinWirePosition)
-			{
-				CurrentWirePositionY--;
-			}
-			else if (Input.GetKeyDown(KeyCode.DownArrow) && CurrentWirePositionY == MinWirePosition)
-			{
-				CurrentWirePositionY = MaxWirePosition;
-			}
-			ChangeWire();
-			ChargingAmount = 0;
-		}
-
-		if (Input.GetKey(KeyCode.LeftArrow) && transform.position.x > PlayerCurrentWire.GetComponent<Wires>().AnchorLeft)
-		{
-			transform.Translate(Vector3.left * Time.deltaTime * PlayerHorizontalSpeed);
-			CanShoot = false;
-		}
-		if (Input.GetKey(KeyCode.RightArrow) && transform.position.x < PlayerCurrentWire.GetComponent<Wires>().AnchorRight)
-		{
-			transform.Translate(Vector3.right * Time.deltaTime * PlayerHorizontalSpeed);
-			CanShoot = false;
-		}
-
-		if (Input.GetKey(KeyCode.LeftArrow) && transform.position.x > PlayerCurrentWire.GetComponent<Wires> ().AnchorLeft) {
-			transform.Translate (Vector3.left * Time.deltaTime * PlayerHorizontalSpeed);
-			CanShoot = false;
-			anim.SetBool ("Run_Bool", true); 
-
-
-		} 
-		if (Input.GetKey (KeyCode.RightArrow) && transform.position.x < PlayerCurrentWire.GetComponent<Wires>().AnchorRight)
-		{
-			transform.Translate(Vector3.right * Time.deltaTime * PlayerHorizontalSpeed);
-			CanShoot = false;
-			//anim.SetTrigger ("Run_Trigger"); 
-			anim.SetBool("Run_Bool", true); 
-		} 
+                if (Input.GetKeyDown(KeyCode.DownArrow) && CurrentWirePositionY > MinWirePosition)
+                {
+                    CurrentWirePositionY--;
+                }
+                else if (Input.GetKeyDown(KeyCode.DownArrow) && CurrentWirePositionY == MinWirePosition)
+                {
+                    CurrentWirePositionY = MaxWirePosition;
+                }
+                ChangeWire();
+                ChargingAmount = 0;
+            }
+            if (Input.GetKey(KeyCode.LeftArrow) && transform.position.x > PlayerCurrentWire.GetComponent<Wires>().AnchorLeft)
+            {
+                transform.Translate(Vector3.left * Time.deltaTime * PlayerHorizontalSpeed);
+                CanShoot = false;
+                anim.SetBool("Run_Bool", true);
+            }
+            if (Input.GetKey(KeyCode.RightArrow) && transform.position.x < PlayerCurrentWire.GetComponent<Wires>().AnchorRight)
+            {
+                transform.Translate(Vector3.right * Time.deltaTime * PlayerHorizontalSpeed);
+                CanShoot = false;
+                //anim.SetTrigger ("Run_Trigger"); 
+                anim.SetBool("Run_Bool", true);
+            }
+            if (Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.RightArrow))
+            {
+                CanShoot = true;
+            }
+        }
 
 
-		if (Input.GetKeyUp(KeyCode.LeftArrow)|| Input.GetKeyUp(KeyCode.RightArrow))
-		{
-			CanShoot = true;
-		}
+        else if (SC.isMountainLevel == true)
+        {
+            if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.LeftArrow))
+            {
+                if (Input.GetKeyDown(KeyCode.RightArrow) && CurrentWirePositionX < MaxWirePosition)
+                {
+                    CurrentWirePositionX++;
+                }
+                else if (Input.GetKeyDown(KeyCode.RightArrow) && CurrentWirePositionX == MaxWirePosition)
+                {
+                    CurrentWirePositionX = MinWirePosition;
+                }
 
-		if (CanShoot == false)
+                if (Input.GetKeyDown(KeyCode.LeftArrow) && CurrentWirePositionX > MinWirePosition)
+                {
+                    CurrentWirePositionX--;
+                }
+                else if (Input.GetKeyDown(KeyCode.LeftArrow) && CurrentWirePositionX == MinWirePosition)
+                {
+                    CurrentWirePositionX = MaxWirePosition;
+                }
+                ChangeWire();
+                ChargingAmount = 0;
+            }
+            //if (Input.GetKey(KeyCode.LeftArrow) && transform.position.x > PlayerCurrentWire.GetComponent<Wires>().AnchorLeft)
+            //{
+            //    transform.Translate(Vector3.left * Time.deltaTime * PlayerHorizontalSpeed);
+            //    CanShoot = false;
+            //    anim.SetBool("Run_Bool", true);
+            //}
+            //if (Input.GetKey(KeyCode.RightArrow) && transform.position.x < PlayerCurrentWire.GetComponent<Wires>().AnchorRight)
+            //{
+            //    transform.Translate(Vector3.right * Time.deltaTime * PlayerHorizontalSpeed);
+            //    CanShoot = false;
+            //    //anim.SetTrigger ("Run_Trigger"); 
+            //    anim.SetBool("Run_Bool", true);
+            //}
+            //if (Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.RightArrow))
+            //{
+            //    CanShoot = true;
+            //}
+        }
+
+
+
+
+        if (CanShoot == false)
 		{
 			ChargingAmount = 0;
 		}

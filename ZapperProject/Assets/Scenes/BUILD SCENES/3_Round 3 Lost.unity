@@ -346,7 +346,7 @@ MonoBehaviour:
   - 0
   - 0
   - 0
-  SpawnAtATime: 000000000000000000000000
+  SpawnAtATime: 000000003c0000003c000000
   WillCancleNormalSpawn: 010101
   WireCoreographer: {fileID: 883947133}
   WireNum: 4
@@ -1599,6 +1599,7 @@ MonoBehaviour:
   PlayerPositionOffsetY: 0
   ChargesPositionOffsetY: 0
   canSpawn: 1
+  anim: {fileID: 0}
 --- !u!61 &235468870
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2239,7 +2240,7 @@ MonoBehaviour:
   - 0
   - 0
   - 0
-  SpawnAtATime: 000000000000000000000000
+  SpawnAtATime: 000000003c0000003c000000
   WillCancleNormalSpawn: 010101
   WireCoreographer: {fileID: 560653868}
   WireNum: 3
@@ -3018,6 +3019,7 @@ MonoBehaviour:
   PlayerPositionOffsetY: 0
   ChargesPositionOffsetY: 0
   canSpawn: 0
+  anim: {fileID: 0}
 --- !u!61 &560653870
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4302,6 +4304,7 @@ MonoBehaviour:
   PlayerPositionOffsetY: 0
   ChargesPositionOffsetY: 0
   canSpawn: 0
+  anim: {fileID: 0}
 --- !u!61 &883947135
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5184,12 +5187,12 @@ MonoBehaviour:
   ChargeObjects: {fileID: 1902694361661754, guid: be122bce40d3b4352b8bf462feaea202,
     type: 2}
   CanShoot: 1
+  CanMoveLeftRight: 1
   ChargingAmount: 0
   ChargingSpeed: 50
   ChargingLimit: 1
   playerY: 0
   playerX: 0
-  anim: {fileID: 0}
 --- !u!61 &1039467706
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5562,6 +5565,7 @@ MonoBehaviour:
   PlayerPositionOffsetY: 0
   ChargesPositionOffsetY: 0
   canSpawn: 1
+  anim: {fileID: 0}
 --- !u!61 &1071027962
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7265,7 +7269,7 @@ MonoBehaviour:
   - 0
   - 0
   - 0
-  SpawnAtATime: 000000000000000000000000
+  SpawnAtATime: 000000003c0000003c000000
   WillCancleNormalSpawn: 000000
   WireCoreographer: {fileID: 235468868}
   WireNum: 1
@@ -7397,7 +7401,7 @@ MonoBehaviour:
   - 0
   - 0
   - 0
-  SpawnAtATime: 000000000000000000000000
+  SpawnAtATime: 000000003c0000003c000000
   WillCancleNormalSpawn: 000000
   WireCoreographer: {fileID: 1071027960}
   WireNum: 2
@@ -10415,6 +10419,8 @@ MonoBehaviour:
   WireFourObject: {fileID: 883947133}
   PlayerObject: {fileID: 0}
   ScoreUI: {fileID: 235144138}
+  CannotLose: 0
+  CannotWin: 0
   PlayerControl: {fileID: 0}
   Spawner: {fileID: 0}
   SpawnerObject: {fileID: 1761539914}
