@@ -12,6 +12,7 @@ public class Wires : MonoBehaviour {
     public float StartPositionLeft;
     public float StartPositionRight;
     public float StartPositionBottom;
+    public float WirePositionTop;
     public float PlayerPositionOffsetY;
 
     public float ChargesPositionOffsetY;
@@ -25,14 +26,8 @@ public class Wires : MonoBehaviour {
         StartPositionLeft = AnchorLeft;
         StartPositionRight = AnchorRight;
         StartPositionBottom = gameObject.transform.position.y - 5;
-		anim = GetComponent<Animator> (); 
+		anim = GetComponent<Animator> ();
 
-        
-
-    }
-	
-	// Update is called once per frame
-	void Update () {
         if (SC.isMountainLevel == false)
         {
             if (PlayerStartRight == true)
@@ -48,8 +43,6 @@ public class Wires : MonoBehaviour {
 
             if (Input.GetKeyDown(KeyCode.A))
             {
-
-
                 anim.SetBool("zapped_wire", true);
             }
         }
@@ -58,6 +51,14 @@ public class Wires : MonoBehaviour {
             PlayersStartPositionY = StartPositionBottom;
             PlayersStartPositionX = transform.position.x;
         }
+
+
+
+    }
+	
+	// Update is called once per frame
+	void Update () {
+        
     }
 
 	public void wire_1_zap () {

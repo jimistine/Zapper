@@ -486,7 +486,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 356407441}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.14, y: 0, z: 0}
+  m_LocalPosition: {x: 6.14, y: 5.11, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -515,6 +515,7 @@ MonoBehaviour:
     type: 2}
   CanShoot: 1
   CanMoveLeftRight: 1
+  isFalling: 0
   ChargingAmount: 0
   ChargingSpeed: 50
   ChargingLimit: 1
@@ -961,6 +962,7 @@ MonoBehaviour:
   StartPositionLeft: 0
   StartPositionRight: 0
   StartPositionBottom: 0
+  WirePositionTop: 8
   PlayerPositionOffsetY: 0
   ChargesPositionOffsetY: 0
   canSpawn: 1
@@ -1159,6 +1161,7 @@ MonoBehaviour:
   StartPositionLeft: 0
   StartPositionRight: 0
   StartPositionBottom: 0
+  WirePositionTop: 8
   PlayerPositionOffsetY: 0
   ChargesPositionOffsetY: 0
   canSpawn: 1
@@ -1452,6 +1455,7 @@ MonoBehaviour:
   StartPositionLeft: 0
   StartPositionRight: 0
   StartPositionBottom: 0
+  WirePositionTop: 8
   PlayerPositionOffsetY: 0
   ChargesPositionOffsetY: 0
   canSpawn: 1
@@ -1798,7 +1802,7 @@ MonoBehaviour:
   isMountainLevel: 1
   PlayerControl: {fileID: 0}
   Spawner: {fileID: 0}
-  SpawnerObject: {fileID: 0}
+  SpawnerObject: {fileID: 2139771686}
   DelayBeforeStartTime: 0
   TotalLevelTime: 0
   Score: 0
@@ -2029,6 +2033,7 @@ MonoBehaviour:
   StartPositionLeft: 0
   StartPositionRight: 0
   StartPositionBottom: 0
+  WirePositionTop: 8
   PlayerPositionOffsetY: 0
   ChargesPositionOffsetY: 0
   canSpawn: 1
@@ -2190,7 +2195,7 @@ MonoBehaviour:
   TimeSinceFailLevelsCapMin: 1
   TimeSinceFailLevelsCapMax: 7
   StoreAddedTime: 0
-  IsSpawning: 1
+  IsSpawning: 0
   validChoices: 
 --- !u!4 &2139771688
 Transform:

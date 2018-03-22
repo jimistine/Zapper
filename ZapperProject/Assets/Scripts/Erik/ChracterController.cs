@@ -22,6 +22,7 @@ public class ChracterController : MonoBehaviour {
 
 	public bool CanShoot = true;
     public bool CanMoveLeftRight = true;
+    public bool isFalling = false;
 	public float ChargingAmount;
 	public float ChargingSpeed = 1;
 	public int ChargingLimit = 100;
@@ -106,7 +107,15 @@ public class ChracterController : MonoBehaviour {
         }
         else if (SC.isMountainLevel == true)
         {
-            transform.position = new Vector3(currentWireScrpt.PlayersStartPositionX, currentWireScrpt.PlayersStartPositionY);
+            if (IsinStartPosition == false)
+            {
+                transform.position = new Vector3(currentWireScrpt.PlayersStartPositionX, currentWireScrpt.PlayersStartPositionY);
+            }
+            if (IsinStartPosition == true)
+            {
+                transform.position = new Vector3(currentWireScrpt.PlayersStartPositionX, gameObject.transform.position.y);
+            }
+            Debug.Log(new Vector3(currentWireScrpt.PlayersStartPositionX, currentWireScrpt.PlayersStartPositionY));
         }
 		
 	}
@@ -119,6 +128,7 @@ public class ChracterController : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+
         if(IsinStartPosition == false)
         {
             ChangeWire();
@@ -175,9 +185,9 @@ public class ChracterController : MonoBehaviour {
         }
 
 
-        else if (SC.isMountainLevel == true)
+        else if (SC.isMountainLevel == true && isFalling == false)
         {
-            if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.LeftArrow))
+            if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.LeftArrow) )
             {
                 if (Input.GetKeyDown(KeyCode.RightArrow) && CurrentWirePositionX < MaxWirePosition)
                 {
@@ -199,33 +209,22 @@ public class ChracterController : MonoBehaviour {
                 ChangeWire();
                 ChargingAmount = 0;
             }
-            //if (Input.GetKey(KeyCode.LeftArrow) && transform.position.x > PlayerCurrentWire.GetComponent<Wires>().AnchorLeft)
-            //{
-            //    transform.Translate(Vector3.left * Time.deltaTime * PlayerHorizontalSpeed);
-            //    CanShoot = false;
-            //    anim.SetBool("Run_Bool", true);
-            //}
-            //if (Input.GetKey(KeyCode.RightArrow) && transform.position.x < PlayerCurrentWire.GetComponent<Wires>().AnchorRight)
-            //{
-            //    transform.Translate(Vector3.right * Time.deltaTime * PlayerHorizontalSpeed);
-            //    CanShoot = false;
-            //    //anim.SetTrigger ("Run_Trigger"); 
-            //    anim.SetBool("Run_Bool", true);
-            //}
-            //if (Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.RightArrow))
-            //{
-            //    CanShoot = true;
-            //}
+            if (Input.GetKey(KeyCode.DownArrow) && transform.position.y > PlayerCurrentWire.GetComponent<Wires>().StartPositionBottom)
+            {
+                transform.Translate(Vector3.down * Time.deltaTime * PlayerHorizontalSpeed);
+                anim.SetBool("Run_Bool", true);
+            }
+            if (Input.GetKey(KeyCode.UpArrow) && transform.position.y < PlayerCurrentWire.GetComponent<Wires>().WirePositionTop)
+            {
+                transform.Translate(Vector3.up * Time.deltaTime * PlayerHorizontalSpeed);
+                anim.SetBool("Run_Bool", true);
+            }
+            if (Input.GetKey(KeyCode.UpArrow) && transform.position.y >= PlayerCurrentWire.GetComponent<Wires>().WirePositionTop)
+            {
+                //for now when the player reaches the top of the wire, win that level. 
+                SC.WinLevel();
+            }
         }
-
-
-
-
-        if (CanShoot == false)
-		{
-			ChargingAmount = 0;
-		}
-
 		if (Input.GetKey(KeyCode.Space)&& CanShoot == true && Time.timeSinceLevelLoad > 2)
 		{
 			ChangeWire();
@@ -236,29 +235,41 @@ public class ChracterController : MonoBehaviour {
 			}
 
 		} //instantiate a "Charge" object
-
-
 		if (Input.GetKeyUp(KeyCode.Space) && CanShoot == true && Time.timeSinceLevelLoad >2)
-
 		{
-
 			anim.SetBool ("Shoot_Bool", true); 
 			Debug.Log("Fire Charge");
 			ChargingAmount = 0;
 			AM.Shoot_source.PlayOneShot(AM.Shoot);
 			CreateChargeObject();
 			StartCoroutine (Anim_shoot ()); 
-
-
 			Debug.Log("Charged to"+ChargingAmount);
 		}
-
 		if (Input.GetKeyDown (KeyCode.A)) {
 
 
 			anim.SetBool ("Zap_Bool", true); 
 		}
+        if (isFalling == true)
+        {
+            if (transform.position.y > PlayerCurrentWire.GetComponent<Wires>().StartPositionBottom)
+            {
+                transform.Translate(Vector3.down * Time.deltaTime * PlayerHorizontalSpeed);
+            }
+
+            CanShoot = false;
+            StartCoroutine(Falling());
+
+            // need to decide how long they will fall, distance? time?
+        }
 	}
+
+    IEnumerator Falling()
+    {
+        yield return new WaitForSeconds(1);
+        isFalling = false;
+        CanShoot = true;
+    }
 
 	IEnumerator Anim_shoot () {
 
