@@ -41,41 +41,68 @@ public class Charge : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
-		if (isReturningCharge == true)
-		{
-			if (ChargesCurrentWire.GetComponent<Wires>().PlayerStartRight == true)
-			{
-				transform.Translate(Vector3.right * Time.deltaTime * (ChargeMoveSpeed/3));
-			}
-			if (ChargesCurrentWire.GetComponent<Wires>().PlayerStartRight == false)
-			{
-				transform.Translate(Vector3.left * Time.deltaTime * (ChargeMoveSpeed/3));
-			}
-			//
-			if(ChargesCurrentWire = SC.PlayerObject.GetComponent<ChracterController>().PlayerCurrentWire)
-			{
-				if (gameObject.transform.position.x < (SC.PlayerObject.transform.position.x) + 0.2f && gameObject.transform.position.x > (SC.PlayerObject.transform.position.x) - 0.2f)
-				{
-					Destroy(gameObject);
-				}
-			}
+        if (SC.isMountainLevel == false)
+        {
+            if (isReturningCharge == true)
+            {
+                if (ChargesCurrentWire.GetComponent<Wires>().PlayerStartRight == true)
+                {
+                    transform.Translate(Vector3.right * Time.deltaTime * (ChargeMoveSpeed / 3));
+                }
+                if (ChargesCurrentWire.GetComponent<Wires>().PlayerStartRight == false)
+                {
+                    transform.Translate(Vector3.left * Time.deltaTime * (ChargeMoveSpeed / 3));
+                }
+                //
+                if (ChargesCurrentWire = SC.PlayerObject.GetComponent<ChracterController>().PlayerCurrentWire)
+                {
+                    if (gameObject.transform.position.x < (SC.PlayerObject.transform.position.x) + 0.2f && gameObject.transform.position.x > (SC.PlayerObject.transform.position.x) - 0.2f)
+                    {
+                        Destroy(gameObject);
+                    }
+                }
+            }
+            if (isReturningCharge == false)
+            {
+                if (ChargesCurrentWire.GetComponent<Wires>().PlayerStartRight == true)
+                {
+                    transform.Translate(Vector3.left * Time.deltaTime * ChargeMoveSpeed);
+                }
+                if (ChargesCurrentWire.GetComponent<Wires>().PlayerStartRight == false)
+                {
+                    transform.Translate(Vector3.right * Time.deltaTime * ChargeMoveSpeed);
+                }
+            }
+            if (transform.position.x > ChargesCurrentWire.GetComponent<Wires>().AnchorRight + 0.5f || transform.position.x < ChargesCurrentWire.GetComponent<Wires>().AnchorLeft - 0.5f)
+            {
+                gameObject.GetComponent<Charge>().ChargeFailState();
+            }
+        }
+        if (SC.isMountainLevel == true)
+        {
+            if (isReturningCharge == true)
+            {
+                transform.Translate(Vector3.down * Time.deltaTime * (ChargeMoveSpeed / 3));
+                if (ChargesCurrentWire = SC.PlayerObject.GetComponent<ChracterController>().PlayerCurrentWire)
+                {
+                    if (gameObject.transform.position.y < (SC.PlayerObject.transform.position.y) + 0.2f && gameObject.transform.position.y > (SC.PlayerObject.transform.position.y) - 0.2f)
+                    {
+                        Destroy(gameObject);
+                    }
+                }
+            }
+            if (isReturningCharge == false)
+            {
+                transform.Translate(Vector3.up * Time.deltaTime * ChargeMoveSpeed);
+            }
+            // does it matter if charge goes off screen?
 
-		}
-		if (isReturningCharge == false)
-		{
-			if (ChargesCurrentWire.GetComponent<Wires>().PlayerStartRight == true)
-			{
-				transform.Translate(Vector3.left * Time.deltaTime * ChargeMoveSpeed);
-			}
-			if (ChargesCurrentWire.GetComponent<Wires>().PlayerStartRight == false)
-			{
-				transform.Translate(Vector3.right * Time.deltaTime * ChargeMoveSpeed);
-			}
-		}
-		if (transform.position.x > ChargesCurrentWire.GetComponent<Wires>().AnchorRight+0.5f || transform.position.x < ChargesCurrentWire.GetComponent<Wires>().AnchorLeft-0.5f)
-		{
-			gameObject.GetComponent<Charge>().ChargeFailState();
-		}
+            if (transform.position.y > ChargesCurrentWire.GetComponent<Wires>().WirePositionTop)
+            {
+                gameObject.GetComponent<Charge>().ChargeFailState();
+            }
+        }
+		
 	}
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
@@ -106,19 +133,28 @@ public class Charge : MonoBehaviour {
 				//Destroy(collision.gameObject);
 				AM.Hit_source.PlayOneShot(AM.Hit);
 				SC.Score++;
-
 			}
 
 			else if (isReturningCharge == true && collision.gameObject.tag == "Player")
 
 			{
-				// destroy returinging charge on collision with player, may have to change function depending on hwo we want return charges to behave.
-				hasTriggered = true;
-				AM.Hit_source.PlayOneShot(AM.Hit);
-				//SC.Score++;
-				//SC.ScoreUpdate();
-				Destroy(gameObject);
-				AM.Hit_source.PlayOneShot(AM.Hit);
+                if (SC.isMountainLevel == false)
+                {
+                    // destroy returinging charge on collision with player, may have to change function depending on hwo we want return charges to behave.
+                    hasTriggered = true;
+                    AM.Hit_source.PlayOneShot(AM.Hit);
+                    //SC.Score++;
+                    //SC.ScoreUpdate();
+                    Destroy(gameObject);
+                    AM.Hit_source.PlayOneShot(AM.Hit);
+                }
+                if (SC.isMountainLevel == true)
+                {
+                    hasTriggered = true;
+                    //cause player to fall a specific distance downwards, not below bottom of wire.
+                    collision.GetComponent<ChracterController>().isFalling = true;
+                }
+				
 			}
 		}
 	}
