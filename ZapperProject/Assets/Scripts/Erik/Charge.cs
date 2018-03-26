@@ -83,12 +83,9 @@ public class Charge : MonoBehaviour {
             if (isReturningCharge == true)
             {
                 transform.Translate(Vector3.down * Time.deltaTime * (ChargeMoveSpeed / 3));
-                if (ChargesCurrentWire = SC.PlayerObject.GetComponent<ChracterController>().PlayerCurrentWire)
+               if (transform.position.y < ChargesCurrentWire.GetComponent<Wires>().StartPositionBottom)
                 {
-                    if (gameObject.transform.position.y < (SC.PlayerObject.transform.position.y) + 0.2f && gameObject.transform.position.y > (SC.PlayerObject.transform.position.y) - 0.2f)
-                    {
-                        Destroy(gameObject);
-                    }
+                    Destroy(gameObject);
                 }
             }
             if (isReturningCharge == false)
