@@ -20,8 +20,11 @@ public class crowMove : MonoBehaviour {
 	public int ScoreForBird;
 	public bool CanReflectCharge = false;
 	public Animator anim; 
-	private BoxCollider2D boxCol; 
+	private BoxCollider2D boxCol;
 
+    public bool isBird;
+    public bool isClock;
+    public bool isRock;
 
 
 	// Use this for initialization
@@ -46,7 +49,7 @@ public class crowMove : MonoBehaviour {
 			gameObject.GetComponent<SpriteRenderer>().flipX = false;
 		}
 
-        if (SC.isMountainLevel == false)
+        if (isBird == true || isClock)
         {
             transform.Translate(goSpeed, 0, 0);
 
@@ -57,7 +60,7 @@ public class crowMove : MonoBehaviour {
                 Destroy(gameObject);
             }
         }
-        if (SC.isMountainLevel == true)
+        if (isRock == true)
         {
             transform.Translate(0, -goSpeed, 0);
             if (transform.position.y < CurrentWire.GetComponent<Wires>().StartPositionBottom)
