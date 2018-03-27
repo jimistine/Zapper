@@ -117,18 +117,22 @@ public class Charge : MonoBehaviour {
 				else
 				{
 					AM.Hit_source.PlayOneShot(AM.Hit);
-					Destroy(gameObject); 
 					AM.Hit_source.PlayOneShot(AM.Hit);
-				}
-				//currently destroying birds on collisions may need to run a function for them to leave scene or some other score behaviours
 
-				SC.Score += collision.gameObject.GetComponent<crowMove>().ScoreForBird;
+                    Destroy(gameObject);
+                }
+                //currently destroying birds on collisions may need to run a function for them to leave scene or some other score behaviours
+
+                SC.Score += collision.gameObject.GetComponent<crowMove>().ScoreForBird;
 				SC.ScoreUpdate();
+                if (collision.gameObject.GetComponent<crowMove>().isBird)
+                {
+                    collision.gameObject.GetComponent<crowMove>().CrowZap();  //run the function on the crowScript 
 
-				collision.gameObject.GetComponent<crowMove>().CrowZap();  //run the function on the crowScript 
+                }
 
-				//Destroy(collision.gameObject);
-				AM.Hit_source.PlayOneShot(AM.Hit);
+                //Destroy(collision.gameObject);
+                AM.Hit_source.PlayOneShot(AM.Hit);
 				SC.Score++;
 			}
 
