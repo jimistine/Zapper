@@ -20,8 +20,11 @@ public class crowMove : MonoBehaviour {
 	public int ScoreForBird;
 	public bool CanReflectCharge = false;
 	public Animator anim; 
-	private BoxCollider2D boxCol; 
+	private BoxCollider2D boxCol;
 
+    public bool isBird;
+    public bool isClock;
+    public bool isRock;
 
 
 	// Use this for initialization
@@ -32,29 +35,43 @@ public class crowMove : MonoBehaviour {
 		SC = FindObjectOfType<SceneController>();
 		anim = GetComponent<Animator> (); 
 		boxCol = GetComponent<BoxCollider2D> (); 
-
-
 	}
 
 	// Update is called once per frame
 	void Update () {
 		randomTimeUntilPause = Random.Range (randomTimeUntilPauseMin, randomTimeUntilPauseMax); 
 		pauseTime = Random.Range (pauseTimeMin, pauseTimeMax);
+
 		if(CurrentWire.GetComponent<Wires>().PlayerStartRight == false)
 		{
 			goSpeed = crowSpeed * (-1);
 			//flip prefab
 			gameObject.GetComponent<SpriteRenderer>().flipX = false;
 		}
-		transform.Translate (goSpeed, 0, 0); 
-		if (transform.position.x < CurrentWire.GetComponent<Wires>().AnchorLeft || transform.position.x > CurrentWire.GetComponent<Wires>().AnchorRight)
-		{
-			FailStateCrow();
-			//Destroy bird for now will need a fail state animation for birds hittitng fuze box
-			Destroy(gameObject);
-		}
-			
-	}
+
+        if (isBird == true || isClock)
+        {
+            transform.Translate(goSpeed, 0, 0);
+
+            if (transform.position.x < CurrentWire.GetComponent<Wires>().AnchorLeft || transform.position.x > CurrentWire.GetComponent<Wires>().AnchorRight)
+            {
+                FailStateCrow();
+                //Destroy bird for now will need a fail state animation for birds hittitng fuze box
+                Destroy(gameObject);
+            }
+        }
+        if (isRock == true)
+        {
+            transform.Translate(0, -goSpeed, 0);
+            if (transform.position.y < SC.PlayerObject.transform.position.y + 0.5f && transform.position.y > SC.PlayerObject.transform.position.y - 0.5f && CurrentWire == SC.PlayerObject.GetComponent<ChracterController>().PlayerCurrentWire)
+            {
+                FailStateCrow();
+                //Destroy bird for now will need a fail state animation for birds hittitng fuze box
+                Destroy(gameObject);
+            }
+        }
+
+    }
 
 	IEnumerator wait () {
 

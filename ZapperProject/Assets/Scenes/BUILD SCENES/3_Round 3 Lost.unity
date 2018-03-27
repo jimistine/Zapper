@@ -346,7 +346,7 @@ MonoBehaviour:
   - 0
   - 0
   - 0
-  SpawnAtATime: 000000000000000000000000
+  SpawnAtATime: 000000003c0000003c000000
   WillCancleNormalSpawn: 010101
   WireCoreographer: {fileID: 883947133}
   WireNum: 4
@@ -2289,7 +2289,7 @@ MonoBehaviour:
   - 0
   - 0
   - 0
-  SpawnAtATime: 000000000000000000000000
+  SpawnAtATime: 000000003c0000003c000000
   WillCancleNormalSpawn: 010101
   WireCoreographer: {fileID: 560653868}
   WireNum: 3
@@ -5267,6 +5267,7 @@ MonoBehaviour:
   ChargeObjects: {fileID: 1902694361661754, guid: be122bce40d3b4352b8bf462feaea202,
     type: 2}
   CanShoot: 1
+  CanMoveLeftRight: 1
   ChargingAmount: 0
   ChargingSpeed: 50
   ChargingLimit: 1
@@ -7366,7 +7367,7 @@ MonoBehaviour:
   - 0
   - 0
   - 0
-  SpawnAtATime: 000000000000000000000000
+  SpawnAtATime: 000000003c0000003c000000
   WillCancleNormalSpawn: 000000
   WireCoreographer: {fileID: 235468868}
   WireNum: 1
@@ -7498,7 +7499,7 @@ MonoBehaviour:
   - 0
   - 0
   - 0
-  SpawnAtATime: 000000000000000000000000
+  SpawnAtATime: 000000003c0000003c000000
   WillCancleNormalSpawn: 000000
   WireCoreographer: {fileID: 1071027960}
   WireNum: 2

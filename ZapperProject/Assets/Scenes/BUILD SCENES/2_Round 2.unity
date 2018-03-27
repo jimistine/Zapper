@@ -340,8 +340,8 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 30
-  - 30
+  - 60
+  - 60
   RateOfSpawn:
   - 0
   - 0
@@ -2283,8 +2283,8 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 30
-  - 30
+  - 60
+  - 60
   RateOfSpawn:
   - 0
   - 0
@@ -5267,6 +5267,7 @@ MonoBehaviour:
   ChargeObjects: {fileID: 1902694361661754, guid: be122bce40d3b4352b8bf462feaea202,
     type: 2}
   CanShoot: 1
+  CanMoveLeftRight: 1
   ChargingAmount: 0
   ChargingSpeed: 50
   ChargingLimit: 1
@@ -7360,8 +7361,8 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 30
-  - 30
+  - 60
+  - 60
   RateOfSpawn:
   - 0
   - 0
@@ -7492,8 +7493,8 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 30
-  - 30
+  - 60
+  - 60
   RateOfSpawn:
   - 0
   - 0
