@@ -31,7 +31,7 @@ public class ChracterController : MonoBehaviour {
 	public float playerX;
 
 	public static Animator anim;
-    bool IsinStartPosition = false;
+   public bool IsinStartPosition = false;
 
 
 	public void Start () {
@@ -111,6 +111,7 @@ public class ChracterController : MonoBehaviour {
             {
                 transform.position = new Vector3(currentWireScrpt.PlayersStartPositionX, currentWireScrpt.PlayersStartPositionY);
             }
+
             if (IsinStartPosition == true)
             {
                 transform.position = new Vector3(currentWireScrpt.PlayersStartPositionX, gameObject.transform.position.y);

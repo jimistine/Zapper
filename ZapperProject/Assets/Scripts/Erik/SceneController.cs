@@ -107,6 +107,7 @@ public class SceneController : MonoBehaviour {
         //reset players position and health
         PlayerControl.Start();
         UpdateHealth();
+        PlayerObject.GetComponent<ChracterController>().IsinStartPosition = false;
         //reset the delay before play timer
         Spawner.DelayBeforeStart = DelayBeforeStartTime + Time.time - 1;
         Spawner.StoreAddedTime = 0;

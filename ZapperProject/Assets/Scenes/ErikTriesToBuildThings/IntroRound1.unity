@@ -486,7 +486,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 356407441}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.14, y: 5.11, z: 0}
+  m_LocalPosition: {x: 6.14, y: 0.81, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -521,6 +521,7 @@ MonoBehaviour:
   ChargingLimit: 1
   playerY: 0
   playerX: 0
+  IsinStartPosition: 0
 --- !u!1 &417148762
 GameObject:
   m_ObjectHideFlags: 0
@@ -591,6 +592,7 @@ GameObject:
   - component: {fileID: 505271571}
   - component: {fileID: 505271570}
   - component: {fileID: 505271569}
+  - component: {fileID: 505271573}
   m_Layer: 0
   m_Name: Main Camera (1)
   m_TagString: MainCamera
@@ -661,6 +663,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &505271573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 505271568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e830307e6a6942a4daf1fd2c01db80a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SC: {fileID: 0}
 --- !u!1 &609389165
 GameObject:
   m_ObjectHideFlags: 0
@@ -1795,7 +1809,7 @@ MonoBehaviour:
   WireTwoObject: {fileID: 948645800}
   WireThreeObject: {fileID: 1461425780}
   WireFourObject: {fileID: 2074991039}
-  PlayerObject: {fileID: 0}
+  PlayerObject: {fileID: 356407441}
   ScoreUI: {fileID: 942307763}
   CannotLose: 0
   CannotWin: 0
