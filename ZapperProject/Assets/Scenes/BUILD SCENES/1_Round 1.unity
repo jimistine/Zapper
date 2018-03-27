@@ -1089,6 +1089,8 @@ GameObject:
   m_Component:
   - component: {fileID: 177410715}
   - component: {fileID: 177410714}
+  - component: {fileID: 177410716}
+  - component: {fileID: 177410717}
   m_Layer: 0
   m_Name: fusebox 2
   m_TagString: Untagged
@@ -1153,6 +1155,35 @@ Transform:
   m_Father: {fileID: 1188202780}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &177410716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 177410713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 987033bc9a3ae461e82ea1f33acf2a28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 0}
+--- !u!95 &177410717
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 177410713}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 93b0ece6e311743e6ae2ea5488e933de, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &181489265
 GameObject:
   m_ObjectHideFlags: 0
@@ -3872,6 +3903,7 @@ GameObject:
   m_Component:
   - component: {fileID: 764203553}
   - component: {fileID: 764203552}
+  - component: {fileID: 764203554}
   m_Layer: 0
   m_Name: fusebox 4
   m_TagString: Untagged
@@ -3936,6 +3968,18 @@ Transform:
   m_Father: {fileID: 1188202780}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &764203554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 764203551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 987033bc9a3ae461e82ea1f33acf2a28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 0}
 --- !u!1 &766951067
 GameObject:
   m_ObjectHideFlags: 0
@@ -7111,6 +7155,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1334868890}
   - component: {fileID: 1334868889}
+  - component: {fileID: 1334868891}
   m_Layer: 0
   m_Name: fusebox 3
   m_TagString: Untagged
@@ -7175,6 +7220,18 @@ Transform:
   m_Father: {fileID: 1188202780}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1334868891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1334868888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 987033bc9a3ae461e82ea1f33acf2a28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 0}
 --- !u!1 &1347009923
 GameObject:
   m_ObjectHideFlags: 0

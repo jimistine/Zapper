@@ -95,6 +95,15 @@ MonoBehaviour:
   isReturningCharge: 0
   ChargesCurrentWire: {fileID: 0}
   new_Sprite: {fileID: 21300000, guid: 3e08941f405f54c87819b1cdf73023ec, type: 3}
+  player: {fileID: 0}
+  fusebox1: {fileID: 0}
+  fusebox2: {fileID: 0}
+  fusebox3: {fileID: 0}
+  fusebox4: {fileID: 0}
+  wire1: {fileID: 0}
+  wire2: {fileID: 0}
+  wire3: {fileID: 0}
+  wire4: {fileID: 0}
 --- !u!212 &212767769928290188
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -127,9 +136,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1725716987
-  m_SortingLayer: 3
+  m_SortingLayer: 6
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 186d9f1b627ca48168016b6e78f2f2ed, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 250604e20152343fcb99436397c51366, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

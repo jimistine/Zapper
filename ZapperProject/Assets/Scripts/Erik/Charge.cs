@@ -14,7 +14,11 @@ public class Charge : MonoBehaviour {
 	public Sprite new_Sprite; 
 
 	public GameObject player;  
+
 	public GameObject fusebox1; 
+	public GameObject fusebox2; 
+	public GameObject fusebox3; 
+	public GameObject fusebox4; 
 
 	public GameObject wire1;
 	public GameObject wire2;
@@ -28,12 +32,16 @@ public class Charge : MonoBehaviour {
 		SC = FindObjectOfType<SceneController>();
 		AM = FindObjectOfType<AudioManager>();
 		player = GameObject.FindWithTag ("Player"); 
-		fusebox1 = GameObject.Find ("fusebox"); 
 
 		wire1 = GameObject.Find ("Wire_1"); 
 		wire2 = GameObject.Find ("Wire_2"); 
 		wire3 = GameObject.Find ("Wire_3"); 
 		wire4 = GameObject.Find ("Wire_4"); 
+
+		fusebox1 = GameObject.Find ("fusebox"); 
+		fusebox2 = GameObject.Find ("fusebox 2"); 
+		fusebox3 = GameObject.Find ("fusebox 3"); 
+		fusebox4 = GameObject.Find ("fusebox 4"); 
 	
 		 
 	}
@@ -136,24 +144,28 @@ public class Charge : MonoBehaviour {
 		if (SC.WireOneObject != null) {
 			if (ChargesCurrentWire == SC.WireOneObject) { 
 				wire1.GetComponent<Wires> ().wire_1_zap (); 
+				fusebox1.GetComponent<fusebox_script> ().fusebox_zap (); 
 			}
 		}
 
 		if (SC.WireTwoObject != null) {	
 			if (ChargesCurrentWire == SC.WireTwoObject) {
 				wire2.GetComponent<Wires> ().wire_2_zap (); 
+				fusebox2.GetComponent<fusebox_script> ().fusebox_zap_2 (); 
 			}
 		}
 
 		if (SC.WireThreeObject != null) {
 			if (ChargesCurrentWire == SC.WireThreeObject) {
 				wire3.GetComponent<Wires> ().wire_3_zap (); 
+				fusebox3.GetComponent<fusebox_script> ().fusebox_zap_3 (); 
 			}
 		}
 
 		if (SC.WireFourObject != null) {
 			if (ChargesCurrentWire == SC.WireFourObject) {
 				wire4.GetComponent<Wires> ().wire_4_zap (); 
+				fusebox4.GetComponent<fusebox_script> ().fusebox_zap_4 (); 
 			}
 		}
 
@@ -180,12 +192,17 @@ public class Charge : MonoBehaviour {
 		SC.CurrentHealth--;
 		SC.RestartLevel();
 
+		//set animation states back to normal 
 		player.GetComponent<ChracterController> ().Clyde_normal (); 
-		fusebox1.GetComponent<fusebox_script> ().fusebox_normal ();
+
 		wire1.GetComponent<Wires> ().wire_1_normal (); 
+		fusebox1.GetComponent<fusebox_script> ().fusebox_normal ();
 		wire2.GetComponent<Wires> ().wire_2_normal (); 
+		fusebox2.GetComponent<fusebox_script> ().fusebox_normal_2 ();
 		wire3.GetComponent<Wires> ().wire_3_normal (); 
+		fusebox3.GetComponent<fusebox_script> ().fusebox_normal_3 (); 
 		wire4.GetComponent<Wires> ().wire_4_normal (); 
+		fusebox4.GetComponent<fusebox_script> ().fusebox_normal_4 (); 
 	
 
 	}
