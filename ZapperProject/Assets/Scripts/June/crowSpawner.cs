@@ -115,7 +115,7 @@ public class crowSpawner : MonoBehaviour {
                 }
                 if(SC.isMountainLevel == true)
                 {
-                    whereToSpawn = new Vector2(WireToSpawn.transform.position.x, WireToSpawn.GetComponent<Wires>().WirePositionTop - 1);
+                    whereToSpawn = new Vector2(WireToSpawn.transform.position.x, Screen.height);
                 }
                 GameObject NewBird = Instantiate(enemies[SelectEnemyToSpawn()], whereToSpawn, Quaternion.identity);
                 NewBird.GetComponent<crowMove>().CurrentWire = SetBirdWire();
