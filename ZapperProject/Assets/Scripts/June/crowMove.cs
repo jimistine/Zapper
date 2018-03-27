@@ -63,7 +63,7 @@ public class crowMove : MonoBehaviour {
         if (isRock == true)
         {
             transform.Translate(0, -goSpeed, 0);
-            if (transform.position.y < SC.PlayerObject.transform.position.y + 0.5f && transform.position.y > SC.PlayerObject.transform.position.y - 0.5f)
+            if (transform.position.y < SC.PlayerObject.transform.position.y + 0.5f && transform.position.y > SC.PlayerObject.transform.position.y - 0.5f && CurrentWire == SC.PlayerObject.GetComponent<ChracterController>().PlayerCurrentWire)
             {
                 FailStateCrow();
                 //Destroy bird for now will need a fail state animation for birds hittitng fuze box
