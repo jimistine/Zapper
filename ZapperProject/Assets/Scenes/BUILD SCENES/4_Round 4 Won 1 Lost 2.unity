@@ -10774,13 +10774,14 @@ MonoBehaviour:
   WireTwoObject: {fileID: 1071027960}
   WireThreeObject: {fileID: 560653868}
   WireFourObject: {fileID: 883947133}
-  PlayerObject: {fileID: 0}
+  PlayerObject: {fileID: 1039467704}
   ScoreUI: {fileID: 235144138}
   CannotLose: 0
   CannotWin: 0
   isMountainLevel: 0
   isFactory: 0
   PlayerControl: {fileID: 0}
+  ChargeScript: {fileID: 0}
   Spawner: {fileID: 0}
   SpawnerObject: {fileID: 1761539914}
   DelayBeforeStartTime: 0

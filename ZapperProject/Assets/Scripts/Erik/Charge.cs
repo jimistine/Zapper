@@ -143,13 +143,14 @@ public class Charge : MonoBehaviour {
 
                 SC.Score += collision.gameObject.GetComponent<crowMove>().ScoreForBird;
 				SC.ScoreUpdate();
-                if (collision.gameObject.GetComponent<crowMove>().isBird)
+             
+				if (collision.gameObject.GetComponent<crowMove>().isBird)
                 {
                     collision.gameObject.GetComponent<crowMove>().CrowZap();  //run the function on the crowScript 
 
                 }
 
-              	Destroy(collision.gameObject);
+              	//Destroy(collision.gameObject);
                 AM.Hit_source.PlayOneShot(AM.Hit);
 				SC.Score++;
 			}
@@ -306,8 +307,15 @@ public class Charge : MonoBehaviour {
 
 			fusebox1.GetComponent<fusebox_script> ().fusebox_normal ();
 			fusebox2.GetComponent<fusebox_script> ().fusebox_normal_2 ();
-			fusebox3.GetComponent<fusebox_script> ().fusebox_normal_3 (); 
-			fusebox4.GetComponent<fusebox_script> ().fusebox_normal_4 (); 
+
+			if (fusebox3 != null) {
+				fusebox3.GetComponent<fusebox_script> ().fusebox_normal_3 (); 
+			}
+
+			if (fusebox4 != null) {
+				fusebox4.GetComponent<fusebox_script> ().fusebox_normal_4 (); 
+			}
+
 			Debug.Log ("charge reset end"); 
 
 		}
