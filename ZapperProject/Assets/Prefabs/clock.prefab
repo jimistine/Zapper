@@ -102,7 +102,7 @@ MonoBehaviour:
   startWait: 0
   pauseTimeMax: 1
   pauseTimeMin: 3
-  ChancetoSpawnCurrent: 1.33
+  ChancetoSpawnCurrent: 1
   ChancetoSpawnStart: 1
   stopSpeed: 0
   randomTimeUntilPauseMax: 1
@@ -110,6 +110,9 @@ MonoBehaviour:
   ScoreForBird: 1
   CanReflectCharge: 1
   anim: {fileID: 0}
+  isBird: 0
+  isClock: 1
+  isRock: 0
 --- !u!212 &212117136249123380
 SpriteRenderer:
   m_ObjectHideFlags: 1

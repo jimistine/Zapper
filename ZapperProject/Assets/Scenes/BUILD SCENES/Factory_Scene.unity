@@ -198,7 +198,7 @@ GameObject:
   - component: {fileID: 16814418}
   - component: {fileID: 16814421}
   m_Layer: 0
-  m_Name: fusebox 2
+  m_Name: alarm 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -213,7 +213,7 @@ Animator:
   m_GameObject: {fileID: 16814417}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 93b0ece6e311743e6ae2ea5488e933de, type: 2}
+  m_Controller: {fileID: 9100000, guid: 7aa6bb4db911749548adfed4a12c09c4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -286,7 +286,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 16814417}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 987033bc9a3ae461e82ea1f33acf2a28, type: 3}
+  m_Script: {fileID: 11500000, guid: f28d7f00db9b142f69438b41c2f852e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
@@ -775,6 +775,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78cdcc0a9fa37a4fb4ebc11f3e876d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SC: {fileID: 0}
   PlayersStartPositionX: 0
   PlayersStartPositionY: 0
   PlayerStartRight: 1
@@ -782,8 +783,10 @@ MonoBehaviour:
   AnchorRight: 6
   StartPositionLeft: 0
   StartPositionRight: 0
-  PlayerPositionOffsetY: 0
-  ChargesPositionOffsetY: 0
+  StartPositionBottom: 0
+  WirePositionTop: 0
+  PlayerPositionOffsetY: 0.1
+  ChargesPositionOffsetY: 0.2
   canSpawn: 1
   anim: {fileID: 0}
 --- !u!61 &235468870
@@ -1680,6 +1683,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78cdcc0a9fa37a4fb4ebc11f3e876d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SC: {fileID: 0}
   PlayersStartPositionX: 0
   PlayersStartPositionY: 0
   PlayerStartRight: 0
@@ -1687,8 +1691,10 @@ MonoBehaviour:
   AnchorRight: 6
   StartPositionLeft: 0
   StartPositionRight: 0
-  PlayerPositionOffsetY: 0
-  ChargesPositionOffsetY: 0
+  StartPositionBottom: 0
+  WirePositionTop: 0
+  PlayerPositionOffsetY: 0.1
+  ChargesPositionOffsetY: 0.2
   canSpawn: 1
   anim: {fileID: 0}
 --- !u!61 &560653870
@@ -2275,7 +2281,7 @@ GameObject:
   - component: {fileID: 720367740}
   - component: {fileID: 720367743}
   m_Layer: 0
-  m_Name: fusebox 3
+  m_Name: alarm 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2290,7 +2296,7 @@ Animator:
   m_GameObject: {fileID: 720367739}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: fb41ce277d2a84e0f937e2af67e1cb7c, type: 2}
+  m_Controller: {fileID: 9100000, guid: 5070f6b59392e4345863dc81d82c5d44, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2363,7 +2369,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 720367739}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 987033bc9a3ae461e82ea1f33acf2a28, type: 3}
+  m_Script: {fileID: 11500000, guid: f28d7f00db9b142f69438b41c2f852e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
@@ -2656,6 +2662,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78cdcc0a9fa37a4fb4ebc11f3e876d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SC: {fileID: 0}
   PlayersStartPositionX: 0
   PlayersStartPositionY: 0
   PlayerStartRight: 0
@@ -2663,8 +2670,10 @@ MonoBehaviour:
   AnchorRight: 6
   StartPositionLeft: 0
   StartPositionRight: 0
-  PlayerPositionOffsetY: 0
-  ChargesPositionOffsetY: 0
+  StartPositionBottom: 0
+  WirePositionTop: 0
+  PlayerPositionOffsetY: 0.1
+  ChargesPositionOffsetY: 0.2
   canSpawn: 1
   anim: {fileID: 0}
 --- !u!61 &883947135
@@ -2912,7 +2921,7 @@ GameObject:
   - component: {fileID: 955512193}
   - component: {fileID: 955512196}
   m_Layer: 0
-  m_Name: fusebox
+  m_Name: alarm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3000,7 +3009,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 955512192}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 987033bc9a3ae461e82ea1f33acf2a28, type: 3}
+  m_Script: {fileID: 11500000, guid: f28d7f00db9b142f69438b41c2f852e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
@@ -3039,17 +3048,21 @@ MonoBehaviour:
   AM: {fileID: 0}
   PlayerHorizontalSpeed: 1
   CurrentWirePositionY: 0
+  CurrentWirePositionX: 0
   MaxWirePosition: 4
   MinWirePosition: 1
   PlayerCurrentWire: {fileID: 0}
   ChargeObjects: {fileID: 1539209488794968, guid: 716651cfe5acc4cad9a1b6daa6ee56c8,
     type: 2}
   CanShoot: 1
+  CanMoveLeftRight: 1
+  isFalling: 0
   ChargingAmount: 0
   ChargingSpeed: 50
   ChargingLimit: 1
   playerY: 0
   playerX: 0
+  IsinStartPosition: 0
 --- !u!61 &1039467706
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3340,6 +3353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78cdcc0a9fa37a4fb4ebc11f3e876d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SC: {fileID: 0}
   PlayersStartPositionX: 0
   PlayersStartPositionY: 0
   PlayerStartRight: 1
@@ -3347,8 +3361,10 @@ MonoBehaviour:
   AnchorRight: 6
   StartPositionLeft: 0
   StartPositionRight: 0
-  PlayerPositionOffsetY: 0
-  ChargesPositionOffsetY: 0
+  StartPositionBottom: 0
+  WirePositionTop: 0
+  PlayerPositionOffsetY: 0.1
+  ChargesPositionOffsetY: 0.2
   canSpawn: 1
   anim: {fileID: 0}
 --- !u!61 &1071027962
@@ -3727,7 +3743,7 @@ GameObject:
   - component: {fileID: 1234910976}
   - component: {fileID: 1234910979}
   m_Layer: 0
-  m_Name: fusebox 4
+  m_Name: alarm 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3742,7 +3758,7 @@ Animator:
   m_GameObject: {fileID: 1234910975}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d6b6ec565c84949a095e21100f3fe38b, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4aed338d2307f4058b6db90be1dd85fd, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3815,7 +3831,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1234910975}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 987033bc9a3ae461e82ea1f33acf2a28, type: 3}
+  m_Script: {fileID: 11500000, guid: f28d7f00db9b142f69438b41c2f852e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
@@ -5945,11 +5961,14 @@ MonoBehaviour:
   WireTwoObject: {fileID: 1071027960}
   WireThreeObject: {fileID: 560653868}
   WireFourObject: {fileID: 883947133}
-  PlayerObject: {fileID: 0}
+  PlayerObject: {fileID: 1039467704}
   ScoreUI: {fileID: 235144138}
   CannotLose: 0
   CannotWin: 0
+  isMountainLevel: 0
+  isFactory: 1
   PlayerControl: {fileID: 0}
+  ChargeScript: {fileID: 0}
   Spawner: {fileID: 0}
   SpawnerObject: {fileID: 1761539914}
   DelayBeforeStartTime: 0
@@ -6583,7 +6602,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2121839420}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.61, y: 6.3, z: -3}
+  m_LocalPosition: {x: -8.87, y: 6.3, z: -3}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

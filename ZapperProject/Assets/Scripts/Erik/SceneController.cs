@@ -23,8 +23,10 @@ public class SceneController : MonoBehaviour {
     public bool CannotLose;
     public bool CannotWin;
     public bool isMountainLevel;
+	public bool isFactory; 
 
     public ChracterController PlayerControl;
+	public Charge ChargeScript; 
     public crowSpawner Spawner;
     public GameObject SpawnerObject;
 
@@ -45,6 +47,7 @@ public class SceneController : MonoBehaviour {
         Spawner = FindObjectOfType<crowSpawner>();
         ScoreUpdate();
         UpdateHealth(); 
+		ChargeScript = FindObjectOfType<Charge> (); 
         
         GameObject MemoryObj = GameObject.Find("Memory");
 
