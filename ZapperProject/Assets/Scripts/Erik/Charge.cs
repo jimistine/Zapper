@@ -150,7 +150,12 @@ public class Charge : MonoBehaviour {
 
                 }
 
-              	//Destroy(collision.gameObject);
+				if (collision.gameObject.GetComponent<crowMove>().isClock == true) {
+
+					Destroy (collision.gameObject);
+
+				}
+					
                 AM.Hit_source.PlayOneShot(AM.Hit);
 				SC.Score++;
 			}
@@ -191,7 +196,9 @@ public class Charge : MonoBehaviour {
 
 		if (SC.WireOneObject != null) {
 			if (ChargesCurrentWire == SC.WireOneObject) { 
+				
 				wire1.GetComponent<Wires> ().wire_1_zap (); 
+
 				if (SC.isFactory) {
 					Debug.Log ("alarm 1 rang!");
 					alarm1.GetComponent<alarmScript> ().alarm_zap (); 
@@ -203,7 +210,9 @@ public class Charge : MonoBehaviour {
 
 		if (SC.WireTwoObject != null) {	
 			if (ChargesCurrentWire == SC.WireTwoObject) {
-				wire2.GetComponent<Wires> ().wire_2_zap (); 
+				
+				wire2.GetComponent<Wires> ().wire_2_zap ();
+			
 				if (SC.isFactory) {
 					Debug.Log ("alarm 2 rang!"); 
 					alarm2.GetComponent<alarmScript> ().alarm_zap_2 ();
@@ -215,7 +224,9 @@ public class Charge : MonoBehaviour {
 
 		if (SC.WireThreeObject != null) {
 			if (ChargesCurrentWire == SC.WireThreeObject) {
-				wire3.GetComponent<Wires> ().wire_3_zap (); 
+
+					wire3.GetComponent<Wires> ().wire_3_zap ();
+
 				if (SC.isFactory) {
 					alarm3.GetComponent<alarmScript> ().alarm_zap_3 (); 
 				} else {
@@ -226,7 +237,8 @@ public class Charge : MonoBehaviour {
 
 		if (SC.WireFourObject != null) {
 			if (ChargesCurrentWire == SC.WireFourObject) {
-				wire4.GetComponent<Wires> ().wire_4_zap (); 
+					wire4.GetComponent<Wires> ().wire_4_zap ();
+
 				if (SC.isFactory) {
 					alarm4.GetComponent<alarmScript> ().alarm_zap_4 (); 
 				} else {
@@ -307,14 +319,19 @@ public class Charge : MonoBehaviour {
 
 			fusebox1.GetComponent<fusebox_script> ().fusebox_normal ();
 			fusebox2.GetComponent<fusebox_script> ().fusebox_normal_2 ();
-
+		
 			if (fusebox3 != null) {
+
 				fusebox3.GetComponent<fusebox_script> ().fusebox_normal_3 (); 
+
 			}
 
 			if (fusebox4 != null) {
+
 				fusebox4.GetComponent<fusebox_script> ().fusebox_normal_4 (); 
+
 			}
+			
 
 			Debug.Log ("charge reset end"); 
 

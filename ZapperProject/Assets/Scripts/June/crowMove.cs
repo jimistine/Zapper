@@ -92,6 +92,7 @@ public class crowMove : MonoBehaviour {
 	}
 
 	public void FailStateCrow()
+
 	{
 		Debug.Log("Crows fail state");
         SC.CurrentHealth--;
