@@ -23,7 +23,8 @@ public class SceneController : MonoBehaviour {
     public bool CannotLose;
     public bool CannotWin;
     public bool isMountainLevel;
-	public bool isFactory; 
+	public bool isFactory;
+    public bool isPrototype;
 
     public ChracterController PlayerControl;
 	public Charge ChargeScript; 

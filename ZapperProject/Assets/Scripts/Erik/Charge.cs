@@ -153,7 +153,6 @@ public class Charge : MonoBehaviour {
 				if (collision.gameObject.GetComponent<crowMove>().isClock == true) {
 
 					Destroy (collision.gameObject);
-
 				}
 					
                 AM.Hit_source.PlayOneShot(AM.Hit);
@@ -193,62 +192,82 @@ public class Charge : MonoBehaviour {
         //destroy for now will have to change things depeneding on how we record fail states
 
 		//fusebox1.GetComponent<fusebox_script> ().fusebox_zap ();
+        if (SC.isPrototype == false)
+        {
+            if (SC.WireOneObject != null)
+            {
+                if (ChargesCurrentWire == SC.WireOneObject)
+                {
 
-		if (SC.WireOneObject != null) {
-			if (ChargesCurrentWire == SC.WireOneObject) { 
-				
-				wire1.GetComponent<Wires> ().wire_1_zap (); 
+                    wire1.GetComponent<Wires>().wire_1_zap();
 
-				if (SC.isFactory) {
-					Debug.Log ("alarm 1 rang!");
-					alarm1.GetComponent<alarmScript> ().alarm_zap (); 
-				} else {
-					fusebox1.GetComponent<fusebox_script> ().fusebox_zap (); 
-				}
-			}
-		}
+                    if (SC.isFactory)
+                    {
+                        Debug.Log("alarm 1 rang!");
+                        alarm1.GetComponent<alarmScript>().alarm_zap();
+                    }
+                    else
+                    {
+                        fusebox1.GetComponent<fusebox_script>().fusebox_zap();
+                    }
+                }
+            }
 
-		if (SC.WireTwoObject != null) {	
-			if (ChargesCurrentWire == SC.WireTwoObject) {
-				
-				wire2.GetComponent<Wires> ().wire_2_zap ();
-			
-				if (SC.isFactory) {
-					Debug.Log ("alarm 2 rang!"); 
-					alarm2.GetComponent<alarmScript> ().alarm_zap_2 ();
-				} else {
-					fusebox2.GetComponent<fusebox_script> ().fusebox_zap_2 ();
-				}
-			}
-		}
+            if (SC.WireTwoObject != null)
+            {
+                if (ChargesCurrentWire == SC.WireTwoObject)
+                {
 
-		if (SC.WireThreeObject != null) {
-			if (ChargesCurrentWire == SC.WireThreeObject) {
+                    wire2.GetComponent<Wires>().wire_2_zap();
 
-					wire3.GetComponent<Wires> ().wire_3_zap ();
+                    if (SC.isFactory)
+                    {
+                        Debug.Log("alarm 2 rang!");
+                        alarm2.GetComponent<alarmScript>().alarm_zap_2();
+                    }
+                    else
+                    {
+                        fusebox2.GetComponent<fusebox_script>().fusebox_zap_2();
+                    }
+                }
+            }
 
-				if (SC.isFactory) {
-					alarm3.GetComponent<alarmScript> ().alarm_zap_3 (); 
-				} else {
-					fusebox3.GetComponent<fusebox_script> ().fusebox_zap_3 (); 
-				}
-			}
-		}
+            if (SC.WireThreeObject != null)
+            {
+                if (ChargesCurrentWire == SC.WireThreeObject)
+                {
 
-		if (SC.WireFourObject != null) {
-			if (ChargesCurrentWire == SC.WireFourObject) {
-					wire4.GetComponent<Wires> ().wire_4_zap ();
+                    wire3.GetComponent<Wires>().wire_3_zap();
 
-				if (SC.isFactory) {
-					alarm4.GetComponent<alarmScript> ().alarm_zap_4 (); 
-				} else {
-					fusebox4.GetComponent<fusebox_script> ().fusebox_zap_4 (); 
-				}
-			}
-		}
+                    if (SC.isFactory)
+                    {
+                        alarm3.GetComponent<alarmScript>().alarm_zap_3();
+                    }
+                    else
+                    {
+                        fusebox3.GetComponent<fusebox_script>().fusebox_zap_3();
+                    }
+                }
+            }
 
-		player.GetComponent<ChracterController> ().Clyde_zap ();
+            if (SC.WireFourObject != null)
+            {
+                if (ChargesCurrentWire == SC.WireFourObject)
+                {
+                    wire4.GetComponent<Wires>().wire_4_zap();
 
+                    if (SC.isFactory)
+                    {
+                        alarm4.GetComponent<alarmScript>().alarm_zap_4();
+                    }
+                    else
+                    {
+                        fusebox4.GetComponent<fusebox_script>().fusebox_zap_4();
+                    }
+                }
+            }
+            player.GetComponent<ChracterController>().Clyde_zap();
+        }
 		StartCoroutine (RestartLevel ());  
 
 	}
@@ -267,8 +286,12 @@ public class Charge : MonoBehaviour {
 	IEnumerator RestartLevel () { 
 
 		Debug.Log ("charge reset beginning"); 
-		yield return new WaitForSeconds (1.2f); 
-		SC.CurrentHealth--;
+        if (SC.isPrototype == false)
+        {
+            yield return new WaitForSeconds(1.2f);
+
+        }
+        SC.CurrentHealth--;
 		SC.RestartLevel();
 
 
@@ -306,38 +329,43 @@ public class Charge : MonoBehaviour {
 	public void SetFalse () {
 
 
+        if (SC.isPrototype == false)
+        {
+            if (SC.isFactory)
+            {
 
-		if (SC.isFactory) {
+                alarm1.GetComponent<alarmScript>().alarm_normal();
+                alarm2.GetComponent<alarmScript>().alarm_normal_2();
+                alarm3.GetComponent<alarmScript>().alarm_normal_3();
+                alarm4.GetComponent<alarmScript>().alarm_normal_4();
+                Debug.Log("charge reset end");
 
-			alarm1.GetComponent<alarmScript> ().alarm_normal (); 
-			alarm2.GetComponent<alarmScript> ().alarm_normal_2 (); 
-			alarm3.GetComponent<alarmScript> ().alarm_normal_3 (); 
-			alarm4.GetComponent<alarmScript> ().alarm_normal_4 (); 
-			Debug.Log ("charge reset end"); 
+            }
+            else
+            {
 
-		} else {
+                fusebox1.GetComponent<fusebox_script>().fusebox_normal();
+                fusebox2.GetComponent<fusebox_script>().fusebox_normal_2();
 
-			fusebox1.GetComponent<fusebox_script> ().fusebox_normal ();
-			fusebox2.GetComponent<fusebox_script> ().fusebox_normal_2 ();
-		
-			if (fusebox3 != null) {
+                if (fusebox3 != null)
+                {
 
-				fusebox3.GetComponent<fusebox_script> ().fusebox_normal_3 (); 
+                    fusebox3.GetComponent<fusebox_script>().fusebox_normal_3();
 
-			}
+                }
 
-			if (fusebox4 != null) {
+                if (fusebox4 != null)
+                {
 
-				fusebox4.GetComponent<fusebox_script> ().fusebox_normal_4 (); 
+                    fusebox4.GetComponent<fusebox_script>().fusebox_normal_4();
 
-			}
-			
-
-			Debug.Log ("charge reset end"); 
-
-		}
+                }
 
 
+                Debug.Log("charge reset end");
+
+            }
+        }
 	}
 
 }

@@ -6812,7 +6812,7 @@ MonoBehaviour:
   luaBindingName: flowchart
 --- !u!114 &1268022659
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -6841,7 +6841,7 @@ MonoBehaviour:
   - {fileID: 1268022660}
 --- !u!114 &1268022660
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -6859,7 +6859,7 @@ MonoBehaviour:
   sceneNameOLD: 
 --- !u!114 &1268022661
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -6889,7 +6889,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1268022663
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -6907,7 +6907,7 @@ MonoBehaviour:
   fadeTexture: {fileID: 0}
 --- !u!114 &1268022664
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -6923,7 +6923,7 @@ MonoBehaviour:
   waitUntilFinished: 1
 --- !u!114 &1268022665
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -6940,7 +6940,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &1268022666
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -10776,8 +10776,8 @@ MonoBehaviour:
   WireFourObject: {fileID: 883947133}
   PlayerObject: {fileID: 1039467704}
   ScoreUI: {fileID: 235144138}
-  CannotLose: 0
-  CannotWin: 0
+  CannotLose: 1
+  CannotWin: 1
   isMountainLevel: 0
   isFactory: 0
   PlayerControl: {fileID: 0}
