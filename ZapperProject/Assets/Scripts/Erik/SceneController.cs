@@ -88,7 +88,11 @@ public class SceneController : MonoBehaviour {
        
             foreach (GameObject deleteGameObject in GameObject.FindGameObjectsWithTag("charge"))
             {
-                DeleteGameObjects.Add(deleteGameObject);
+                
+				deleteGameObject.GetComponent<Charge> ().StopAllCoroutines (); 
+				deleteGameObject.GetComponent<Charge> ().SetFalse (); 
+				DeleteGameObjects.Add(deleteGameObject);
+
             }
             foreach (GameObject deleteGameObject in GameObject.FindGameObjectsWithTag("Target"))
             {

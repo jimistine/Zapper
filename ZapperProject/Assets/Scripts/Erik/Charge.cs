@@ -72,7 +72,7 @@ public class Charge : MonoBehaviour {
                     transform.Translate(Vector3.left * Time.deltaTime * (ChargeMoveSpeed / 3));
                 }
                 //
-                if (ChargesCurrentWire = SC.PlayerObject.GetComponent<ChracterController>().PlayerCurrentWire)
+                if (ChargesCurrentWire == SC.PlayerObject.GetComponent<ChracterController>().PlayerCurrentWire)
                 {
                     if (gameObject.transform.position.x < (SC.PlayerObject.transform.position.x) + 0.2f && gameObject.transform.position.x > (SC.PlayerObject.transform.position.x) - 0.2f)
                     {
@@ -267,6 +267,33 @@ public class Charge : MonoBehaviour {
 		wire3.GetComponent<Wires> ().wire_3_normal (); 
 		wire4.GetComponent<Wires> ().wire_4_normal (); 
 
+//		if (SC.isFactory) {
+//
+//			alarm1.GetComponent<alarmScript> ().alarm_normal (); 
+//			alarm2.GetComponent<alarmScript> ().alarm_normal_2 (); 
+//			alarm3.GetComponent<alarmScript> ().alarm_normal_3 (); 
+//			alarm4.GetComponent<alarmScript> ().alarm_normal_4 (); 
+//			Debug.Log ("charge reset end"); 
+//
+//		} else {
+//
+//			fusebox1.GetComponent<fusebox_script> ().fusebox_normal ();
+//			fusebox2.GetComponent<fusebox_script> ().fusebox_normal_2 ();
+//			fusebox3.GetComponent<fusebox_script> ().fusebox_normal_3 (); 
+//			fusebox4.GetComponent<fusebox_script> ().fusebox_normal_4 (); 
+//			Debug.Log ("charge reset end"); 
+//
+//		}
+
+
+	
+
+	}
+
+	public void SetFalse () {
+
+
+
 		if (SC.isFactory) {
 
 			alarm1.GetComponent<alarmScript> ().alarm_normal (); 
@@ -285,8 +312,6 @@ public class Charge : MonoBehaviour {
 
 		}
 
-
-	
 
 	}
 

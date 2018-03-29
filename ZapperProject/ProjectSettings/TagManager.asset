@@ -8,6 +8,8 @@ TagManager:
   - charge
   - Health
   - Memory
+  - tree
+  - platform
   layers:
   - Default
   - TransparentFX
