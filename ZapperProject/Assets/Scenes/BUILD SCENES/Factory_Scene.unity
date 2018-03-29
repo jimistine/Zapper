@@ -371,7 +371,7 @@ MonoBehaviour:
   SpawnType: 00000000000000000200000000000000
   BeatTime:
   - 0
-  - 15
+  - 60
   - 60
   - 60
   RateOfSpawn:
@@ -1174,7 +1174,7 @@ MonoBehaviour:
   SpawnType: 00000000000000000200000000000000
   BeatTime:
   - 0
-  - 15
+  - 60
   - 60
   - 60
   RateOfSpawn:
@@ -1483,8 +1483,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 527109326}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.86, y: 1.64, z: -3}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalPosition: {x: -8.79, y: 1.64, z: -3}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 28
@@ -2532,7 +2532,7 @@ Transform:
   m_GameObject: {fileID: 764123477}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 8.3, y: -1.68, z: -3}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 25
@@ -2842,8 +2842,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 926352409}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.87, y: -5.02, z: -3}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalPosition: {x: -7.83, y: -4.81, z: -3}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 26
@@ -3046,7 +3046,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SC: {fileID: 0}
   AM: {fileID: 0}
-  PlayerHorizontalSpeed: 1
+  PlayerHorizontalSpeed: 3
   CurrentWirePositionY: 0
   CurrentWirePositionX: 0
   MaxWirePosition: 4
@@ -3725,8 +3725,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1222348492}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.27, y: -2.66, z: -3}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalPosition: {x: 8.77, y: -0.44, z: -3}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 27
@@ -4460,7 +4460,7 @@ MonoBehaviour:
   SpawnType: 00000000000000000200000000000000
   BeatTime:
   - 0
-  - 15
+  - 60
   - 60
   - 60
   RateOfSpawn:
@@ -4612,7 +4612,7 @@ MonoBehaviour:
   SpawnType: 00000000000000000200000000000000
   BeatTime:
   - 0
-  - 15
+  - 60
   - 60
   - 60
   RateOfSpawn:
