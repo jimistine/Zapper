@@ -103,18 +103,28 @@ public class crowMove : MonoBehaviour {
 
 		boxCol.enabled = false;
         goSpeed = 0;
-		anim.SetBool ("Zap_Bool", true); 
-		StartCoroutine (ZapAnim()); 
+        if (SC.isPrototype == false)
+        {
+            anim.SetBool("Zap_Bool", true);
+            StartCoroutine(ZapAnim());
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+		
 
 	}
 
 	IEnumerator ZapAnim() {
-
-		yield return new WaitForSeconds (.1f); 
-		Debug.Log ("zapped!"); 
-		yield return new WaitForSeconds (.4f); 
-		Destroy (this.gameObject); 
-		yield return null; 
+        if (SC.isPrototype == false)
+        {
+            yield return new WaitForSeconds(.1f);
+            Debug.Log("zapped!");
+            yield return new WaitForSeconds(.4f);
+            Destroy(this.gameObject);
+            yield return null;
+        }
 
 	}
 

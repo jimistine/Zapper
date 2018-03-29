@@ -10745,8 +10745,8 @@ MonoBehaviour:
   WireFourObject: {fileID: 883947133}
   PlayerObject: {fileID: 1039467704}
   ScoreUI: {fileID: 235144138}
-  CannotLose: 0
-  CannotWin: 0
+  CannotLose: 1
+  CannotWin: 1
   isMountainLevel: 0
   isFactory: 0
   PlayerControl: {fileID: 0}
