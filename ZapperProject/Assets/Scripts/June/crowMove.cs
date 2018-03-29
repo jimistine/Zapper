@@ -35,6 +35,7 @@ public class crowMove : MonoBehaviour {
 		SC = FindObjectOfType<SceneController>();
 		anim = GetComponent<Animator> (); 
 		boxCol = GetComponent<BoxCollider2D> (); 
+
 	}
 
 	// Update is called once per frame
@@ -90,7 +91,7 @@ public class crowMove : MonoBehaviour {
 		StartCoroutine (pause ()); 
 	}
 
-	void FailStateCrow()
+	public void FailStateCrow()
 	{
 		Debug.Log("Crows fail state");
         SC.CurrentHealth--;

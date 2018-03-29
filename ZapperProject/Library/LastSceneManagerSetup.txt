@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/ErikTriesToBuildThings/IntroRound1.unity
+- path: Assets/Scenes/BUILD SCENES/2_Round 2.unity
   isLoaded: 1
   isActive: 1

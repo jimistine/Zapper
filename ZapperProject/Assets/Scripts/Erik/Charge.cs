@@ -14,7 +14,16 @@ public class Charge : MonoBehaviour {
 	public Sprite new_Sprite; 
 
 	public GameObject player;  
+
 	public GameObject fusebox1; 
+	public GameObject fusebox2; 
+	public GameObject fusebox3; 
+	public GameObject fusebox4; 
+
+	public GameObject alarm1;
+	public GameObject alarm2;
+	public GameObject alarm3; 
+	public GameObject alarm4; 
 
 	public GameObject wire1;
 	public GameObject wire2;
@@ -28,12 +37,21 @@ public class Charge : MonoBehaviour {
 		SC = FindObjectOfType<SceneController>();
 		AM = FindObjectOfType<AudioManager>();
 		player = GameObject.FindWithTag ("Player"); 
-		fusebox1 = GameObject.Find ("fusebox"); 
 
 		wire1 = GameObject.Find ("Wire_1"); 
 		wire2 = GameObject.Find ("Wire_2"); 
 		wire3 = GameObject.Find ("Wire_3"); 
 		wire4 = GameObject.Find ("Wire_4"); 
+
+		fusebox1 = GameObject.Find ("fusebox"); 
+		fusebox2 = GameObject.Find ("fusebox 2"); 
+		fusebox3 = GameObject.Find ("fusebox 3"); 
+		fusebox4 = GameObject.Find ("fusebox 4"); 
+
+		alarm1 = GameObject.Find ("alarm"); 
+		alarm2 = GameObject.Find ("alarm 2"); 
+		alarm3 = GameObject.Find ("alarm 3"); 
+		alarm4 = GameObject.Find ("alarm 4"); 
 	
 		 
 	}
@@ -54,7 +72,7 @@ public class Charge : MonoBehaviour {
                     transform.Translate(Vector3.left * Time.deltaTime * (ChargeMoveSpeed / 3));
                 }
                 //
-                if (ChargesCurrentWire = SC.PlayerObject.GetComponent<ChracterController>().PlayerCurrentWire)
+                if (ChargesCurrentWire == SC.PlayerObject.GetComponent<ChracterController>().PlayerCurrentWire)
                 {
                     if (gameObject.transform.position.x < (SC.PlayerObject.transform.position.x) + 0.2f && gameObject.transform.position.x > (SC.PlayerObject.transform.position.x) - 0.2f)
                     {
@@ -131,7 +149,7 @@ public class Charge : MonoBehaviour {
 
                 }
 
-                //Destroy(collision.gameObject);
+              	Destroy(collision.gameObject);
                 AM.Hit_source.PlayOneShot(AM.Hit);
 				SC.Score++;
 			}
@@ -173,24 +191,46 @@ public class Charge : MonoBehaviour {
 		if (SC.WireOneObject != null) {
 			if (ChargesCurrentWire == SC.WireOneObject) { 
 				wire1.GetComponent<Wires> ().wire_1_zap (); 
+				if (SC.isFactory) {
+					Debug.Log ("alarm 1 rang!");
+					alarm1.GetComponent<alarmScript> ().alarm_zap (); 
+				} else {
+					fusebox1.GetComponent<fusebox_script> ().fusebox_zap (); 
+				}
 			}
 		}
 
 		if (SC.WireTwoObject != null) {	
 			if (ChargesCurrentWire == SC.WireTwoObject) {
 				wire2.GetComponent<Wires> ().wire_2_zap (); 
+				if (SC.isFactory) {
+					Debug.Log ("alarm 2 rang!"); 
+					alarm2.GetComponent<alarmScript> ().alarm_zap_2 ();
+				} else {
+					fusebox2.GetComponent<fusebox_script> ().fusebox_zap_2 ();
+				}
 			}
 		}
 
 		if (SC.WireThreeObject != null) {
 			if (ChargesCurrentWire == SC.WireThreeObject) {
 				wire3.GetComponent<Wires> ().wire_3_zap (); 
+				if (SC.isFactory) {
+					alarm3.GetComponent<alarmScript> ().alarm_zap_3 (); 
+				} else {
+					fusebox3.GetComponent<fusebox_script> ().fusebox_zap_3 (); 
+				}
 			}
 		}
 
 		if (SC.WireFourObject != null) {
 			if (ChargesCurrentWire == SC.WireFourObject) {
 				wire4.GetComponent<Wires> ().wire_4_zap (); 
+				if (SC.isFactory) {
+					alarm4.GetComponent<alarmScript> ().alarm_zap_4 (); 
+				} else {
+					fusebox4.GetComponent<fusebox_script> ().fusebox_zap_4 (); 
+				}
 			}
 		}
 
@@ -212,18 +252,66 @@ public class Charge : MonoBehaviour {
 	}
 
 	IEnumerator RestartLevel () { 
-		
+
+		Debug.Log ("charge reset beginning"); 
 		yield return new WaitForSeconds (1.2f); 
 		SC.CurrentHealth--;
 		SC.RestartLevel();
 
+
+		//set animation states back to normal 
 		player.GetComponent<ChracterController> ().Clyde_normal (); 
-		fusebox1.GetComponent<fusebox_script> ().fusebox_normal ();
+
 		wire1.GetComponent<Wires> ().wire_1_normal (); 
 		wire2.GetComponent<Wires> ().wire_2_normal (); 
 		wire3.GetComponent<Wires> ().wire_3_normal (); 
 		wire4.GetComponent<Wires> ().wire_4_normal (); 
+
+//		if (SC.isFactory) {
+//
+//			alarm1.GetComponent<alarmScript> ().alarm_normal (); 
+//			alarm2.GetComponent<alarmScript> ().alarm_normal_2 (); 
+//			alarm3.GetComponent<alarmScript> ().alarm_normal_3 (); 
+//			alarm4.GetComponent<alarmScript> ().alarm_normal_4 (); 
+//			Debug.Log ("charge reset end"); 
+//
+//		} else {
+//
+//			fusebox1.GetComponent<fusebox_script> ().fusebox_normal ();
+//			fusebox2.GetComponent<fusebox_script> ().fusebox_normal_2 ();
+//			fusebox3.GetComponent<fusebox_script> ().fusebox_normal_3 (); 
+//			fusebox4.GetComponent<fusebox_script> ().fusebox_normal_4 (); 
+//			Debug.Log ("charge reset end"); 
+//
+//		}
+
+
 	
+
+	}
+
+	public void SetFalse () {
+
+
+
+		if (SC.isFactory) {
+
+			alarm1.GetComponent<alarmScript> ().alarm_normal (); 
+			alarm2.GetComponent<alarmScript> ().alarm_normal_2 (); 
+			alarm3.GetComponent<alarmScript> ().alarm_normal_3 (); 
+			alarm4.GetComponent<alarmScript> ().alarm_normal_4 (); 
+			Debug.Log ("charge reset end"); 
+
+		} else {
+
+			fusebox1.GetComponent<fusebox_script> ().fusebox_normal ();
+			fusebox2.GetComponent<fusebox_script> ().fusebox_normal_2 ();
+			fusebox3.GetComponent<fusebox_script> ().fusebox_normal_3 (); 
+			fusebox4.GetComponent<fusebox_script> ().fusebox_normal_4 (); 
+			Debug.Log ("charge reset end"); 
+
+		}
+
 
 	}
 

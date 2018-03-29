@@ -8,6 +8,8 @@ TagManager:
   - charge
   - Health
   - Memory
+  - tree
+  - platform
   layers:
   - Default
   - TransparentFX
@@ -45,12 +47,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Chute
-    uniqueID: 784847367
-    locked: 0
-  - name: Clock
-    uniqueID: 708394593
-    locked: 0
   - name: Conveyor
     uniqueID: 1741813989
     locked: 0
@@ -62,4 +58,13 @@ TagManager:
     locked: 0
   - name: Wires
     uniqueID: 1725716987
+    locked: 0
+  - name: Chute
+    uniqueID: 784847367
+    locked: 0
+  - name: Fusebox
+    uniqueID: 3142114517
+    locked: 0
+  - name: Clock
+    uniqueID: 708394593
     locked: 0

@@ -16,13 +16,22 @@ public class fusebox_script : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		//test function on keypress
 		if (Input.GetKeyDown (KeyCode.A)) {
 
 
 			anim.SetBool ("zap_bool", true); 
+
+			anim.SetBool ("zap_bool_2", true); 
+
+			anim.SetBool ("zap_bool_3", true); 
+
+			anim.SetBool ("zap_bool_4", true);
 		}
 		
 	}
+
+	//zap 
 
 	public void fusebox_zap () {
 
@@ -30,8 +39,47 @@ public class fusebox_script : MonoBehaviour {
 
 	}
 
+	public void fusebox_zap_2 () {
+
+		anim.SetBool ("zap_bool_2", true); 
+
+	}
+
+	public void fusebox_zap_3 () {
+
+		anim.SetBool ("zap_bool_3", true); 
+
+	}
+		
+	public void fusebox_zap_4 () {
+
+		anim.SetBool ("zap_bool_4", true); 
+
+
+	}
+
+	//normal
+
 	public void fusebox_normal () {
 
 		anim.SetBool ("zap_bool", false); 
+	}
+
+	public void fusebox_normal_2 () {
+
+		anim.SetBool ("zap_bool_2", false); 
+
+	}
+
+	public void fusebox_normal_3 () {
+
+		anim.SetBool ("zap_bool_3", false); 
+
+	}
+
+	public void fusebox_normal_4 () {
+
+		anim.SetBool ("zap_bool_4", false); 
+
 	}
 }
