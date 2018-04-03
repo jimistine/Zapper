@@ -367,17 +367,17 @@ MonoBehaviour:
   PlayerObj: {fileID: 0}
   currentBeatNum: 0
   BeatNum: 00000000010000000200000003000000
-  SpawnNum: 00000000000000005e1a000000000000
-  SpawnType: 00000000000000000200000000000000
+  SpawnNum: 00000000080000000000000000000000
+  SpawnType: 00000000000000000000000000000000
   BeatTime:
-  - 0
-  - 60
-  - 60
-  - 60
+  - 6
+  - 38
+  - 67
+  - 67
   RateOfSpawn:
   - 0
+  - 4
   - 0
-  - 0.1
   - 0
   SpawnAtATime: 01000000010000000100000001000000
   WillCancleNormalSpawn: 00000000
@@ -787,7 +787,7 @@ MonoBehaviour:
   WirePositionTop: 0
   PlayerPositionOffsetY: 0.1
   ChargesPositionOffsetY: 0.2
-  canSpawn: 1
+  canSpawn: 0
   anim: {fileID: 0}
 --- !u!61 &235468870
 BoxCollider2D:
@@ -1170,17 +1170,17 @@ MonoBehaviour:
   PlayerObj: {fileID: 0}
   currentBeatNum: 0
   BeatNum: 00000000010000000200000003000000
-  SpawnNum: 00000000000000005e1a000000000000
-  SpawnType: 00000000000000000200000000000000
+  SpawnNum: 00000000080000000000000000000000
+  SpawnType: 00000000000000000000000000000000
   BeatTime:
-  - 0
-  - 60
-  - 60
-  - 60
+  - 4
+  - 36
+  - 66
+  - 66
   RateOfSpawn:
   - 0
+  - 4
   - 0
-  - 0.1
   - 0
   SpawnAtATime: 01000000010000000100000001000000
   WillCancleNormalSpawn: 00000000
@@ -1695,7 +1695,7 @@ MonoBehaviour:
   WirePositionTop: 0
   PlayerPositionOffsetY: 0.1
   ChargesPositionOffsetY: 0.2
-  canSpawn: 1
+  canSpawn: 0
   anim: {fileID: 0}
 --- !u!61 &560653870
 BoxCollider2D:
@@ -2674,7 +2674,7 @@ MonoBehaviour:
   WirePositionTop: 0
   PlayerPositionOffsetY: 0.1
   ChargesPositionOffsetY: 0.2
-  canSpawn: 1
+  canSpawn: 0
   anim: {fileID: 0}
 --- !u!61 &883947135
 BoxCollider2D:
@@ -3365,7 +3365,7 @@ MonoBehaviour:
   WirePositionTop: 0
   PlayerPositionOffsetY: 0.1
   ChargesPositionOffsetY: 0.2
-  canSpawn: 1
+  canSpawn: 0
   anim: {fileID: 0}
 --- !u!61 &1071027962
 BoxCollider2D:
@@ -3857,7 +3857,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1268022658
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4456,17 +4456,17 @@ MonoBehaviour:
   PlayerObj: {fileID: 0}
   currentBeatNum: 0
   BeatNum: 00000000010000000200000003000000
-  SpawnNum: 00000000000000005e1a000000000000
-  SpawnType: 00000000000000000200000000000000
+  SpawnNum: 00000000080000000000000000000000
+  SpawnType: 00000000000000000000000000000000
   BeatTime:
   - 0
-  - 60
-  - 60
-  - 60
+  - 32
+  - 64
+  - 64
   RateOfSpawn:
   - 0
+  - 4
   - 0
-  - 0.1
   - 0
   SpawnAtATime: 01000000010000000100000001000000
   WillCancleNormalSpawn: 00000000
@@ -4608,17 +4608,17 @@ MonoBehaviour:
   PlayerObj: {fileID: 0}
   currentBeatNum: 0
   BeatNum: 00000000010000000200000003000000
-  SpawnNum: 00000000000000005e1a000000000000
-  SpawnType: 00000000000000000200000000000000
+  SpawnNum: 00000000080000000000000000000000
+  SpawnType: 00000000000000000000000000000000
   BeatTime:
-  - 0
-  - 60
-  - 60
-  - 60
+  - 2
+  - 34
+  - 65
+  - 65
   RateOfSpawn:
   - 0
+  - 4
   - 0
-  - 0.1
   - 0
   SpawnAtATime: 01000000010000000100000001000000
   WillCancleNormalSpawn: 00000000
@@ -5967,6 +5967,7 @@ MonoBehaviour:
   CannotWin: 0
   isMountainLevel: 0
   isFactory: 1
+  isPrototype: 0
   PlayerControl: {fileID: 0}
   ChargeScript: {fileID: 0}
   Spawner: {fileID: 0}

@@ -115,7 +115,17 @@ public class crowMove : MonoBehaviour {
 		
 
 	}
-
+    public void MakeCrowDisapear(float x)
+    {
+        crowSpeed = 0;
+        gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        StartCoroutine(DestroyinDelay(x));
+    }
+    IEnumerator DestroyinDelay(float x)
+    {
+        yield return new WaitForSeconds(x);
+        Destroy(gameObject);
+    }
 	IEnumerator ZapAnim() {
         if (SC.isPrototype == false)
         {
