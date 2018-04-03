@@ -131,19 +131,11 @@ public class crowSpawner : MonoBehaviour {
         if (TimeSinceFail> StoreAddedTime + (DelayBeforeStart + ((TimeSinceFailLevelsCapMax-(TimeSinceFailLevels-1)))))
         {
             StoreAddedTime += DelayBeforeStart + (TimeSinceFailLevelsCapMax - (TimeSinceFailLevels - 1));
-            if (WireToSpawn.GetComponent<Wires>().canWin == true)
-            {
-                spawnRate = spawnRate + 0.5f;
-            }
 
             if (TimeSinceFailLevels < TimeSinceFailLevelsCapMax - (TimeSinceFailLevelsCapMin-1))
             {
                 TimeSinceFailLevels+=1;
-                if (WireToSpawn.GetComponent<Wires>().canWin == false)
-                {
-                    spawnRate = spawnRate - 0.25f;
-                }
-                
+                spawnRate = spawnRate - 0.25f;
                 enemies[1].GetComponent<crowMove>().ChancetoSpawnCurrent += .33f;
             }
             // Edit Spawn Rates for spawner / Edit Odds of enemy types

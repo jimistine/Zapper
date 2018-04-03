@@ -18,7 +18,6 @@ public class Wires : MonoBehaviour {
     public float ChargesPositionOffsetY;
 
     public bool canSpawn;
-    public bool canWin = false;
 	public Animator anim; 
 
     // Use this for initialization

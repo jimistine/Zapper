@@ -226,7 +226,7 @@ public class ChracterController : MonoBehaviour {
                 SC.WinLevel();
             }
         }
-		if (Input.GetKey(KeyCode.Space)&& CanShoot == true && Time.timeSinceLevelLoad > 0.5f)
+		if (Input.GetKey(KeyCode.Space)&& CanShoot == true && Time.timeSinceLevelLoad > 2)
 		{
 			ChangeWire();
 

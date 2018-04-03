@@ -1560,7 +1560,6 @@ MonoBehaviour:
   PlayerPositionOffsetY: 0
   ChargesPositionOffsetY: 0
   canSpawn: 1
-  canWin: 0
   anim: {fileID: 0}
 --- !u!61 &235468870
 BoxCollider2D:
@@ -3076,7 +3075,6 @@ MonoBehaviour:
   PlayerPositionOffsetY: 0
   ChargesPositionOffsetY: 0
   canSpawn: 0
-  canWin: 0
   anim: {fileID: 0}
 --- !u!61 &560653870
 BoxCollider2D:
@@ -4487,7 +4485,6 @@ MonoBehaviour:
   PlayerPositionOffsetY: 0
   ChargesPositionOffsetY: 0
   canSpawn: 0
-  canWin: 0
   anim: {fileID: 0}
 --- !u!61 &883947135
 BoxCollider2D:
@@ -5804,7 +5801,6 @@ MonoBehaviour:
   PlayerPositionOffsetY: 0
   ChargesPositionOffsetY: 0
   canSpawn: 1
-  canWin: 0
   anim: {fileID: 0}
 --- !u!61 &1071027962
 BoxCollider2D:
@@ -9743,7 +9739,7 @@ MonoBehaviour:
   - {fileID: 1697413447292782, guid: af9a10b32d76440ae9429fb6084380ed, type: 2}
   WireToSpawn: {fileID: 0}
   spawnRate: 1.1
-  spawnRateMin: 2
+  spawnRateMin: 2.25
   spawnRateMax: 0.5
   gapSpace: 0.2
   TotalCrowsForLevel: 0
@@ -10753,7 +10749,6 @@ MonoBehaviour:
   CannotWin: 0
   isMountainLevel: 0
   isFactory: 0
-  isPrototype: 0
   PlayerControl: {fileID: 0}
   ChargeScript: {fileID: 0}
   Spawner: {fileID: 0}

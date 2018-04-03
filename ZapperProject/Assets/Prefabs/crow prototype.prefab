@@ -110,9 +110,6 @@ MonoBehaviour:
   ScoreForBird: 1
   CanReflectCharge: 0
   anim: {fileID: 0}
-  isBird: 1
-  isClock: 0
-  isRock: 0
 --- !u!212 &212695718335865992
 SpriteRenderer:
   m_ObjectHideFlags: 1

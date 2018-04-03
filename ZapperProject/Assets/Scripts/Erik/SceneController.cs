@@ -23,8 +23,7 @@ public class SceneController : MonoBehaviour {
     public bool CannotLose;
     public bool CannotWin;
     public bool isMountainLevel;
-	public bool isFactory;
-    public bool isPrototype;
+	public bool isFactory; 
 
     public ChracterController PlayerControl;
 	public Charge ChargeScript; 
@@ -56,7 +55,7 @@ public class SceneController : MonoBehaviour {
 	}
     private void Update()
     {
-        if(WireOneObject.GetComponent<Wires>().canWin == true && WireTwoObject.GetComponent<Wires>().canWin == true && WireThreeObject.GetComponent<Wires>().canWin == true && WireFourObject.GetComponent<Wires>().canWin == true)
+        if(WireOneObject.GetComponent<Wires>().canSpawn == false && WireTwoObject.GetComponent<Wires>().canSpawn == false && WireThreeObject.GetComponent<Wires>().canSpawn == false&& WireFourObject.GetComponent<Wires>().canSpawn == false)
         {
             Debug.Log("Done");
             
@@ -97,15 +96,8 @@ public class SceneController : MonoBehaviour {
             }
             foreach (GameObject deleteGameObject in GameObject.FindGameObjectsWithTag("Target"))
             {
-            if (WireOneObject.GetComponent<Wires>().canWin == true && WireTwoObject.GetComponent<Wires>().canWin == true && WireThreeObject.GetComponent<Wires>().canWin == true && WireFourObject.GetComponent<Wires>().canWin == true)
-            {
-                deleteGameObject.GetComponent<crowMove>().MakeCrowDisapear(5);
-            }else
-            {
                 DeleteGameObjects.Add(deleteGameObject);
-
             }
-        }
             // delete all clone game objects
           
         foreach (GameObject deleteThis in DeleteGameObjects)
