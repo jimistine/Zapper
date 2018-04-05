@@ -18,32 +18,32 @@ public class SceneAdvancer : MonoBehaviour
 	void Update()
 	{
 		// TO ROUND 4
-		if (MemoryOBJ.GetComponent<Memory>().WonThirdRound)
-		{
-			Flowchart.BroadcastFungusMessage("Load round 4 (Won 3)");
-		}
-		//
-		if (MemoryOBJ.GetComponent<Memory>().WonSecondRound &&
-		    MemoryOBJ.GetComponent<Memory>().PlayedThirdRound &&
-		    MemoryOBJ.GetComponent<Memory>().WonThirdRound == false)
-		{
-			Flowchart.BroadcastFungusMessage("Load round 4 (Won 2 Lost 1)");
-		}
-		//
-		if (MemoryOBJ.GetComponent<Memory>().WonFirstRound == false &&
-			MemoryOBJ.GetComponent<Memory>().WonSecondRound == false &&
-		    MemoryOBJ.GetComponent<Memory>().WonThirdRound)
-		{
-			Flowchart.BroadcastFungusMessage("Load round 4 (Won 1 Lost 2)");
-		}
-		//
-		if (MemoryOBJ.GetComponent<Memory>().WonFirstRound == false &&
-		    MemoryOBJ.GetComponent<Memory>().WonSecondRound == false &&
-		    MemoryOBJ.GetComponent<Memory>().PlayedThirdRound &&
-		    MemoryOBJ.GetComponent<Memory>().WonThirdRound == false)
-		{
-			Flowchart.BroadcastFungusMessage("Load round 4 (Lost 3)");
-		}
+//		if (MemoryOBJ.GetComponent<Memory>().WonThirdRound)
+//		{
+//			Flowchart.BroadcastFungusMessage("Load round 4 (Won 3)");
+//		}
+//	
+//		if (MemoryOBJ.GetComponent<Memory>().WonSecondRound &&
+//		    MemoryOBJ.GetComponent<Memory>().PlayedThirdRound &&
+//		    MemoryOBJ.GetComponent<Memory>().WonThirdRound == false)
+//		{
+//			Flowchart.BroadcastFungusMessage("Load round 4 (Won 2 Lost 1)");
+//		}
+//	
+//		if (MemoryOBJ.GetComponent<Memory>().WonFirstRound == false &&
+//			MemoryOBJ.GetComponent<Memory>().WonSecondRound == false &&
+//		    MemoryOBJ.GetComponent<Memory>().WonThirdRound)
+//		{
+//			Flowchart.BroadcastFungusMessage("Load round 4 (Won 1 Lost 2)");
+//		}
+//
+//		if (MemoryOBJ.GetComponent<Memory>().WonFirstRound == false &&
+//		    MemoryOBJ.GetComponent<Memory>().WonSecondRound == false &&
+//		    MemoryOBJ.GetComponent<Memory>().PlayedThirdRound &&
+//		    MemoryOBJ.GetComponent<Memory>().WonThirdRound == false)
+//		{
+//			Flowchart.BroadcastFungusMessage("Load round 4 (Lost 3)");
+//		}
 	}
 	
 	public void CheckStateToLoad()
@@ -58,30 +58,30 @@ public class SceneAdvancer : MonoBehaviour
 		    MemoryOBJ.GetComponent<Memory>().PlayedThirdRound == false &&
 		    MemoryOBJ.GetComponent<Memory>().WonSecondRound)
 		{
-			Flowchart.BroadcastFungusMessage ("Play music fail (Won)");
+			Flowchart.BroadcastFungusMessage ("First VO (Won)");
 		}
 		if (MemoryOBJ.GetComponent<Memory>().PlayedFirstRound &&
 		    MemoryOBJ.GetComponent<Memory>().PlayedSecondRound &&
 		    MemoryOBJ.GetComponent<Memory>().PlayedThirdRound == false &&
 		    MemoryOBJ.GetComponent<Memory>().WonSecondRound == false)
 		{
-			Flowchart.BroadcastFungusMessage ("Play music fail (Lost)");
+			Flowchart.BroadcastFungusMessage ("First VO (Lost)");
 		}
-
-		if (MemoryOBJ.GetComponent<Memory>().PlayedFirstRound &&
-			MemoryOBJ.GetComponent<Memory>().PlayedSecondRound &&
-			MemoryOBJ.GetComponent<Memory>().PlayedThirdRound &&
-			MemoryOBJ.GetComponent<Memory>().WonSecondRound == false &&
-			MemoryOBJ.GetComponent<Memory>().WonThirdRound == false)
-		{
-			Flowchart.BroadcastFungusMessage ("Reload Round 3");
-		}
+//
 //		if (MemoryOBJ.GetComponent<Memory>().PlayedFirstRound &&
-//		    MemoryOBJ.GetComponent<Memory>().PlayedSecondRound &&
-//		    MemoryOBJ.GetComponent<Memory>().PlayedThirdRound)
+//			MemoryOBJ.GetComponent<Memory>().PlayedSecondRound &&
+//			MemoryOBJ.GetComponent<Memory>().PlayedThirdRound &&
+//			MemoryOBJ.GetComponent<Memory>().WonSecondRound == false &&
+//			MemoryOBJ.GetComponent<Memory>().WonThirdRound == false)
 //		{
-//			Flowchart.BroadcastFungusMessage ("Load Prototype Scene");
+//			Flowchart.BroadcastFungusMessage ("Reload Round 3");
 //		}
+		if (MemoryOBJ.GetComponent<Memory>().PlayedFirstRound &&
+		    MemoryOBJ.GetComponent<Memory>().PlayedSecondRound &&
+		    MemoryOBJ.GetComponent<Memory>().PlayedThirdRound)
+		{
+			Flowchart.BroadcastFungusMessage ("Music Loop");
+		}
 	}
 
 //	public void CheckOther()

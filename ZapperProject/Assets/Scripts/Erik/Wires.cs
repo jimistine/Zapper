@@ -109,5 +109,15 @@ public class Wires : MonoBehaviour {
 
 	}
 
+	// Called by fungus to toggle spawning in game
+	public void set_spawn_false()
+	{
+		canSpawn = false;
+	}
+	
+	public void set_spawn_true()
+	{
+		canSpawn = true;
+	}
 
 }
