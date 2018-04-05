@@ -11,7 +11,7 @@ public class Charge : MonoBehaviour {
 	public GameObject ChargesCurrentWire;
 	bool hasTriggered = false; 
 
-	public Sprite new_Sprite; 
+	public Sprite new_Sprite;  
 
 	public GameObject player;  
 
@@ -29,6 +29,8 @@ public class Charge : MonoBehaviour {
 	public GameObject wire2;
 	public GameObject wire3;
 	public GameObject wire4; 
+
+	public Animator anim; 
 
 
 	// Use this for initialization
@@ -52,6 +54,8 @@ public class Charge : MonoBehaviour {
 		alarm2 = GameObject.Find ("alarm 2"); 
 		alarm3 = GameObject.Find ("alarm 3"); 
 		alarm4 = GameObject.Find ("alarm 4"); 
+	
+		anim = GetComponent<Animator> ();
 	
 		 
 	}
@@ -101,6 +105,7 @@ public class Charge : MonoBehaviour {
             if (isReturningCharge == true)
             {
                 transform.Translate(Vector3.down * Time.deltaTime * (ChargeMoveSpeed / 3));
+
                if (transform.position.y < ChargesCurrentWire.GetComponent<Wires>().StartPositionBottom)
                 {
                     Destroy(gameObject);
@@ -130,7 +135,18 @@ public class Charge : MonoBehaviour {
 				if (collision.gameObject.GetComponent<crowMove>().CanReflectCharge == true)
 				{
 					isReturningCharge = true;
-					ChangeSprite (); 
+
+					if (collision.gameObject.GetComponent<crowMove> ().isClock) {
+						ChangeSprite (); 
+
+					}
+
+					if(collision.gameObject.GetComponent<crowMove> ().isRock) {
+
+						Debug.Log ("shattered!");
+						anim.SetBool ("shatter_bool", true); 
+				
+					}
 				}
 				else
 				{
@@ -150,7 +166,7 @@ public class Charge : MonoBehaviour {
 
                 }
 
-				if (collision.gameObject.GetComponent<crowMove>().isClock == true) {
+				if (collision.gameObject.GetComponent<crowMove>().isClock == true || collision.gameObject.GetComponent<crowMove>().isRock == true) {
 
 					Destroy (collision.gameObject);
 
@@ -256,6 +272,7 @@ public class Charge : MonoBehaviour {
 	public void ChangeSprite() {
 
 		this.GetComponent<SpriteRenderer>().sprite = new_Sprite;
+		Debug.Log ("changed sprite!"); 
 	}
 
 	IEnumerator WaitForDestruction () {
@@ -280,26 +297,6 @@ public class Charge : MonoBehaviour {
 		wire3.GetComponent<Wires> ().wire_3_normal (); 
 		wire4.GetComponent<Wires> ().wire_4_normal (); 
 
-//		if (SC.isFactory) {
-//
-//			alarm1.GetComponent<alarmScript> ().alarm_normal (); 
-//			alarm2.GetComponent<alarmScript> ().alarm_normal_2 (); 
-//			alarm3.GetComponent<alarmScript> ().alarm_normal_3 (); 
-//			alarm4.GetComponent<alarmScript> ().alarm_normal_4 (); 
-//			Debug.Log ("charge reset end"); 
-//
-//		} else {
-//
-//			fusebox1.GetComponent<fusebox_script> ().fusebox_normal ();
-//			fusebox2.GetComponent<fusebox_script> ().fusebox_normal_2 ();
-//			fusebox3.GetComponent<fusebox_script> ().fusebox_normal_3 (); 
-//			fusebox4.GetComponent<fusebox_script> ().fusebox_normal_4 (); 
-//			Debug.Log ("charge reset end"); 
-//
-//		}
-
-
-	
 
 	}
 
