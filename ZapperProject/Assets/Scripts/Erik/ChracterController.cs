@@ -20,6 +20,8 @@ public class ChracterController : MonoBehaviour {
 	public GameObject PlayerCurrentWire;
 	public GameObject ChargeObjects;
 
+	public SpriteRenderer mySpriteRenderer; 
+
 	public bool CanShoot = true;
     public bool CanMoveLeftRight = true;
     public bool isFalling = false;
@@ -34,9 +36,10 @@ public class ChracterController : MonoBehaviour {
    public bool IsinStartPosition = false;
 
 
+
 	public void Start () {
 
-
+		mySpriteRenderer = gameObject.GetComponent<SpriteRenderer> (); 
 		anim = GetComponent<Animator> (); 
 
 		SC = FindObjectOfType<SceneController>();
@@ -252,7 +255,11 @@ public class ChracterController : MonoBehaviour {
 			anim.SetBool ("Zap_Bool", true); 
 		}
         if (isFalling == true)
-        {
+        
+		{
+			//flashing the character animation when player is hit 
+			this.GetComponent<Flash>().flicker (mySpriteRenderer); 
+
             if (transform.position.y > PlayerCurrentWire.GetComponent<Wires>().StartPositionBottom)
             {
                 transform.Translate(Vector3.down * Time.deltaTime * PlayerHorizontalSpeed);
@@ -270,6 +277,7 @@ public class ChracterController : MonoBehaviour {
         yield return new WaitForSeconds(1);
         isFalling = false;
         CanShoot = true;
+		mySpriteRenderer.enabled = true; 
     }
 
 	IEnumerator Anim_shoot () {
