@@ -78,9 +78,18 @@ public class SceneAdvancer : MonoBehaviour
 //		}
 		if (MemoryOBJ.GetComponent<Memory>().PlayedFirstRound &&
 		    MemoryOBJ.GetComponent<Memory>().PlayedSecondRound &&
-		    MemoryOBJ.GetComponent<Memory>().PlayedThirdRound)
+		    MemoryOBJ.GetComponent<Memory>().PlayedThirdRound &&
+		    MemoryOBJ.GetComponent<Memory>().WonSecondRound == false)
 		{
-			Flowchart.BroadcastFungusMessage ("Music Loop");
+			Flowchart.BroadcastFungusMessage ("Music Loop to 2Wires");
+		}
+		
+		if (MemoryOBJ.GetComponent<Memory>().PlayedFirstRound &&
+		    MemoryOBJ.GetComponent<Memory>().PlayedSecondRound &&
+		    MemoryOBJ.GetComponent<Memory>().PlayedThirdRound &&
+		    MemoryOBJ.GetComponent<Memory>().WonSecondRound)
+		{
+			Flowchart.BroadcastFungusMessage ("Music Loop to 4Wires");
 		}
 	}
 
