@@ -340,7 +340,7 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 60
+  - 75
   - 60
   RateOfSpawn:
   - 0
@@ -1634,6 +1634,7 @@ MonoBehaviour:
   PlayerPositionOffsetY: 0
   ChargesPositionOffsetY: 0
   canSpawn: 1
+  canWin: 0
   anim: {fileID: 0}
 --- !u!61 &235468870
 BoxCollider2D:
@@ -2286,7 +2287,7 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 60
+  - 75
   - 60
   RateOfSpawn:
   - 0
@@ -3074,6 +3075,7 @@ MonoBehaviour:
   PlayerPositionOffsetY: 0
   ChargesPositionOffsetY: 0
   canSpawn: 0
+  canWin: 0
   anim: {fileID: 0}
 --- !u!61 &560653870
 BoxCollider2D:
@@ -3535,7 +3537,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 2805430d5c03140bfafafe54afa8ec6b, type: 2}
+  - {fileID: 2100000, guid: 0f7f2e02185924fc7aebf87f9aa95cb3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4362,6 +4364,7 @@ MonoBehaviour:
   PlayerPositionOffsetY: 0
   ChargesPositionOffsetY: 0
   canSpawn: 0
+  canWin: 0
   anim: {fileID: 0}
 --- !u!61 &883947135
 BoxCollider2D:
@@ -5663,6 +5666,7 @@ MonoBehaviour:
   PlayerPositionOffsetY: 0
   ChargesPositionOffsetY: 0
   canSpawn: 1
+  canWin: 0
   anim: {fileID: 0}
 --- !u!61 &1071027962
 BoxCollider2D:
@@ -6705,7 +6709,6 @@ GameObject:
   - component: {fileID: 1268022663}
   - component: {fileID: 1268022661}
   - component: {fileID: 1268022676}
-  - component: {fileID: 1268022678}
   - component: {fileID: 1268022680}
   - component: {fileID: 1268022677}
   - component: {fileID: 1268022679}
@@ -6743,8 +6746,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1268022660}
-  selectedCommands:
-  - {fileID: 1268022681}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -6819,7 +6821,6 @@ MonoBehaviour:
   - {fileID: 1268022664}
   - {fileID: 1268022663}
   - {fileID: 1268022661}
-  - {fileID: 1268022678}
 --- !u!114 &1268022661
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -7136,22 +7137,6 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
---- !u!114 &1268022678
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1268022657}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 16
-  indentLevel: 0
-  targetObject: {fileID: 883947133}
-  methodName: 
-  delay: 0
 --- !u!114 &1268022679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7866,7 +7851,7 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 30
+  - 75
   - 30
   RateOfSpawn:
   - 0
@@ -7998,7 +7983,7 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 30
+  - 75
   - 30
   RateOfSpawn:
   - 0

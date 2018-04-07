@@ -340,7 +340,7 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 60
+  - 75
   - 60
   RateOfSpawn:
   - 0
@@ -1634,6 +1634,7 @@ MonoBehaviour:
   PlayerPositionOffsetY: 0
   ChargesPositionOffsetY: 0
   canSpawn: 1
+  canWin: 0
   anim: {fileID: 0}
 --- !u!61 &235468870
 BoxCollider2D:
@@ -2286,7 +2287,7 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 60
+  - 75
   - 60
   RateOfSpawn:
   - 0
@@ -3075,6 +3076,7 @@ MonoBehaviour:
   PlayerPositionOffsetY: 0
   ChargesPositionOffsetY: 0
   canSpawn: 0
+  canWin: 0
   anim: {fileID: 0}
 --- !u!61 &560653870
 BoxCollider2D:
@@ -3553,7 +3555,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 2805430d5c03140bfafafe54afa8ec6b, type: 2}
+  - {fileID: 2100000, guid: be620dba8c82843058d94303aecae4cd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4412,6 +4414,7 @@ MonoBehaviour:
   PlayerPositionOffsetY: 0
   ChargesPositionOffsetY: 0
   canSpawn: 0
+  canWin: 0
   anim: {fileID: 0}
 --- !u!61 &883947135
 BoxCollider2D:
@@ -5730,6 +5733,7 @@ MonoBehaviour:
   PlayerPositionOffsetY: 0
   ChargesPositionOffsetY: 0
   canSpawn: 1
+  canWin: 0
   anim: {fileID: 0}
 --- !u!61 &1071027962
 BoxCollider2D:
@@ -6836,7 +6840,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 299
     y: 134.73224
-    width: 162.55928
+    width: 166.11378
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7917,7 +7921,7 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 60
+  - 75
   - 60
   RateOfSpawn:
   - 0
@@ -8049,7 +8053,7 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 60
+  - 75
   - 60
   RateOfSpawn:
   - 0
