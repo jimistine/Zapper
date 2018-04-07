@@ -35,7 +35,7 @@ public class ChracterController : MonoBehaviour {
 	public static Animator anim;
    public bool IsinStartPosition = false;
 
-
+	public GameObject wire1;
 
 	public void Start () {
 
@@ -286,9 +286,6 @@ public class ChracterController : MonoBehaviour {
 		yield return new WaitForSeconds (.2f); 
 		anim.SetBool ("Shoot_Bool", false); 
 		yield return null; 
-
-
-
 	}
 
 	public void Clyde_zap () {
@@ -301,6 +298,21 @@ public class ChracterController : MonoBehaviour {
 		anim.SetBool ("Zap_Bool", false); 
 	}
 
+	//Called by Fungus to expand/reduce player movement on the fly
+	public void set_max_pos_4()
+	{
+		MaxWirePosition = 4;
+	}
+	public void set_max_pos_2()
+	{
+		MaxWirePosition = 2;
+	}
+	//Called by Fungus to move player at will
+
+	public void set_player_pos_1()
+	{
+		PlayerCurrentWire = wire1;
+	}
 
 }
 

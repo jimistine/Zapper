@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -786,12 +786,6 @@ GameObject:
   - component: {fileID: 1411999141}
   - component: {fileID: 1411999138}
   - component: {fileID: 1411999137}
-  - component: {fileID: 1411999136}
-  - component: {fileID: 1411999135}
-  - component: {fileID: 1411999134}
-  - component: {fileID: 1411999133}
-  - component: {fileID: 1411999132}
-  - component: {fileID: 1411999131}
   - component: {fileID: 1411999130}
   - component: {fileID: 1411999151}
   - component: {fileID: 1411999150}
@@ -815,8 +809,6 @@ GameObject:
   - component: {fileID: 1411999156}
   - component: {fileID: 1411999117}
   - component: {fileID: 1411999129}
-  - component: {fileID: 1411999161}
-  - component: {fileID: 1411999160}
   - component: {fileID: 1411999119}
   - component: {fileID: 1411999164}
   - component: {fileID: 1411999163}
@@ -1204,11 +1196,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1411999142}
-  - {fileID: 1411999145}
-  - {fileID: 1411999148}
-  - {fileID: 1411999151}
-  selectedCommands: []
+  - {fileID: 1411999138}
+  selectedCommands:
+  - {fileID: 1411999130}
   variables: []
   description: 
   stepPause: 0
@@ -1386,105 +1376,6 @@ MonoBehaviour:
     stringVal: 3_Round 3 Lost
   loadingImage: {fileID: 0}
   sceneNameOLD: 
---- !u!114 &1411999131
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1411999102}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 46
-  indentLevel: 0
-  soundClip: {fileID: 8300000, guid: 43a994c6f951d4aad99af6289cb2a235, type: 3}
-  volume: 1
-  waitUntilFinished: 1
---- !u!114 &1411999132
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1411999102}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 45
-  indentLevel: 0
-  _duration:
-    floatRef: {fileID: 0}
-    floatVal: 1
-  durationOLD: 0
---- !u!114 &1411999133
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1411999102}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 44
-  indentLevel: 0
-  soundClip: {fileID: 8300000, guid: f71ff64bcd369468aa7a17acdb86f044, type: 3}
-  volume: 1
-  waitUntilFinished: 1
---- !u!114 &1411999134
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1411999102}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 43
-  indentLevel: 0
-  _duration:
-    floatRef: {fileID: 0}
-    floatVal: 1
-  durationOLD: 0
---- !u!114 &1411999135
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1411999102}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 42
-  indentLevel: 0
-  soundClip: {fileID: 8300000, guid: 3b4e1657bb8744ee1b5c8df1275eb346, type: 3}
-  volume: 1
-  waitUntilFinished: 1
---- !u!114 &1411999136
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1411999102}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 41
-  indentLevel: 0
-  _duration:
-    floatRef: {fileID: 0}
-    floatVal: 3.5
-  durationOLD: 0
 --- !u!114 &1411999137
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1498,7 +1389,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 40
   indentLevel: 0
-  soundClip: {fileID: 8300000, guid: 5d9eeb6cf084549d39c03d19dc5c5cf4, type: 3}
+  soundClip: {fileID: 8300000, guid: 17dc92a7cc520460cb384eea10e19836, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &1411999138
@@ -1526,14 +1417,6 @@ MonoBehaviour:
   eventHandler: {fileID: 1411999119}
   commandList:
   - {fileID: 1411999137}
-  - {fileID: 1411999136}
-  - {fileID: 1411999161}
-  - {fileID: 1411999160}
-  - {fileID: 1411999135}
-  - {fileID: 1411999134}
-  - {fileID: 1411999133}
-  - {fileID: 1411999132}
-  - {fileID: 1411999131}
   - {fileID: 1411999130}
 --- !u!114 &1411999139
 MonoBehaviour:
@@ -1915,46 +1798,6 @@ MonoBehaviour:
     floatRef: {fileID: 0}
     floatVal: 2
   durationOLD: 0
---- !u!114 &1411999160
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1411999102}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 79
-  indentLevel: 0
-  _targetGameObject:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 1928824319}
-  activeState:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  targetGameObjectOLD: {fileID: 0}
---- !u!114 &1411999161
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1411999102}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 78
-  indentLevel: 0
-  _targetGameObject:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 1467929191}
-  activeState:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
-  targetGameObjectOLD: {fileID: 0}
 --- !u!114 &1411999162
 MonoBehaviour:
   m_ObjectHideFlags: 2
