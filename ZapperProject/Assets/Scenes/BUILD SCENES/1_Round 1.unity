@@ -1560,6 +1560,7 @@ MonoBehaviour:
   PlayerPositionOffsetY: 0
   ChargesPositionOffsetY: 0
   canSpawn: 1
+  canWin: 0
   anim: {fileID: 0}
 --- !u!61 &235468870
 BoxCollider2D:
@@ -3075,6 +3076,7 @@ MonoBehaviour:
   PlayerPositionOffsetY: 0
   ChargesPositionOffsetY: 0
   canSpawn: 0
+  canWin: 0
   anim: {fileID: 0}
 --- !u!61 &560653870
 BoxCollider2D:
@@ -3553,7 +3555,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 2805430d5c03140bfafafe54afa8ec6b, type: 2}
+  - {fileID: 2100000, guid: c613250cf0010402397329d4d6645d6f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4485,6 +4487,7 @@ MonoBehaviour:
   PlayerPositionOffsetY: 0
   ChargesPositionOffsetY: 0
   canSpawn: 0
+  canWin: 0
   anim: {fileID: 0}
 --- !u!61 &883947135
 BoxCollider2D:
@@ -5414,8 +5417,9 @@ MonoBehaviour:
   MaxWirePosition: 2
   MinWirePosition: 1
   PlayerCurrentWire: {fileID: 0}
-  ChargeObjects: {fileID: 1347931769218562, guid: 692319439482146b4b96b4415eaf592f,
+  ChargeObjects: {fileID: 1902694361661754, guid: be122bce40d3b4352b8bf462feaea202,
     type: 2}
+  mySpriteRenderer: {fileID: 0}
   CanShoot: 1
   CanMoveLeftRight: 1
   isFalling: 0
@@ -5801,6 +5805,7 @@ MonoBehaviour:
   PlayerPositionOffsetY: 0
   ChargesPositionOffsetY: 0
   canSpawn: 1
+  canWin: 0
   anim: {fileID: 0}
 --- !u!61 &1071027962
 BoxCollider2D:

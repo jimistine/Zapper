@@ -69,14 +69,14 @@ public class Choreographer : MonoBehaviour {
         ///
         if (currentBeatNum > 0 && IsCoreographerEnding == false && BeatsValueNum[currentBeatNum] != 0)
         {
-            if (BeatsBoolTotalControl[currentBeatNum])
+            if (BeatsBoolTotalControl[currentBeatNum] == true)
             {
-                Debug.Log("There true");
+                //Debug.Log("There true");
                 DissableArcadeSpawner(WireNum);
             }
-            if (BeatsBoolTotalControl[currentBeatNum])
+            if (BeatsBoolTotalControl[currentBeatNum] == false)
             {
-                Debug.Log("There false");
+                //Debug.Log("There false");
                 EnableArcadeSpawner(WireNum);
             }
 
@@ -121,7 +121,8 @@ public class Choreographer : MonoBehaviour {
         {
             Debug.Log("Ending coreography" + " Wire " + WireNum);
             IsCoreographerEnding = true;
-            DissableArcadeSpawner(WireNum);
+            //DissableArcadeSpawner(WireNum);
+            WireCoreographer.GetComponent<Wires>().canWin = true;
         }
 
     }
