@@ -340,7 +340,7 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 60
+  - 25
   - 60
   RateOfSpawn:
   - 0
@@ -2287,7 +2287,7 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 60
+  - 25
   - 60
   RateOfSpawn:
   - 0
@@ -7382,7 +7382,7 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 60
+  - 25
   - 60
   RateOfSpawn:
   - 0
@@ -7514,7 +7514,7 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 60
+  - 25
   - 60
   RateOfSpawn:
   - 0

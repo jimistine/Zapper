@@ -340,7 +340,7 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 30
+  - 20
   - 30
   RateOfSpawn:
   - 0
@@ -2213,7 +2213,7 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 30
+  - 20
   - 30
   RateOfSpawn:
   - 0
@@ -5429,6 +5429,7 @@ MonoBehaviour:
   playerY: 0
   playerX: 0
   IsinStartPosition: 0
+  wire1: {fileID: 0}
 --- !u!61 &1039467706
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7593,7 +7594,7 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 30
+  - 20
   - 30
   RateOfSpawn:
   - 0
@@ -7725,7 +7726,7 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 30
+  - 20
   - 30
   RateOfSpawn:
   - 0

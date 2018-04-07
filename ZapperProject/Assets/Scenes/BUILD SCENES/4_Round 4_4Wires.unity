@@ -4802,19 +4802,10 @@ MonoBehaviour:
   Hit_source: {fileID: 1504388195}
   Shoot_source: {fileID: 1986085758}
   FailSound_source: {fileID: 2080914984}
-  VO_source: {fileID: 0}
+  VO_source: {fileID: 1947654310}
   Shoot: {fileID: 8300000, guid: d9c57a9112493498799157d96964bb3f, type: 3}
   Fail: {fileID: 8300000, guid: a5daa1eb9be1d4229ae0a3510483d049, type: 3}
   Hit: {fileID: 8300000, guid: 04d5b3fe5a8004086a53aeec8ae15e3f, type: 3}
-  VOClip_1: {fileID: 0}
-  VOClip_2: {fileID: 0}
-  VOClip_3: {fileID: 0}
-  VOClip_4: {fileID: 0}
-  VOClip_5: {fileID: 0}
-  VOClip_6: {fileID: 0}
-  VOClip_7: {fileID: 0}
-  VOClip_8: {fileID: 0}
-  VOClip_9: {fileID: 0}
 --- !u!4 &932989999
 Transform:
   m_ObjectHideFlags: 0
