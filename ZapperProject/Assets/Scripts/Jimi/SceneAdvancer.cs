@@ -67,15 +67,15 @@ public class SceneAdvancer : MonoBehaviour
 		{
 			Flowchart.BroadcastFungusMessage ("First VO (Lost)");
 		}
-//
-//		if (MemoryOBJ.GetComponent<Memory>().PlayedFirstRound &&
-//			MemoryOBJ.GetComponent<Memory>().PlayedSecondRound &&
-//			MemoryOBJ.GetComponent<Memory>().PlayedThirdRound &&
-//			MemoryOBJ.GetComponent<Memory>().WonSecondRound == false &&
-//			MemoryOBJ.GetComponent<Memory>().WonThirdRound == false)
-//		{
-//			Flowchart.BroadcastFungusMessage ("Reload Round 3");
-//		}
+
+		if (MemoryOBJ.GetComponent<Memory>().PlayedFirstRound &&
+			MemoryOBJ.GetComponent<Memory>().PlayedSecondRound &&
+			MemoryOBJ.GetComponent<Memory>().PlayedThirdRound &&
+			MemoryOBJ.GetComponent<Memory>().WonThirdRound == false)
+		{
+			Flowchart.BroadcastFungusMessage ("Reload Round 3");
+		}
+		
 		if (MemoryOBJ.GetComponent<Memory>().PlayedFirstRound &&
 		    MemoryOBJ.GetComponent<Memory>().PlayedSecondRound &&
 		    MemoryOBJ.GetComponent<Memory>().PlayedThirdRound &&
