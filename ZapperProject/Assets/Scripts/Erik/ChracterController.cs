@@ -308,12 +308,21 @@ public class ChracterController : MonoBehaviour {
 		MaxWirePosition = 2;
 	}
 	//Called by Fungus to move player at will
-
 	public void set_player_pos_1()
 	{
 		PlayerCurrentWire = wire1;
+		ChangeWire();
 	}
-
+	// Called by fungus to disable player shooting
+	public void disable_player_shoot()
+	{
+		CanShoot = false;
+	}
+	// Called by fungus to enable player shooting
+	public void enable_player_shoot()
+	{
+		CanShoot = true;
+	}
 }
 
 

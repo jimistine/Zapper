@@ -79,7 +79,8 @@ public class SceneAdvancer : MonoBehaviour
 		if (MemoryOBJ.GetComponent<Memory>().PlayedFirstRound &&
 		    MemoryOBJ.GetComponent<Memory>().PlayedSecondRound &&
 		    MemoryOBJ.GetComponent<Memory>().PlayedThirdRound &&
-		    MemoryOBJ.GetComponent<Memory>().WonSecondRound == false)
+		    MemoryOBJ.GetComponent<Memory>().WonSecondRound == false &&
+			MemoryOBJ.GetComponent<Memory>().WonThirdRound)
 		{
 			Flowchart.BroadcastFungusMessage ("Music Loop to 2Wires");
 		}
@@ -87,6 +88,7 @@ public class SceneAdvancer : MonoBehaviour
 		if (MemoryOBJ.GetComponent<Memory>().PlayedFirstRound &&
 		    MemoryOBJ.GetComponent<Memory>().PlayedSecondRound &&
 		    MemoryOBJ.GetComponent<Memory>().PlayedThirdRound &&
+		    MemoryOBJ.GetComponent<Memory>().WonThirdRound &&
 		    MemoryOBJ.GetComponent<Memory>().WonSecondRound)
 		{
 			Flowchart.BroadcastFungusMessage ("Music Loop to 4Wires");

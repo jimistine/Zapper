@@ -100,8 +100,12 @@ public class crowSpawner : MonoBehaviour {
 
             if (Time.time > nextSpawn && IsSpawning)
             {
+                if (WireToSpawn.GetComponent<Wires>().canWin == true)
+                {
+                    spawnRate = spawnRate + 0.5f;
+                }
                 nextSpawn = Time.time + spawnRate;
-
+                    
                 if(SC.isMountainLevel == false)
                 {
                     if (WireToSpawn.GetComponent<Wires>().PlayerStartRight == false)
@@ -131,10 +135,6 @@ public class crowSpawner : MonoBehaviour {
         if (TimeSinceFail> StoreAddedTime + (DelayBeforeStart + ((TimeSinceFailLevelsCapMax-(TimeSinceFailLevels-1)))))
         {
             StoreAddedTime += DelayBeforeStart + (TimeSinceFailLevelsCapMax - (TimeSinceFailLevels - 1));
-            if (WireToSpawn.GetComponent<Wires>().canWin == true)
-            {
-                spawnRate = spawnRate + 0.5f;
-            }
 
             if (TimeSinceFailLevels < TimeSinceFailLevelsCapMax - (TimeSinceFailLevelsCapMin-1))
             {
