@@ -98,11 +98,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SC: {fileID: 0}
   CurrentWire: {fileID: 0}
-  crowSpeed: 0.05
+  crowSpeed: 0.025
   startWait: 0
-  pauseTimeMax: 1
-  pauseTimeMin: 3
-  ChancetoSpawnCurrent: 1
+  pauseTimeMax: 0
+  pauseTimeMin: 0
+  ChancetoSpawnCurrent: 1.33
   ChancetoSpawnStart: 1
   stopSpeed: 0
   randomTimeUntilPauseMax: 1

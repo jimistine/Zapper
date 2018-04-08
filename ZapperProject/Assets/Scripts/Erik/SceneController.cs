@@ -19,6 +19,8 @@ public class SceneController : MonoBehaviour {
     public GameObject WireFourObject;
     public GameObject PlayerObject;
     public GameObject ScoreUI;
+    public GameObject ClocksBrokenUI;
+    public GameObject TimeRemainingUI;
 
     public bool CannotLose;
     public bool CannotWin;
@@ -39,6 +41,11 @@ public class SceneController : MonoBehaviour {
     public int CurrentHealth;
     public GameObject HealthObject;
     public Vector2 HealthOjectOnePos;
+
+    //Factory Ints
+    public int ClocksBroken;
+    public float TimeRemaining;
+    public float TimeRemainingStart;
 
     // Use this for initialization
     void Start () {
@@ -65,12 +72,16 @@ public class SceneController : MonoBehaviour {
             }
 
         }
+        //TimeRemaining -= Time.timeSinceLevelLoad*Time.deltaTime;
+        TimeRemaining = TimeRemainingStart-Time.time;
+        TimeRemainingUI.GetComponent<Text>().text = (" "+ Mathf.Round(TimeRemaining)+" ");
+        ClocksBrokenUI.GetComponent<Text>().text = (" "+ClocksBroken+" "); 
     }
 
     public void ScoreUpdate()
     {
         //GUI.Label(new Rect(10,10,200,90), "Birds Zapped: " + Score);
-        ScoreUI.GetComponent<Text>().text = ("Score "+Score);
+        ScoreUI.GetComponent<Text>().text = (" "+Score+" ");   
     }
     
     public void RestartLevel()
@@ -187,7 +198,7 @@ public class SceneController : MonoBehaviour {
             CurrentHealthNum++;
             CurrentHealthStore--;
         }
-        if (CurrentHealth == 0 && CannotLose == false)
+        if (CurrentHealth == 0 && CannotLose == false && isFactory == false)
         {
             LoseLevel();
         }

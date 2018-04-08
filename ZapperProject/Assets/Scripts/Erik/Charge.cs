@@ -69,17 +69,22 @@ public class Charge : MonoBehaviour {
             {
                 if (ChargesCurrentWire.GetComponent<Wires>().PlayerStartRight == true)
                 {
-                    transform.Translate(Vector3.right * Time.deltaTime * (ChargeMoveSpeed / 3));
+                    transform.Translate(Vector3.right * Time.deltaTime * (ChargeMoveSpeed / 5));
                 }
                 if (ChargesCurrentWire.GetComponent<Wires>().PlayerStartRight == false)
                 {
-                    transform.Translate(Vector3.left * Time.deltaTime * (ChargeMoveSpeed / 3));
+                    transform.Translate(Vector3.left * Time.deltaTime * (ChargeMoveSpeed / 5));
                 }
                 //
                 if (ChargesCurrentWire == SC.PlayerObject.GetComponent<ChracterController>().PlayerCurrentWire)
                 {
                     if (gameObject.transform.position.x < (SC.PlayerObject.transform.position.x) + 0.2f && gameObject.transform.position.x > (SC.PlayerObject.transform.position.x) - 0.2f)
                     {
+	                    if (SC.isFactory)
+	                    {
+		                    SC.Score++;
+	                    }
+	                    
                         Destroy(gameObject);
                     }
                 }
@@ -173,7 +178,15 @@ public class Charge : MonoBehaviour {
 				}
 					
                 AM.Hit_source.PlayOneShot(AM.Hit);
-				SC.Score++;
+				if (SC.isFactory)
+				{
+					
+				}
+				else
+				{
+					SC.Score++;
+				}
+				
 			}
 
 			else if (isReturningCharge == true && collision.gameObject.tag == "Player")
@@ -266,7 +279,7 @@ public class Charge : MonoBehaviour {
 		player.GetComponent<ChracterController> ().Clyde_zap ();
 
 		StartCoroutine (RestartLevel ());  
-
+		
 	}
 
 	public void ChangeSprite() {
@@ -284,7 +297,12 @@ public class Charge : MonoBehaviour {
 	IEnumerator RestartLevel () { 
 
 		Debug.Log ("charge reset beginning"); 
-		yield return new WaitForSeconds (1.2f); 
+		yield return new WaitForSeconds (1.2f);
+		//INCREMENT CLOCK BROKEN++ AFTER WAIT FOR SECONDS ANIM
+		if (SC.isFactory)
+		{
+			SC.ClocksBroken++;
+		}
 		SC.CurrentHealth--;
 		SC.RestartLevel();
 

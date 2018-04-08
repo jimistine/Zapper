@@ -1151,7 +1151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 21
   indentLevel: 0
-  musicClip: {fileID: 8300000, guid: eda692f08d3f741138a9c3a01a1594cf, type: 3}
+  musicClip: {fileID: 8300000, guid: 518ac41b201864f568bd39d7520b24f8, type: 3}
   atTime: 0
   loop: 0
   fadeDuration: 0

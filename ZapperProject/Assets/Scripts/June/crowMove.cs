@@ -96,6 +96,10 @@ public class crowMove : MonoBehaviour {
 	{
 		Debug.Log("Crows fail state");
         SC.CurrentHealth--;
+		if (isClock)
+		{
+			SC.ClocksBroken++;
+		}
 		SC.RestartLevel();
 	}
 
