@@ -16,7 +16,7 @@ public class CameraController : MonoBehaviour {
 	void Update () {
         if (SC.isMountainLevel == true)
         {
-            if (SC.PlayerObject.transform.position.y > 0.5)
+            if (SC.PlayerObject.transform.position.y > SC.PlayerObject.GetComponent<ChracterController>().PlayersStartingPositionY + (Camera.main.orthographicSize/2))
             {
                 Vector3 newPosition = transform.position;
                 newPosition.y = Mathf.Lerp(transform.position.y, SC.PlayerObject.transform.position.y, Time.deltaTime);

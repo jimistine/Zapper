@@ -119,8 +119,12 @@ public class SceneController : MonoBehaviour {
             x.GetComponent<crowMove>().ChancetoSpawnCurrent = x.GetComponent<crowMove>().ChancetoSpawnStart;
         }
         //reset players position and health
-        PlayerControl.Start();
+        //PlayerControl.Start();
         UpdateHealth();
+        if(isMountainLevel == true && PlayerObject.transform.position.y >= PlayerObject.GetComponent<ChracterController>().PlayerCurrentWire.GetComponent<Wires>().StartPositionBottom + (Camera.main.orthographicSize / 2))
+        {
+            PlayerObject.GetComponent<ChracterController>().PlayersStartingPositionY = PlayerObject.transform.position.y - (Camera.main.orthographicSize / 2);
+        }
         PlayerObject.GetComponent<ChracterController>().IsinStartPosition = false;
         //reset the delay before play timer
         Spawner.DelayBeforeStart = DelayBeforeStartTime + Time.time - 1;

@@ -11,6 +11,7 @@ public class ChracterController : MonoBehaviour {
 	public SceneController SC;
 	public AudioManager AM;
 	public float PlayerHorizontalSpeed = 1;
+    public float PlayersStartingPositionY;
 	public int CurrentWirePositionY;
     public int CurrentWirePositionX;
 
@@ -48,7 +49,9 @@ public class ChracterController : MonoBehaviour {
 		CurrentWirePositionY = 1;
         CurrentWirePositionX = 1;
 
-	}
+        PlayersStartingPositionY = SC.WireOneObject.GetComponent<Wires>().StartPositionBottom;
+
+    }
 	public void FindCurrentWire()
 	{
         if (SC.isMountainLevel == false)
@@ -95,6 +98,7 @@ public class ChracterController : MonoBehaviour {
 	{
 		FindCurrentWire();
 		Wires currentWireScrpt = PlayerCurrentWire.GetComponent<Wires>();
+        
 
         if (SC.isMountainLevel == false)
         {
@@ -112,14 +116,14 @@ public class ChracterController : MonoBehaviour {
         {
             if (IsinStartPosition == false)
             {
-                transform.position = new Vector3(currentWireScrpt.PlayersStartPositionX, currentWireScrpt.PlayersStartPositionY);
+                transform.position = new Vector3(currentWireScrpt.PlayersStartPositionX, PlayersStartingPositionY);
             }
 
             if (IsinStartPosition == true)
             {
                 transform.position = new Vector3(currentWireScrpt.PlayersStartPositionX, gameObject.transform.position.y);
             }
-            Debug.Log(new Vector3(currentWireScrpt.PlayersStartPositionX, currentWireScrpt.PlayersStartPositionY));
+            //Debug.Log(new Vector3(currentWireScrpt.PlayersStartPositionX, currentWireScrpt.PlayersStartPositionY));
         }
 		
 	}
@@ -223,7 +227,7 @@ public class ChracterController : MonoBehaviour {
                 transform.Translate(Vector3.up * Time.deltaTime * PlayerHorizontalSpeed);
                 anim.SetBool("Run_Bool", true);
             }
-            if (Input.GetKey(KeyCode.UpArrow) && transform.position.y >= PlayerCurrentWire.GetComponent<Wires>().WirePositionTop)
+            if (Input.GetKey(KeyCode.UpArrow) && transform.position.y >= PlayerCurrentWire.GetComponent<Wires>().WirePositionTop && PlayerCurrentWire.GetComponent<Wires>().isSummitWire == true)
             {
                 //for now when the player reaches the top of the wire, win that level. 
                 SC.WinLevel();
