@@ -11,7 +11,8 @@ public class Wires : MonoBehaviour {
     public float AnchorRight = 6f;
     public float StartPositionLeft;
     public float StartPositionRight;
-    public float StartPositionBottom;
+
+    public float StartPositionBottom = -3;
     public float WirePositionTop;
     public float PlayerPositionOffsetY;
 
@@ -19,6 +20,7 @@ public class Wires : MonoBehaviour {
 
     public bool canSpawn;
     public bool canWin = false;
+    public bool isSummitWire = false;
     public Animator anim; 
 
     // Use this for initialization
@@ -26,7 +28,6 @@ public class Wires : MonoBehaviour {
         SC = FindObjectOfType<SceneController>();
         StartPositionLeft = AnchorLeft;
         StartPositionRight = AnchorRight;
-        StartPositionBottom = gameObject.transform.position.y - 5;
 		anim = GetComponent<Animator> ();
 
         if (SC.isMountainLevel == false)
