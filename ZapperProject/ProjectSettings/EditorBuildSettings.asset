@@ -60,8 +60,8 @@ EditorBuildSettings:
     path: Assets/Scenes/BUILD SCENES/9_Factory_Scene3.unity
     guid: 67628a7bad5664a5dacc8258aa9acc0c
   - enabled: 1
-    path: Assets/Scenes/BUILD SCENES/10_Factory_Scene4.unity
-    guid: 04aa3130ded4d446693a3e4193b043c9
+    path: Assets/Scenes/BUILD SCENES/10_Factory_Scene4.1.unity
+    guid: aed8c3c2f4f8647be83d3085b16021f1
   - enabled: 0
     path: Assets/__DELETED_GUID_Trash/8ac4801d8c5ca4b1b88254a5fe8f8a51
     guid: 8ac4801d8c5ca4b1b88254a5fe8f8a51
@@ -80,3 +80,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BUILD SCENES/GameOver+Win_Factory.unity
     guid: 0a8a13c97b08541f0880e6da66d63a97
+  - enabled: 0
+    path: Assets/__DELETED_GUID_Trash/04aa3130ded4d446693a3e4193b043c9
+    guid: 04aa3130ded4d446693a3e4193b043c9
+  - enabled: 0
+    path: Assets/__DELETED_GUID_Trash/04aa3130ded4d446693a3e4193b043c9
+    guid: 04aa3130ded4d446693a3e4193b043c9
+  - enabled: 1
+    path: Assets/Scenes/ErikTriesToBuildThings/MtTest.unity
+    guid: c5302e2f2b14e43389c494fa8b73b5e8
