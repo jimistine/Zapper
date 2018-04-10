@@ -1571,6 +1571,7 @@ GameObject:
   - component: {fileID: 235468871}
   - component: {fileID: 235468870}
   - component: {fileID: 235468869}
+  - component: {fileID: 235468873}
   m_Layer: 0
   m_Name: Wire_1
   m_TagString: Untagged
@@ -1687,6 +1688,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &235468873
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 235468868}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &239852444
 GameObject:
   m_ObjectHideFlags: 0
@@ -3326,6 +3344,7 @@ GameObject:
   - component: {fileID: 560653871}
   - component: {fileID: 560653870}
   - component: {fileID: 560653869}
+  - component: {fileID: 560653873}
   m_Layer: 0
   m_Name: Wire_3
   m_TagString: Untagged
@@ -3442,6 +3461,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &560653873
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 560653868}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &562131308
 GameObject:
   m_ObjectHideFlags: 0
@@ -4616,6 +4652,7 @@ GameObject:
   - component: {fileID: 883947136}
   - component: {fileID: 883947135}
   - component: {fileID: 883947134}
+  - component: {fileID: 883947138}
   m_Layer: 0
   m_Name: Wire_4
   m_TagString: Untagged
@@ -4732,6 +4769,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &883947138
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 883947133}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &892285283
 GameObject:
   m_ObjectHideFlags: 0
@@ -5140,12 +5194,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VO_Delay: 0
   Hit_source: {fileID: 0}
-  Shoot_source: {fileID: 0}
+  Shoot_source: {fileID: 1986085758}
   FailSound_source: {fileID: 0}
   VO_source: {fileID: 0}
   Music_source: {fileID: 0}
   Ambient_source: {fileID: 0}
-  Shoot: {fileID: 0}
+  Shoot: {fileID: 8300000, guid: a5daa1eb9be1d4229ae0a3510483d049, type: 3}
   Fail: {fileID: 0}
   Hit: {fileID: 0}
   Music: {fileID: 0}
@@ -5657,7 +5711,8 @@ MonoBehaviour:
   PlayerCurrentWire: {fileID: 0}
   ChargeObjects: {fileID: 1902694361661754, guid: 6285e976f16384ae99ccac31a82d5112,
     type: 2}
-  NewChargeObjects: {fileID: 0}
+  NewChargeObjects: {fileID: 1539209488794968, guid: aa0f0005512d94fcb9ae3b97facc8aea,
+    type: 2}
   mySpriteRenderer: {fileID: 0}
   CanShoot: 1
   CanMoveLeftRight: 1
@@ -6014,6 +6069,7 @@ GameObject:
   - component: {fileID: 1071027963}
   - component: {fileID: 1071027962}
   - component: {fileID: 1071027961}
+  - component: {fileID: 1071027965}
   m_Layer: 0
   m_Name: Wire_2
   m_TagString: Untagged
@@ -6130,6 +6186,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1071027965
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1071027960}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1082100048
 GameObject:
   m_ObjectHideFlags: 0
@@ -8159,7 +8232,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &1268022710
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -8175,7 +8248,7 @@ MonoBehaviour:
   waitUntilFinished: 1
 --- !u!114 &1268022711
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -8191,7 +8264,7 @@ MonoBehaviour:
   waitUntilFinished: 1
 --- !u!114 &1268022712
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -12233,12 +12306,13 @@ MonoBehaviour:
   WireFourObject: {fileID: 883947133}
   PlayerObject: {fileID: 1039467704}
   ScoreUI: {fileID: 235144138}
-  ClocksBrokenUI: {fileID: 0}
-  TimeRemainingUI: {fileID: 0}
+  ClocksBrokenUI: {fileID: 1892035139}
+  TimeRemainingUI: {fileID: 1892035139}
   CannotLose: 1
   CannotWin: 1
   isMountainLevel: 0
   isFactory: 0
+  isPrototype: 1
   PlayerControl: {fileID: 0}
   ChargeScript: {fileID: 0}
   Spawner: {fileID: 0}

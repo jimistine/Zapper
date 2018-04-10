@@ -132,9 +132,15 @@ public class Charge : MonoBehaviour {
 	}
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
+
 		if (hasTriggered == false)
 		{
-			Debug.Log("collision");
+			if (SC.isPrototype && collision.gameObject.tag== "Target")
+			{
+				Destroy(collision.gameObject);
+
+
+			}
 
 			if (collision.gameObject.tag == "Target" && isReturningCharge == false)
 			{
@@ -142,16 +148,18 @@ public class Charge : MonoBehaviour {
 				{
 					isReturningCharge = true;
 
-					if (collision.gameObject.GetComponent<crowMove> ().isClock) {
-						ChangeSprite (); 
+					if (collision.gameObject.GetComponent<crowMove>().isClock)
+					{
+						ChangeSprite();
 
 					}
 
-					if(collision.gameObject.GetComponent<crowMove> ().isRock) {
+					if (collision.gameObject.GetComponent<crowMove>().isRock)
+					{
 
-						Debug.Log ("shattered!");
-						anim.SetBool ("shatter_bool", true); 
-				
+						Debug.Log("shattered!");
+						anim.SetBool("shatter_bool", true);
+
 					}
 				}
 				else
@@ -159,59 +167,62 @@ public class Charge : MonoBehaviour {
 					AM.Hit_source.PlayOneShot(AM.Hit);
 					AM.Hit_source.PlayOneShot(AM.Hit);
 
-                    Destroy(gameObject);
-                }
-                //currently destroying birds on collisions may need to run a function for them to leave scene or some other score behaviours
+					Destroy(gameObject);
+				}
+				//currently destroying birds on collisions may need to run a function for them to leave scene or some other score behaviours
 
-                SC.Score += collision.gameObject.GetComponent<crowMove>().ScoreForBird;
+				SC.Score += collision.gameObject.GetComponent<crowMove>().ScoreForBird;
 				SC.ScoreUpdate();
-             
+
 				if (collision.gameObject.GetComponent<crowMove>().isBird)
-                {
-                    collision.gameObject.GetComponent<crowMove>().CrowZap();  //run the function on the crowScript 
-
-                }
-
-				if (collision.gameObject.GetComponent<crowMove>().isClock == true || collision.gameObject.GetComponent<crowMove>().isRock == true) {
-
-					Destroy (collision.gameObject);
+				{
+					collision.gameObject.GetComponent<crowMove>().CrowZap(); //run the function on the crowScript 
 
 				}
-					
-                AM.Hit_source.PlayOneShot(AM.Hit);
+
+				if (collision.gameObject.GetComponent<crowMove>().isClock == true ||
+				    collision.gameObject.GetComponent<crowMove>().isRock == true)
+				{
+
+					Destroy(collision.gameObject);
+
+				}
+
+				AM.Hit_source.PlayOneShot(AM.Hit);
 				if (SC.isFactory)
 				{
-					
+
 				}
 				else
 				{
 					SC.Score++;
 				}
-				
+
 			}
 
 			else if (isReturningCharge == true && collision.gameObject.tag == "Player")
 
 			{
-                if (SC.isMountainLevel == false)
-                {
-                    // destroy returinging charge on collision with player, may have to change function depending on hwo we want return charges to behave.
-                    hasTriggered = true;
-                    AM.Hit_source.PlayOneShot(AM.Hit);
-                    //SC.Score++;
-                    //SC.ScoreUpdate();
-                    Destroy(gameObject);
-                    AM.Hit_source.PlayOneShot(AM.Hit);
-                }
-                if (SC.isMountainLevel == true)
-                {
-                    hasTriggered = true;
-                    //cause player to fall a specific distance downwards, not below bottom of wire.
-                    collision.GetComponent<ChracterController>().isFalling = true;
-                }
-				
+				if (SC.isMountainLevel == false)
+				{
+					// destroy returinging charge on collision with player, may have to change function depending on hwo we want return charges to behave.
+					hasTriggered = true;
+					AM.Hit_source.PlayOneShot(AM.Hit);
+					//SC.Score++;
+					//SC.ScoreUpdate();
+					Destroy(gameObject);
+					AM.Hit_source.PlayOneShot(AM.Hit);
+				}
+				if (SC.isMountainLevel == true)
+				{
+					hasTriggered = true;
+					//cause player to fall a specific distance downwards, not below bottom of wire.
+					collision.GetComponent<ChracterController>().isFalling = true;
+				}
+
 			}
 		}
+		
 	}
 
 	public void ChargeFailState()
@@ -219,71 +230,111 @@ public class Charge : MonoBehaviour {
 	{
 		
 		Debug.Log("Charge Fail State");
-		Debug.Log (ChargesCurrentWire); 
-		HasCalledFailFunction = true; 
-		gameObject.GetComponent<SpriteRenderer> ().enabled = false; 
-		AM.FailSound_source.PlayOneShot(AM.Fail);
-        //destroy for now will have to change things depeneding on how we record fail states
+		Debug.Log (ChargesCurrentWire);
+		if (SC.isPrototype == false)
+		{
 
-		//fusebox1.GetComponent<fusebox_script> ().fusebox_zap ();
+			HasCalledFailFunction = true;
+			gameObject.GetComponent<SpriteRenderer>().enabled = false;
+			AM.FailSound_source.PlayOneShot(AM.Fail);
+			//destroy for now will have to change things depeneding on how we record fail states
 
-		if (SC.WireOneObject != null) {
-			if (ChargesCurrentWire == SC.WireOneObject) { 
-				
-				wire1.GetComponent<Wires> ().wire_1_zap (); 
+			//fusebox1.GetComponent<fusebox_script> ().fusebox_zap ();
 
-				if (SC.isFactory) {
-					Debug.Log ("alarm 1 rang!");
-					alarm1.GetComponent<alarmScript> ().alarm_zap (); 
-				} else {
-					fusebox1.GetComponent<fusebox_script> ().fusebox_zap (); 
+			if (SC.WireOneObject != null)
+			{
+				if (ChargesCurrentWire == SC.WireOneObject)
+				{
+
+					wire1.GetComponent<Wires>().wire_1_zap();
+
+					if (SC.isFactory)
+					{
+						Debug.Log("alarm 1 rang!");
+						alarm1.GetComponent<alarmScript>().alarm_zap();
+					}
+					else if (SC.isPrototype == false)
+					{
+						fusebox1.GetComponent<fusebox_script>().fusebox_zap();
+					}
+					else
+					{
+						return;
+					}
 				}
 			}
-		}
 
-		if (SC.WireTwoObject != null) {	
-			if (ChargesCurrentWire == SC.WireTwoObject) {
-				
-				wire2.GetComponent<Wires> ().wire_2_zap ();
-			
-				if (SC.isFactory) {
-					Debug.Log ("alarm 2 rang!"); 
-					alarm2.GetComponent<alarmScript> ().alarm_zap_2 ();
-				} else {
-					fusebox2.GetComponent<fusebox_script> ().fusebox_zap_2 ();
+			if (SC.WireTwoObject != null)
+			{
+				if (ChargesCurrentWire == SC.WireTwoObject)
+				{
+
+					wire2.GetComponent<Wires>().wire_2_zap();
+
+					if (SC.isFactory)
+					{
+						Debug.Log("alarm 2 rang!");
+						alarm2.GetComponent<alarmScript>().alarm_zap_2();
+					}
+					else if (SC.isPrototype == false)
+					{
+						fusebox2.GetComponent<fusebox_script>().fusebox_zap_2();
+					}
+					else
+					{
+						return;
+					}
 				}
 			}
-		}
 
-		if (SC.WireThreeObject != null) {
-			if (ChargesCurrentWire == SC.WireThreeObject) {
+			if (SC.WireThreeObject != null)
+			{
+				if (ChargesCurrentWire == SC.WireThreeObject)
+				{
 
-					wire3.GetComponent<Wires> ().wire_3_zap ();
+					wire3.GetComponent<Wires>().wire_3_zap();
 
-				if (SC.isFactory) {
-					alarm3.GetComponent<alarmScript> ().alarm_zap_3 (); 
-				} else {
-					fusebox3.GetComponent<fusebox_script> ().fusebox_zap_3 (); 
+					if (SC.isFactory)
+					{
+						alarm3.GetComponent<alarmScript>().alarm_zap_3();
+					}
+					else if (SC.isPrototype == false)
+					{
+						fusebox3.GetComponent<fusebox_script>().fusebox_zap_3();
+					}
+					else
+					{
+						return;
+					}
 				}
 			}
-		}
 
-		if (SC.WireFourObject != null) {
-			if (ChargesCurrentWire == SC.WireFourObject) {
-					wire4.GetComponent<Wires> ().wire_4_zap ();
+			if (SC.WireFourObject != null)
+			{
+				if (ChargesCurrentWire == SC.WireFourObject)
+				{
+					wire4.GetComponent<Wires>().wire_4_zap();
 
-				if (SC.isFactory) {
-					alarm4.GetComponent<alarmScript> ().alarm_zap_4 (); 
-				} else {
-					fusebox4.GetComponent<fusebox_script> ().fusebox_zap_4 (); 
+					if (SC.isFactory)
+					{
+						alarm4.GetComponent<alarmScript>().alarm_zap_4();
+					}
+					else if (SC.isPrototype == false)
+					{
+						fusebox4.GetComponent<fusebox_script>().fusebox_zap_4();
+					}
+					else
+					{
+						return;
+					}
 				}
 			}
+
+			player.GetComponent<ChracterController>().Clyde_zap();
+
+			StartCoroutine(RestartLevel());
 		}
-
-		player.GetComponent<ChracterController> ().Clyde_zap ();
-
-		StartCoroutine (RestartLevel ());  
-		
+		else{Destroy(gameObject);}
 	}
 
 	public void ChangeSprite() {
@@ -315,9 +366,17 @@ public class Charge : MonoBehaviour {
 		player.GetComponent<ChracterController> ().Clyde_normal (); 
 
 		wire1.GetComponent<Wires> ().wire_1_normal (); 
-		wire2.GetComponent<Wires> ().wire_2_normal (); 
-		wire3.GetComponent<Wires> ().wire_3_normal (); 
-		wire4.GetComponent<Wires> ().wire_4_normal (); 
+		wire2.GetComponent<Wires> ().wire_2_normal ();
+		if (wire3 != null)
+		{
+			wire3.GetComponent<Wires> ().wire_3_normal (); 
+
+		}
+		if (wire4 != null)
+		{
+			wire4.GetComponent<Wires> ().wire_4_normal (); 
+
+		}
 
 
 	}

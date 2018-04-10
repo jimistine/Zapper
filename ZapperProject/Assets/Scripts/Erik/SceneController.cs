@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Fungus;
 using UnityEngine.UI;
-using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
 
 
 public class SceneController : MonoBehaviour {
@@ -25,7 +25,8 @@ public class SceneController : MonoBehaviour {
     public bool CannotLose;
     public bool CannotWin;
     public bool isMountainLevel;
-	public bool isFactory; 
+	public bool isFactory;
+    public bool isPrototype;
 
     public ChracterController PlayerControl;
 	public Charge ChargeScript; 

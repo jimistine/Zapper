@@ -3353,9 +3353,11 @@ MonoBehaviour:
   PlayerCurrentWire: {fileID: 0}
   ChargeObjects: {fileID: 1539209488794968, guid: 716651cfe5acc4cad9a1b6daa6ee56c8,
     type: 2}
+  NewChargeObjects: {fileID: 0}
   mySpriteRenderer: {fileID: 0}
   CanShoot: 1
   CanMoveLeftRight: 1
+  IsUsingCharge_1: 1
   isFalling: 0
   ChargingAmount: 0
   ChargingSpeed: 50
@@ -6921,7 +6923,7 @@ MonoBehaviour:
   TotalLevelTime: 0
   Score: 0
   LevelSelectGateOpen: 0
-  CurrentHealth: 3
+  CurrentHealth: 0
   HealthObject: {fileID: 1784129382507516, guid: 491e2e6a7a37d410f892c16f4fd7226e,
     type: 2}
   HealthOjectOnePos: {x: -7, y: 6}

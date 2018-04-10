@@ -8743,7 +8743,7 @@ MonoBehaviour:
   TotalLevelTime: 0
   Score: 0
   LevelSelectGateOpen: 0
-  CurrentHealth: 3
+  CurrentHealth: 0
   HealthObject: {fileID: 1784129382507516, guid: 491e2e6a7a37d410f892c16f4fd7226e,
     type: 2}
   HealthOjectOnePos: {x: -7, y: 6}
