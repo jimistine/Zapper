@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/BUILD SCENES/6_Crunch_New.unity
+- path: Assets/Scenes/BUILD SCENES/0_TempTitleScreen.unity
   isLoaded: 1
   isActive: 1

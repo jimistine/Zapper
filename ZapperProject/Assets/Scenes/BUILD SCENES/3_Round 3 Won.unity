@@ -1635,6 +1635,7 @@ MonoBehaviour:
   ChargesPositionOffsetY: 0
   canSpawn: 1
   canWin: 0
+  isSummitWire: 0
   anim: {fileID: 0}
 --- !u!61 &235468870
 BoxCollider2D:
@@ -3077,6 +3078,7 @@ MonoBehaviour:
   ChargesPositionOffsetY: 0
   canSpawn: 0
   canWin: 0
+  isSummitWire: 0
   anim: {fileID: 0}
 --- !u!61 &560653870
 BoxCollider2D:
@@ -4415,6 +4417,7 @@ MonoBehaviour:
   ChargesPositionOffsetY: 0
   canSpawn: 0
   canWin: 0
+  isSummitWire: 0
   anim: {fileID: 0}
 --- !u!61 &883947135
 BoxCollider2D:
@@ -4799,18 +4802,15 @@ MonoBehaviour:
   Shoot_source: {fileID: 1986085758}
   FailSound_source: {fileID: 2080914984}
   VO_source: {fileID: 0}
+  Music_source: {fileID: 0}
+  Ambient_source: {fileID: 0}
   Shoot: {fileID: 8300000, guid: d9c57a9112493498799157d96964bb3f, type: 3}
   Fail: {fileID: 8300000, guid: a5daa1eb9be1d4229ae0a3510483d049, type: 3}
   Hit: {fileID: 8300000, guid: 04d5b3fe5a8004086a53aeec8ae15e3f, type: 3}
-  VOClip_1: {fileID: 0}
-  VOClip_2: {fileID: 0}
-  VOClip_3: {fileID: 0}
-  VOClip_4: {fileID: 0}
-  VOClip_5: {fileID: 0}
-  VOClip_6: {fileID: 0}
-  VOClip_7: {fileID: 0}
-  VOClip_8: {fileID: 0}
-  VOClip_9: {fileID: 0}
+  Music: {fileID: 0}
+  Ambient: {fileID: 0}
+  Wagner: {fileID: 0}
+  NormalAmbient: {fileID: 0}
 --- !u!4 &932989999
 Transform:
   m_ObjectHideFlags: 0
@@ -5339,6 +5339,7 @@ MonoBehaviour:
   SC: {fileID: 0}
   AM: {fileID: 0}
   PlayerHorizontalSpeed: 1
+  PlayersStartingPositionY: 0
   CurrentWirePositionY: 0
   CurrentWirePositionX: 0
   MaxWirePosition: 2
@@ -5734,6 +5735,7 @@ MonoBehaviour:
   ChargesPositionOffsetY: 0
   canSpawn: 1
   canWin: 0
+  isSummitWire: 0
   anim: {fileID: 0}
 --- !u!61 &1071027962
 BoxCollider2D:
@@ -6810,10 +6812,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1268022659}
-  selectedCommands:
-  - {fileID: 1268022670}
+  selectedBlocks: []
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -6827,7 +6827,7 @@ MonoBehaviour:
   luaBindingName: flowchart
 --- !u!114 &1268022659
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -6869,7 +6869,7 @@ MonoBehaviour:
   - {fileID: 1268022675}
 --- !u!114 &1268022660
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -6889,7 +6889,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &1268022661
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -6922,7 +6922,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1268022663
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -6942,7 +6942,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &1268022664
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -6962,7 +6962,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &1268022665
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -6982,7 +6982,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &1268022666
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -7002,7 +7002,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &1268022667
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -7022,7 +7022,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &1268022668
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -7042,7 +7042,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &1268022669
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -7062,7 +7062,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &1268022670
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -7082,7 +7082,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &1268022671
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -7095,11 +7095,11 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 1
+    floatVal: 2
   durationOLD: 0
 --- !u!114 &1268022672
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -7115,7 +7115,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &1268022673
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -7128,7 +7128,7 @@ MonoBehaviour:
   waitForFrames: 1
 --- !u!114 &1268022674
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -7145,7 +7145,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &1268022675
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -7161,7 +7161,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &1268022676
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -7178,7 +7178,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &1268022677
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -7205,7 +7205,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &1268022678
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -7232,7 +7232,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &1268022679
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -11077,6 +11077,8 @@ MonoBehaviour:
   WireFourObject: {fileID: 883947133}
   PlayerObject: {fileID: 1039467704}
   ScoreUI: {fileID: 235144138}
+  ClocksBrokenUI: {fileID: 0}
+  TimeRemainingUI: {fileID: 0}
   CannotLose: 0
   CannotWin: 0
   isMountainLevel: 0
@@ -11093,6 +11095,9 @@ MonoBehaviour:
   HealthObject: {fileID: 1784129382507516, guid: 491e2e6a7a37d410f892c16f4fd7226e,
     type: 2}
   HealthOjectOnePos: {x: -7, y: 6}
+  ClocksBroken: 0
+  TimeRemaining: 0
+  TimeRemainingStart: 0
 --- !u!114 &1984350833
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -902,7 +902,7 @@ Prefab:
     - target: {fileID: 114953354116052668, guid: bf27c202ee50141d69a620111a69480e,
         type: 2}
       propertyPath: selectedCommands.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4235797061913842, guid: bf27c202ee50141d69a620111a69480e, type: 2}
       propertyPath: m_LocalPosition.x
@@ -995,7 +995,7 @@ Prefab:
         type: 2}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 1462903813}
+      objectReference: {fileID: 0}
     - target: {fileID: 114598376556601752, guid: bf27c202ee50141d69a620111a69480e,
         type: 2}
       propertyPath: nodeRect.y
@@ -2157,7 +2157,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 565.30316
     y: 107.936264
-    width: 255.87471
+    width: 254.86552
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2455,7 +2455,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 563.00073
     y: 164.44801
-    width: 255.87471
+    width: 254.86552
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
