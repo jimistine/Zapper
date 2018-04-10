@@ -5657,9 +5657,11 @@ MonoBehaviour:
   PlayerCurrentWire: {fileID: 0}
   ChargeObjects: {fileID: 1902694361661754, guid: 6285e976f16384ae99ccac31a82d5112,
     type: 2}
+  NewChargeObjects: {fileID: 0}
   mySpriteRenderer: {fileID: 0}
   CanShoot: 1
   CanMoveLeftRight: 1
+  IsUsingCharge_1: 1
   isFalling: 0
   ChargingAmount: 0
   ChargingSpeed: 50
@@ -7140,7 +7142,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1268022660}
   selectedCommands:
-  - {fileID: 1268022709}
+  - {fileID: 1268022694}
   variables: []
   description: 
   stepPause: 0
@@ -7851,7 +7853,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 33
   indentLevel: 0
-  soundClip: {fileID: 8300000, guid: 41039d436f24545a49898bda9f0834ac, type: 3}
+  soundClip: {fileID: 8300000, guid: 011ffe8770c0b442fa2377dc4a56439a, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &1268022695

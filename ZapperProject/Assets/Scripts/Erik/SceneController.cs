@@ -73,7 +73,7 @@ public class SceneController : MonoBehaviour {
 
         }
         //TimeRemaining -= Time.timeSinceLevelLoad*Time.deltaTime;
-        TimeRemaining = TimeRemainingStart-Time.time;
+        TimeRemaining = TimeRemainingStart-Time.timeSinceLevelLoad;
         TimeRemainingUI.GetComponent<Text>().text = (" "+ Mathf.Round(TimeRemaining)+" ");
         ClocksBrokenUI.GetComponent<Text>().text = (" "+ClocksBroken+" "); 
     }

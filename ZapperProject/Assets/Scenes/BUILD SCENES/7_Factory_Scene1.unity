@@ -3773,9 +3773,11 @@ MonoBehaviour:
   PlayerCurrentWire: {fileID: 0}
   ChargeObjects: {fileID: 1539209488794968, guid: 716651cfe5acc4cad9a1b6daa6ee56c8,
     type: 2}
+  NewChargeObjects: {fileID: 0}
   mySpriteRenderer: {fileID: 0}
   CanShoot: 1
   CanMoveLeftRight: 1
+  IsUsingCharge_1: 1
   isFalling: 0
   ChargingAmount: 0
   ChargingSpeed: 50
@@ -7630,7 +7632,7 @@ MonoBehaviour:
   HealthOjectOnePos: {x: -7, y: 6}
   ClocksBroken: 0
   TimeRemaining: 0
-  TimeRemainingStart: 132
+  TimeRemainingStart: 97
 --- !u!114 &1984350833
 MonoBehaviour:
   m_ObjectHideFlags: 0

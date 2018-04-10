@@ -3702,7 +3702,7 @@ MonoBehaviour:
   WirePositionTop: 0
   PlayerPositionOffsetY: 0
   ChargesPositionOffsetY: 0
-  canSpawn: 0
+  canSpawn: 1
   canWin: 0
   isSummitWire: 0
   anim: {fileID: 0}
@@ -5365,9 +5365,11 @@ MonoBehaviour:
   PlayerCurrentWire: {fileID: 0}
   ChargeObjects: {fileID: 1902694361661754, guid: be122bce40d3b4352b8bf462feaea202,
     type: 2}
+  NewChargeObjects: {fileID: 0}
   mySpriteRenderer: {fileID: 0}
   CanShoot: 1
   CanMoveLeftRight: 1
+  IsUsingCharge_1: 1
   isFalling: 0
   ChargingAmount: 0
   ChargingSpeed: 50
@@ -6876,7 +6878,7 @@ MonoBehaviour:
   WirePositionTop: 0
   PlayerPositionOffsetY: 0
   ChargesPositionOffsetY: 0
-  canSpawn: 0
+  canSpawn: 1
   canWin: 0
   isSummitWire: 0
   anim: {fileID: 0}

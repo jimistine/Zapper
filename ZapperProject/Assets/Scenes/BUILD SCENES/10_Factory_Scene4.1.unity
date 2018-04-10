@@ -3362,9 +3362,12 @@ MonoBehaviour:
   PlayerCurrentWire: {fileID: 0}
   ChargeObjects: {fileID: 1539209488794968, guid: 716651cfe5acc4cad9a1b6daa6ee56c8,
     type: 2}
+  NewChargeObjects: {fileID: 1539209488794968, guid: aa0f0005512d94fcb9ae3b97facc8aea,
+    type: 2}
   mySpriteRenderer: {fileID: 0}
   CanShoot: 1
   CanMoveLeftRight: 1
+  IsUsingCharge_1: 1
   isFalling: 0
   ChargingAmount: 0
   ChargingSpeed: 50
@@ -4358,6 +4361,7 @@ GameObject:
   - component: {fileID: 1268022748}
   - component: {fileID: 1268022661}
   - component: {fileID: 1268022749}
+  - component: {fileID: 1268022750}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -4391,8 +4395,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1268022672}
-  selectedCommands:
-  - {fileID: 1268022664}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -4710,6 +4713,7 @@ MonoBehaviour:
   - {fileID: 1268022671}
   - {fileID: 1268022663}
   - {fileID: 1268022674}
+  - {fileID: 1268022750}
   - {fileID: 1268022749}
   - {fileID: 1268022664}
   - {fileID: 1268022675}
@@ -6173,6 +6177,33 @@ MonoBehaviour:
   targetComponentText: AudioManager
   targetMethod: Play_Music
   targetMethodText: 'Play_Music (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1268022750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1268022657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 106
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1039467704}
+  targetComponentAssemblyName: ChracterController, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: ChracterController
+  targetMethod: Swap_Player_Charge
+  targetMethodText: 'Swap_Player_Charge (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 

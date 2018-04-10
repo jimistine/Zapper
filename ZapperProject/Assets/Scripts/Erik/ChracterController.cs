@@ -20,11 +20,13 @@ public class ChracterController : MonoBehaviour {
 
 	public GameObject PlayerCurrentWire;
 	public GameObject ChargeObjects;
+	public GameObject NewChargeObjects;
 
 	public SpriteRenderer mySpriteRenderer; 
 
 	public bool CanShoot = true;
     public bool CanMoveLeftRight = true;
+	public bool IsUsingCharge_1 = true;
     public bool isFalling = false;
 	public float ChargingAmount;
 	public float ChargingSpeed = 1;
@@ -49,7 +51,9 @@ public class ChracterController : MonoBehaviour {
 		CurrentWirePositionY = 1;
         CurrentWirePositionX = 1;
 		PlayersStartingPositionY = SC.WireOneObject.GetComponent<Wires>().StartPositionBottom;
- 
+
+		IsUsingCharge_1 = true;
+
 	}
  
 	public void FindCurrentWire()
@@ -128,9 +132,24 @@ public class ChracterController : MonoBehaviour {
 	}
 	void CreateChargeObject()
 	{
-		GameObject NewChargeObject = Instantiate(ChargeObjects,new Vector3(transform.position.x, transform.position.y+PlayerCurrentWire.GetComponent<Wires>().ChargesPositionOffsetY, 0), Quaternion.identity ) as GameObject;
-		Charge NewChargeScrpt = NewChargeObject.GetComponent<Charge>();
-		NewChargeScrpt.ChargesCurrentWire = PlayerCurrentWire;
+		if (IsUsingCharge_1)
+		{
+			GameObject NewChargeObject = Instantiate(ChargeObjects,
+				new Vector3(transform.position.x,
+					transform.position.y + PlayerCurrentWire.GetComponent<Wires>().ChargesPositionOffsetY, 0),
+				Quaternion.identity) as GameObject;
+			Charge NewChargeScrpt = NewChargeObject.GetComponent<Charge>();
+			NewChargeScrpt.ChargesCurrentWire = PlayerCurrentWire;
+		}
+		if (IsUsingCharge_1 == false)
+		{
+			GameObject NewChargeObject = Instantiate(NewChargeObjects,
+				new Vector3(transform.position.x,
+					transform.position.y + PlayerCurrentWire.GetComponent<Wires>().ChargesPositionOffsetY, 0),
+				Quaternion.identity) as GameObject;
+			Charge NewChargeScrpt = NewChargeObject.GetComponent<Charge>();
+			NewChargeScrpt.ChargesCurrentWire = PlayerCurrentWire;
+		}
 	}
 
 	// Update is called once per frame
@@ -325,6 +344,11 @@ public class ChracterController : MonoBehaviour {
 	public void enable_player_shoot()
 	{
 		CanShoot = true;
+	}
+
+	public void Swap_Player_Charge()
+	{
+		IsUsingCharge_1 = false;
 	}
 }
 
