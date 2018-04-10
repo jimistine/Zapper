@@ -29,6 +29,7 @@ public class Charge : MonoBehaviour {
 	public GameObject wire2;
 	public GameObject wire3;
 	public GameObject wire4; 
+	bool HasCalledFailFunction; 
 
 	public Animator anim; 
 
@@ -100,7 +101,7 @@ public class Charge : MonoBehaviour {
                     transform.Translate(Vector3.right * Time.deltaTime * ChargeMoveSpeed);
                 }
             }
-            if (transform.position.x > ChargesCurrentWire.GetComponent<Wires>().AnchorRight + 0.5f || transform.position.x < ChargesCurrentWire.GetComponent<Wires>().AnchorLeft - 0.5f)
+			if (transform.position.x > ChargesCurrentWire.GetComponent<Wires>().AnchorRight + 0.5f || transform.position.x < ChargesCurrentWire.GetComponent<Wires>().AnchorLeft - 0.5f && HasCalledFailFunction == false)
             {
                 gameObject.GetComponent<Charge>().ChargeFailState();
             }
@@ -216,8 +217,11 @@ public class Charge : MonoBehaviour {
 	public void ChargeFailState()
 
 	{
+		
 		Debug.Log("Charge Fail State");
 		Debug.Log (ChargesCurrentWire); 
+		HasCalledFailFunction = true; 
+		gameObject.GetComponent<SpriteRenderer> ().enabled = false; 
 		AM.FailSound_source.PlayOneShot(AM.Fail);
         //destroy for now will have to change things depeneding on how we record fail states
 
