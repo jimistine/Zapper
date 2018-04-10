@@ -3119,15 +3119,16 @@ MonoBehaviour:
   Shoot_source: {fileID: 1986085758}
   FailSound_source: {fileID: 2080914984}
   VO_source: {fileID: 0}
-  Music_source: {fileID: 0}
-  Ambient_source: {fileID: 0}
+  Music_source: {fileID: 1164723960}
+  Ambient_source: {fileID: 1677918429}
   Shoot: {fileID: 8300000, guid: d9c57a9112493498799157d96964bb3f, type: 3}
   Fail: {fileID: 8300000, guid: a5daa1eb9be1d4229ae0a3510483d049, type: 3}
   Hit: {fileID: 8300000, guid: 04d5b3fe5a8004086a53aeec8ae15e3f, type: 3}
-  Music: {fileID: 0}
-  Ambient: {fileID: 0}
-  Wagner: {fileID: 0}
-  NormalAmbient: {fileID: 0}
+  Music: {fileID: 8300000, guid: 0efdcde9e7a6d4046a4ea732626b92a4, type: 3}
+  Ambient: {fileID: 8300000, guid: f6115ab4eb8ae4fd3b57495345d17b70, type: 3}
+  Wagner: {fileID: 245067496763653946, guid: d8f21f564eaad40aea199debe00cd414, type: 2}
+  NormalAmbient: {fileID: 245744949524360078, guid: d8f21f564eaad40aea199debe00cd414,
+    type: 2}
 --- !u!4 &932989999
 Transform:
   m_ObjectHideFlags: 0
@@ -3910,7 +3911,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 243098007530816306, guid: d8f21f564eaad40aea199debe00cd414,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 0efdcde9e7a6d4046a4ea732626b92a4, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -4391,7 +4392,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1268022672}
   selectedCommands:
-  - {fileID: 1268022745}
+  - {fileID: 1268022664}
   variables: []
   description: 
   stepPause: 0
@@ -4512,7 +4513,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 3
+    floatVal: 6
   durationOLD: 0
 --- !u!114 &1268022665
 MonoBehaviour:
@@ -4566,7 +4567,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 592.23755
     y: 146.84387
-    width: 159.72864
+    width: 156.33496
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5421,7 +5422,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 594.13794
     y: 213.58609
-    width: 199.32144
+    width: 194.79655
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0

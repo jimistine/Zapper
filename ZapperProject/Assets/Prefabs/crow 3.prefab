@@ -180,7 +180,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SC: {fileID: 0}
   CurrentWire: {fileID: 0}
-  crowSpeed: 0.06
+  crowSpeed: 0.04
   startWait: 0
   pauseTimeMax: 0
   pauseTimeMin: 0

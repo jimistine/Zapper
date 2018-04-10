@@ -5143,9 +5143,15 @@ MonoBehaviour:
   Shoot_source: {fileID: 0}
   FailSound_source: {fileID: 0}
   VO_source: {fileID: 0}
+  Music_source: {fileID: 0}
+  Ambient_source: {fileID: 0}
   Shoot: {fileID: 0}
   Fail: {fileID: 0}
   Hit: {fileID: 0}
+  Music: {fileID: 0}
+  Ambient: {fileID: 0}
+  Wagner: {fileID: 0}
+  NormalAmbient: {fileID: 0}
 --- !u!4 &932989999
 Transform:
   m_ObjectHideFlags: 0
@@ -7132,8 +7138,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1268022708}
-  selectedCommands: []
+  - {fileID: 1268022660}
+  selectedCommands:
+  - {fileID: 1268022709}
   variables: []
   description: 
   stepPause: 0

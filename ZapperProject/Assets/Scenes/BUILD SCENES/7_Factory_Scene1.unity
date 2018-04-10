@@ -3526,14 +3526,15 @@ MonoBehaviour:
   FailSound_source: {fileID: 2080914984}
   VO_source: {fileID: 1947654310}
   Music_source: {fileID: 800953471}
-  Ambient_source: {fileID: 0}
+  Ambient_source: {fileID: 800953471}
   Shoot: {fileID: 8300000, guid: d9c57a9112493498799157d96964bb3f, type: 3}
   Fail: {fileID: 8300000, guid: a5daa1eb9be1d4229ae0a3510483d049, type: 3}
   Hit: {fileID: 8300000, guid: 04d5b3fe5a8004086a53aeec8ae15e3f, type: 3}
   Music: {fileID: 8300000, guid: f6115ab4eb8ae4fd3b57495345d17b70, type: 3}
-  Ambient: {fileID: 0}
-  Wagner: {fileID: 0}
-  NormalAmbient: {fileID: 0}
+  Ambient: {fileID: 8300000, guid: f6115ab4eb8ae4fd3b57495345d17b70, type: 3}
+  Wagner: {fileID: 245067496763653946, guid: d8f21f564eaad40aea199debe00cd414, type: 2}
+  NormalAmbient: {fileID: 245744949524360078, guid: d8f21f564eaad40aea199debe00cd414,
+    type: 2}
 --- !u!4 &932989999
 Transform:
   m_ObjectHideFlags: 0
@@ -4636,7 +4637,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1268022659}
   selectedCommands:
-  - {fileID: 1268022694}
+  - {fileID: 1268022695}
   variables: []
   description: 
   stepPause: 0
@@ -7629,7 +7630,7 @@ MonoBehaviour:
   HealthOjectOnePos: {x: -7, y: 6}
   ClocksBroken: 0
   TimeRemaining: 0
-  TimeRemainingStart: 97
+  TimeRemainingStart: 132
 --- !u!114 &1984350833
 MonoBehaviour:
   m_ObjectHideFlags: 0
