@@ -5194,12 +5194,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VO_Delay: 0
   Hit_source: {fileID: 0}
-  Shoot_source: {fileID: 1986085758}
+  Shoot_source: {fileID: 0}
   FailSound_source: {fileID: 0}
   VO_source: {fileID: 0}
   Music_source: {fileID: 0}
   Ambient_source: {fileID: 0}
-  Shoot: {fileID: 8300000, guid: a5daa1eb9be1d4229ae0a3510483d049, type: 3}
+  Shoot: {fileID: 0}
   Fail: {fileID: 0}
   Hit: {fileID: 0}
   Music: {fileID: 0}
@@ -7212,10 +7212,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1268022660}
-  selectedCommands:
-  - {fileID: 1268022694}
+  selectedBlocks: []
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0

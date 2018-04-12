@@ -308,8 +308,8 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 75
-  - 60
+  - 50
+  - 50
   RateOfSpawn:
   - 0
   - 0
@@ -2238,8 +2238,8 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 75
-  - 60
+  - 50
+  - 50
   RateOfSpawn:
   - 0
   - 0
@@ -7168,10 +7168,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1268022660}
-  selectedCommands:
-  - {fileID: 1268022663}
+  selectedBlocks: []
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -7295,7 +7293,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 10
+    floatVal: 4
   durationOLD: 0
 --- !u!114 &1268022664
 MonoBehaviour:
@@ -8527,8 +8525,8 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 75
-  - 30
+  - 50
+  - 50
   RateOfSpawn:
   - 0
   - 0
@@ -8659,8 +8657,8 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 75
-  - 30
+  - 50
+  - 50
   RateOfSpawn:
   - 0
   - 0
@@ -11875,6 +11873,7 @@ MonoBehaviour:
   CannotWin: 0
   isMountainLevel: 0
   isFactory: 0
+  isPrototype: 0
   PlayerControl: {fileID: 0}
   ChargeScript: {fileID: 0}
   Spawner: {fileID: 0}

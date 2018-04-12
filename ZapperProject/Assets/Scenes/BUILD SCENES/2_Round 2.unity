@@ -395,7 +395,7 @@ MonoBehaviour:
   BeatTime:
   - 0
   - 25
-  - 60
+  - 45
   RateOfSpawn:
   - 0
   - 0
@@ -2385,7 +2385,7 @@ MonoBehaviour:
   BeatTime:
   - 0
   - 25
-  - 60
+  - 45
   RateOfSpawn:
   - 0
   - 0
@@ -5201,9 +5201,11 @@ MonoBehaviour:
   PlayerCurrentWire: {fileID: 0}
   ChargeObjects: {fileID: 1902694361661754, guid: be122bce40d3b4352b8bf462feaea202,
     type: 2}
+  NewChargeObjects: {fileID: 0}
   mySpriteRenderer: {fileID: 0}
   CanShoot: 1
   CanMoveLeftRight: 1
+  IsUsingCharge_1: 1
   isFalling: 0
   ChargingAmount: 0
   ChargingSpeed: 50
@@ -7715,7 +7717,7 @@ MonoBehaviour:
   BeatTime:
   - 0
   - 25
-  - 60
+  - 45
   RateOfSpawn:
   - 0
   - 0
@@ -7847,7 +7849,7 @@ MonoBehaviour:
   BeatTime:
   - 0
   - 25
-  - 60
+  - 45
   RateOfSpawn:
   - 0
   - 0
@@ -10941,6 +10943,7 @@ MonoBehaviour:
   CannotWin: 0
   isMountainLevel: 0
   isFactory: 0
+  isPrototype: 0
   PlayerControl: {fileID: 0}
   ChargeScript: {fileID: 0}
   Spawner: {fileID: 0}

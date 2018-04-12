@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/BUILD SCENES/0_TempTitleScreen.unity
+- path: Assets/Scenes/BUILD SCENES/5_Prototype.unity
   isLoaded: 1
   isActive: 1
