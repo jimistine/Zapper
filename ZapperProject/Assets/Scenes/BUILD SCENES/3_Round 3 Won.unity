@@ -7116,7 +7116,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1268022659}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1268022674}
   variables: []
   description: 
   stepPause: 0
@@ -7448,7 +7449,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 4
+    floatVal: 10
   durationOLD: 0
 --- !u!114 &1268022675
 MonoBehaviour:
