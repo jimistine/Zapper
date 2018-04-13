@@ -454,8 +454,8 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 75
-  - 60
+  - 50
+  - 50
   RateOfSpawn:
   - 0
   - 0
@@ -2330,8 +2330,8 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 75
-  - 60
+  - 50
+  - 50
   RateOfSpawn:
   - 0
   - 0
@@ -5529,9 +5529,11 @@ MonoBehaviour:
   PlayerCurrentWire: {fileID: 0}
   ChargeObjects: {fileID: 1902694361661754, guid: be122bce40d3b4352b8bf462feaea202,
     type: 2}
+  NewChargeObjects: {fileID: 0}
   mySpriteRenderer: {fileID: 0}
   CanShoot: 1
   CanMoveLeftRight: 1
+  IsUsingCharge_1: 1
   isFalling: 0
   ChargingAmount: 0
   ChargingSpeed: 50
@@ -7115,7 +7117,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1268022659}
   selectedCommands:
-  - {fileID: 1268022680}
+  - {fileID: 1268022674}
   variables: []
   description: 
   stepPause: 0
@@ -7447,7 +7449,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 20
+    floatVal: 10
   durationOLD: 0
 --- !u!114 &1268022675
 MonoBehaviour:
@@ -7565,7 +7567,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &1268022680
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -7585,7 +7587,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &1268022681
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -7605,7 +7607,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &1268022682
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -7625,7 +7627,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &1268022683
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -8276,8 +8278,8 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 75
-  - 60
+  - 50
+  - 50
   RateOfSpawn:
   - 0
   - 0
@@ -8481,8 +8483,8 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 75
-  - 60
+  - 50
+  - 50
   RateOfSpawn:
   - 0
   - 0
@@ -11905,6 +11907,7 @@ MonoBehaviour:
   CannotWin: 0
   isMountainLevel: 0
   isFactory: 0
+  isPrototype: 0
   PlayerControl: {fileID: 0}
   ChargeScript: {fileID: 0}
   Spawner: {fileID: 0}

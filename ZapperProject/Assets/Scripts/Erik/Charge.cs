@@ -138,7 +138,7 @@ public class Charge : MonoBehaviour {
 			if (SC.isPrototype && collision.gameObject.tag== "Target")
 			{
 				Destroy(collision.gameObject);
-
+				Destroy(gameObject);
 
 			}
 
