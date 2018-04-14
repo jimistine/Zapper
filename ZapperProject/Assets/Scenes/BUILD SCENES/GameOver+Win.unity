@@ -897,7 +897,7 @@ Prefab:
     - target: {fileID: 114953354116052668, guid: bf27c202ee50141d69a620111a69480e,
         type: 2}
       propertyPath: selectedBlocks.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114953354116052668, guid: bf27c202ee50141d69a620111a69480e,
         type: 2}
@@ -1135,7 +1135,7 @@ Prefab:
         type: 2}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 1462903795}
+      objectReference: {fileID: 1462903787}
     - target: {fileID: 114687680074337954, guid: bf27c202ee50141d69a620111a69480e,
         type: 2}
       propertyPath: nodeRect.x
@@ -1199,7 +1199,7 @@ Prefab:
     - target: {fileID: 114598376556601752, guid: bf27c202ee50141d69a620111a69480e,
         type: 2}
       propertyPath: nodeRect.x
-      value: 254.54593
+      value: 253.53674
       objectReference: {fileID: 0}
     - target: {fileID: 114726029531484670, guid: bf27c202ee50141d69a620111a69480e,
         type: 2}
@@ -1629,7 +1629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
 --- !u!114 &1462903766 stripped
 MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114598376556601752, guid: bf27c202ee50141d69a620111a69480e,
+  m_PrefabParentObject: {fileID: 114687680074337954, guid: bf27c202ee50141d69a620111a69480e,
     type: 2}
   m_PrefabInternal: {fileID: 1462903762}
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}

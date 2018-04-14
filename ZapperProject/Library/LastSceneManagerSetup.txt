@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/BUILD SCENES/8_Factory_Scene2.unity
+=======
+- path: Assets/Scenes/BUILD SCENES/9_Factory_Scene3.unity
+>>>>>>> Jimi2
   isLoaded: 1
   isActive: 1

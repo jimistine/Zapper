@@ -3042,7 +3042,7 @@ MonoBehaviour:
   Music_source: {fileID: 1586315499}
   Ambient_source: {fileID: 1702770763}
   Shoot: {fileID: 8300000, guid: d9c57a9112493498799157d96964bb3f, type: 3}
-  Fail: {fileID: 8300000, guid: a5daa1eb9be1d4229ae0a3510483d049, type: 3}
+  Fail: {fileID: 8300000, guid: 63cc8b8282d10477fa5de4b115b49397, type: 3}
   Hit: {fileID: 8300000, guid: 04d5b3fe5a8004086a53aeec8ae15e3f, type: 3}
   Music: {fileID: 8300000, guid: 0efdcde9e7a6d4046a4ea732626b92a4, type: 3}
   Ambient: {fileID: 8300000, guid: f6115ab4eb8ae4fd3b57495345d17b70, type: 3}
