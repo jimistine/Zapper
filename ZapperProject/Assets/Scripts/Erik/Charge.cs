@@ -203,7 +203,7 @@ public class Charge : MonoBehaviour {
 			else if (isReturningCharge == true && collision.gameObject.tag == "Player")
 
 			{
-				if (SC.isMountainLevel == false)
+				if (SC.isMountainLevel == false && SC.isFactory == false)
 				{
 					// destroy returinging charge on collision with player, may have to change function depending on hwo we want return charges to behave.
 					hasTriggered = true;
@@ -218,6 +218,18 @@ public class Charge : MonoBehaviour {
 					hasTriggered = true;
 					//cause player to fall a specific distance downwards, not below bottom of wire.
 					collision.GetComponent<ChracterController>().isFalling = true;
+				}
+
+				if (SC.isFactory == true) { 
+
+					Debug.Log ("Collected clock!"); 
+					hasTriggered = true;
+					AM.Hit_source.PlayOneShot(AM.Hit);
+					//SC.Score++;
+					//SC.ScoreUpdate();
+					Destroy(gameObject);
+					AM.Hit_source.PlayOneShot(AM.Hit);
+					//player.GetComponent<ChracterController>().Clyde_zap();
 				}
 
 			}

@@ -5900,9 +5900,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: 1897183817452254, guid: 57f49aee29f964de8bdc595cbae64c7f, type: 2}
-  - {fileID: 1897183817452254, guid: 57f49aee29f964de8bdc595cbae64c7f, type: 2}
-  - {fileID: 1897183817452254, guid: 57f49aee29f964de8bdc595cbae64c7f, type: 2}
+  - {fileID: 1791657620474538, guid: ff713b0a23d9646e783db29a0f0c7f3c, type: 2}
+  - {fileID: 1791657620474538, guid: ff713b0a23d9646e783db29a0f0c7f3c, type: 2}
+  - {fileID: 1791657620474538, guid: ff713b0a23d9646e783db29a0f0c7f3c, type: 2}
   WireToSpawn: {fileID: 0}
   spawnRate: 1.1
   spawnRateMin: 2.25
@@ -6634,6 +6634,7 @@ MonoBehaviour:
   CannotWin: 0
   isMountainLevel: 0
   isFactory: 1
+  isPrototype: 0
   PlayerControl: {fileID: 0}
   ChargeScript: {fileID: 0}
   Spawner: {fileID: 0}
