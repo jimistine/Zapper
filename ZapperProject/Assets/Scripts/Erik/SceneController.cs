@@ -22,6 +22,8 @@ public class SceneController : MonoBehaviour {
     public GameObject ClocksBrokenUI;
     public GameObject TimeRemainingUI;
 
+	public GameObject plusOne; 
+
     public bool CannotLose;
     public bool CannotWin;
     public bool isMountainLevel;
@@ -58,7 +60,7 @@ public class SceneController : MonoBehaviour {
 		ChargeScript = FindObjectOfType<Charge> (); 
         
         GameObject MemoryObj = GameObject.Find("Memory");
-
+		plusOne.GetComponent<SpriteRenderer> ().enabled = false; 
         
 	}
     private void Update()
@@ -83,6 +85,7 @@ public class SceneController : MonoBehaviour {
     {
         //GUI.Label(new Rect(10,10,200,90), "Birds Zapped: " + Score);
         ScoreUI.GetComponent<Text>().text = (" "+Score+" ");   
+		StartCoroutine (pickUpClock ()); 
     }
     
     public void RestartLevel()
@@ -231,17 +234,15 @@ public class SceneController : MonoBehaviour {
         // On next restart, load the level select instead of resetting
         LevelSelectGateOpen = true;
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+	public IEnumerator pickUpClock () {
+
+
+		plusOne.GetComponent<SpriteRenderer>().enabled = true; 
+		yield return new WaitForSeconds (.2f);
+		plusOne.GetComponent<SpriteRenderer>().enabled = false; 
+
+
+	}
     
 }

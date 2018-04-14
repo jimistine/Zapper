@@ -54,6 +54,8 @@ public class ChracterController : MonoBehaviour {
 
 		IsUsingCharge_1 = true;
 
+	
+
 	}
  
 	public void FindCurrentWire()
@@ -155,6 +157,13 @@ public class ChracterController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		if (Input.GetKeyDown (KeyCode.A)) {
+
+			Debug.Log ("falling!"); 
+			anim.SetBool ("Rock_Bool", true); 
+
+		}
+
         if(IsinStartPosition == false)
         {
             ChangeWire();
@@ -195,6 +204,7 @@ public class ChracterController : MonoBehaviour {
             {
                 transform.Translate(Vector3.left * Time.deltaTime * PlayerHorizontalSpeed);
                 CanShoot = false;
+				anim.SetBool ("Pickup_Bool", false); 
                 anim.SetBool("Run_Bool", true);
             }
             if (Input.GetKey(KeyCode.RightArrow) && transform.position.x < PlayerCurrentWire.GetComponent<Wires>().AnchorRight)
@@ -202,6 +212,7 @@ public class ChracterController : MonoBehaviour {
                 transform.Translate(Vector3.right * Time.deltaTime * PlayerHorizontalSpeed);
                 CanShoot = false;
                 //anim.SetTrigger ("Run_Trigger"); 
+				anim.SetBool ("Pickup_Bool", false); 
                 anim.SetBool("Run_Bool", true);
             }
             if (Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.RightArrow))
@@ -263,6 +274,7 @@ public class ChracterController : MonoBehaviour {
 		} //instantiate a "Charge" object
 		if (Input.GetKeyUp(KeyCode.Space) && CanShoot == true && Time.timeSinceLevelLoad >2)
 		{
+			anim.SetBool ("Pickup_Bool", false); 
 			anim.SetBool ("Shoot_Bool", true); 
 			Debug.Log("Fire Charge");
 			ChargingAmount = 0;
@@ -273,7 +285,7 @@ public class ChracterController : MonoBehaviour {
 		}
 		if (Input.GetKeyDown (KeyCode.A)) {
 
-
+			anim.SetBool ("Pickup_Bool", false); 
 			anim.SetBool ("Zap_Bool", true); 
 		}
         if (isFalling == true)
@@ -293,6 +305,7 @@ public class ChracterController : MonoBehaviour {
             // need to decide how long they will fall, distance? time?
         }
 	}
+
 
     IEnumerator Falling()
     {
@@ -318,6 +331,19 @@ public class ChracterController : MonoBehaviour {
 	public void Clyde_normal () {
 
 		anim.SetBool ("Zap_Bool", false); 
+	}
+
+	public void mt_fall () {
+		
+		anim.SetBool ("Rock_Bool", true); 
+
+	}
+		
+
+	public void mt_normal () {
+
+		anim.SetBool ("Rock_Bool", false); 
+
 	}
 
 	//Called by Fungus to expand/reduce player movement on the fly

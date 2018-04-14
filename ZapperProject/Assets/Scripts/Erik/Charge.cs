@@ -54,10 +54,9 @@ public class Charge : MonoBehaviour {
 		alarm1 = GameObject.Find ("alarm"); 
 		alarm2 = GameObject.Find ("alarm 2"); 
 		alarm3 = GameObject.Find ("alarm 3"); 
-		alarm4 = GameObject.Find ("alarm 4"); 
+		alarm4 = GameObject.Find ("alarm 4");  
 	
-		anim = GetComponent<Animator> ();
-	
+		anim = GetComponent<Animator> (); 
 		 
 	}
 
@@ -159,6 +158,7 @@ public class Charge : MonoBehaviour {
 
 						Debug.Log("shattered!");
 						anim.SetBool("shatter_bool", true);
+						player.GetComponent<ChracterController> ().mt_fall (); 
 
 					}
 				}
@@ -220,16 +220,16 @@ public class Charge : MonoBehaviour {
 					collision.GetComponent<ChracterController>().isFalling = true;
 				}
 
-				if (SC.isFactory == true) { 
+				if (SC.isFactory == true && SC.isMountainLevel == false) { 
 
 					Debug.Log ("Collected clock!"); 
 					hasTriggered = true;
-					AM.Hit_source.PlayOneShot(AM.Hit);
 					//SC.Score++;
 					//SC.ScoreUpdate();
 					Destroy(gameObject);
-					AM.Hit_source.PlayOneShot(AM.Hit);
-					//player.GetComponent<ChracterController>().Clyde_zap();
+					AM.Hit_source.PlayOneShot (AM.Hit);  
+
+
 				}
 
 			}
@@ -392,6 +392,7 @@ public class Charge : MonoBehaviour {
 
 
 	}
+		
 
 	public void SetFalse () {
 
