@@ -45,6 +45,7 @@ public class SceneController : MonoBehaviour {
     public GameObject HealthObject;
     public Vector2 HealthOjectOnePos;
 
+
     //Factory Ints
     public int ClocksBroken;
     public float TimeRemaining;
@@ -85,7 +86,7 @@ public class SceneController : MonoBehaviour {
     {
         //GUI.Label(new Rect(10,10,200,90), "Birds Zapped: " + Score);
         ScoreUI.GetComponent<Text>().text = (" "+Score+" ");   
-		StartCoroutine (pickUpClock ()); 
+		StartCoroutine (pickUpClockTime ()); 
     }
     
     public void RestartLevel()
@@ -126,6 +127,7 @@ public class SceneController : MonoBehaviour {
             {
 //            if()
                 Destroy(deleteThis);
+	
             }
         
         
@@ -135,14 +137,24 @@ public class SceneController : MonoBehaviour {
         }
         //reset players position and health
         // PlayerControl.Start();
+
+
         UpdateHealth();
         if(isMountainLevel == true && PlayerObject.transform.position.y >= PlayerObject.GetComponent<ChracterController>().PlayerCurrentWire.GetComponent<Wires>().StartPositionBottom + (Camera.main.orthographicSize / 2))
         {
-            PlayerObject.GetComponent<ChracterController>().PlayersStartingPositionY = PlayerObject.transform.position.y - (Camera.main.orthographicSize / 2);
+			//call a coroutine that has yield wait for seconds then put this in it 
+
+			PlayerObject.GetComponent<ChracterController> ().mt_fall ();  
+			StartCoroutine (mtFailState ()); 
         }
-        PlayerObject.GetComponent<ChracterController>().IsinStartPosition = false;
+
+        
         //reset the delay before play timer
-        Spawner.DelayBeforeStart = DelayBeforeStartTime + Time.time - 1;
+		if (isMountainLevel) {
+			Spawner.DelayBeforeStart = DelayBeforeStartTime + Time.time + 1;
+		} else {
+			Spawner.DelayBeforeStart = DelayBeforeStartTime + Time.time - 1;
+		}
         Spawner.StoreAddedTime = 0;
         Spawner.spawnRate = Spawner.spawnRateMin;
         Spawner.TimeSinceFailLevels = 1;
@@ -235,11 +247,35 @@ public class SceneController : MonoBehaviour {
         LevelSelectGateOpen = true;
     }
 
-	public IEnumerator pickUpClock () {
+
+	//PICKING UP CLOCKS 
+
+	public void pickUpClock () {
+
+
+		StartCoroutine (pickUpClockTime ()); 
+
+	}
+
+	IEnumerator mtFailState () {
+
+		PlayerObject.GetComponent<ChracterController> ().canInput = false; 
+		yield return new WaitForSeconds(2f); 
+		PlayerObject.GetComponent<ChracterController>().PlayersStartingPositionY = PlayerObject.transform.position.y - (Camera.main.orthographicSize / 2);
+		PlayerControl.mt_normal (); 
+		PlayerObject.GetComponent<ChracterController>().IsinStartPosition = false;
+		PlayerObject.GetComponent<ChracterController> ().canInput = true;
+	}
+
+	public IEnumerator pickUpClockTime () {
 
 
 		plusOne.GetComponent<SpriteRenderer>().enabled = true; 
 		yield return new WaitForSeconds (.2f);
+		plusOne.GetComponent<SpriteRenderer>().enabled = false; 
+		yield return new WaitForSeconds (.2f);
+		plusOne.GetComponent<SpriteRenderer>().enabled = true; 
+		yield return new WaitForSeconds (.2f); 
 		plusOne.GetComponent<SpriteRenderer>().enabled = false; 
 
 

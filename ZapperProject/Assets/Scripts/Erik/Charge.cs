@@ -158,7 +158,7 @@ public class Charge : MonoBehaviour {
 
 						Debug.Log("shattered!");
 						anim.SetBool("shatter_bool", true);
-						player.GetComponent<ChracterController> ().mt_fall (); 
+
 
 					}
 				}

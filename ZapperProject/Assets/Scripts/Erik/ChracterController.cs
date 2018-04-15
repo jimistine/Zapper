@@ -10,7 +10,7 @@ public class ChracterController : MonoBehaviour {
 	// Use this for initialization
 	public SceneController SC;
 	public AudioManager AM;
-	public float PlayerHorizontalSpeed = 1;
+	public float PlayerHorizontalSpeed = 10;
 	public float PlayersStartingPositionY; 
 	public int CurrentWirePositionY;
     public int CurrentWirePositionX;
@@ -39,6 +39,8 @@ public class ChracterController : MonoBehaviour {
    public bool IsinStartPosition = false;
 
 	public GameObject wire1;
+
+	public bool canInput = true; 
 
 	public void Start () {
 
@@ -288,7 +290,7 @@ public class ChracterController : MonoBehaviour {
 			anim.SetBool ("Pickup_Bool", false); 
 			anim.SetBool ("Zap_Bool", true); 
 		}
-        if (isFalling == true)
+		if (isFalling == true || canInput == false)
         
 		{
 			//flashing the character animation when player is hit 
@@ -300,10 +302,16 @@ public class ChracterController : MonoBehaviour {
             }
 
             CanShoot = false;
-            StartCoroutine(Falling());
+           
 
             // need to decide how long they will fall, distance? time?
         }
+
+		if (isFalling == true) {
+
+			StartCoroutine(Falling());
+
+		}
 	}
 
 
@@ -338,7 +346,6 @@ public class ChracterController : MonoBehaviour {
 		anim.SetBool ("Rock_Bool", true); 
 
 	}
-		
 
 	public void mt_normal () {
 

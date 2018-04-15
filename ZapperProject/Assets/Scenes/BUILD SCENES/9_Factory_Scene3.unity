@@ -1241,9 +1241,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08f6bac5442f14747b81afdd03958f7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SC: {fileID: 0}
-  Spawner: {fileID: 0}
-  PlayerObj: {fileID: 0}
+  SC: {fileID: 1984350832}
+  Spawner: {fileID: 1761539915}
+  PlayerObj: {fileID: 1039467704}
   currentBeatNum: 0
   BeatNum: 00000000010000000200000003000000
   SpawnNum: 0000000000000000100e000000000000

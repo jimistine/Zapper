@@ -145,18 +145,15 @@ MonoBehaviour:
   Shoot_source: {fileID: 1563467296}
   FailSound_source: {fileID: 771058661}
   VO_source: {fileID: 0}
+  Music_source: {fileID: 0}
+  Ambient_source: {fileID: 0}
   Shoot: {fileID: 8300000, guid: d9c57a9112493498799157d96964bb3f, type: 3}
   Fail: {fileID: 8300000, guid: a5daa1eb9be1d4229ae0a3510483d049, type: 3}
   Hit: {fileID: 8300000, guid: 04d5b3fe5a8004086a53aeec8ae15e3f, type: 3}
-  VOClip_1: {fileID: 0}
-  VOClip_2: {fileID: 0}
-  VOClip_3: {fileID: 0}
-  VOClip_4: {fileID: 0}
-  VOClip_5: {fileID: 0}
-  VOClip_6: {fileID: 0}
-  VOClip_7: {fileID: 0}
-  VOClip_8: {fileID: 0}
-  VOClip_9: {fileID: 0}
+  Music: {fileID: 0}
+  Ambient: {fileID: 0}
+  Wagner: {fileID: 0}
+  NormalAmbient: {fileID: 0}
 --- !u!4 &4922282
 Transform:
   m_ObjectHideFlags: 0
@@ -579,7 +576,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SC: {fileID: 0}
   AM: {fileID: 0}
-  PlayerHorizontalSpeed: 1
+  PlayerHorizontalSpeed: 1.5
+  PlayersStartingPositionY: 0
   CurrentWirePositionY: 0
   CurrentWirePositionX: 0
   MaxWirePosition: 4
@@ -587,9 +585,11 @@ MonoBehaviour:
   PlayerCurrentWire: {fileID: 0}
   ChargeObjects: {fileID: 1674605608341064, guid: 711050ea3a7b5415b80a881b74d8e749,
     type: 2}
+  NewChargeObjects: {fileID: 0}
   mySpriteRenderer: {fileID: 0}
   CanShoot: 1
   CanMoveLeftRight: 1
+  IsUsingCharge_1: 1
   isFalling: 0
   ChargingAmount: 0
   ChargingSpeed: 50
@@ -597,6 +597,8 @@ MonoBehaviour:
   playerY: 0
   playerX: 0
   IsinStartPosition: 0
+  wire1: {fileID: 0}
+  canInput: 1
 --- !u!114 &356407447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1285,11 +1287,12 @@ MonoBehaviour:
   StartPositionLeft: 0
   StartPositionRight: 0
   StartPositionBottom: 0
-  WirePositionTop: 8
+  WirePositionTop: 73
   PlayerPositionOffsetY: 0
   ChargesPositionOffsetY: 0
   canSpawn: 1
   canWin: 0
+  isSummitWire: 0
   anim: {fileID: 0}
 --- !u!61 &789935820
 BoxCollider2D:
@@ -1628,11 +1631,12 @@ MonoBehaviour:
   StartPositionLeft: 0
   StartPositionRight: 0
   StartPositionBottom: 0
-  WirePositionTop: 8
+  WirePositionTop: 294
   PlayerPositionOffsetY: 0
   ChargesPositionOffsetY: 0
   canSpawn: 1
   canWin: 0
+  isSummitWire: 0
   anim: {fileID: 0}
 --- !u!61 &948645802
 BoxCollider2D:
@@ -2434,11 +2438,12 @@ MonoBehaviour:
   StartPositionLeft: 0
   StartPositionRight: 0
   StartPositionBottom: 0
-  WirePositionTop: 8
+  WirePositionTop: 218
   PlayerPositionOffsetY: 0
   ChargesPositionOffsetY: 0
   canSpawn: 1
   canWin: 0
+  isSummitWire: 0
   anim: {fileID: 0}
 --- !u!61 &1461425782
 BoxCollider2D:
@@ -2923,10 +2928,14 @@ MonoBehaviour:
   WireFourObject: {fileID: 2074991039}
   PlayerObject: {fileID: 356407441}
   ScoreUI: {fileID: 942307763}
+  ClocksBrokenUI: {fileID: 0}
+  TimeRemainingUI: {fileID: 0}
+  plusOne: {fileID: 0}
   CannotLose: 0
   CannotWin: 0
   isMountainLevel: 1
   isFactory: 0
+  isPrototype: 0
   PlayerControl: {fileID: 0}
   ChargeScript: {fileID: 0}
   Spawner: {fileID: 0}
@@ -2939,6 +2948,9 @@ MonoBehaviour:
   HealthObject: {fileID: 1784129382507516, guid: 491e2e6a7a37d410f892c16f4fd7226e,
     type: 2}
   HealthOjectOnePos: {x: -7, y: 6}
+  ClocksBroken: 0
+  TimeRemaining: 0
+  TimeRemainingStart: 0
 --- !u!114 &1682933951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3384,11 +3396,12 @@ MonoBehaviour:
   StartPositionLeft: 0
   StartPositionRight: 0
   StartPositionBottom: 0
-  WirePositionTop: 8
+  WirePositionTop: 158
   PlayerPositionOffsetY: 0
   ChargesPositionOffsetY: 0
   canSpawn: 1
   canWin: 0
+  isSummitWire: 0
   anim: {fileID: 0}
 --- !u!61 &2074991041
 BoxCollider2D:
