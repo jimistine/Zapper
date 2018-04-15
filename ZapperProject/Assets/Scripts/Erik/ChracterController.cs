@@ -56,7 +56,7 @@ public class ChracterController : MonoBehaviour {
 
 		IsUsingCharge_1 = true;
 
-	
+		//comment
 
 	}
  
