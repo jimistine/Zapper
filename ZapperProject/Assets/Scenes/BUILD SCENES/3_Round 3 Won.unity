@@ -454,8 +454,8 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 50
-  - 50
+  - 55
+  - 55
   RateOfSpawn:
   - 0
   - 0
@@ -2330,8 +2330,8 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 50
-  - 50
+  - 55
+  - 55
   RateOfSpawn:
   - 0
   - 0
@@ -5542,6 +5542,7 @@ MonoBehaviour:
   playerX: 0
   IsinStartPosition: 0
   wire1: {fileID: 0}
+  canInput: 1
 --- !u!61 &1039467706
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8278,8 +8279,8 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 50
-  - 50
+  - 55
+  - 55
   RateOfSpawn:
   - 0
   - 0
@@ -8483,8 +8484,8 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 50
-  - 50
+  - 55
+  - 55
   RateOfSpawn:
   - 0
   - 0
@@ -11903,6 +11904,7 @@ MonoBehaviour:
   ScoreUI: {fileID: 783104529}
   ClocksBrokenUI: {fileID: 0}
   TimeRemainingUI: {fileID: 0}
+  plusOne: {fileID: 0}
   CannotLose: 0
   CannotWin: 0
   isMountainLevel: 0

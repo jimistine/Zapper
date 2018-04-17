@@ -61,7 +61,10 @@ public class SceneController : MonoBehaviour {
 		ChargeScript = FindObjectOfType<Charge> (); 
         
         GameObject MemoryObj = GameObject.Find("Memory");
-		plusOne.GetComponent<SpriteRenderer> ().enabled = false; 
+        if (isFactory)
+        {
+            plusOne.GetComponent<SpriteRenderer> ().enabled = false; 
+        }
         
 	}
     private void Update()
@@ -76,17 +79,21 @@ public class SceneController : MonoBehaviour {
             }
 
         }
-        //TimeRemaining -= Time.timeSinceLevelLoad*Time.deltaTime;
-        TimeRemaining = TimeRemainingStart-Time.timeSinceLevelLoad;
-        TimeRemainingUI.GetComponent<Text>().text = (" "+ Mathf.Round(TimeRemaining)+" ");
-        ClocksBrokenUI.GetComponent<Text>().text = (" "+ClocksBroken+" "); 
+
+        if (isFactory)
+        {
+            //TimeRemaining -= Time.timeSinceLevelLoad*Time.deltaTime;
+            TimeRemaining = TimeRemainingStart - Time.timeSinceLevelLoad;
+            TimeRemainingUI.GetComponent<Text>().text = (" " + Mathf.Round(TimeRemaining) + " ");
+            ClocksBrokenUI.GetComponent<Text>().text = (" " + ClocksBroken + " ");
+        }
     }
 
     public void ScoreUpdate()
     {
         //GUI.Label(new Rect(10,10,200,90), "Birds Zapped: " + Score);
         ScoreUI.GetComponent<Text>().text = (" "+Score+" ");   
-		StartCoroutine (pickUpClockTime ()); 
+		
     }
     
     public void RestartLevel()
@@ -250,12 +257,7 @@ public class SceneController : MonoBehaviour {
 
 	//PICKING UP CLOCKS 
 
-	public void pickUpClock () {
-
-
-		StartCoroutine (pickUpClockTime ()); 
-
-	}
+	
 
 	IEnumerator mtFailState () {
 
@@ -267,18 +269,6 @@ public class SceneController : MonoBehaviour {
 		PlayerObject.GetComponent<ChracterController> ().canInput = true;
 	}
 
-	public IEnumerator pickUpClockTime () {
-
-
-		plusOne.GetComponent<SpriteRenderer>().enabled = true; 
-		yield return new WaitForSeconds (.2f);
-		plusOne.GetComponent<SpriteRenderer>().enabled = false; 
-		yield return new WaitForSeconds (.2f);
-		plusOne.GetComponent<SpriteRenderer>().enabled = true; 
-		yield return new WaitForSeconds (.2f); 
-		plusOne.GetComponent<SpriteRenderer>().enabled = false; 
-
-
-	}
+	
     
 }

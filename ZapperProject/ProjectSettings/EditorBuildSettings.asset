@@ -23,9 +23,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BUILD SCENES/0_TempTitleScreen.unity
     guid: 13ba53d61692b4b068888ce089cd44f2
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/BUILD SCENES/1_Round 1.unity
     guid: 877e1403402ed40e09dd74cc521f1414
@@ -65,24 +62,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ErikTriesToBuildThings/MtTest.unity
     guid: c5302e2f2b14e43389c494fa8b73b5e8
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/BUILD SCENES/GameOver+Win.unity
     guid: f0abb2790273949ab9fe798c743a8c86
   - enabled: 1
     path: Assets/Scenes/BUILD SCENES/GameOver+Lose.unity
     guid: a8123d035599f3e49a2b36e3b8078ce6
+  - enabled: 1
+    path: Assets/Scenes/BUILD SCENES/GameOver+Win_Factory.unity
+    guid: 0a8a13c97b08541f0880e6da66d63a97
   - enabled: 0
     path: Assets/Scenes/PastStates/4_Round 4 Won 2 Lost 1 OLD.unity
     guid: 50f66b1a365a54996ae45f3163c5c90e
   - enabled: 0
     path: Assets/Scenes/PastStates/4_Round 4 Won 1 Lost 2 OLD.unity
     guid: 8d85effdfb411469da50bae25fdeb4e9
-  - enabled: 1
-    path: Assets/Scenes/BUILD SCENES/GameOver+Win_Factory.unity
-    guid: 0a8a13c97b08541f0880e6da66d63a97
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000

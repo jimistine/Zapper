@@ -264,7 +264,7 @@ public class ChracterController : MonoBehaviour {
                 SC.WinLevel();
             }
         }
-		if (Input.GetKey(KeyCode.Space)&& CanShoot == true && Time.timeSinceLevelLoad > 2)
+		if (Input.GetKey(KeyCode.Space)&& CanShoot == true && Time.timeSinceLevelLoad > 0.5)
 		{
 			ChangeWire();
 
@@ -280,10 +280,13 @@ public class ChracterController : MonoBehaviour {
 			anim.SetBool ("Shoot_Bool", true); 
 			Debug.Log("Fire Charge");
 			ChargingAmount = 0;
-			AM.Shoot_source.PlayOneShot(AM.Shoot);
 			CreateChargeObject();
-			StartCoroutine (Anim_shoot ()); 
+			StartCoroutine (Anim_shoot ());
 			Debug.Log("Charged to"+ChargingAmount);
+			if (SC.isPrototype == false)
+			{
+				AM.Shoot_source.PlayOneShot(AM.Shoot);
+			}
 		}
 		if (Input.GetKeyDown (KeyCode.A)) {
 
