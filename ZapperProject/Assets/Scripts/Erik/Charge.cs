@@ -164,8 +164,11 @@ public class Charge : MonoBehaviour {
 				}
 				else
 				{
-					AM.Hit_source.PlayOneShot(AM.Hit);
-					AM.Hit_source.PlayOneShot(AM.Hit);
+					if (SC.isPrototype == false)
+					{
+						AM.Hit_source.PlayOneShot(AM.Hit);
+						AM.Hit_source.PlayOneShot(AM.Hit);
+					}
 
 					Destroy(gameObject);
 				}
