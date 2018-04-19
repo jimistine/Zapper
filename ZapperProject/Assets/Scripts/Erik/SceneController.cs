@@ -21,6 +21,7 @@ public class SceneController : MonoBehaviour {
     public GameObject ScoreUI;
     public GameObject ClocksBrokenUI;
     public GameObject TimeRemainingUI;
+    public GameObject CameraObj;
 
 	public GameObject plusOne; 
 
@@ -44,7 +45,7 @@ public class SceneController : MonoBehaviour {
     public int CurrentHealth;
     public GameObject HealthObject;
     public Vector2 HealthOjectOnePos;
-    public GameObject MemoryObj;
+    //public GameObject MemoryObj;
 
 
     //Factory Ints
@@ -59,9 +60,11 @@ public class SceneController : MonoBehaviour {
         Spawner = FindObjectOfType<crowSpawner>();
         ScoreUpdate();
         UpdateHealth(); 
-		ChargeScript = FindObjectOfType<Charge> (); 
-        
-        GameObject MemoryObj = GameObject.Find("Memory");
+		ChargeScript = FindObjectOfType<Charge> ();
+
+
+        //GameObject MemoryObj = GameObject.Find("Memory");
+
         if (isFactory)
         {
             plusOne.GetComponent<SpriteRenderer> ().enabled = false; 
@@ -108,8 +111,6 @@ public class SceneController : MonoBehaviour {
         PlayerControl.enabled = false;
         //list all game objects to be destroyed
         List<GameObject> DeleteGameObjects = new List<GameObject>();
-       
-       
             foreach (GameObject deleteGameObject in GameObject.FindGameObjectsWithTag("charge"))
             {
                 
@@ -135,9 +136,7 @@ public class SceneController : MonoBehaviour {
             {
 //            if()
                 Destroy(deleteThis);
-	
             }
-        
         
         foreach(GameObject x in Spawner.enemies)
         {
@@ -146,7 +145,6 @@ public class SceneController : MonoBehaviour {
         //reset players position and health
         // PlayerControl.Start();
 
-
         UpdateHealth();
         if(isMountainLevel == true )
         {
@@ -154,7 +152,6 @@ public class SceneController : MonoBehaviour {
 			PlayerObject.GetComponent<ChracterController> ().mt_fall ();  
 			StartCoroutine (mtFailState ()); 
         }
-
         
         //reset the delay before play timer
 		if (isMountainLevel) {
@@ -267,10 +264,34 @@ public class SceneController : MonoBehaviour {
         {
             PlayerObject.GetComponent<ChracterController>().PlayersStartingPositionY = PlayerObject.transform.position.y - ((Camera.main.orthographicSize / 2) -5);
         }
+        if(CurrentHealth == 0)
+        {
+            if (GameObject.Find("Memory").GetComponent<Memory>().checkPoint1Reahced == false)
+            {
+                PlayerObject.GetComponent<ChracterController>().PlayersStartingPositionY = WireTwoObject.GetComponent<Wires>().StartPositionBottom;
+            }
+            if (GameObject.Find("Memory").GetComponent<Memory>().checkPoint1Reahced == true && GameObject.Find("Memory").GetComponent<Memory>().checkPoint2Reahced == false)
+            {
+                PlayerObject.GetComponent<ChracterController>().PlayersStartingPositionY = GameObject.Find("Memory").GetComponent<Memory>().CheckPoint1Length;
+            }
+            if (GameObject.Find("Memory").GetComponent<Memory>().checkPoint2Reahced == true && GameObject.Find("Memory").GetComponent<Memory>().checkPoint3Reahced == false)
+            {
+                PlayerObject.GetComponent<ChracterController>().PlayersStartingPositionY = GameObject.Find("Memory").GetComponent<Memory>().CheckPoint2Length;
+            }
+            if (GameObject.Find("Memory").GetComponent<Memory>().checkPoint3Reahced == true)
+            {
+                PlayerObject.GetComponent<ChracterController>().PlayersStartingPositionY = GameObject.Find("Memory").GetComponent<Memory>().CheckPoint3Length;
+            }
+            CurrentHealth = 3;
+            UpdateHealth();
+            CameraObj.GetComponent<CameraController>().UpdateCameraPosition();
+        }
 		PlayerControl.mt_normal (); 
 		PlayerObject.GetComponent<ChracterController>().IsinStartPosition = false;
 		PlayerObject.GetComponent<ChracterController> ().canInput = true;
-	}
+        PlayerObject.GetComponent<ChracterController>().CanShoot = true;
+
+    }
 
 	
     

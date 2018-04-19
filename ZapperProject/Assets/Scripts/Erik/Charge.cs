@@ -124,7 +124,7 @@ public class Charge : MonoBehaviour {
 
             if (transform.position.y > ChargesCurrentWire.GetComponent<Wires>().WirePositionTop)
             {
-                gameObject.GetComponent<Charge>().ChargeFailState();
+                //gameObject.GetComponent<Charge>().ChargeFailState();
             }
         }
 		
@@ -399,39 +399,34 @@ public class Charge : MonoBehaviour {
 
 	public void SetFalse () {
 
+        if (SC.isMountainLevel == false)
+        {
+            if (SC.isFactory)
+            {
+                alarm1.GetComponent<alarmScript>().alarm_normal();
+                alarm2.GetComponent<alarmScript>().alarm_normal_2();
+                alarm3.GetComponent<alarmScript>().alarm_normal_3();
+                alarm4.GetComponent<alarmScript>().alarm_normal_4();
+                Debug.Log("charge reset end");
+            }
+            else
+            {
+                fusebox1.GetComponent<fusebox_script>().fusebox_normal();
+                fusebox2.GetComponent<fusebox_script>().fusebox_normal_2();
 
+                if (fusebox3 != null)
+                {
+                    fusebox3.GetComponent<fusebox_script>().fusebox_normal_3();
+                }
 
-		if (SC.isFactory) {
+                if (fusebox4 != null)
+                {
+                    fusebox4.GetComponent<fusebox_script>().fusebox_normal_4();
+                }
 
-			alarm1.GetComponent<alarmScript> ().alarm_normal (); 
-			alarm2.GetComponent<alarmScript> ().alarm_normal_2 (); 
-			alarm3.GetComponent<alarmScript> ().alarm_normal_3 (); 
-			alarm4.GetComponent<alarmScript> ().alarm_normal_4 (); 
-			Debug.Log ("charge reset end"); 
-
-		} else {
-
-			fusebox1.GetComponent<fusebox_script> ().fusebox_normal ();
-			fusebox2.GetComponent<fusebox_script> ().fusebox_normal_2 ();
-		
-			if (fusebox3 != null) {
-
-				fusebox3.GetComponent<fusebox_script> ().fusebox_normal_3 (); 
-
-			}
-
-			if (fusebox4 != null) {
-
-				fusebox4.GetComponent<fusebox_script> ().fusebox_normal_4 (); 
-
-			}
-			
-
-			Debug.Log ("charge reset end"); 
-
-		}
-
-
+                Debug.Log("charge reset end");
+            }
+        }
 	}
 
 }
