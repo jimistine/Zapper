@@ -1357,8 +1357,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -904196873
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d8127d21cdd184ec5a45bf65af2c4aa5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2112,8 +2112,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -904196873
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d8127d21cdd184ec5a45bf65af2c4aa5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3141,8 +3141,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -904196873
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d8127d21cdd184ec5a45bf65af2c4aa5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3865,8 +3865,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -904196873
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d8127d21cdd184ec5a45bf65af2c4aa5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3938,8 +3938,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -904196873
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d8127d21cdd184ec5a45bf65af2c4aa5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4179,8 +4179,13 @@ GameObject:
   m_Component:
   - component: {fileID: 790181267}
   - component: {fileID: 790181266}
+<<<<<<< HEAD
   - component: {fileID: 790181268}
   - component: {fileID: 790181269}
+=======
+  - component: {fileID: 790181269}
+  - component: {fileID: 790181268}
+>>>>>>> June
   m_Layer: 0
   m_Name: platform 1
   m_TagString: Untagged
@@ -4219,8 +4224,13 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+<<<<<<< HEAD
   m_SortingLayerID: 1140730413
   m_SortingLayer: 8
+=======
+  m_SortingLayerID: -1954766149
+  m_SortingLayer: 9
+>>>>>>> June
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4c3858e0576f3429aa6b3decaa24720c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4239,7 +4249,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 790181265}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: 5.98, y: -1.74, z: -3}
+=======
+  m_LocalPosition: {x: 5.94, y: -1.74, z: -3}
+>>>>>>> June
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4254,7 +4268,11 @@ Animator:
   m_GameObject: {fileID: 790181265}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
+<<<<<<< HEAD
   m_Controller: {fileID: 9100000, guid: 7fb5d796a31614b4495ca88fbe62651f, type: 2}
+=======
+  m_Controller: {fileID: 9100000, guid: 699999f0755ad46f8a97e6fbe4b4cdd4, type: 2}
+>>>>>>> June
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -4270,7 +4288,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 790181265}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: 7d0130f7fbffd40deae1d4362ad3b02b, type: 3}
+=======
+  m_Script: {fileID: 11500000, guid: 4184081a84cfd497ca10d1d6c1b7556a, type: 3}
+>>>>>>> June
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
@@ -5268,8 +5290,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1725716987
-  m_SortingLayer: 4
+  m_SortingLayerID: -904196873
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d8127d21cdd184ec5a45bf65af2c4aa5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5481,8 +5503,13 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+<<<<<<< HEAD
   m_SortingLayerID: 1140730413
   m_SortingLayer: 8
+=======
+  m_SortingLayerID: -1954766149
+  m_SortingLayer: 9
+>>>>>>> June
   m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: ec43a4956affd4b6bba0b4362845fd2a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -6149,8 +6176,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1129871551}
   - component: {fileID: 1129871550}
+<<<<<<< HEAD
   - component: {fileID: 1129871552}
   - component: {fileID: 1129871553}
+=======
+  - component: {fileID: 1129871553}
+  - component: {fileID: 1129871552}
+>>>>>>> June
   m_Layer: 0
   m_Name: platform 3
   m_TagString: Untagged
@@ -6189,8 +6221,13 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+<<<<<<< HEAD
   m_SortingLayerID: 1140730413
   m_SortingLayer: 8
+=======
+  m_SortingLayerID: -1954766149
+  m_SortingLayer: 9
+>>>>>>> June
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4c3858e0576f3429aa6b3decaa24720c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -6209,7 +6246,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1129871549}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: 5.96, y: 2.27, z: 0}
+=======
+  m_LocalPosition: {x: 5.98, y: 2.24, z: -3}
+>>>>>>> June
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6224,7 +6265,11 @@ Animator:
   m_GameObject: {fileID: 1129871549}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
+<<<<<<< HEAD
   m_Controller: {fileID: 9100000, guid: 5329d20e6683d484bb70f0be7fe041e9, type: 2}
+=======
+  m_Controller: {fileID: 9100000, guid: 4ccbeb6b97a504637b8ac464e05c69c9, type: 2}
+>>>>>>> June
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -6240,7 +6285,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1129871549}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: 7d0130f7fbffd40deae1d4362ad3b02b, type: 3}
+=======
+  m_Script: {fileID: 11500000, guid: 4184081a84cfd497ca10d1d6c1b7556a, type: 3}
+>>>>>>> June
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
@@ -8222,8 +8271,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -904196873
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d8127d21cdd184ec5a45bf65af2c4aa5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -8851,8 +8900,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1725716987
-  m_SortingLayer: 4
+  m_SortingLayerID: -904196873
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d8127d21cdd184ec5a45bf65af2c4aa5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -10052,8 +10101,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1767970805}
   - component: {fileID: 1767970804}
+<<<<<<< HEAD
   - component: {fileID: 1767970806}
   - component: {fileID: 1767970807}
+=======
+  - component: {fileID: 1767970807}
+  - component: {fileID: 1767970806}
+>>>>>>> June
   m_Layer: 0
   m_Name: platform 4
   m_TagString: Untagged
@@ -10092,8 +10146,13 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+<<<<<<< HEAD
   m_SortingLayerID: 1140730413
   m_SortingLayer: 8
+=======
+  m_SortingLayerID: -1954766149
+  m_SortingLayer: 9
+>>>>>>> June
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4c3858e0576f3429aa6b3decaa24720c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -10112,7 +10171,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1767970803}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: 5.93, y: 4.13, z: 0}
+=======
+  m_LocalPosition: {x: 5.93, y: 4.13, z: -3}
+>>>>>>> June
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -10127,7 +10190,11 @@ Animator:
   m_GameObject: {fileID: 1767970803}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
+<<<<<<< HEAD
   m_Controller: {fileID: 9100000, guid: 6f2237aa3d66d4ab98635226baa2235b, type: 2}
+=======
+  m_Controller: {fileID: 9100000, guid: c0f1e521b118c46458e801cdba2d7a96, type: 2}
+>>>>>>> June
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -10143,7 +10210,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1767970803}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: 7d0130f7fbffd40deae1d4362ad3b02b, type: 3}
+=======
+  m_Script: {fileID: 11500000, guid: 4184081a84cfd497ca10d1d6c1b7556a, type: 3}
+>>>>>>> June
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
@@ -11563,10 +11634,16 @@ MonoBehaviour:
   WireFourObject: {fileID: 1267621917}
   PlayerObject: {fileID: 1039467704}
   ScoreUI: {fileID: 913752656}
+<<<<<<< HEAD
   ClocksBrokenUI: {fileID: 0}
   TimeRemainingUI: {fileID: 0}
   CameraObj: {fileID: 0}
   plusOne: {fileID: 0}
+=======
+  ClocksBrokenUI: {fileID: 427333854}
+  TimeRemainingUI: {fileID: 427333854}
+  plusOne: {fileID: 427333854}
+>>>>>>> June
   CannotLose: 0
   CannotWin: 0
   isMountainLevel: 0
@@ -12899,8 +12976,13 @@ GameObject:
   m_Component:
   - component: {fileID: 2143727395}
   - component: {fileID: 2143727394}
+<<<<<<< HEAD
   - component: {fileID: 2143727396}
   - component: {fileID: 2143727397}
+=======
+  - component: {fileID: 2143727397}
+  - component: {fileID: 2143727396}
+>>>>>>> June
   m_Layer: 0
   m_Name: platform 2
   m_TagString: Untagged
@@ -12939,8 +13021,13 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+<<<<<<< HEAD
   m_SortingLayerID: 1140730413
   m_SortingLayer: 8
+=======
+  m_SortingLayerID: -1954766149
+  m_SortingLayer: 9
+>>>>>>> June
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4c3858e0576f3429aa6b3decaa24720c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -12959,7 +13046,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2143727393}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: 5.93, y: 0.28, z: -3}
+=======
+  m_LocalPosition: {x: 5.95, y: 0.21, z: -3}
+>>>>>>> June
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -12974,7 +13065,11 @@ Animator:
   m_GameObject: {fileID: 2143727393}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
+<<<<<<< HEAD
   m_Controller: {fileID: 9100000, guid: 11eea5ff65a69440c8f19c694aeca993, type: 2}
+=======
+  m_Controller: {fileID: 9100000, guid: 9147a2e6d49264558af0bb5290c9585e, type: 2}
+>>>>>>> June
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -12990,7 +13085,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2143727393}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: 7d0130f7fbffd40deae1d4362ad3b02b, type: 3}
+=======
+  m_Script: {fileID: 11500000, guid: 4184081a84cfd497ca10d1d6c1b7556a, type: 3}
+>>>>>>> June
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 0}

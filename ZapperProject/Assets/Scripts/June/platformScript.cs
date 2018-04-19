@@ -16,6 +16,7 @@ public class platformScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+<<<<<<< HEAD
 		//test function on keypress
 		if (Input.GetKeyDown (KeyCode.A)) {
 
@@ -29,6 +30,8 @@ public class platformScript : MonoBehaviour {
 			anim.SetBool ("zap_bool_4", true);
 		}
 
+=======
+>>>>>>> June
 	}
 
 	//zap 
@@ -36,27 +39,47 @@ public class platformScript : MonoBehaviour {
 	public void platform_zap () {
 
 		anim.SetBool ("zap_bool", true); 
+<<<<<<< HEAD
+=======
+		Debug.Log ("platform 1 zapped!"); 
+>>>>>>> June
 
 	}
 
 	public void platform_zap_2 () {
 
+<<<<<<< HEAD
 		anim.SetBool ("zap_bool_2", true); 
+=======
+		anim.SetBool ("zap_bool2", true); 
+		Debug.Log ("platform 2 zapped!"); 
+>>>>>>> June
 
 	}
 
 	public void platform_zap_3 () {
 
 		anim.SetBool ("zap_bool_3", true); 
+<<<<<<< HEAD
+=======
+		Debug.Log ("platform 3 zapped!"); 
+>>>>>>> June
 
 	}
 
 	public void platform_zap_4 () {
 
 		anim.SetBool ("zap_bool_4", true); 
+<<<<<<< HEAD
 
 
 	}
+=======
+		Debug.Log ("platform 4 zapped!"); 
+
+	}	
+
+>>>>>>> June
 
 	//normal
 
@@ -67,7 +90,11 @@ public class platformScript : MonoBehaviour {
 
 	public void platform_normal_2 () {
 
+<<<<<<< HEAD
 		anim.SetBool ("zap_bool_2", false); 
+=======
+		anim.SetBool ("zap_bool2", false); 
+>>>>>>> June
 
 	}
 
@@ -81,5 +108,11 @@ public class platformScript : MonoBehaviour {
 
 		anim.SetBool ("zap_bool_4", false); 
 
+<<<<<<< HEAD
 	}
+=======
+	}	
+
+
+>>>>>>> June
 }

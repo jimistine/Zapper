@@ -36,6 +36,11 @@ public class crowMove : MonoBehaviour {
 		anim = GetComponent<Animator> (); 
 		boxCol = GetComponent<BoxCollider2D> (); 
 
+		if (isClock = true) {
+
+			anim.SetBool ("Fall_Bool", false);
+		}
+
 	}
 
 	// Update is called once per frame
@@ -58,7 +63,7 @@ public class crowMove : MonoBehaviour {
             {
                 FailStateCrow();
                 //Destroy bird for now will need a fail state animation for birds hittitng fuze box
-                Destroy(gameObject);
+                //Destroy(gameObject);
             }
         }
         if (isRock == true)
@@ -90,7 +95,6 @@ public class crowMove : MonoBehaviour {
 	IEnumerator pause() {
 
 		yield return new WaitForSeconds (randomTimeUntilPause); 
-		goSpeed = 0; 
 		yield return new WaitForSeconds (pauseTime); 
 		goSpeed = crowSpeed; 
 		StartCoroutine (pause ()); 
@@ -101,11 +105,33 @@ public class crowMove : MonoBehaviour {
 	{
 		Debug.Log("Crows fail state");
         SC.CurrentHealth--;
-		if (isClock)
+		if (isClock == true)
 		{
-			SC.ClocksBroken++;
+			Debug.Log ("clock broken!"); 
+			SC.ClocksBroken++; 
+			anim.SetBool ("Fall_Bool", true); 
+			// StartCoroutine (clockReset ()); 
+			SC.RestartLevel (); 
+		
 		}
-		SC.RestartLevel();
+			
+		else {
+			Debug.Log ("not a clock"); 
+			SC.RestartLevel ();
+//			Destroy (gameObject); 
+		}
+	}
+
+	public IEnumerator clockReset () {
+
+
+		Debug.Log ("factory reset");
+		yield return new WaitForSeconds (1f); 
+		Debug.Log ("after the wait!"); 
+		SC.RestartLevel (); 
+		anim.SetBool ("Fall_Bool", false);
+//		Destroy (gameObject); 
+
 	}
 
 	public void CrowZap() {
