@@ -7893,8 +7893,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemies:
   - {fileID: 1791657620474538, guid: ff713b0a23d9646e783db29a0f0c7f3c, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1791657620474538, guid: ff713b0a23d9646e783db29a0f0c7f3c, type: 2}
+  - {fileID: 1791657620474538, guid: ff713b0a23d9646e783db29a0f0c7f3c, type: 2}
   WireToSpawn: {fileID: 0}
   spawnRate: 1.1
   spawnRateMin: 2.25
@@ -8732,6 +8732,7 @@ MonoBehaviour:
   ScoreUI: {fileID: 235144138}
   ClocksBrokenUI: {fileID: 500873178}
   TimeRemainingUI: {fileID: 1758428799}
+  CameraObj: {fileID: 0}
   plusOne: {fileID: 0}
   CannotLose: 0
   CannotWin: 0

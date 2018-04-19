@@ -1391,6 +1391,7 @@ GameObject:
   - component: {fileID: 206161709}
   - component: {fileID: 206161711}
   - component: {fileID: 206161710}
+  - component: {fileID: 206161712}
   m_Layer: 0
   m_Name: fusebox 3
   m_TagString: Untagged
@@ -1467,6 +1468,23 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!95 &206161712
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 206161708}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fb41ce277d2a84e0f937e2af67e1cb7c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &213869652
 GameObject:
   m_ObjectHideFlags: 0
@@ -3103,6 +3121,7 @@ GameObject:
   - component: {fileID: 560653871}
   - component: {fileID: 560653870}
   - component: {fileID: 560653869}
+  - component: {fileID: 560653873}
   m_Layer: 0
   m_Name: Wire_3
   m_TagString: Untagged
@@ -3197,7 +3216,7 @@ SpriteRenderer:
   m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6b424f188d51b4bc99c12a119da9ef8b, type: 3}
-  m_Color: {r: 0.22794116, g: 0.22794116, b: 0.22794116, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3214,11 +3233,28 @@ Transform:
   m_GameObject: {fileID: 560653868}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.018, y: 3.45, z: 0}
-  m_LocalScale: {x: 46.710796, y: 0.5745003, z: 1}
+  m_LocalScale: {x: 5.35, y: 0.5745003, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &560653873
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 560653868}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b64c0b782991e4522a74e7e436066db6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &562131308
 GameObject:
   m_ObjectHideFlags: 0
@@ -4676,6 +4712,7 @@ GameObject:
   - component: {fileID: 883947136}
   - component: {fileID: 883947135}
   - component: {fileID: 883947134}
+  - component: {fileID: 883947138}
   m_Layer: 0
   m_Name: Wire_4
   m_TagString: Untagged
@@ -4770,7 +4807,7 @@ SpriteRenderer:
   m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6b424f188d51b4bc99c12a119da9ef8b, type: 3}
-  m_Color: {r: 0.22794116, g: 0.22794116, b: 0.22794116, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4787,11 +4824,28 @@ Transform:
   m_GameObject: {fileID: 883947133}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.018, y: 5.37, z: 0}
-  m_LocalScale: {x: 46.710796, y: 0.5745003, z: 1}
+  m_LocalScale: {x: 5.35, y: 0.5745003, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &883947138
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 883947133}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7350aaf05c74b4f0fab7e7190ce8fb9d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &901468029
 GameObject:
   m_ObjectHideFlags: 0
@@ -5706,6 +5760,7 @@ MonoBehaviour:
   playerX: 0
   IsinStartPosition: 0
   wire1: {fileID: 0}
+  canInput: 1
 --- !u!61 &1039467706
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11871,6 +11926,8 @@ MonoBehaviour:
   ScoreUI: {fileID: 428322390}
   ClocksBrokenUI: {fileID: 0}
   TimeRemainingUI: {fileID: 819539346}
+  CameraObj: {fileID: 0}
+  plusOne: {fileID: 0}
   CannotLose: 0
   CannotWin: 0
   isMountainLevel: 0
@@ -13027,6 +13084,7 @@ GameObject:
   - component: {fileID: 2138453423}
   - component: {fileID: 2138453425}
   - component: {fileID: 2138453424}
+  - component: {fileID: 2138453426}
   m_Layer: 0
   m_Name: fusebox 4
   m_TagString: Untagged
@@ -13103,6 +13161,23 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!95 &2138453426
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2138453422}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d6b6ec565c84949a095e21100f3fe38b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &2143374009
 GameObject:
   m_ObjectHideFlags: 0
