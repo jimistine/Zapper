@@ -122,7 +122,10 @@ public class Choreographer : MonoBehaviour {
             Debug.Log("Ending coreography" + " Wire " + WireNum);
             IsCoreographerEnding = true;
             //DissableArcadeSpawner(WireNum);
-            WireCoreographer.GetComponent<Wires>().canWin = true;
+            if (SC.isMountainLevel == false)
+            {
+                WireCoreographer.GetComponent<Wires>().canWin = true;
+            }
         }
 
     }

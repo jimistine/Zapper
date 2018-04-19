@@ -44,6 +44,7 @@ public class SceneController : MonoBehaviour {
     public int CurrentHealth;
     public GameObject HealthObject;
     public Vector2 HealthOjectOnePos;
+    public GameObject MemoryObj;
 
 
     //Factory Ints
@@ -60,7 +61,7 @@ public class SceneController : MonoBehaviour {
         UpdateHealth(); 
 		ChargeScript = FindObjectOfType<Charge> (); 
         
-        GameObject MemoryObj = GameObject.Find("Memory");
+        MemoryObj = GameObject.Find("Memory");
 		plusOne.GetComponent<SpriteRenderer> ().enabled = false; 
         
 	}
@@ -140,10 +141,9 @@ public class SceneController : MonoBehaviour {
 
 
         UpdateHealth();
-        if(isMountainLevel == true && PlayerObject.transform.position.y >= PlayerObject.GetComponent<ChracterController>().PlayerCurrentWire.GetComponent<Wires>().StartPositionBottom + (Camera.main.orthographicSize / 2))
+        if(isMountainLevel == true )
         {
 			//call a coroutine that has yield wait for seconds then put this in it 
-
 			PlayerObject.GetComponent<ChracterController> ().mt_fall ();  
 			StartCoroutine (mtFailState ()); 
         }
@@ -260,8 +260,11 @@ public class SceneController : MonoBehaviour {
 	IEnumerator mtFailState () {
 
 		PlayerObject.GetComponent<ChracterController> ().canInput = false; 
-		yield return new WaitForSeconds(2f); 
-		PlayerObject.GetComponent<ChracterController>().PlayersStartingPositionY = PlayerObject.transform.position.y - (Camera.main.orthographicSize / 2);
+		yield return new WaitForSeconds(2f);
+        if (PlayerObject.transform.position.y >= PlayerObject.GetComponent<ChracterController>().PlayerCurrentWire.GetComponent<Wires>().StartPositionBottom + (Camera.main.orthographicSize / 2))
+        {
+            PlayerObject.GetComponent<ChracterController>().PlayersStartingPositionY = PlayerObject.transform.position.y - ((Camera.main.orthographicSize / 2) -5);
+        }
 		PlayerControl.mt_normal (); 
 		PlayerObject.GetComponent<ChracterController>().IsinStartPosition = false;
 		PlayerObject.GetComponent<ChracterController> ().canInput = true;
