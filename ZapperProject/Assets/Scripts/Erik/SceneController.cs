@@ -289,7 +289,9 @@ public class SceneController : MonoBehaviour {
 		PlayerControl.mt_normal (); 
 		PlayerObject.GetComponent<ChracterController>().IsinStartPosition = false;
 		PlayerObject.GetComponent<ChracterController> ().canInput = true;
-	}
+        PlayerObject.GetComponent<ChracterController>().CanShoot = true;
+
+    }
 
 	
     
