@@ -32,3 +32,9 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+ZapperProject/\.vs/ZapperProject/v15/Server/sqlite3/storage\.ide
+
+ZapperProject/\.vs/ZapperProject/v15/Server/sqlite3/storage\.ide-shm
+
+ZapperProject/\.vs/ZapperProject/v15/Server/sqlite3/storage\.ide-wal

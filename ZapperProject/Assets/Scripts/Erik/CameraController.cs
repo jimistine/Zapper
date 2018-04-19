@@ -26,19 +26,23 @@ public class CameraController : MonoBehaviour {
                 }
                 transform.localPosition = newPosition;
             }
-            if (SC.GetComponent<SceneController>().MemoryObj.GetComponent<Memory>().checkPoint3Reahced == true && transform.position.y <= SC.GetComponent<SceneController>().MemoryObj.GetComponent<Memory>().CheckPoint3Length)
+            if (GameObject.Find("Memory").GetComponent<Memory>().checkPoint3Reahced == true && transform.position.y <= GameObject.Find("Memory").GetComponent<Memory>().CheckPoint3Length)
             {
-                transform.position = new Vector3(transform.position.x, SC.GetComponent<SceneController>().MemoryObj.GetComponent<Memory>().CheckPoint3Length, transform.position.z);
+                transform.position = new Vector3(transform.position.x, GameObject.Find("Memory").GetComponent<Memory>().CheckPoint3Length, transform.position.z);
             }
-            else if (SC.GetComponent<SceneController>().MemoryObj.GetComponent<Memory>().checkPoint2Reahced == true && transform.position.y <= SC.GetComponent<SceneController>().MemoryObj.GetComponent<Memory>().CheckPoint2Length)
+            else if (GameObject.Find("Memory").GetComponent<Memory>().checkPoint2Reahced == true && transform.position.y <= GameObject.Find("Memory").GetComponent<Memory>().CheckPoint2Length)
             {
-                transform.position = new Vector3(transform.position.x, SC.GetComponent<SceneController>().MemoryObj.GetComponent<Memory>().CheckPoint2Length, transform.position.z);
+                transform.position = new Vector3(transform.position.x, GameObject.Find("Memory").GetComponent<Memory>().CheckPoint2Length, transform.position.z);
             }
-            else if (SC.GetComponent<SceneController>().MemoryObj.GetComponent<Memory>().checkPoint1Reahced == true && transform.position.y <= SC.GetComponent<SceneController>().MemoryObj.GetComponent<Memory>().CheckPoint1Length)
+            else if (GameObject.Find("Memory").GetComponent<Memory>().checkPoint1Reahced == true && transform.position.y <= GameObject.Find("Memory").GetComponent<Memory>().CheckPoint1Length)
             {
-                transform.position = new Vector3(transform.position.x, SC.GetComponent<SceneController>().MemoryObj.GetComponent<Memory>().CheckPoint1Length, transform.position.z);
+                transform.position = new Vector3(transform.position.x, GameObject.Find("Memory").GetComponent<Memory>().CheckPoint1Length, transform.position.z);
             }
         }
-		
 	}
+    public void UpdateCameraPosition()
+    {
+        gameObject.transform.position = new Vector3(transform.position.x, SC.PlayerObject.transform.position.y+1, transform.position.z);
+
+    }
 }
