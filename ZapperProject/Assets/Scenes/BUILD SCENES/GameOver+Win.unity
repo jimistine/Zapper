@@ -897,7 +897,7 @@ Prefab:
     - target: {fileID: 114953354116052668, guid: bf27c202ee50141d69a620111a69480e,
         type: 2}
       propertyPath: selectedBlocks.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114953354116052668, guid: bf27c202ee50141d69a620111a69480e,
         type: 2}
@@ -995,7 +995,7 @@ Prefab:
         type: 2}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 1462903766}
+      objectReference: {fileID: 1462903828}
     - target: {fileID: 114598376556601752, guid: bf27c202ee50141d69a620111a69480e,
         type: 2}
       propertyPath: nodeRect.y
@@ -1624,12 +1624,6 @@ MonoBehaviour:
 --- !u!114 &1462903765 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114306151610556114, guid: bf27c202ee50141d69a620111a69480e,
-    type: 2}
-  m_PrefabInternal: {fileID: 1462903762}
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
---- !u!114 &1462903766 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114687680074337954, guid: bf27c202ee50141d69a620111a69480e,
     type: 2}
   m_PrefabInternal: {fileID: 1462903762}
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
