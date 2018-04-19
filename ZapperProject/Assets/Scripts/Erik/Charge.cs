@@ -29,6 +29,11 @@ public class Charge : MonoBehaviour {
 	public GameObject wire2;
 	public GameObject wire3;
 	public GameObject wire4; 
+
+	public GameObject platform1; 
+	public GameObject platform2; 
+	public GameObject platform3; 
+	public GameObject platform4; 
 	bool HasCalledFailFunction; 
 
 	public Animator anim; 
@@ -55,6 +60,12 @@ public class Charge : MonoBehaviour {
 		alarm2 = GameObject.Find ("alarm 2"); 
 		alarm3 = GameObject.Find ("alarm 3"); 
 		alarm4 = GameObject.Find ("alarm 4");  
+
+		platform1 = GameObject.Find ("platform 1"); 
+		platform2 = GameObject.Find ("platform 2"); 
+		platform3 = GameObject.Find ("platform 3"); 
+		platform4 = GameObject.Find ("platform 4"); 
+
 	
 		anim = GetComponent<Animator> (); 
 		 
@@ -263,6 +274,18 @@ public class Charge : MonoBehaviour {
 
 					wire1.GetComponent<Wires>().wire_1_zap();
 
+					if (SC.isFactory == false && SC.isMountainLevel == false) {
+						platform1.GetComponent<platformScript> ().platform_zap (); 
+						platform2.GetComponent<platformScript> ().platform_zap_2 ();
+						if (fusebox3 != null) {
+							platform3.GetComponent<platformScript> ().platform_zap_3 (); 
+						}
+
+						if (fusebox4 != null) {
+							platform4.GetComponent<platformScript> ().platform_zap_4 (); 
+						}
+					}
+
 					if (SC.isFactory)
 					{
 						Debug.Log("alarm 1 rang!");
@@ -285,6 +308,18 @@ public class Charge : MonoBehaviour {
 				{
 
 					wire2.GetComponent<Wires>().wire_2_zap();
+
+					if (SC.isFactory == false && SC.isMountainLevel == false) {
+						platform1.GetComponent<platformScript> ().platform_zap (); 
+						platform2.GetComponent<platformScript> ().platform_zap_2 ();
+						if (fusebox3 != null) {
+							platform3.GetComponent<platformScript> ().platform_zap_3 (); 
+						}
+
+						if (fusebox4 != null) {
+							platform4.GetComponent<platformScript> ().platform_zap_4 (); 
+						}
+					}
 
 					if (SC.isFactory)
 					{
@@ -309,6 +344,18 @@ public class Charge : MonoBehaviour {
 
 					wire3.GetComponent<Wires>().wire_3_zap();
 
+					if (SC.isFactory == false && SC.isMountainLevel == false) {
+						platform1.GetComponent<platformScript> ().platform_zap (); 
+						platform2.GetComponent<platformScript> ().platform_zap_2 ();
+						if (fusebox3 != null) {
+							platform3.GetComponent<platformScript> ().platform_zap_3 (); 
+						}
+
+						if (fusebox4 != null) {
+							platform4.GetComponent<platformScript> ().platform_zap_4 (); 
+						}
+					}
+
 					if (SC.isFactory)
 					{
 						alarm3.GetComponent<alarmScript>().alarm_zap_3();
@@ -329,6 +376,18 @@ public class Charge : MonoBehaviour {
 				if (ChargesCurrentWire == SC.WireFourObject)
 				{
 					wire4.GetComponent<Wires>().wire_4_zap();
+
+					if (SC.isFactory == false && SC.isMountainLevel == false) {
+						platform1.GetComponent<platformScript> ().platform_zap (); 
+						platform2.GetComponent<platformScript> ().platform_zap_2 ();
+						if (fusebox3 != null) {
+							platform3.GetComponent<platformScript> ().platform_zap_3 (); 
+						}
+
+						if (fusebox4 != null) {
+							platform4.GetComponent<platformScript> ().platform_zap_4 (); 
+						}
+					}
 
 					if (SC.isFactory)
 					{
@@ -396,37 +455,38 @@ public class Charge : MonoBehaviour {
 
 	}
 		
-
 	public void SetFalse () {
 
-        if (SC.isMountainLevel == false)
-        {
-            if (SC.isFactory)
-            {
-                alarm1.GetComponent<alarmScript>().alarm_normal();
-                alarm2.GetComponent<alarmScript>().alarm_normal_2();
-                alarm3.GetComponent<alarmScript>().alarm_normal_3();
-                alarm4.GetComponent<alarmScript>().alarm_normal_4();
-                Debug.Log("charge reset end");
-            }
-            else
-            {
-                fusebox1.GetComponent<fusebox_script>().fusebox_normal();
-                fusebox2.GetComponent<fusebox_script>().fusebox_normal_2();
+		if (SC.isFactory == true) {
 
-                if (fusebox3 != null)
-                {
-                    fusebox3.GetComponent<fusebox_script>().fusebox_normal_3();
-                }
+			alarm1.GetComponent<alarmScript> ().alarm_normal (); 
+			alarm2.GetComponent<alarmScript> ().alarm_normal_2 (); 
+			alarm3.GetComponent<alarmScript> ().alarm_normal_3 (); 
+			alarm4.GetComponent<alarmScript> ().alarm_normal_4 (); 
+			Debug.Log ("charge reset end"); 
 
-                if (fusebox4 != null)
-                {
-                    fusebox4.GetComponent<fusebox_script>().fusebox_normal_4();
-                }
+		} else if (SC.isMountainLevel == false && SC.isFactory == false) {
 
-                Debug.Log("charge reset end");
-            }
-        }
+			fusebox1.GetComponent<fusebox_script> ().fusebox_normal ();
+			fusebox2.GetComponent<fusebox_script> ().fusebox_normal_2 ();
+			platform1.GetComponent<platformScript> ().platform_normal (); 
+			platform2.GetComponent <platformScript> ().platform_normal_2 (); 
+
+		}
+
+		if (fusebox3 != null) {
+
+			fusebox3.GetComponent<fusebox_script> ().fusebox_normal_3 (); 
+			platform3.GetComponent<platformScript> ().platform_normal_3 (); 
+
+		}
+
+		if (fusebox4 != null) {
+
+			fusebox4.GetComponent<fusebox_script> ().fusebox_normal_4 (); 
+			platform4.GetComponent<platformScript> ().platform_normal_4 (); 
+
+		}
 	}
 
 }

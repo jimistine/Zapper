@@ -68,3 +68,6 @@ TagManager:
   - name: Clock
     uniqueID: 708394593
     locked: 0
+  - name: platforms
+    uniqueID: 1140730413
+    locked: 0
