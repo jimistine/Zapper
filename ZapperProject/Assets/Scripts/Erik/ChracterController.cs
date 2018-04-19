@@ -175,10 +175,10 @@ public class ChracterController : MonoBehaviour {
 		playerX = gameObject.transform.position.x;
 		playerY = gameObject.transform.position.y;
 
-		anim.SetBool ("Run_Bool", false); 
-		//		anim.SetBool ("Shoot_Bool", false); 
+		anim.SetBool ("Run_Bool", false);
+        //		anim.SetBool ("Shoot_Bool", false); 
 
-        if(SC.isMountainLevel == false)
+        if (SC.isMountainLevel == false)
         {
             if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
             {
@@ -206,7 +206,7 @@ public class ChracterController : MonoBehaviour {
             {
                 transform.Translate(Vector3.left * Time.deltaTime * PlayerHorizontalSpeed);
                 CanShoot = false;
-				anim.SetBool ("Pickup_Bool", false); 
+                anim.SetBool("Pickup_Bool", false);
                 anim.SetBool("Run_Bool", true);
             }
             if (Input.GetKey(KeyCode.RightArrow) && transform.position.x < PlayerCurrentWire.GetComponent<Wires>().AnchorRight)
@@ -214,7 +214,7 @@ public class ChracterController : MonoBehaviour {
                 transform.Translate(Vector3.right * Time.deltaTime * PlayerHorizontalSpeed);
                 CanShoot = false;
                 //anim.SetTrigger ("Run_Trigger"); 
-				anim.SetBool ("Pickup_Bool", false); 
+                anim.SetBool("Pickup_Bool", false);
                 anim.SetBool("Run_Bool", true);
             }
             if (Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.RightArrow))
@@ -224,7 +224,7 @@ public class ChracterController : MonoBehaviour {
         }
 
 
-        else if (SC.isMountainLevel == true && isFalling == false)
+        else if (SC.isMountainLevel == true && isFalling == false && canInput == true)
         {
             if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.LeftArrow) )
             {

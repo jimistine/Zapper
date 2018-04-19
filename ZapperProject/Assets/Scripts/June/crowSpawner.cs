@@ -154,19 +154,19 @@ public class crowSpawner : MonoBehaviour {
     }
     GameObject SetBirdWire()
     {
-        if (getRandY == 1)
+        if (WireToSpawn == SC.WireOneObject)
         {
             return SC.WireOneObject;
         }
-        else if (getRandY == 2)
+        else if (WireToSpawn == SC.WireTwoObject)
         {
             return SC.WireTwoObject;
         }
-        else if (getRandY == 3)
+        else if (WireToSpawn == SC.WireThreeObject)
         {
             return SC.WireThreeObject;
         }
-        else if (getRandY == 4)
+        else if (WireToSpawn == SC.WireFourObject)
         {
             return SC.WireFourObject;
         }
