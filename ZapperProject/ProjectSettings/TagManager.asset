@@ -68,3 +68,9 @@ TagManager:
   - name: Clock
     uniqueID: 708394593
     locked: 0
+  - name: PowerLines
+    uniqueID: 3390770423
+    locked: 0
+  - name: Platforms
+    uniqueID: 2340201147
+    locked: 0

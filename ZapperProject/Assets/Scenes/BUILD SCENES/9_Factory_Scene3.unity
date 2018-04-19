@@ -3366,6 +3366,7 @@ MonoBehaviour:
   playerX: 0
   IsinStartPosition: 0
   wire1: {fileID: 0}
+  canInput: 1
 --- !u!61 &1039467706
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6255,9 +6256,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1103486496238702, guid: 8a996c0f00a63420c9d96edb7eb04f8c, type: 2}
+  - {fileID: 1103486496238702, guid: 8a996c0f00a63420c9d96edb7eb04f8c, type: 2}
+  - {fileID: 1103486496238702, guid: 8a996c0f00a63420c9d96edb7eb04f8c, type: 2}
   WireToSpawn: {fileID: 0}
   spawnRate: 1.1
   spawnRateMin: 2.25

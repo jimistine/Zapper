@@ -86,7 +86,7 @@ public class SceneController : MonoBehaviour {
     {
         //GUI.Label(new Rect(10,10,200,90), "Birds Zapped: " + Score);
         ScoreUI.GetComponent<Text>().text = (" "+Score+" ");   
-		StartCoroutine (pickUpClockTime ()); 
+	
     }
     
     public void RestartLevel()
@@ -169,6 +169,8 @@ public class SceneController : MonoBehaviour {
         Spawner.enabled = true;
         SpawnerObject.SetActive(true);
         //Score = 0;
+
+		Debug.Log ("reset level"); 
     }
     public void WinLevel()
     {
@@ -250,12 +252,6 @@ public class SceneController : MonoBehaviour {
 
 	//PICKING UP CLOCKS 
 
-	public void pickUpClock () {
-
-
-		StartCoroutine (pickUpClockTime ()); 
-
-	}
 
 	IEnumerator mtFailState () {
 
@@ -267,18 +263,6 @@ public class SceneController : MonoBehaviour {
 		PlayerObject.GetComponent<ChracterController> ().canInput = true;
 	}
 
-	public IEnumerator pickUpClockTime () {
 
-
-		plusOne.GetComponent<SpriteRenderer>().enabled = true; 
-		yield return new WaitForSeconds (.2f);
-		plusOne.GetComponent<SpriteRenderer>().enabled = false; 
-		yield return new WaitForSeconds (.2f);
-		plusOne.GetComponent<SpriteRenderer>().enabled = true; 
-		yield return new WaitForSeconds (.2f); 
-		plusOne.GetComponent<SpriteRenderer>().enabled = false; 
-
-
-	}
     
 }
