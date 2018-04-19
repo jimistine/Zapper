@@ -97,7 +97,11 @@ public class SceneController : MonoBehaviour {
     {
         //GUI.Label(new Rect(10,10,200,90), "Birds Zapped: " + Score);
         ScoreUI.GetComponent<Text>().text = (" "+Score+" ");   
+<<<<<<< HEAD
 		
+=======
+	
+>>>>>>> June
     }
     
     public void RestartLevel()
@@ -173,6 +177,8 @@ public class SceneController : MonoBehaviour {
         Spawner.enabled = true;
         SpawnerObject.SetActive(true);
         //Score = 0;
+
+		Debug.Log ("reset level"); 
     }
     public void WinLevel()
     {
@@ -254,7 +260,10 @@ public class SceneController : MonoBehaviour {
 
 	//PICKING UP CLOCKS 
 
+<<<<<<< HEAD
 	
+=======
+>>>>>>> June
 
 	IEnumerator mtFailState () {
 
@@ -289,10 +298,16 @@ public class SceneController : MonoBehaviour {
 		PlayerControl.mt_normal (); 
 		PlayerObject.GetComponent<ChracterController>().IsinStartPosition = false;
 		PlayerObject.GetComponent<ChracterController> ().canInput = true;
+<<<<<<< HEAD
         PlayerObject.GetComponent<ChracterController>().CanShoot = true;
 
     }
 
 	
+=======
+	}
+
+
+>>>>>>> June
     
 }
