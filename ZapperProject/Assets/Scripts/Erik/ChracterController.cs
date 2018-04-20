@@ -297,7 +297,7 @@ public class ChracterController : MonoBehaviour {
         
 		{
 			//flashing the character animation when player is hit 
-			this.GetComponent<Flash>().flicker (mySpriteRenderer); 
+			//this.GetComponent<Flash>().flicker (mySpriteRenderer); 
 
             if (transform.position.y > PlayerCurrentWire.GetComponent<Wires>().StartPositionBottom)
             {
@@ -313,6 +313,7 @@ public class ChracterController : MonoBehaviour {
 		if (isFalling == true) {
 
 			StartCoroutine(Falling());
+			anim.SetBool ("Slide_Bool", true); 
 
 		}
 	}
@@ -323,6 +324,7 @@ public class ChracterController : MonoBehaviour {
         yield return new WaitForSeconds(1);
         isFalling = false;
         CanShoot = true;
+		anim.SetBool ("Slide_Bool", false); 
 		mySpriteRenderer.enabled = true; 
     }
 
