@@ -34,6 +34,10 @@ public class Charge : MonoBehaviour {
 	public GameObject platform2; 
 	public GameObject platform3; 
 	public GameObject platform4; 
+<<<<<<< HEAD
+=======
+
+>>>>>>> June
 	bool HasCalledFailFunction; 
 
 	public Animator anim; 
@@ -65,7 +69,10 @@ public class Charge : MonoBehaviour {
 		platform2 = GameObject.Find ("platform 2"); 
 		platform3 = GameObject.Find ("platform 3"); 
 		platform4 = GameObject.Find ("platform 4"); 
+<<<<<<< HEAD
 
+=======
+>>>>>>> June
 	
 		anim = GetComponent<Animator> (); 
 		 
@@ -270,10 +277,14 @@ public class Charge : MonoBehaviour {
 			if (SC.WireOneObject != null)
 			{
 				if (ChargesCurrentWire == SC.WireOneObject)
+					
 				{
 
 					wire1.GetComponent<Wires>().wire_1_zap();
+<<<<<<< HEAD
 
+=======
+>>>>>>> June
 					if (SC.isFactory == false && SC.isMountainLevel == false) {
 						platform1.GetComponent<platformScript> ().platform_zap (); 
 						platform2.GetComponent<platformScript> ().platform_zap_2 ();
@@ -285,7 +296,10 @@ public class Charge : MonoBehaviour {
 							platform4.GetComponent<platformScript> ().platform_zap_4 (); 
 						}
 					}
+<<<<<<< HEAD
 
+=======
+>>>>>>> June
 					if (SC.isFactory)
 					{
 						Debug.Log("alarm 1 rang!");
@@ -343,7 +357,10 @@ public class Charge : MonoBehaviour {
 				{
 
 					wire3.GetComponent<Wires>().wire_3_zap();
+<<<<<<< HEAD
 
+=======
+>>>>>>> June
 					if (SC.isFactory == false && SC.isMountainLevel == false) {
 						platform1.GetComponent<platformScript> ().platform_zap (); 
 						platform2.GetComponent<platformScript> ().platform_zap_2 ();
@@ -355,7 +372,10 @@ public class Charge : MonoBehaviour {
 							platform4.GetComponent<platformScript> ().platform_zap_4 (); 
 						}
 					}
+<<<<<<< HEAD
 
+=======
+>>>>>>> June
 					if (SC.isFactory)
 					{
 						alarm3.GetComponent<alarmScript>().alarm_zap_3();
@@ -471,15 +491,29 @@ public class Charge : MonoBehaviour {
 			fusebox2.GetComponent<fusebox_script> ().fusebox_normal_2 ();
 			platform1.GetComponent<platformScript> ().platform_normal (); 
 			platform2.GetComponent <platformScript> ().platform_normal_2 (); 
+<<<<<<< HEAD
 
 		}
+=======
+
+		
+			if (fusebox3 != null) {
+
+				fusebox3.GetComponent<fusebox_script> ().fusebox_normal_3 (); 
+				platform3.GetComponent<platformScript> ().platform_normal_3 (); 
+>>>>>>> June
 
 		if (fusebox3 != null) {
 
 			fusebox3.GetComponent<fusebox_script> ().fusebox_normal_3 (); 
 			platform3.GetComponent<platformScript> ().platform_normal_3 (); 
 
+<<<<<<< HEAD
 		}
+=======
+				fusebox4.GetComponent<fusebox_script> ().fusebox_normal_4 (); 
+				platform4.GetComponent<platformScript> ().platform_normal_4 (); 
+>>>>>>> June
 
 		if (fusebox4 != null) {
 

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/ErikTriesToBuildThings/MtTest.unity
+- path: Assets/Scenes/BUILD SCENES/8_Factory_Scene2.unity
   isLoaded: 1
   isActive: 1
