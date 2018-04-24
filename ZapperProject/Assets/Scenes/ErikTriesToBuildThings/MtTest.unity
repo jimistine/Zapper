@@ -297,6 +297,7 @@ MonoBehaviour:
   CheckPoint2Length: 158
   CheckPoint3Length: 218
   SC: {fileID: 0}
+  DebbugerControls: 0
 --- !u!1 &128280567
 GameObject:
   m_ObjectHideFlags: 0
@@ -2983,8 +2984,9 @@ MonoBehaviour:
   ScoreUI: {fileID: 942307763}
   ClocksBrokenUI: {fileID: 0}
   TimeRemainingUI: {fileID: 0}
+  CameraObj: {fileID: 505271568}
   plusOne: {fileID: 0}
-  CannotLose: 0
+  CannotLose: 1
   CannotWin: 0
   isMountainLevel: 1
   isFactory: 0
@@ -3001,7 +3003,6 @@ MonoBehaviour:
   HealthObject: {fileID: 1784129382507516, guid: 491e2e6a7a37d410f892c16f4fd7226e,
     type: 2}
   HealthOjectOnePos: {x: -7, y: 6}
-  MemoryObj: {fileID: 0}
   ClocksBroken: 0
   TimeRemaining: 0
   TimeRemainingStart: 0

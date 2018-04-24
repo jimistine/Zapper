@@ -2930,7 +2930,7 @@ MonoBehaviour:
   ScoreUI: {fileID: 942307763}
   ClocksBrokenUI: {fileID: 0}
   TimeRemainingUI: {fileID: 0}
-  CameraObj: {fileID: 0}
+  CameraObj: {fileID: 505271568}
   plusOne: {fileID: 0}
   CannotLose: 0
   CannotWin: 0
