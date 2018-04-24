@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class Memory : MonoBehaviour {
     public bool WonFirstRound;
@@ -21,7 +23,7 @@ public class Memory : MonoBehaviour {
 
     public SceneController SC;
 
-
+    public bool DebbugerControls;
     // Use this for initialization
     void Start () {
         SC = FindObjectOfType<SceneController>();
@@ -72,7 +74,25 @@ public class Memory : MonoBehaviour {
         {
             SC.PlayerObject.GetComponent<ChracterController>().PlayersStartingPositionY = CheckPoint3Length;
         }
-
+        if (DebbugerControls == true && Input.GetKey(KeyCode.LeftControl)&&Input.GetKey(KeyCode.LeftAlt))
+        {
+            if (Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                SceneManager.LoadScene("");
+            }
+            if (Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                SceneManager.LoadScene("");
+            }
+            if (Input.GetKeyDown(KeyCode.LeftArrow))
+            {
+                SceneManager.LoadScene("");
+            }
+            if (Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                SceneManager.LoadScene("");
+            }
+        }
     }
     public void StoreMemory(int x, bool y)
     {
