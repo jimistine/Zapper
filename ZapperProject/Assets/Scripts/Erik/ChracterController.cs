@@ -50,9 +50,9 @@ public class ChracterController : MonoBehaviour {
 		SC = FindObjectOfType<SceneController>();
 		AM = FindObjectOfType<AudioManager>();
 
-		CurrentWirePositionY = 1;
-        CurrentWirePositionX = 1;
-		PlayersStartingPositionY = SC.WireOneObject.GetComponent<Wires>().StartPositionBottom;
+		CurrentWirePositionY = 2;
+        CurrentWirePositionX = 2;
+		PlayersStartingPositionY = SC.WireTwoObject.GetComponent<Wires>().StartPositionBottom;
 
 		IsUsingCharge_1 = true;
 
@@ -182,8 +182,10 @@ public class ChracterController : MonoBehaviour {
         {
             if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
             {
+                
                 if (Input.GetKeyDown(KeyCode.UpArrow) && CurrentWirePositionY < MaxWirePosition)
                 {
+                    Debug.Log("This");
                     CurrentWirePositionY++;
                 }
                 else if (Input.GetKeyDown(KeyCode.UpArrow) && CurrentWirePositionY == MaxWirePosition)

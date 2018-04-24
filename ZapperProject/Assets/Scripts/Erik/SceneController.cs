@@ -30,6 +30,7 @@ public class SceneController : MonoBehaviour {
     public bool isMountainLevel;
 	public bool isFactory;
     public bool isPrototype;
+    public bool isArcade;
 
     public ChracterController PlayerControl;
 	public Charge ChargeScript; 
@@ -197,7 +198,10 @@ public class SceneController : MonoBehaviour {
         //load the lose screen overlay
         //track previous wins, losses?
         //MemoryObj.GetComponent<Memory>().StoreMemory(RoundNum, false);
-        GameObject.Find("Memory").GetComponent<Memory>().StoreMemory(RoundNum, false);
+        if(isArcade == false)
+        {
+            GameObject.Find("Memory").GetComponent<Memory>().StoreMemory(RoundNum, false);
+        }
         //each round needs a unique value
         SceneManager.LoadScene("GameOver+Lose");
     }
