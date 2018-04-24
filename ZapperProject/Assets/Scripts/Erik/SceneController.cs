@@ -160,7 +160,7 @@ public class SceneController : MonoBehaviour {
 			Spawner.DelayBeforeStart = DelayBeforeStartTime + Time.time - 1;
 		}
         Spawner.StoreAddedTime = 0;
-        Spawner.spawnRate = Spawner.spawnRateMin;
+        Spawner.spawnRate = Spawner.spawnRateMin - ((Spawner.spawnRateMin - Spawner.spawnRate)/2);
         Spawner.TimeSinceFailLevels = 1;
         Spawner.validChoices.Clear();
         Spawner.validChoices.Add(1);

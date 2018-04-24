@@ -630,7 +630,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SC: {fileID: 0}
   AM: {fileID: 0}
-  PlayerHorizontalSpeed: 2
+  PlayerHorizontalSpeed: 5
   PlayersStartingPositionY: 0
   CurrentWirePositionY: 0
   CurrentWirePositionX: 0
@@ -3747,6 +3747,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemies:
+  - {fileID: 1538132615749136, guid: 7e091df6641b44a57b4ecdebfd3e3e8c, type: 2}
   - {fileID: 1538132615749136, guid: 7e091df6641b44a57b4ecdebfd3e3e8c, type: 2}
   WireToSpawn: {fileID: 0}
   spawnRate: 1.1
