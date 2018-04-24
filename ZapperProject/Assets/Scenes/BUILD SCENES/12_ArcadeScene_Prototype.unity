@@ -10713,7 +10713,7 @@ MonoBehaviour:
   - {fileID: 1697413447292782, guid: 2ae2cabbe9ae94fcb984c20926dd9852, type: 2}
   WireToSpawn: {fileID: 0}
   spawnRate: 1.1
-  spawnRateMin: 2.25
+  spawnRateMin: 2
   spawnRateMax: 0.5
   gapSpace: 0.2
   TotalCrowsForLevel: 0
