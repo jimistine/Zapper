@@ -297,7 +297,7 @@ public class ChracterController : MonoBehaviour {
         
 		{
 			//flashing the character animation when player is hit 
-			//this.GetComponent<Flash>().flicker (mySpriteRenderer); 
+			this.GetComponent<Flash>().flicker (mySpriteRenderer); 
 
             if (transform.position.y > PlayerCurrentWire.GetComponent<Wires>().StartPositionBottom)
             {
