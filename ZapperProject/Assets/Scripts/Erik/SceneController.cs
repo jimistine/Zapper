@@ -283,11 +283,11 @@ public class SceneController : MonoBehaviour {
                 PlayerObject.GetComponent<ChracterController>().PlayersStartingPositionY = GameObject.Find("Memory").GetComponent<Memory>().CheckPoint3Length;
             }
             CurrentHealth = 3;
-            UpdateHealth();
             CameraObj.GetComponent<CameraController>().UpdateCameraPosition();
         }
-		PlayerControl.mt_normal (); 
-		PlayerObject.GetComponent<ChracterController>().IsinStartPosition = false;
+		PlayerControl.mt_normal ();
+        UpdateHealth();
+        PlayerObject.GetComponent<ChracterController>().IsinStartPosition = false;
 		PlayerObject.GetComponent<ChracterController> ().canInput = true;
         PlayerObject.GetComponent<ChracterController>().CanShoot = true;
 

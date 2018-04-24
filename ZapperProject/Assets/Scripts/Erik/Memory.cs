@@ -23,7 +23,7 @@ public class Memory : MonoBehaviour {
 
     public SceneController SC;
 
-    public bool DebbugerControls;
+    public bool DebbugerControls = false;
     // Use this for initialization
     void Start () {
         SC = FindObjectOfType<SceneController>();
@@ -45,6 +45,7 @@ public class Memory : MonoBehaviour {
         if (SC.PlayerObject.transform.position.y >= CheckPoint3Length && checkPoint3Reahced == false)
         {
             checkPoint3Reahced = true;
+            UnlockDebugger();
         }
 
         if (checkPoint1Reahced == true && SC.WireOneObject.GetComponent<Wires>().canSpawn == true)
@@ -78,19 +79,19 @@ public class Memory : MonoBehaviour {
         {
             if (Input.GetKeyDown(KeyCode.RightArrow))
             {
-                SceneManager.LoadScene("");
+                SceneManager.LoadScene("12_ArcadeScene_Birds_4Wire");
             }
             if (Input.GetKeyDown(KeyCode.DownArrow))
             {
-                SceneManager.LoadScene("");
+                SceneManager.LoadScene("12_ArcadeScene_Prototype");
             }
             if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
-                SceneManager.LoadScene("");
+                SceneManager.LoadScene("12_ArcadeScene_Factory");
             }
             if (Input.GetKeyDown(KeyCode.UpArrow))
             {
-                SceneManager.LoadScene("");
+                SceneManager.LoadScene("12_ArcadeScene_MtTest 2");
             }
         }
     }
@@ -130,5 +131,9 @@ public class Memory : MonoBehaviour {
         SC.PlayerObject.GetComponent<ChracterController>().CurrentWirePositionX = 2;
         SC.PlayerObject.GetComponent<ChracterController>().FindCurrentWire();
         SC.PlayerObject.GetComponent<ChracterController>().IsinStartPosition = false;
+    }
+    public void UnlockDebugger()
+    {
+        DebbugerControls = true;
     }
 }

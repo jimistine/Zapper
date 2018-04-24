@@ -66,7 +66,6 @@ public class crowMove : MonoBehaviour {
             transform.Translate(0, -goSpeed, 0);
             if (transform.position.y < SC.PlayerObject.transform.position.y + 0.3f && transform.position.y > SC.PlayerObject.transform.position.y - 0.3f && CurrentWire == SC.PlayerObject.GetComponent<ChracterController>().PlayerCurrentWire)
             {
-                Debug.Log("That");
                 FailStateCrow();
                 //Destroy bird for now will need a fail state animation for birds hittitng fuze box
                 Destroy(gameObject);
