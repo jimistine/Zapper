@@ -59,7 +59,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BUILD SCENES/10_Factory_Scene4.1.unity
     guid: aed8c3c2f4f8647be83d3085b16021f1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ErikTriesToBuildThings/MtTest.unity
     guid: c5302e2f2b14e43389c494fa8b73b5e8
   - enabled: 1
@@ -83,3 +83,18 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/BUILD SCENES/11_MtTest 1.unity
+    guid: b93b91fffdc911f428e12496097e2328
+  - enabled: 1
+    path: Assets/Scenes/BUILD SCENES/12_ArcadeScene_Birds_4Wire.unity
+    guid: 1b66fb5031007f24ab6d584dadec67c1
+  - enabled: 1
+    path: Assets/Scenes/BUILD SCENES/12_ArcadeScene_Factory.unity
+    guid: 61980a55f2fd43d42b8a6275d2e52e99
+  - enabled: 1
+    path: Assets/Scenes/BUILD SCENES/12_ArcadeScene_MtTest 2.unity
+    guid: 01c74f904a8e920449aabe9f27b15bcd
+  - enabled: 1
+    path: Assets/Scenes/BUILD SCENES/12_ArcadeScene_Prototype.unity
+    guid: e91f327de3a0ae2419f2badc1c291ea1

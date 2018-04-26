@@ -244,60 +244,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &79995568
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 79995569}
-  - component: {fileID: 79995570}
-  m_Layer: 0
-  m_Name: Memory
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &79995569
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 79995568}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1682933952}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &79995570
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 79995568}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99ce6895ce2882542a1c5f8da86c65b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  WonFirstRound: 0
-  WonSecondRound: 0
-  WonThirdRound: 0
-  PlayedFirstRound: 1
-  PlayedSecondRound: 1
-  PlayedThirdRound: 1
-  checkPoint1Reahced: 0
-  checkPoint2Reahced: 0
-  checkPoint3Reahced: 0
-  CheckPoint1Length: 73
-  CheckPoint2Length: 158
-  CheckPoint3Length: 218
-  SC: {fileID: 0}
-  DebbugerControls: 0
 --- !u!1 &128280567
 GameObject:
   m_ObjectHideFlags: 0
@@ -630,7 +576,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SC: {fileID: 0}
   AM: {fileID: 0}
-  PlayerHorizontalSpeed: 5
+  PlayerHorizontalSpeed: 2
   PlayersStartingPositionY: 0
   CurrentWirePositionY: 0
   CurrentWirePositionX: 0
@@ -2308,6 +2254,61 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1205836094
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1205836095}
+  - component: {fileID: 1205836096}
+  m_Layer: 0
+  m_Name: Memory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1205836095
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1205836094}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1682933952}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1205836096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1205836094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99ce6895ce2882542a1c5f8da86c65b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WonFirstRound: 0
+  WonSecondRound: 0
+  WonThirdRound: 0
+  PlayedFirstRound: 0
+  PlayedSecondRound: 0
+  PlayedThirdRound: 0
+  checkPoint1Reahced: 1
+  checkPoint2Reahced: 1
+  checkPoint3Reahced: 1
+  CheckPoint1Length: 0
+  CheckPoint2Length: 0
+  CheckPoint3Length: 218
+  SC: {fileID: 0}
+  DebbugerControls: 1
+  IsTemp: 1
 --- !u!1 &1294914166
 GameObject:
   m_ObjectHideFlags: 0
@@ -2986,11 +2987,12 @@ MonoBehaviour:
   TimeRemainingUI: {fileID: 0}
   CameraObj: {fileID: 505271568}
   plusOne: {fileID: 0}
-  CannotLose: 1
+  CannotLose: 0
   CannotWin: 0
   isMountainLevel: 1
   isFactory: 0
   isPrototype: 0
+  isArcade: 1
   PlayerControl: {fileID: 0}
   ChargeScript: {fileID: 0}
   Spawner: {fileID: 0}
@@ -3028,7 +3030,7 @@ Transform:
   m_LocalPosition: {x: 0.4047612, y: -0.09718411, z: -9.472457}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 79995569}
+  - {fileID: 1205836095}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3751,7 +3753,7 @@ MonoBehaviour:
   - {fileID: 1538132615749136, guid: 7e091df6641b44a57b4ecdebfd3e3e8c, type: 2}
   WireToSpawn: {fileID: 0}
   spawnRate: 1.1
-  spawnRateMin: 2
+  spawnRateMin: 1.5
   spawnRateMax: 0.5
   gapSpace: 0.2
   TotalCrowsForLevel: 0

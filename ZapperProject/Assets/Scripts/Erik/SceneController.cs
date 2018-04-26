@@ -30,6 +30,7 @@ public class SceneController : MonoBehaviour {
     public bool isMountainLevel;
 	public bool isFactory;
     public bool isPrototype;
+    public bool isArcade;
 
     public ChracterController PlayerControl;
 	public Charge ChargeScript; 
@@ -160,7 +161,7 @@ public class SceneController : MonoBehaviour {
 			Spawner.DelayBeforeStart = DelayBeforeStartTime + Time.time - 1;
 		}
         Spawner.StoreAddedTime = 0;
-        Spawner.spawnRate = Spawner.spawnRateMin;
+        Spawner.spawnRate = Spawner.spawnRateMin - ((Spawner.spawnRateMin - Spawner.spawnRate)/2);
         Spawner.TimeSinceFailLevels = 1;
         Spawner.validChoices.Clear();
         Spawner.validChoices.Add(1);
@@ -183,9 +184,16 @@ public class SceneController : MonoBehaviour {
         ////Freeze Time?
         //load the win screen overlay
         //track previous wins, losses?
-        GameObject.Find("Memory").GetComponent<Memory>().StoreMemory(RoundNum, true);
         //each round needs a unique value
-        SceneManager.LoadScene("GameOver+Win");
+        if (isArcade == false)
+        {
+            SceneManager.LoadScene("GameOver+Win");
+            GameObject.Find("Memory").GetComponent<Memory>().StoreMemory(RoundNum, true);
+        }
+        if (isArcade == true)
+        {
+            SceneManager.LoadScene("GameOver+Win_Arcade");
+        }
     }
     void LoseLevel()
     {
@@ -197,9 +205,17 @@ public class SceneController : MonoBehaviour {
         //load the lose screen overlay
         //track previous wins, losses?
         //MemoryObj.GetComponent<Memory>().StoreMemory(RoundNum, false);
-        GameObject.Find("Memory").GetComponent<Memory>().StoreMemory(RoundNum, false);
         //each round needs a unique value
-        SceneManager.LoadScene("GameOver+Lose");
+        if (isArcade == false)
+        {
+            SceneManager.LoadScene("GameOver+Lose");
+            GameObject.Find("Memory").GetComponent<Memory>().StoreMemory(RoundNum, false);
+
+        }
+        if (isArcade == true)
+        {
+            SceneManager.LoadScene("GameOver+Lose_Arcade");
+        }
     }
     public void UpdateHealth()
     {
@@ -283,11 +299,11 @@ public class SceneController : MonoBehaviour {
                 PlayerObject.GetComponent<ChracterController>().PlayersStartingPositionY = GameObject.Find("Memory").GetComponent<Memory>().CheckPoint3Length;
             }
             CurrentHealth = 3;
-            UpdateHealth();
             CameraObj.GetComponent<CameraController>().UpdateCameraPosition();
         }
-		PlayerControl.mt_normal (); 
-		PlayerObject.GetComponent<ChracterController>().IsinStartPosition = false;
+		PlayerControl.mt_normal ();
+        UpdateHealth();
+        PlayerObject.GetComponent<ChracterController>().IsinStartPosition = false;
 		PlayerObject.GetComponent<ChracterController> ().canInput = true;
         PlayerObject.GetComponent<ChracterController>().CanShoot = true;
 

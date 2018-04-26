@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class Memory : MonoBehaviour {
     public bool WonFirstRound;
@@ -21,58 +23,88 @@ public class Memory : MonoBehaviour {
 
     public SceneController SC;
 
-
+    public bool DebbugerControls = false;
+    public bool IsTemp = false;
     // Use this for initialization
     void Start () {
         SC = FindObjectOfType<SceneController>();
+        UpdateMountainSceneOnLoad();
     }
 	
 	// Update is called once per frame
 	void Update () {
-        
-        DontDestroyOnLoad(transform.gameObject);
-        
-        if (SC.PlayerObject.transform.position.y >= CheckPoint1Length && checkPoint1Reahced == false)
+       if (IsTemp == false)
         {
-            checkPoint1Reahced = true;
+            DontDestroyOnLoad(transform.gameObject);
         }
-        if (SC.PlayerObject.transform.position.y >= CheckPoint2Length && checkPoint2Reahced == false)
+        if (SC != null)
         {
-            checkPoint2Reahced = true;
-        }
-        if (SC.PlayerObject.transform.position.y >= CheckPoint3Length && checkPoint3Reahced == false)
-        {
-            checkPoint3Reahced = true;
-        }
+            if (SC.PlayerObject.transform.position.y >= CheckPoint1Length && checkPoint1Reahced == false)
+            {
+                checkPoint1Reahced = true;
+            }
+            if (SC.PlayerObject.transform.position.y >= CheckPoint2Length && checkPoint2Reahced == false)
+            {
+                checkPoint2Reahced = true;
+            }
+            if (SC.PlayerObject.transform.position.y >= CheckPoint3Length && checkPoint3Reahced == false)
+            {
+                checkPoint3Reahced = true;
+                UnlockDebugger();
+            }
+            if (SC.isMountainLevel == true)
+            {
+                if (checkPoint1Reahced == true && SC.WireOneObject.GetComponent<Wires>().canSpawn == true)
+                {
+                    SC.WireOneObject.GetComponent<Wires>().canSpawn = false;
+                    SC.PlayerObject.GetComponent<ChracterController>().MinWirePosition++;
+                }
+                if (checkPoint2Reahced == true && SC.WireFourObject.GetComponent<Wires>().canSpawn == true)
+                {
+                    SC.WireFourObject.GetComponent<Wires>().canSpawn = false;
+                    SC.PlayerObject.GetComponent<ChracterController>().MaxWirePosition--;
+                }
+                if (checkPoint3Reahced == true && SC.WireThreeObject.GetComponent<Wires>().canSpawn == true)
+                {
+                    SC.WireThreeObject.GetComponent<Wires>().canSpawn = false;
+                    SC.PlayerObject.GetComponent<ChracterController>().MaxWirePosition--;
+                }
 
-        if (checkPoint1Reahced == true && SC.WireOneObject.GetComponent<Wires>().canSpawn == true)
-        {
-            SC.WireOneObject.GetComponent<Wires>().canSpawn = false;
-            SC.PlayerObject.GetComponent<ChracterController>().MinWirePosition++;
+                if (checkPoint1Reahced && SC.PlayerObject.GetComponent<ChracterController>().PlayersStartingPositionY <= CheckPoint1Length)
+                {
+                    SC.PlayerObject.GetComponent<ChracterController>().PlayersStartingPositionY = CheckPoint1Length;
+                }
+                if (checkPoint2Reahced && SC.PlayerObject.GetComponent<ChracterController>().PlayersStartingPositionY <= CheckPoint2Length)
+                {
+                    SC.PlayerObject.GetComponent<ChracterController>().PlayersStartingPositionY = CheckPoint2Length;
+                }
+                if (checkPoint3Reahced && SC.PlayerObject.GetComponent<ChracterController>().PlayersStartingPositionY <= CheckPoint3Length)
+                {
+                    SC.PlayerObject.GetComponent<ChracterController>().PlayersStartingPositionY = CheckPoint3Length;
+                }
+            }
         }
-        if (checkPoint2Reahced == true && SC.WireFourObject.GetComponent<Wires>().canSpawn == true)
+       
+        if (DebbugerControls == true && Input.GetKey(KeyCode.LeftControl)&&Input.GetKey(KeyCode.LeftAlt))
         {
-            SC.WireFourObject.GetComponent<Wires>().canSpawn = false;
-            SC.PlayerObject.GetComponent<ChracterController>().MaxWirePosition--;
+            Debug.Log("Debugger");
+            if (Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                SceneManager.LoadScene("12_ArcadeScene_Birds_4Wire");
+            }
+            if (Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                SceneManager.LoadScene("12_ArcadeScene_Prototype");
+            }
+            if (Input.GetKeyDown(KeyCode.LeftArrow))
+            {
+                SceneManager.LoadScene("12_ArcadeScene_Factory");
+            }
+            if (Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                SceneManager.LoadScene("12_ArcadeScene_MtTest 2");
+            }
         }
-        if (checkPoint3Reahced == true && SC.WireThreeObject.GetComponent<Wires>().canSpawn == true)
-        {
-            SC.WireThreeObject.GetComponent<Wires>().canSpawn = false;
-            SC.PlayerObject.GetComponent<ChracterController>().MaxWirePosition--;
-        }
-        if (checkPoint1Reahced && SC.PlayerObject.GetComponent<ChracterController>().PlayersStartingPositionY <= CheckPoint1Length)
-        {
-            SC.PlayerObject.GetComponent<ChracterController>().PlayersStartingPositionY = CheckPoint1Length;
-        }
-        if (checkPoint2Reahced && SC.PlayerObject.GetComponent<ChracterController>().PlayersStartingPositionY <= CheckPoint2Length)
-        {
-            SC.PlayerObject.GetComponent<ChracterController>().PlayersStartingPositionY = CheckPoint2Length;
-        }
-        if (checkPoint3Reahced && SC.PlayerObject.GetComponent<ChracterController>().PlayersStartingPositionY <= CheckPoint3Length)
-        {
-            SC.PlayerObject.GetComponent<ChracterController>().PlayersStartingPositionY = CheckPoint3Length;
-        }
-
     }
     public void StoreMemory(int x, bool y)
     {
@@ -110,5 +142,9 @@ public class Memory : MonoBehaviour {
         SC.PlayerObject.GetComponent<ChracterController>().CurrentWirePositionX = 2;
         SC.PlayerObject.GetComponent<ChracterController>().FindCurrentWire();
         SC.PlayerObject.GetComponent<ChracterController>().IsinStartPosition = false;
+    }
+    public void UnlockDebugger()
+    {
+        DebbugerControls = true;
     }
 }
