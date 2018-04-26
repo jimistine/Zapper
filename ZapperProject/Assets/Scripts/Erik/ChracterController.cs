@@ -22,8 +22,6 @@ public class ChracterController : MonoBehaviour {
 	public GameObject ChargeObjects;
 	public GameObject NewChargeObjects;
 
-	public SpriteRenderer mySpriteRenderer; 
-
 	public bool CanShoot = true;
     public bool CanMoveLeftRight = true;
 	public bool IsUsingCharge_1 = true;
@@ -44,7 +42,6 @@ public class ChracterController : MonoBehaviour {
 
 	public void Start () {
 
-		mySpriteRenderer = gameObject.GetComponent<SpriteRenderer> (); 
 		anim = GetComponent<Animator> (); 
 
 		SC = FindObjectOfType<SceneController>();
@@ -296,8 +293,6 @@ public class ChracterController : MonoBehaviour {
 		if (isFalling == true || canInput == false)
         
 		{
-			//flashing the character animation when player is hit 
-			this.GetComponent<Flash>().flicker (mySpriteRenderer); 
 
             if (transform.position.y > PlayerCurrentWire.GetComponent<Wires>().StartPositionBottom)
             {
@@ -325,7 +320,6 @@ public class ChracterController : MonoBehaviour {
         isFalling = false;
         CanShoot = true;
 		anim.SetBool ("Slide_Bool", false); 
-		mySpriteRenderer.enabled = true; 
     }
 
 	IEnumerator Anim_shoot () {
