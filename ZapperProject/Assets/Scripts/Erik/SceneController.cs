@@ -184,9 +184,16 @@ public class SceneController : MonoBehaviour {
         ////Freeze Time?
         //load the win screen overlay
         //track previous wins, losses?
-        GameObject.Find("Memory").GetComponent<Memory>().StoreMemory(RoundNum, true);
         //each round needs a unique value
-        SceneManager.LoadScene("GameOver+Win");
+        if (isArcade == false)
+        {
+            SceneManager.LoadScene("GameOver+Win");
+            GameObject.Find("Memory").GetComponent<Memory>().StoreMemory(RoundNum, true);
+        }
+        if (isArcade == true)
+        {
+            SceneManager.LoadScene("GameOver+Win_Arcade");
+        }
     }
     void LoseLevel()
     {
@@ -198,12 +205,17 @@ public class SceneController : MonoBehaviour {
         //load the lose screen overlay
         //track previous wins, losses?
         //MemoryObj.GetComponent<Memory>().StoreMemory(RoundNum, false);
-        if(isArcade == false)
-        {
-            GameObject.Find("Memory").GetComponent<Memory>().StoreMemory(RoundNum, false);
-        }
         //each round needs a unique value
-        SceneManager.LoadScene("GameOver+Lose");
+        if (isArcade == false)
+        {
+            SceneManager.LoadScene("GameOver+Lose");
+            GameObject.Find("Memory").GetComponent<Memory>().StoreMemory(RoundNum, false);
+
+        }
+        if (isArcade == true)
+        {
+            SceneManager.LoadScene("GameOver+Lose_Arcade");
+        }
     }
     public void UpdateHealth()
     {

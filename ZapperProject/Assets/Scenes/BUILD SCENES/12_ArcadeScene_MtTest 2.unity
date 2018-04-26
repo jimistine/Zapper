@@ -3750,6 +3750,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemies:
   - {fileID: 1538132615749136, guid: 7e091df6641b44a57b4ecdebfd3e3e8c, type: 2}
+  - {fileID: 1538132615749136, guid: 7e091df6641b44a57b4ecdebfd3e3e8c, type: 2}
   WireToSpawn: {fileID: 0}
   spawnRate: 1.1
   spawnRateMin: 1.5
