@@ -28,6 +28,7 @@ public class crowMove : MonoBehaviour {
 
 
 	// Use this for initialization
+	//comment to see the changes!
 	void Start () {
 
 		ChancetoSpawnCurrent = ChancetoSpawnStart;
