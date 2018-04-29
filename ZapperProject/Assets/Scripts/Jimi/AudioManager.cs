@@ -12,7 +12,8 @@ public class AudioManager : MonoBehaviour
 	public AudioSource Hit_source;
 	public AudioSource Shoot_source;
 	public AudioSource FailSound_source;
-	public AudioSource VO_source;
+	public AudioSource VO_source_1;
+	public AudioSource VO_source_2;
 	public AudioSource Music_source;
 	public AudioSource Ambient_source;
 
@@ -52,5 +53,14 @@ public class AudioManager : MonoBehaviour
 	public void Stop_Ambient()
 	{
 		Ambient_source.Stop();
+	}
+	public void Play_VO_1()
+	{
+		VO_source_1.Play();
+	}
+	
+	public void Play_VO_2()
+	{
+		VO_source_2.Play();
 	}
 }
