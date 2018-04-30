@@ -34,6 +34,12 @@ public class Charge : MonoBehaviour {
 	public GameObject platform2; 
 	public GameObject platform3; 
 	public GameObject platform4; 
+
+//	public GameObject falling1; 
+//	public GameObject falling2; 
+//	public GameObject falling3; 
+//	public GameObject falling4; 
+
 	bool HasCalledFailFunction; 
 
 	public Animator anim; 
@@ -65,6 +71,11 @@ public class Charge : MonoBehaviour {
 		platform2 = GameObject.Find ("platform 2"); 
 		platform3 = GameObject.Find ("platform 3"); 
 		platform4 = GameObject.Find ("platform 4"); 
+
+//		falling1 = GameObject.Find ("falling1"); 
+//		falling2 = GameObject.Find ("falling2"); 
+//		falling3 = GameObject.Find ("falling3"); 
+//		falling4 = GameObject.Find ("falling4"); 
 
 	
 		anim = GetComponent<Animator> (); 

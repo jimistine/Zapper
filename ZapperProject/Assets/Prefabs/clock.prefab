@@ -184,7 +184,7 @@ MonoBehaviour:
   startWait: 0
   pauseTimeMax: 0
   pauseTimeMin: 0
-  ChancetoSpawnCurrent: 1.9900001
+  ChancetoSpawnCurrent: 1.33
   ChancetoSpawnStart: 1
   stopSpeed: 0
   randomTimeUntilPauseMax: 1
@@ -229,7 +229,7 @@ SpriteRenderer:
   m_SortingLayerID: 708394593
   m_SortingLayer: 7
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 23d9963a71a7d4741bb2ef3dc1eed4f0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b10ff6811a54c46e797580b00cc05338, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0

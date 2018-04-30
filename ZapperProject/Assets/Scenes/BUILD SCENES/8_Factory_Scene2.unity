@@ -3216,7 +3216,6 @@ MonoBehaviour:
     type: 2}
   NewChargeObjects: {fileID: 1539209488794968, guid: aa0f0005512d94fcb9ae3b97facc8aea,
     type: 2}
-  mySpriteRenderer: {fileID: 0}
   CanShoot: 1
   CanMoveLeftRight: 1
   IsUsingCharge_1: 1
@@ -3228,6 +3227,7 @@ MonoBehaviour:
   playerX: 0
   IsinStartPosition: 0
   wire1: {fileID: 0}
+  canInput: 1
 --- !u!61 &1039467706
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5901,14 +5901,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: 1791657620474538, guid: ff713b0a23d9646e783db29a0f0c7f3c, type: 2}
-  - {fileID: 1791657620474538, guid: ff713b0a23d9646e783db29a0f0c7f3c, type: 2}
-  - {fileID: 1791657620474538, guid: ff713b0a23d9646e783db29a0f0c7f3c, type: 2}
+  - {fileID: 1299142415905442, guid: 9ff1b7559d39c4726b1e778a5e7a4928, type: 2}
+  - {fileID: 1299142415905442, guid: 9ff1b7559d39c4726b1e778a5e7a4928, type: 2}
+  - {fileID: 1299142415905442, guid: 9ff1b7559d39c4726b1e778a5e7a4928, type: 2}
   WireToSpawn: {fileID: 0}
   spawnRate: 1.1
   spawnRateMin: 2.25
   spawnRateMax: 0.5
-  gapSpace: 0.2
+  gapSpace: 0.4
   TotalCrowsForLevel: 0
   BeginingDelay: 3
   DelayBeforeStart: 0
@@ -6631,12 +6631,14 @@ MonoBehaviour:
   ScoreUI: {fileID: 235144138}
   ClocksBrokenUI: {fileID: 500873178}
   TimeRemainingUI: {fileID: 1758428799}
+  CameraObj: {fileID: 0}
   plusOne: {fileID: 1998961848}
   CannotLose: 0
   CannotWin: 0
   isMountainLevel: 0
   isFactory: 1
   isPrototype: 0
+  isArcade: 0
   PlayerControl: {fileID: 0}
   ChargeScript: {fileID: 0}
   Spawner: {fileID: 0}

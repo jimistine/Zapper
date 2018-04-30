@@ -41,6 +41,14 @@ public class crowMove : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+
+		if (Input.GetKeyDown (KeyCode.A)) {
+
+
+			anim.SetBool ("Zap_Bool", true); 
+
+		}
+			
 		randomTimeUntilPause = Random.Range (randomTimeUntilPauseMin, randomTimeUntilPauseMax); 
 		pauseTime = Random.Range (pauseTimeMin, pauseTimeMax);
 
@@ -101,11 +109,16 @@ public class crowMove : MonoBehaviour {
 	{
 		Debug.Log("Crows fail state");
         SC.CurrentHealth--;
-		if (isClock)
+		if (isClock == true)
 		{
 			SC.ClocksBroken++;
+			StartCoroutine (clockDestructionWait ()); 
+
 		}
+
+
 		SC.RestartLevel();
+		Debug.Log ("fail state crow"); 
 	}
 
 	public void CrowZap() {
@@ -114,6 +127,14 @@ public class crowMove : MonoBehaviour {
         goSpeed = 0;
 		anim.SetBool ("Zap_Bool", true); 
 		StartCoroutine (ZapAnim()); 
+
+	}
+
+	IEnumerator clockDestructionWait () {
+
+		anim.SetBool ("Zap_Bool", true); 
+		yield return new WaitForSeconds (1.2f); 
+		SC.RestartLevel (); 
 
 	}
 
