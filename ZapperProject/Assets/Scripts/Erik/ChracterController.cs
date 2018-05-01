@@ -38,7 +38,8 @@ public class ChracterController : MonoBehaviour {
 
 	public GameObject wire1;
 
-	public bool canInput = true; 
+	public bool canInput = true;
+    public bool JoystickInUse = false;
 
 	public void Start () {
 
@@ -156,12 +157,11 @@ public class ChracterController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (Input.GetKeyDown (KeyCode.A)) {
+  //      if (Input.GetKeyDown (KeyCode.A)) {
 
-			Debug.Log ("falling!"); 
-			anim.SetBool ("Rock_Bool", true); 
-
-		}
+		//	Debug.Log ("falling!"); 
+		//	anim.SetBool ("Rock_Bool", true); 
+		//}
 
         if(IsinStartPosition == false)
         {
@@ -175,40 +175,49 @@ public class ChracterController : MonoBehaviour {
 		anim.SetBool ("Run_Bool", false);
         //		anim.SetBool ("Shoot_Bool", false); 
 
+        if (Input.GetAxis("Vertical") == 0 && Input.GetAxis("Horizontal") == 0)
+        {
+            JoystickInUse = false;
+        }
+
         if (SC.isMountainLevel == false)
         {
-            if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
+            if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow) || Input.GetAxis("Vertical") == 1 || Input.GetAxis("Vertical") == -1 && Input.GetAxis("Horizontal") == 0 && JoystickInUse == false)
             {
                 
-                if (Input.GetKeyDown(KeyCode.UpArrow) && CurrentWirePositionY < MaxWirePosition)
+                if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetAxis("Vertical") == 1 && Input.GetAxis("Horizontal") == 0 && CurrentWirePositionY < MaxWirePosition && JoystickInUse == false)
                 {
                     Debug.Log("This");
                     CurrentWirePositionY++;
+                    JoystickInUse = true;
                 }
-                else if (Input.GetKeyDown(KeyCode.UpArrow) && CurrentWirePositionY == MaxWirePosition)
+                else if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetAxis("Vertical") == 1 && Input.GetAxis("Horizontal") == 0 && CurrentWirePositionY == MaxWirePosition && JoystickInUse == false)
                 {
                     CurrentWirePositionY = MinWirePosition;
+                    JoystickInUse = true;
                 }
 
-                if (Input.GetKeyDown(KeyCode.DownArrow) && CurrentWirePositionY > MinWirePosition)
+                if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetAxis("Vertical") == -1 && Input.GetAxis("Horizontal") == 0 && CurrentWirePositionY > MinWirePosition && JoystickInUse == false)
                 {
                     CurrentWirePositionY--;
+                    JoystickInUse = true;
                 }
-                else if (Input.GetKeyDown(KeyCode.DownArrow) && CurrentWirePositionY == MinWirePosition)
+                else if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetAxis("Vertical") == -1 && Input.GetAxis("Horizontal") == 0 && CurrentWirePositionY == MinWirePosition && JoystickInUse == false)
                 {
                     CurrentWirePositionY = MaxWirePosition;
+                    JoystickInUse = true;
                 }
                 ChangeWire();
                 ChargingAmount = 0;
             }
-            if (Input.GetKey(KeyCode.LeftArrow) && transform.position.x > PlayerCurrentWire.GetComponent<Wires>().AnchorLeft)
+            if (Input.GetKey(KeyCode.LeftArrow) || Input.GetAxis("Horizontal") == -1 && Input.GetAxis("Vertical") == 0 && transform.position.x > PlayerCurrentWire.GetComponent<Wires>().AnchorLeft)
             {
                 transform.Translate(Vector3.left * Time.deltaTime * PlayerHorizontalSpeed);
                 CanShoot = false;
                 anim.SetBool("Pickup_Bool", false);
                 anim.SetBool("Run_Bool", true);
             }
-            if (Input.GetKey(KeyCode.RightArrow) && transform.position.x < PlayerCurrentWire.GetComponent<Wires>().AnchorRight)
+            if (Input.GetKey(KeyCode.RightArrow) || Input.GetAxis("Horizontal") == 1 && Input.GetAxis("Vertical") == 0 && transform.position.x < PlayerCurrentWire.GetComponent<Wires>().AnchorRight)
             {
                 transform.Translate(Vector3.right * Time.deltaTime * PlayerHorizontalSpeed);
                 CanShoot = false;
@@ -216,7 +225,7 @@ public class ChracterController : MonoBehaviour {
                 anim.SetBool("Pickup_Bool", false);
                 anim.SetBool("Run_Bool", true);
             }
-            if (Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.RightArrow))
+            if (Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.RightArrow) || Input.GetAxis("Horizontal") == -1 || Input.GetAxis("Horizontal") == 1 && Input.GetAxis("Vertical") == 0)
             {
                 CanShoot = true;
             }
@@ -225,45 +234,49 @@ public class ChracterController : MonoBehaviour {
 
         else if (SC.isMountainLevel == true && isFalling == false && canInput == true)
         {
-            if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.LeftArrow) )
+            if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetAxis("Horizontal") == -1 || Input.GetAxis("Horizontal") == 1 && Input.GetAxis("Vertical") == 0)
             {
-                if (Input.GetKeyDown(KeyCode.RightArrow) && CurrentWirePositionX < MaxWirePosition)
+                if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetAxis("Horizontal") == 1 && Input.GetAxis("Vertical") == 0 && CurrentWirePositionX < MaxWirePosition && JoystickInUse == false)
                 {
                     CurrentWirePositionX++;
+                    JoystickInUse = true;
                 }
-                else if (Input.GetKeyDown(KeyCode.RightArrow) && CurrentWirePositionX == MaxWirePosition)
+                else if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetAxis("Horizontal") == 1 && Input.GetAxis("Vertical") == 0 && CurrentWirePositionX == MaxWirePosition && JoystickInUse == false)
                 {
                     CurrentWirePositionX = MinWirePosition;
+                    JoystickInUse = true;
                 }
 
-                if (Input.GetKeyDown(KeyCode.LeftArrow) && CurrentWirePositionX > MinWirePosition)
+                if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetAxis("Horizontal") == -1 && Input.GetAxis("Vertical") == 0 && CurrentWirePositionX > MinWirePosition && JoystickInUse == false)
                 {
                     CurrentWirePositionX--;
+                    JoystickInUse = true;
                 }
-                else if (Input.GetKeyDown(KeyCode.LeftArrow) && CurrentWirePositionX == MinWirePosition)
+                else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetAxis("Horizontal") == -1 && Input.GetAxis("Vertical") == 0 && CurrentWirePositionX == MinWirePosition && JoystickInUse == false)
                 {
                     CurrentWirePositionX = MaxWirePosition;
+                    JoystickInUse = true;
                 }
                 ChangeWire();
                 ChargingAmount = 0;
             }
-            if (Input.GetKey(KeyCode.DownArrow) && transform.position.y > PlayerCurrentWire.GetComponent<Wires>().StartPositionBottom)
+            if (Input.GetKey(KeyCode.DownArrow) || Input.GetAxis("Vertical") == -1 && Input.GetAxis("Horizontal") == 0 && transform.position.y > PlayerCurrentWire.GetComponent<Wires>().StartPositionBottom)
             {
                 transform.Translate(Vector3.down * Time.deltaTime * PlayerHorizontalSpeed);
                 anim.SetBool("Run_Bool", true);
             }
-            if (Input.GetKey(KeyCode.UpArrow) && transform.position.y < PlayerCurrentWire.GetComponent<Wires>().WirePositionTop)
+            if (Input.GetKey(KeyCode.UpArrow) || Input.GetAxis("Vertical") == 1 && Input.GetAxis("Horizontal") == 0 && transform.position.y < PlayerCurrentWire.GetComponent<Wires>().WirePositionTop)
             {
                 transform.Translate(Vector3.up * Time.deltaTime * PlayerHorizontalSpeed);
                 anim.SetBool("Run_Bool", true);
             }
-	        if (Input.GetKey(KeyCode.UpArrow) && transform.position.y >= PlayerCurrentWire.GetComponent<Wires>().WirePositionTop && PlayerCurrentWire.GetComponent<Wires>().isSummitWire == true) 
+	        if (Input.GetKey(KeyCode.UpArrow) || Input.GetAxis("Vertical") == 1 && Input.GetAxis("Horizontal") == 0 && transform.position.y >= PlayerCurrentWire.GetComponent<Wires>().WirePositionTop && PlayerCurrentWire.GetComponent<Wires>().isSummitWire == true) 
             {
                 //for now when the player reaches the top of the wire, win that level. 
                 SC.WinLevel();
             }
         }
-		if (Input.GetKey(KeyCode.Space)&& CanShoot == true && Time.timeSinceLevelLoad > 0.5)
+		if (Input.GetKey(KeyCode.Space) || Input.GetButtonUp("Jump") && CanShoot == true && Time.timeSinceLevelLoad > 0.5)
 		{
 			ChangeWire();
 
@@ -273,8 +286,9 @@ public class ChracterController : MonoBehaviour {
 			}
 
 		} //instantiate a "Charge" object
-		if (Input.GetKeyUp(KeyCode.Space) && CanShoot == true && Time.timeSinceLevelLoad >2)
-		{
+		if (Input.GetKeyUp(KeyCode.Space) || Input.GetButtonUp("Jump") && CanShoot == true && Time.timeSinceLevelLoad >2)
+
+        {
 			anim.SetBool ("Pickup_Bool", false); 
 			anim.SetBool ("Shoot_Bool", true); 
 			Debug.Log("Fire Charge");
@@ -287,11 +301,11 @@ public class ChracterController : MonoBehaviour {
 				AM.Shoot_source.PlayOneShot(AM.Shoot);
 			}
 		}
-		if (Input.GetKeyDown (KeyCode.A)) {
+		//if (Input.GetKeyDown (KeyCode.A)) {
 
-			anim.SetBool ("Pickup_Bool", false); 
-			anim.SetBool ("Zap_Bool", true); 
-		}
+		//	anim.SetBool ("Pickup_Bool", false); 
+		//	anim.SetBool ("Zap_Bool", true); 
+		//}
 		if (isFalling == true || canInput == false)
         
 		{
