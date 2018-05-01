@@ -33,6 +33,7 @@ public class SceneController : MonoBehaviour {
     public bool isArcade;
 
     public ChracterController PlayerControl;
+    public AudioManager AM;
 	public Charge ChargeScript; 
     public crowSpawner Spawner;
     public GameObject SpawnerObject;
@@ -56,12 +57,14 @@ public class SceneController : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-
+        AM = FindObjectOfType<AudioManager>();
         PlayerControl = FindObjectOfType<ChracterController>();
         Spawner = FindObjectOfType<crowSpawner>();
         ScoreUpdate();
         UpdateHealth(); 
 		ChargeScript = FindObjectOfType<Charge> ();
+       
+
 
 
         //GameObject MemoryObj = GameObject.Find("Memory");
@@ -267,6 +270,18 @@ public class SceneController : MonoBehaviour {
         LevelSelectGateOpen = true;
     }
 
+    public void AnswerCall()
+    {
+        Flowchart.BroadcastFungusMessage ("Answer");
+    }
+    public void HangUpCall()
+    {
+        Flowchart.BroadcastFungusMessage ("Hang Up");
+    }
+    public void WaitOnCall()
+    {
+        Flowchart.BroadcastFungusMessage ("Wait");
+    }
 
 	//PICKING UP CLOCKS 
 
