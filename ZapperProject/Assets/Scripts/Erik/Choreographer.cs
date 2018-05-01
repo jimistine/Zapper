@@ -58,14 +58,14 @@ public class Choreographer : MonoBehaviour {
         {
             Debug.Log("Escape");
         }
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            Debug.Log(BeatsValueType[0]);
-        }
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            Debug.Log(BeatsValueType[1]);
-        }
+        //if (Input.GetKeyDown(KeyCode.Q))
+        //{
+        //    Debug.Log(BeatsValueType[0]);
+        //}
+        //if (Input.GetKeyDown(KeyCode.W))
+        //{
+        //    Debug.Log(BeatsValueType[1]);
+        //}
         ///
         if (currentBeatNum > 0 && IsCoreographerEnding == false && BeatsValueNum[currentBeatNum] != 0)
         {

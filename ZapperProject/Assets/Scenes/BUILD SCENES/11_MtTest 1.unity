@@ -140,20 +140,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa59b36efab174bc1889d226690c1308, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SC: {fileID: 0}
   VO_Delay: 0
   Hit_source: {fileID: 976072697}
   Shoot_source: {fileID: 1563467296}
   FailSound_source: {fileID: 771058661}
-  VO_source: {fileID: 0}
+  VO_source_1: {fileID: 0}
+  VO_source_2: {fileID: 0}
+  VO_source_3: {fileID: 0}
+  VO_source_4: {fileID: 0}
+  VO_source_5: {fileID: 0}
+  VO_source_6: {fileID: 0}
+  VO_source_7: {fileID: 0}
+  VO_source_8: {fileID: 0}
+  VO_source_9: {fileID: 0}
+  VO_source_10: {fileID: 0}
   Music_source: {fileID: 0}
   Ambient_source: {fileID: 0}
+  MiscSFX_source_1: {fileID: 0}
   Shoot: {fileID: 8300000, guid: d9c57a9112493498799157d96964bb3f, type: 3}
   Fail: {fileID: 8300000, guid: a5daa1eb9be1d4229ae0a3510483d049, type: 3}
   Hit: {fileID: 8300000, guid: 04d5b3fe5a8004086a53aeec8ae15e3f, type: 3}
   Music: {fileID: 0}
   Ambient: {fileID: 0}
   Wagner: {fileID: 0}
-  NormalAmbient: {fileID: 0}
+  NormalMaster: {fileID: 0}
+  MuteSFXSnapshot: {fileID: 0}
+  NormalSFXSnapshot: {fileID: 0}
+  GainVoSnapshot: {fileID: 0}
 --- !u!4 &4922282
 Transform:
   m_ObjectHideFlags: 0
@@ -689,6 +703,7 @@ MonoBehaviour:
   IsinStartPosition: 0
   wire1: {fileID: 0}
   canInput: 1
+  JoystickInUse: 0
 --- !u!114 &356407447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2251,7 +2266,7 @@ MonoBehaviour:
   CheckPoint2Length: 100
   CheckPoint3Length: 150
   SC: {fileID: 0}
-  DebbugerControls: 0
+  DebbugerControls: 1
   IsTemp: 1
 --- !u!1 &1294914166
 GameObject:
@@ -2938,6 +2953,7 @@ MonoBehaviour:
   isPrototype: 0
   isArcade: 0
   PlayerControl: {fileID: 0}
+  AM: {fileID: 0}
   ChargeScript: {fileID: 0}
   Spawner: {fileID: 0}
   SpawnerObject: {fileID: 2139771686}
