@@ -132,6 +132,7 @@ public class crowMove : MonoBehaviour {
 
 	IEnumerator clockDestructionWait () {
 
+		Debug.Log ("started enum"); 
 		anim.SetBool ("Zap_Bool", true); 
 		yield return new WaitForSeconds (1.2f); 
 		SC.RestartLevel (); 
