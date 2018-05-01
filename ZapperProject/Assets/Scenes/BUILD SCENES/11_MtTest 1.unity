@@ -2162,7 +2162,7 @@ MonoBehaviour:
   CheckPoint3Length: 150
   SC: {fileID: 0}
   DebbugerControls: 0
-  IsTemp: 0
+  IsTemp: 1
 --- !u!1 &1294914166
 GameObject:
   m_ObjectHideFlags: 0

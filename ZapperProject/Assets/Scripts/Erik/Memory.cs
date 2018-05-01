@@ -37,6 +37,10 @@ public class Memory : MonoBehaviour {
         {
             DontDestroyOnLoad(transform.gameObject);
         }
+       if (SC.isMountainLevel == true && IsTemp == false)
+        {
+            Destroy(gameObject);
+        }
         if (SC != null)
         {
             if (SC.PlayerObject.transform.position.y >= CheckPoint1Length && checkPoint1Reahced == false)
