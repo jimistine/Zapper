@@ -3968,11 +3968,13 @@ MonoBehaviour:
   Music: {fileID: 0}
   Ambient: {fileID: 0}
   Wagner: {fileID: 0}
-  NormalMaster: {fileID: 0}
+  NormalMaster: {fileID: 245744949524360078, guid: d8f21f564eaad40aea199debe00cd414,
+    type: 2}
   MuteSFXSnapshot: {fileID: 245717163109634456, guid: 5ac80df882d8b4bbdb4f27a4b48231fc,
     type: 2}
   NormalSFXSnapshot: {fileID: 24500006, guid: 5ac80df882d8b4bbdb4f27a4b48231fc, type: 2}
-  GainVoSnapshot: {fileID: 0}
+  GainVoSnapshot: {fileID: 245993496100636052, guid: d8f21f564eaad40aea199debe00cd414,
+    type: 2}
 --- !u!4 &932989999
 Transform:
   m_ObjectHideFlags: 0
@@ -5604,8 +5606,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1268022680}
-  selectedCommands: []
+  - {fileID: 1268022660}
+  selectedCommands:
+  - {fileID: 1268022671}
   variables: []
   description: 
   stepPause: 0
@@ -5918,7 +5921,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 30
+    floatVal: 25
   durationOLD: 0
 --- !u!114 &1268022672
 MonoBehaviour:
