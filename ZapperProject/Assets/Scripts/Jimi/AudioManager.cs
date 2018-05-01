@@ -6,7 +6,8 @@ using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
-
+	public SceneController SC;
+	
 	public int VO_Delay;
 	
 	public AudioSource Hit_source;
@@ -14,9 +15,15 @@ public class AudioManager : MonoBehaviour
 	public AudioSource FailSound_source;
 	public AudioSource VO_source_1;
 	public AudioSource VO_source_2;
+	public AudioSource VO_source_3;
+	public AudioSource VO_source_4;
+	public AudioSource VO_source_5;
+	public AudioSource VO_source_6;
+	public AudioSource VO_source_7;
+	public AudioSource VO_source_8;
 	public AudioSource Music_source;
 	public AudioSource Ambient_source;
-
+	public AudioSource MiscSFX_source_1;
 	
 	public AudioClip Shoot;
 	public AudioClip Fail;
@@ -26,23 +33,28 @@ public class AudioManager : MonoBehaviour
 
 	public AudioMixerSnapshot Wagner;
 	public AudioMixerSnapshot NormalAmbient;
-	
-//	public void VO_1()
-//	{ VO_source.PlayOneShot(VOClip_1);}
-//	
-//	public void VO_2()
-//	{ VO_source.PlayOneShot(VOClip_2);}
+
+	void Start()
+	{
+		SC = FindObjectOfType<SceneController>();
+	}
 
 	public void Play_Music()
 	{
 		Music_source.Play();
-		Wagner.TransitionTo(1);
+		if (SC.isFactory)
+		{
+			Wagner.TransitionTo(1);
+		}
 	}
 
 	public void Stop_Muisc()
 	{
 		Music_source.Stop();
-		NormalAmbient.TransitionTo(1);
+		if (SC.isFactory)
+		{
+			NormalAmbient.TransitionTo(1);
+		}
 	}
 	
 	public void Play_Ambient()
@@ -63,4 +75,45 @@ public class AudioManager : MonoBehaviour
 	{
 		VO_source_2.Play();
 	}
+	
+	public void Play_VO_3()
+	{
+		VO_source_3.Play();
+	}
+	
+	public void Play_VO_4()
+	{
+		VO_source_4.Play();
+	}
+	
+	public void Play_VO_5()
+	{
+		VO_source_5.Play();
+	}
+	
+	public void Play_VO_6()
+	{
+		VO_source_6.Play();
+	}
+	
+	public void Play_VO_7()
+	{
+		VO_source_7.Play();
+	}
+	
+	public void Play_VO_8()
+	{
+		VO_source_8.Play();
+	}
+
+	public void Play_MiscSFX_1()
+	{
+		MiscSFX_source_1.Play();
+	}
+	
+	public void Stop_MiscSFX_1()
+	{
+		MiscSFX_source_1.Stop();
+	}
+	
 }
