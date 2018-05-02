@@ -59,7 +59,7 @@ public class crowMove : MonoBehaviour {
 			gameObject.GetComponent<SpriteRenderer>().flipX = false;
 		}
 
-        if (isBird == true || isClock)
+        if (isBird == true || isClock == true)
         {
             transform.Translate(goSpeed, 0, 0);
 
@@ -67,7 +67,7 @@ public class crowMove : MonoBehaviour {
             {
                 FailStateCrow();
                 //Destroy bird for now will need a fail state animation for birds hittitng fuze box
-                Destroy(gameObject);
+                //Destroy(gameObject);
             }
         }
         if (isRock == true)
@@ -107,18 +107,21 @@ public class crowMove : MonoBehaviour {
 	public void FailStateCrow()
 
 	{
-		Debug.Log("Crows fail state");
+        crowSpeed = 0;
+		Debug.Log("Crows fail state 1");
         SC.CurrentHealth--;
 		if (isClock == true)
 		{
 			SC.ClocksBroken++;
+            goSpeed = 0;
 			StartCoroutine (clockDestructionWait ()); 
-
 		}
+        else
+        {
+            SC.RestartLevel();
 
-
-		SC.RestartLevel();
-		Debug.Log ("fail state crow"); 
+        }
+        Debug.Log ("fail state crow 2"); 
 	}
 
 	public void CrowZap() {
@@ -132,7 +135,7 @@ public class crowMove : MonoBehaviour {
 
 	IEnumerator clockDestructionWait () {
 
-		Debug.Log ("started enum"); 
+        Debug.Log ("started enum"); 
 		anim.SetBool ("Zap_Bool", true); 
 		yield return new WaitForSeconds (1.2f); 
 		SC.RestartLevel (); 
@@ -149,7 +152,8 @@ public class crowMove : MonoBehaviour {
 
 	}
     public void MakeCrowDisapear(float x){
-        crowSpeed = 0;
+        goSpeed = 0;
+
         gameObject.GetComponent<SpriteRenderer>().enabled = false;
         StartCoroutine(DestroyinDelay(x));
     }
