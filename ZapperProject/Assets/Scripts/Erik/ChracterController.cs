@@ -185,26 +185,31 @@ public class ChracterController : MonoBehaviour {
             if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow) || Input.GetAxis("Vertical") == 1 || Input.GetAxis("Vertical") == -1 && Input.GetAxis("Horizontal") == 0 && JoystickInUse == false)
             {
                 
-                if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetAxis("Vertical") == 1 && Input.GetAxis("Horizontal") == 0 && CurrentWirePositionY < MaxWirePosition && JoystickInUse == false)
+                if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetAxis("Vertical") == 1 && Input.GetAxis("Horizontal") == 0 && JoystickInUse == false)
                 {
-                    Debug.Log("This");
-                    CurrentWirePositionY++;
-                    JoystickInUse = true;
-                }
-                else if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetAxis("Vertical") == 1 && Input.GetAxis("Horizontal") == 0 && CurrentWirePositionY == MaxWirePosition && JoystickInUse == false)
-                {
-                    CurrentWirePositionY = MinWirePosition;
-                    JoystickInUse = true;
-                }
+                    if (CurrentWirePositionY < MaxWirePosition)
+                    {
+                        Debug.Log("This" + MaxWirePosition);
+                        CurrentWirePositionY++;
 
-                if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetAxis("Vertical") == -1 && Input.GetAxis("Horizontal") == 0 && CurrentWirePositionY > MinWirePosition && JoystickInUse == false)
-                {
-                    CurrentWirePositionY--;
+                    }
+                    else if (CurrentWirePositionY == MaxWirePosition)
+                    {
+                        CurrentWirePositionY = MinWirePosition;
+                    }
+                   
                     JoystickInUse = true;
                 }
-                else if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetAxis("Vertical") == -1 && Input.GetAxis("Horizontal") == 0 && CurrentWirePositionY == MinWirePosition && JoystickInUse == false)
+                if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetAxis("Vertical") == -1 && Input.GetAxis("Horizontal") == 0  && JoystickInUse == false)
                 {
-                    CurrentWirePositionY = MaxWirePosition;
+                    if (CurrentWirePositionY > MinWirePosition)
+                    {
+                        CurrentWirePositionY--;
+                    }
+                    else if (CurrentWirePositionY == MinWirePosition)
+                    {
+                        CurrentWirePositionY = MaxWirePosition;
+                    }
                     JoystickInUse = true;
                 }
                 ChangeWire();
