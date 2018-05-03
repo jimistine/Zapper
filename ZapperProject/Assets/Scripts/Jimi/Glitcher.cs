@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Glitcher : MonoBehaviour
 {
@@ -23,6 +24,12 @@ public class Glitcher : MonoBehaviour
 	
 	public bool StartGrow;
 	public bool StartMove;
+
+	public float TimeVisible;
+	public float TimeInisible;
+
+	public IEnumerator coroutine;
+	
 
 
 	void Start()
@@ -83,5 +90,26 @@ public class Glitcher : MonoBehaviour
 	{
 		StartGrow = true;
 	}
+	
+	public void Flicker()
+	{
+		StartCoroutine(FlickerTimer());
+	}
+	
+	IEnumerator FlickerTimer()
+	{
+		yield return new WaitForSeconds(TimeVisible);
+		Debug.Log("invisible");
+		gameObject.GetComponent<Text>().enabled = false;
+		StartCoroutine(SetActive());
+	}
 
+	IEnumerator SetActive()
+	{
+		yield return new WaitForSeconds(TimeInisible);
+		Debug.Log("visible");
+		gameObject.GetComponent<Text>().enabled = true;
+		StartCoroutine(FlickerTimer());
+	}
+	
 }
