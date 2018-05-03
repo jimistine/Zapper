@@ -3616,7 +3616,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 9fd6649cf05d342d7af7a70ab518187b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -5511,6 +5511,7 @@ MonoBehaviour:
   GainVoSnapshot: {fileID: 0}
   MuteMusic: {fileID: 245777860501240480, guid: d8f21f564eaad40aea199debe00cd414,
     type: 2}
+  GainMisc: {fileID: 0}
   MusicFadeoutDur: 30
   MusicFadeinDur: 0
 --- !u!4 &932989999
@@ -7501,7 +7502,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 299
     y: 131.16191
-    width: 160.46082
+    width: 164.66313
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0

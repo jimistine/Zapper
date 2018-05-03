@@ -226,7 +226,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 243098007530816306, guid: d8f21f564eaad40aea199debe00cd414,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: d32bef859b0d745edb22869fffefe6e2, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 0.02
   m_Pitch: 1
   Loop: 1
@@ -5902,6 +5902,7 @@ MonoBehaviour:
   GainVoSnapshot: {fileID: 0}
   MuteMusic: {fileID: 245777860501240480, guid: d8f21f564eaad40aea199debe00cd414,
     type: 2}
+  GainMisc: {fileID: 0}
   MusicFadeoutDur: 0
   MusicFadeinDur: 0
 --- !u!4 &932989999
@@ -7855,13 +7856,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1268022660}
-  selectedCommands:
-  - {fileID: 1268022686}
-  - {fileID: 1268022690}
-  - {fileID: 1268022675}
-  - {fileID: 1268022663}
-  - {fileID: 1268022674}
-  - {fileID: 1268022691}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -7907,7 +7902,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 294.22037
-    y: 184
+    y: 183
     width: 203
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
