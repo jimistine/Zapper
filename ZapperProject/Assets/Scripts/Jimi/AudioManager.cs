@@ -39,6 +39,7 @@ public class AudioManager : MonoBehaviour
 	public AudioMixerSnapshot NormalSFXSnapshot;
 	public AudioMixerSnapshot GainVoSnapshot;
 	public AudioMixerSnapshot MuteMusic;
+	public AudioMixerSnapshot GainMisc;
 
 	public float MusicFadeoutDur;
 	public float MusicFadeinDur;
@@ -46,6 +47,15 @@ public class AudioManager : MonoBehaviour
 	void Start()
 	{
 		SC = FindObjectOfType<SceneController>();
+
+//		if (SC.isPrototype)
+//		{
+//			Proto.TransitionTo(0);
+//		}
+//		else
+//		{
+//			NormalMaster.TransitionTo(0);
+//		}
 	}
 //
 	public void MuteSFX()
@@ -189,6 +199,11 @@ public class AudioManager : MonoBehaviour
 	public void Stop_MiscSFX_1()
 	{
 		MiscSFX_source_1.Stop();
+	}
+
+	public void Gain_Misc()
+	{
+		GainMisc.TransitionTo(0);
 	}
 //	
 	public void Wagner_Snapshot()
