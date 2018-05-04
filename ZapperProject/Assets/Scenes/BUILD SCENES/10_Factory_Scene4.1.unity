@@ -662,6 +662,8 @@ MonoBehaviour:
   GrowSpeedZ: 0
   StartGrow: 0
   StartMove: 0
+  TimeVisible: 0
+  TimeInisible: 0
 --- !u!1 &109842812
 GameObject:
   m_ObjectHideFlags: 0
@@ -939,6 +941,8 @@ MonoBehaviour:
   GrowSpeedZ: 0
   StartGrow: 0
   StartMove: 0
+  TimeVisible: 0
+  TimeInisible: 0
 --- !u!1 &235468868
 GameObject:
   m_ObjectHideFlags: 0
@@ -1530,6 +1534,8 @@ MonoBehaviour:
   GrowSpeedZ: 0
   StartGrow: 0
   StartMove: 0
+  TimeVisible: 0
+  TimeInisible: 0
 --- !u!1 &338732112
 GameObject:
   m_ObjectHideFlags: 0
@@ -1834,6 +1840,8 @@ MonoBehaviour:
   GrowSpeedZ: 0
   StartGrow: 0
   StartMove: 0
+  TimeVisible: 0
+  TimeInisible: 0
 --- !u!1 &519778268
 GameObject:
   m_ObjectHideFlags: 0
@@ -2167,6 +2175,8 @@ MonoBehaviour:
   GrowSpeedZ: 0
   StartGrow: 0
   StartMove: 0
+  TimeVisible: 0
+  TimeInisible: 0
 --- !u!1 &539426765
 GameObject:
   m_ObjectHideFlags: 0
@@ -3515,6 +3525,10 @@ MonoBehaviour:
   NormalSFXSnapshot: {fileID: 24500006, guid: 5ac80df882d8b4bbdb4f27a4b48231fc, type: 2}
   GainVoSnapshot: {fileID: 245993496100636052, guid: d8f21f564eaad40aea199debe00cd414,
     type: 2}
+  MuteMusic: {fileID: 0}
+  GainMisc: {fileID: 0}
+  MusicFadeoutDur: 0
+  MusicFadeinDur: 0
 --- !u!4 &932989999
 Transform:
   m_ObjectHideFlags: 0
@@ -3813,6 +3827,8 @@ MonoBehaviour:
   GrowSpeedZ: 0.05
   StartGrow: 0
   StartMove: 0
+  TimeVisible: 0
+  TimeInisible: 0
 --- !u!212 &1039467708
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4310,9 +4326,9 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243098007530816306, guid: d8f21f564eaad40aea199debe00cd414,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 0efdcde9e7a6d4046a4ea732626b92a4, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6a3d533a7f9ff40ffba5e43009cb859b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4505,6 +4521,8 @@ MonoBehaviour:
   GrowSpeedZ: 0
   StartGrow: 0
   StartMove: 0
+  TimeVisible: 0
+  TimeInisible: 0
 --- !u!1 &1197337386
 GameObject:
   m_ObjectHideFlags: 0
@@ -8553,6 +8571,8 @@ MonoBehaviour:
   GrowSpeedZ: 0
   StartGrow: 0
   StartMove: 0
+  TimeVisible: 0
+  TimeInisible: 0
 --- !u!1 &1504388194
 GameObject:
   m_ObjectHideFlags: 0
@@ -9530,6 +9550,8 @@ MonoBehaviour:
   GrowSpeedZ: 0
   StartGrow: 0
   StartMove: 0
+  TimeVisible: 0
+  TimeInisible: 0
 --- !u!1 &1761539914
 GameObject:
   m_ObjectHideFlags: 0
@@ -10036,6 +10058,8 @@ MonoBehaviour:
   GrowSpeedZ: 0
   StartGrow: 0
   StartMove: 0
+  TimeVisible: 0
+  TimeInisible: 0
 --- !u!1 &1910531878
 GameObject:
   m_ObjectHideFlags: 0
@@ -10132,6 +10156,8 @@ MonoBehaviour:
   GrowSpeedZ: 0
   StartGrow: 0
   StartMove: 0
+  TimeVisible: 0
+  TimeInisible: 0
 --- !u!1 &1947654309
 GameObject:
   m_ObjectHideFlags: 0
@@ -10338,6 +10364,8 @@ MonoBehaviour:
   GrowSpeedZ: 0
   StartGrow: 0
   StartMove: 0
+  TimeVisible: 0
+  TimeInisible: 0
 --- !u!1 &1978514399
 GameObject:
   m_ObjectHideFlags: 0
@@ -10739,6 +10767,8 @@ MonoBehaviour:
   GrowSpeedZ: 0.001
   StartGrow: 0
   StartMove: 0
+  TimeVisible: 0
+  TimeInisible: 0
 --- !u!1 &2048816950
 GameObject:
   m_ObjectHideFlags: 0

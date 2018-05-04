@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1021,6 +1021,7 @@ MonoBehaviour:
   GainVoSnapshot: {fileID: 0}
   MuteMusic: {fileID: 245777860501240480, guid: d8f21f564eaad40aea199debe00cd414,
     type: 2}
+  GainMisc: {fileID: 0}
   MusicFadeoutDur: 5
   MusicFadeinDur: 0
 --- !u!4 &1026155252
@@ -1938,7 +1939,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &1411999118
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1411999102}
@@ -1965,17 +1966,17 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &1411999119
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1411999102}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d7d417659cd54a6787f70f763950c34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 1411999138}
-  waitForFrames: 1
+  message: First VO (Lost)
 --- !u!114 &1411999120
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2006,7 +2007,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 291.98236, y: 214.84079}
+  scrollPos: {x: 105.39317, y: 116.6997}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 452
@@ -2018,9 +2019,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1411999138}
-  selectedCommands:
-  - {fileID: 1411999240}
+  - {fileID: 1411999164}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -2091,7 +2091,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 95.92728
     y: 88.25627
-    width: 125.12029
+    width: 126.33191
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2179,7 +2179,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -92.816345
     y: 86.804985
-    width: 173.58499
+    width: 176.00824
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2337,7 +2337,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &1411999137
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1411999102}
@@ -2377,7 +2377,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 243.67041
     y: 84.82026
-    width: 125.12029
+    width: 128.14934
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2530,7 +2530,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &1411999145
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1411999102}
@@ -2883,7 +2883,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 237.62921
     y: 154.12056
-    width: 134.81323
+    width: 136.63066
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2928,7 +2928,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &1411999166
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1411999102}
@@ -3278,7 +3278,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 65.3089
     y: 347.10037
-    width: 161.46881
+    width: 163.28625
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3682,7 +3682,7 @@ MonoBehaviour:
   waitUntilFinished: 1
 --- !u!114 &1411999206
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1411999102}
@@ -3735,7 +3735,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 389.04022
     y: 147.57181
-    width: 289.90027
+    width: 298.3816
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3887,7 +3887,7 @@ MonoBehaviour:
   waitUntilFinished: 1
 --- !u!114 &1411999216
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1411999102}
@@ -3940,7 +3940,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 390.89825
     y: 80.84771
-    width: 289.90027
+    width: 298.3816
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5419,7 +5419,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 05a01975ee5e54344a3ad71be44a5671, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.321
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0

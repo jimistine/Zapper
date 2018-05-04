@@ -3959,7 +3959,7 @@ MonoBehaviour:
   VO_source_8: {fileID: 299418576}
   VO_source_9: {fileID: 663951328}
   VO_source_10: {fileID: 541818849}
-  Music_source: {fileID: 0}
+  Music_source: {fileID: 1487958841}
   Ambient_source: {fileID: 1188189461}
   MiscSFX_source_1: {fileID: 328688257}
   Shoot: {fileID: 8300000, guid: d9c57a9112493498799157d96964bb3f, type: 3}
@@ -3975,6 +3975,11 @@ MonoBehaviour:
   NormalSFXSnapshot: {fileID: 24500006, guid: 5ac80df882d8b4bbdb4f27a4b48231fc, type: 2}
   GainVoSnapshot: {fileID: 245993496100636052, guid: d8f21f564eaad40aea199debe00cd414,
     type: 2}
+  MuteMusic: {fileID: 245777860501240480, guid: d8f21f564eaad40aea199debe00cd414,
+    type: 2}
+  GainMisc: {fileID: 245101799975984254, guid: 5ac80df882d8b4bbdb4f27a4b48231fc, type: 2}
+  MusicFadeoutDur: 0
+  MusicFadeinDur: 0
 --- !u!4 &932989999
 Transform:
   m_ObjectHideFlags: 0
@@ -4452,6 +4457,7 @@ MonoBehaviour:
   IsinStartPosition: 0
   wire1: {fileID: 0}
   canInput: 1
+  JoystickInUse: 0
 --- !u!61 &1039467706
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5574,6 +5580,7 @@ GameObject:
   - component: {fileID: 1268022684}
   - component: {fileID: 1268022686}
   - component: {fileID: 1268022685}
+  - component: {fileID: 1268022687}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -5608,7 +5615,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1268022660}
   selectedCommands:
-  - {fileID: 1268022671}
+  - {fileID: 1268022676}
   variables: []
   description: 
   stepPause: 0
@@ -5670,6 +5677,7 @@ MonoBehaviour:
   - {fileID: 1268022661}
   - {fileID: 1268022674}
   - {fileID: 1268022676}
+  - {fileID: 1268022687}
   - {fileID: 1268022673}
   - {fileID: 1268022710}
   - {fileID: 1268022675}
@@ -6019,8 +6027,8 @@ MonoBehaviour:
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: AudioManager
-  targetMethod: Play_MiscSFX_1
-  targetMethodText: 'Play_MiscSFX_1 (): Void'
+  targetMethod: Stop_Muisc
+  targetMethodText: 'Stop_Muisc (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
@@ -6250,6 +6258,33 @@ MonoBehaviour:
   targetComponentText: AudioManager
   targetMethod: GainVO
   targetMethodText: 'GainVO (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1268022687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1268022657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 67
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 932989997}
+  targetComponentAssemblyName: AudioManager, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: AudioManager
+  targetMethod: Play_MiscSFX_1
+  targetMethodText: 'Play_MiscSFX_1 (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
@@ -7626,9 +7661,9 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243098007530816306, guid: d8f21f564eaad40aea199debe00cd414,
     type: 2}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 6a3d533a7f9ff40ffba5e43009cb859b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0

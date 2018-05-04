@@ -39,7 +39,7 @@ Transform:
   m_GameObject: {fileID: 1902694361661754}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.3161128, y: -0.3810165, z: 1}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -113,6 +113,24 @@ MonoBehaviour:
   isReturningCharge: 0
   ChargesCurrentWire: {fileID: 0}
   new_Sprite: {fileID: 0}
+  player: {fileID: 0}
+  fusebox1: {fileID: 0}
+  fusebox2: {fileID: 0}
+  fusebox3: {fileID: 0}
+  fusebox4: {fileID: 0}
+  alarm1: {fileID: 0}
+  alarm2: {fileID: 0}
+  alarm3: {fileID: 0}
+  alarm4: {fileID: 0}
+  wire1: {fileID: 0}
+  wire2: {fileID: 0}
+  wire3: {fileID: 0}
+  wire4: {fileID: 0}
+  platform1: {fileID: 0}
+  platform2: {fileID: 0}
+  platform3: {fileID: 0}
+  platform4: {fileID: 0}
+  anim: {fileID: 0}
 --- !u!212 &212592848819860892
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -145,7 +163,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1725716987
-  m_SortingLayer: 6
+  m_SortingLayer: 4
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 9d692e9d25d154b53a4b96f67f70767a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
