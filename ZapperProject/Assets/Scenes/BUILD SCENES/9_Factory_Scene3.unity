@@ -8494,14 +8494,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: 1791657620474538, guid: ff713b0a23d9646e783db29a0f0c7f3c, type: 2}
-  - {fileID: 1791657620474538, guid: ff713b0a23d9646e783db29a0f0c7f3c, type: 2}
-  - {fileID: 1791657620474538, guid: ff713b0a23d9646e783db29a0f0c7f3c, type: 2}
+  - {fileID: 1899373791477148, guid: 372fdceddad1c401b9015a0845ca327a, type: 2}
+  - {fileID: 1899373791477148, guid: 372fdceddad1c401b9015a0845ca327a, type: 2}
+  - {fileID: 1899373791477148, guid: 372fdceddad1c401b9015a0845ca327a, type: 2}
   WireToSpawn: {fileID: 0}
   spawnRate: 1.1
   spawnRateMin: 2.25
   spawnRateMax: 0.5
-  gapSpace: 0.2
+  gapSpace: 0.7
   TotalCrowsForLevel: 0
   BeginingDelay: 3
   DelayBeforeStart: 0
@@ -10807,7 +10807,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}

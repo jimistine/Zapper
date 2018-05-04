@@ -625,7 +625,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -2018,7 +2018,7 @@ Prefab:
     - target: {fileID: 114953354116052668, guid: bf27c202ee50141d69a620111a69480e,
         type: 2}
       propertyPath: selectedCommands.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4235797061913842, guid: bf27c202ee50141d69a620111a69480e, type: 2}
       propertyPath: m_LocalPosition.x
@@ -2111,7 +2111,7 @@ Prefab:
         type: 2}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 1462903766}
+      objectReference: {fileID: 1462903813}
     - target: {fileID: 114598376556601752, guid: bf27c202ee50141d69a620111a69480e,
         type: 2}
       propertyPath: nodeRect.y
@@ -2994,12 +2994,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1462903762}
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
---- !u!114 &1462903766 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114598376556601752, guid: bf27c202ee50141d69a620111a69480e,
-    type: 2}
-  m_PrefabInternal: {fileID: 1462903762}
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
 --- !u!1 &1462903784 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1079967422432648, guid: bf27c202ee50141d69a620111a69480e,
@@ -3367,7 +3361,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 568.33075
     y: 107.936264
-    width: 255.87471
+    width: 254.86552
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3707,7 +3701,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 561.9915
     y: 186.65016
-    width: 255.87471
+    width: 254.86552
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5396,7 +5390,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 398.1477
     y: 116.83308
-    width: 127.70761
+    width: 126.698425
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
