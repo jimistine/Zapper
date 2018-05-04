@@ -3168,10 +3168,12 @@ MonoBehaviour:
   Music: {fileID: 8300000, guid: 0efdcde9e7a6d4046a4ea732626b92a4, type: 3}
   Ambient: {fileID: 8300000, guid: f6115ab4eb8ae4fd3b57495345d17b70, type: 3}
   Wagner: {fileID: 245067496763653946, guid: d8f21f564eaad40aea199debe00cd414, type: 2}
-  NormalMaster: {fileID: 0}
+  NormalMaster: {fileID: 245744949524360078, guid: d8f21f564eaad40aea199debe00cd414,
+    type: 2}
   MuteSFXSnapshot: {fileID: 0}
   NormalSFXSnapshot: {fileID: 0}
-  GainVoSnapshot: {fileID: 0}
+  GainVoSnapshot: {fileID: 245993496100636052, guid: d8f21f564eaad40aea199debe00cd414,
+    type: 2}
   MuteMusic: {fileID: 0}
   GainMisc: {fileID: 0}
   MusicFadeoutDur: 0
@@ -4154,6 +4156,8 @@ GameObject:
   - component: {fileID: 1268022671}
   - component: {fileID: 1268022665}
   - component: {fileID: 1268022663}
+  - component: {fileID: 1268022672}
+  - component: {fileID: 1268022673}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -4187,8 +4191,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1268022660}
-  selectedCommands:
-  - {fileID: 1268022671}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -4231,7 +4234,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 239
+    x: 240
     y: 159
     width: 120
     height: 40
@@ -4247,6 +4250,8 @@ MonoBehaviour:
   - {fileID: 1268022667}
   - {fileID: 1268022669}
   - {fileID: 1268022665}
+  - {fileID: 1268022673}
+  - {fileID: 1268022672}
   - {fileID: 1268022664}
   - {fileID: 1268022663}
   - {fileID: 1268022661}
@@ -4328,8 +4333,8 @@ MonoBehaviour:
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: AudioManager
-  targetMethod: Play_VO_2
-  targetMethodText: 'Play_VO_2 (): Void'
+  targetMethod: RestoreMaster
+  targetMethodText: 'RestoreMaster (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
@@ -4471,6 +4476,60 @@ MonoBehaviour:
     floatRef: {fileID: 0}
     floatVal: 3
   durationOLD: 0
+--- !u!114 &1268022672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1268022657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 16
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 932989997}
+  targetComponentAssemblyName: AudioManager, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: AudioManager
+  targetMethod: Play_VO_2
+  targetMethodText: 'Play_VO_2 (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1268022673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1268022657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 17
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 932989997}
+  targetComponentAssemblyName: AudioManager, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: AudioManager
+  targetMethod: Wagner_Snapshot
+  targetMethodText: 'Wagner_Snapshot (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!1 &1288270199
 GameObject:
   m_ObjectHideFlags: 0

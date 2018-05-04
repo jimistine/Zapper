@@ -1735,6 +1735,7 @@ GameObject:
   - component: {fileID: 521591095}
   - component: {fileID: 521591097}
   - component: {fileID: 521591096}
+  - component: {fileID: 521591098}
   m_Layer: 5
   m_Name: C
   m_TagString: Untagged
@@ -1799,6 +1800,30 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 521591094}
+--- !u!114 &521591098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 521591094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e1195e1fa858402e93b1372151403e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  new_Sprite: {fileID: 0}
+  new_Sprite2: {fileID: 0}
+  Move1: {x: 0, y: 0}
+  Move2: {x: 0, y: 0}
+  MoveSpeed: 0
+  NewScale: {x: 0, y: 0, z: 0}
+  GrowSpeedX: 0
+  GrowSpeedY: 0
+  GrowSpeedZ: 0
+  StartGrow: 0
+  StartMove: 0
+  TimeVisible: 0.02
+  TimeInisible: 1
 --- !u!1 &524834029
 GameObject:
   m_ObjectHideFlags: 0
@@ -3874,10 +3899,12 @@ MonoBehaviour:
   Music: {fileID: 8300000, guid: f6115ab4eb8ae4fd3b57495345d17b70, type: 3}
   Ambient: {fileID: 8300000, guid: f6115ab4eb8ae4fd3b57495345d17b70, type: 3}
   Wagner: {fileID: 245067496763653946, guid: d8f21f564eaad40aea199debe00cd414, type: 2}
-  NormalMaster: {fileID: 0}
+  NormalMaster: {fileID: 245744949524360078, guid: d8f21f564eaad40aea199debe00cd414,
+    type: 2}
   MuteSFXSnapshot: {fileID: 0}
   NormalSFXSnapshot: {fileID: 0}
-  GainVoSnapshot: {fileID: 0}
+  GainVoSnapshot: {fileID: 245993496100636052, guid: d8f21f564eaad40aea199debe00cd414,
+    type: 2}
   MuteMusic: {fileID: 0}
   GainMisc: {fileID: 0}
   MusicFadeoutDur: 0
@@ -4960,6 +4987,10 @@ GameObject:
   - component: {fileID: 1268022697}
   - component: {fileID: 1268022696}
   - component: {fileID: 1268022698}
+  - component: {fileID: 1268022699}
+  - component: {fileID: 1268022700}
+  - component: {fileID: 1268022701}
+  - component: {fileID: 1268022702}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -4993,7 +5024,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1268022659}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1268022702}
   variables: []
   description: 
   stepPause: 0
@@ -5032,8 +5064,10 @@ MonoBehaviour:
   - {fileID: 1268022663}
   - {fileID: 1268022661}
   - {fileID: 1268022690}
+  - {fileID: 1268022702}
   - {fileID: 1268022674}
   - {fileID: 1268022695}
+  - {fileID: 1268022701}
   - {fileID: 1268022673}
   - {fileID: 1268022691}
   - {fileID: 1268022660}
@@ -5389,8 +5423,10 @@ MonoBehaviour:
   - {fileID: 1268022692}
   - {fileID: 1268022693}
   - {fileID: 1268022680}
-  - {fileID: 1268022696}
+  - {fileID: 1268022700}
+  - {fileID: 1268022699}
   - {fileID: 1268022697}
+  - {fileID: 1268022696}
   - {fileID: 1268022688}
 --- !u!114 &1268022677
 MonoBehaviour:
@@ -5853,8 +5889,8 @@ MonoBehaviour:
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: AudioManager
-  targetMethod: Play_VO_1
-  targetMethodText: 'Play_VO_1 (): Void'
+  targetMethod: RestoreMaster
+  targetMethodText: 'RestoreMaster (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
@@ -5899,6 +5935,114 @@ MonoBehaviour:
   targetComponentText: AudioManager
   targetMethod: Play_Ambient
   targetMethodText: 'Play_Ambient (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1268022699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1268022657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 39
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 932989997}
+  targetComponentAssemblyName: AudioManager, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: AudioManager
+  targetMethod: Play_VO_1
+  targetMethodText: 'Play_VO_1 (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1268022700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1268022657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 40
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 932989997}
+  targetComponentAssemblyName: AudioManager, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: AudioManager
+  targetMethod: GainVO
+  targetMethodText: 'GainVO (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1268022701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1268022657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 41
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 932989997}
+  targetComponentAssemblyName: AudioManager, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: AudioManager
+  targetMethod: Stop_Ambient
+  targetMethodText: 'Stop_Ambient (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1268022702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1268022657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 42
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 521591094}
+  targetComponentAssemblyName: Glitcher, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: Glitcher
+  targetMethod: Flicker
+  targetMethodText: 'Flicker (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
@@ -7459,14 +7603,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: 1791657620474538, guid: ff713b0a23d9646e783db29a0f0c7f3c, type: 2}
-  - {fileID: 1791657620474538, guid: ff713b0a23d9646e783db29a0f0c7f3c, type: 2}
-  - {fileID: 1791657620474538, guid: ff713b0a23d9646e783db29a0f0c7f3c, type: 2}
+  - {fileID: 1899373791477148, guid: 372fdceddad1c401b9015a0845ca327a, type: 2}
+  - {fileID: 1899373791477148, guid: 372fdceddad1c401b9015a0845ca327a, type: 2}
+  - {fileID: 1899373791477148, guid: 372fdceddad1c401b9015a0845ca327a, type: 2}
   WireToSpawn: {fileID: 0}
   spawnRate: 1.1
   spawnRateMin: 2.25
   spawnRateMax: 0.5
-  gapSpace: 0.3
+  gapSpace: 0.8
   TotalCrowsForLevel: 0
   BeginingDelay: 3
   DelayBeforeStart: 0
