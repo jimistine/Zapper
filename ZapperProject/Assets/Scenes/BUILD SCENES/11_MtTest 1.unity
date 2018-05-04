@@ -168,6 +168,10 @@ MonoBehaviour:
   MuteSFXSnapshot: {fileID: 0}
   NormalSFXSnapshot: {fileID: 0}
   GainVoSnapshot: {fileID: 0}
+  MuteMusic: {fileID: 0}
+  GainMisc: {fileID: 0}
+  MusicFadeoutDur: 0
+  MusicFadeinDur: 0
 --- !u!4 &4922282
 Transform:
   m_ObjectHideFlags: 0
@@ -1199,7 +1203,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 942307764}
+  - {fileID: 1952166444}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1408,80 +1412,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
---- !u!1 &942307763
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 942307764}
-  - component: {fileID: 942307766}
-  - component: {fileID: 942307765}
-  m_Layer: 5
-  m_Name: Score
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &942307764
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 942307763}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 784285052}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 149.31322, y: 208.00002}
-  m_SizeDelta: {x: 224.4, y: 63.4}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &942307765
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 942307763}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.8215008, g: 0.41176468, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: 6e8653675cf2149dfa2f37295a0242f7, type: 3}
-    m_FontSize: 33
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 41
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Score
---- !u!222 &942307766
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 942307763}
 --- !u!1001 &948397249
 Prefab:
   m_ObjectHideFlags: 0
@@ -2266,7 +2196,7 @@ MonoBehaviour:
   CheckPoint2Length: 100
   CheckPoint3Length: 150
   SC: {fileID: 0}
-  DebbugerControls: 1
+  DebbugerControls: 0
   IsTemp: 1
 --- !u!1 &1294914166
 GameObject:
@@ -2941,7 +2871,7 @@ MonoBehaviour:
   WireThreeObject: {fileID: 1461425780}
   WireFourObject: {fileID: 2074991039}
   PlayerObject: {fileID: 356407441}
-  ScoreUI: {fileID: 942307763}
+  ScoreUI: {fileID: 0}
   ClocksBrokenUI: {fileID: 0}
   TimeRemainingUI: {fileID: 0}
   CameraObj: {fileID: 505271568}
@@ -3126,6 +3056,110 @@ MonoBehaviour:
   WillCancleNormalSpawn: 000000
   WireCoreographer: {fileID: 1461425780}
   WireNum: 3
+--- !u!1 &1952166443
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1952166444}
+  - component: {fileID: 1952166447}
+  - component: {fileID: 1952166446}
+  - component: {fileID: 1952166445}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1952166444
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1952166443}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 784285052}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -28.6, y: 154.8}
+  m_SizeDelta: {x: 271.36, y: 134.98}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1952166445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1952166443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff5bffe9ef7aceb408362f0d9478259e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FullTextBox: ']Jimi Stine''s Zapper] By Jimi Stine'
+  IntervalPerCharMin: 0.5
+  IntervalPerCharMax: 2
+  StoreStartTime: 0
+  IsStarted: 0
+--- !u!114 &1952166446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1952166443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 32
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: 'Jimi Stine''s Zapper
+
+    Lead Designer:Jimi Stine
+
+    Lead Programmer Erik Miller
+
+    Lead Artist Junege Hong
+
+
+    Other Job Jimi Stine
+
+    Other Job Jimi Stine
+
+    Administrator Kate Smith'
+--- !u!222 &1952166447
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1952166443}
 --- !u!1 &1953511503
 GameObject:
   m_ObjectHideFlags: 0
