@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Security.Policy;
 using UnityEngine;
 using Fungus;
 
@@ -18,11 +19,16 @@ public class MountainVOManager : MonoBehaviour {
 		if (MemoryOBJ.GetComponent<Memory>().PlayedMtn_1)
 		{
 			Flowchart.BroadcastFungusMessage("second");
-			Destroy(this);
+		//	Destroy(this);
 		}
 		else
 		{
 			Flowchart.BroadcastFungusMessage("first");
 		}
+	}
+
+	public void UnlockDebugOnMem()
+	{
+		MemoryOBJ.GetComponent<Memory>().UnlockDebugger();
 	}
 }
