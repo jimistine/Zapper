@@ -14,16 +14,15 @@ public class MountainVOManager : MonoBehaviour {
 
 	public void CheckStateToLoad()
 	{
-		if (MemoryOBJ.GetComponent<Memory>().PlayedMtn_1 &&
-		    MemoryOBJ.GetComponent<Memory>().PlayedMtn_2 ==false)
-		{
-			Flowchart.BroadcastFungusMessage("first");
-		}
-		
-		if (MemoryOBJ.GetComponent<Memory>().PlayedMtn_1 &&
-		    MemoryOBJ.GetComponent<Memory>().PlayedMtn_2)
+
+		if (MemoryOBJ.GetComponent<Memory>().PlayedMtn_1)
 		{
 			Flowchart.BroadcastFungusMessage("second");
+			Destroy(this);
+		}
+		else
+		{
+			Flowchart.BroadcastFungusMessage("first");
 		}
 	}
 }
