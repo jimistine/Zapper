@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Fungus;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -17,8 +18,7 @@ public class Memory : MonoBehaviour {
     public bool checkPoint2Reahced; //wire 4
     public bool checkPoint3Reahced; //wire 3
 
-    public bool PlayedMtn_1;
-    public bool PlayedMtn_2;
+    public bool PlayedMtn_1 = false;
 
     public float CheckPoint1Length;
     public float CheckPoint2Length;
@@ -32,6 +32,7 @@ public class Memory : MonoBehaviour {
     void Start () {
         SC = FindObjectOfType<SceneController>();
         UpdateMountainSceneOnLoad();
+    //    SetTimesVisitedMtn();
     }
 	
 	// Update is called once per frame
@@ -40,10 +41,10 @@ public class Memory : MonoBehaviour {
         {
             DontDestroyOnLoad(transform.gameObject);
         }
-       if (SC.isMountainLevel == true && IsTemp == false)
-        {
-            Destroy(gameObject);
-        }
+//       if (SC.isMountainLevel == true && IsTemp == false)
+//        {
+//            Destroy(gameObject);
+//        }
         if (SC != null)
         {
             if (SC.PlayerObject.transform.position.y >= CheckPoint1Length && checkPoint1Reahced == false)
@@ -58,6 +59,7 @@ public class Memory : MonoBehaviour {
             {
                 checkPoint3Reahced = true;
                 UnlockDebugger();
+                Flowchart.BroadcastFungusMessage("top");
             }
             if (SC.isMountainLevel == true)
             {
@@ -150,6 +152,7 @@ public class Memory : MonoBehaviour {
         SC.PlayerObject.GetComponent<ChracterController>().FindCurrentWire();
         SC.PlayerObject.GetComponent<ChracterController>().IsinStartPosition = false;
     }
+   
     public void UnlockDebugger()
     {
         DebbugerControls = true;
