@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -27,8 +28,17 @@ public class CreditTextControlelr : MonoBehaviour {
         {
             StartCoroutine(DelayPrintNext());
         }
-		
 	}
+
+    public void Start_Typing()
+    {
+        StartCoroutine(DelayPrintNext());
+    }
+    
+    public void Start_Deleting()
+    {
+        StartCoroutine(DelayDeleteNext());
+    }
 
     public void StartTextTime()
     {
@@ -85,6 +95,37 @@ public class CreditTextControlelr : MonoBehaviour {
                 //StartCoroutine(DelayPrintNext(x));
                 //Debug.Log(x);
                 gameObject.GetComponent<Text>().text += x;
+            }
+        }
+        Debug.Log("Finish");
+    }
+    
+    IEnumerator DelayDeleteNext()
+    {
+        Debug.Log("Start");
+        
+        ConvertedText = new string[FullTextBox.Length];
+
+        for (int i = 0; i < FullTextBox.Length; i++)
+        {
+            ConvertedText[i] = System.Convert.ToString(FullTextBox[i]);
+        }
+
+        foreach (string x in ConvertedText)
+        {
+            if (x == "]")
+            {
+                yield return new WaitForSeconds(Random.Range(IntervalPerCharMin, IntervalPerCharMax));
+                //StartCoroutine(DelayPrintNext(x));
+                //Debug.Log("\n");
+                gameObject.GetComponent<Text>().text += "\n";
+            }
+            else
+            {
+                yield return new WaitForSeconds(Random.Range(IntervalPerCharMin, IntervalPerCharMax));
+                //StartCoroutine(DelayPrintNext(x));
+                //Debug.Log(x);
+                gameObject.GetComponent<Text>().text.Reverse();
             }
         }
         Debug.Log("Finish");
