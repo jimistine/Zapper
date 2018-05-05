@@ -277,8 +277,8 @@ public class ChracterController : MonoBehaviour {
             }
 	        if (Input.GetKey(KeyCode.UpArrow) || Input.GetAxis("Vertical") == 1 && Input.GetAxis("Horizontal") == 0 && transform.position.y >= PlayerCurrentWire.GetComponent<Wires>().WirePositionTop && PlayerCurrentWire.GetComponent<Wires>().isSummitWire == true) 
             {
-                //for now when the player reaches the top of the wire, win that level. 
-                SC.WinLevel();
+                // for now when the player reaches the top of the wire, win that level. 
+                // SC.WinLevel();
             }
         }
 		if (Input.GetKey(KeyCode.Space) || Input.GetButtonUp("Jump") && CanShoot == true && Time.timeSinceLevelLoad > 0.5)

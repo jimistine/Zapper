@@ -216,6 +216,11 @@ public class crowSpawner : MonoBehaviour {
         }
         return EnemyToSpawn;
     }
+    
+    public void SwapEnemytype(int x, GameObject y)
+    {
+        enemies[x] = y;
+    }
 }
 
 

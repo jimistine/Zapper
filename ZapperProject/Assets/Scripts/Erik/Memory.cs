@@ -17,6 +17,9 @@ public class Memory : MonoBehaviour {
     public bool checkPoint2Reahced; //wire 4
     public bool checkPoint3Reahced; //wire 3
 
+    public bool PlayedMtn_1;
+    public bool PlayedMtn_2;
+
     public float CheckPoint1Length;
     public float CheckPoint2Length;
     public float CheckPoint3Length;
