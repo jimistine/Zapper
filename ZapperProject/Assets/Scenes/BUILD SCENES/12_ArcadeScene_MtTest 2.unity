@@ -3097,8 +3097,8 @@ MonoBehaviour:
   TimeRemainingUI: {fileID: 0}
   CameraObj: {fileID: 505271568}
   plusOne: {fileID: 0}
-  CannotLose: 0
-  CannotWin: 0
+  CannotLose: 1
+  CannotWin: 1
   isMountainLevel: 1
   isFactory: 0
   isPrototype: 0

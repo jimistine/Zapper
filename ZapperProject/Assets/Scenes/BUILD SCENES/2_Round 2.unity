@@ -5425,7 +5425,7 @@ MonoBehaviour:
     type: 2}
   NewChargeObjects: {fileID: 0}
   CanShoot: 1
-  CanMoveLeftRight: 1
+  CanMoveLeftRight: 0
   IsUsingCharge_1: 1
   isFalling: 0
   ChargingAmount: 0

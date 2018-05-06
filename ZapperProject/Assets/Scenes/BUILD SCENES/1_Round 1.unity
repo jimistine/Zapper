@@ -4394,6 +4394,7 @@ MonoBehaviour:
   checkPoint1Reahced: 0
   checkPoint2Reahced: 0
   checkPoint3Reahced: 0
+  PlayedMtn_1: 0
   CheckPoint1Length: 0
   CheckPoint2Length: 0
   CheckPoint3Length: 0
@@ -5562,7 +5563,7 @@ MonoBehaviour:
     type: 2}
   NewChargeObjects: {fileID: 0}
   CanShoot: 1
-  CanMoveLeftRight: 1
+  CanMoveLeftRight: 0
   IsUsingCharge_1: 1
   isFalling: 0
   ChargingAmount: 0
@@ -12163,7 +12164,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 1, g: 0.47794116, b: 0.47794116, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
