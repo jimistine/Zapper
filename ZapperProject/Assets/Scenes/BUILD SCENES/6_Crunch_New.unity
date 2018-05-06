@@ -1312,7 +1312,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u2022 How can a game convince the masses there cogs in capitalist machine?"
+  m_Text: "\u2022 How can a game convince the masses they're cogs in capitalist machine?"
 --- !u!222 &957427225
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -37,7 +37,15 @@ public class Memory : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-       if (IsTemp == false)
+	    
+	    if (Input.GetKeyDown(KeyCode.R))
+	    {
+	        SceneManager.LoadScene("0_TempTitleScreen");
+	       
+	        Destroy(this.gameObject);
+	    }
+	    
+	    if (IsTemp == false)
         {
             DontDestroyOnLoad(transform.gameObject);
         }
@@ -45,7 +53,9 @@ public class Memory : MonoBehaviour {
 //        {
 //            Destroy(gameObject);
 //        }
-        if (SC != null)
+	    if (IsTemp == true)
+	    {
+	        if (SC != null)
         {
             if (SC.PlayerObject.transform.position.y >= CheckPoint1Length && checkPoint1Reahced == false)
             {
@@ -59,6 +69,7 @@ public class Memory : MonoBehaviour {
             {
                 checkPoint3Reahced = true;
                 UnlockDebugger();
+                Debug.Log("PLAY TOP");
                 Flowchart.BroadcastFungusMessage("top");
             }
             if (SC.isMountainLevel == true)
@@ -82,14 +93,17 @@ public class Memory : MonoBehaviour {
                 if (checkPoint1Reahced && SC.PlayerObject.GetComponent<ChracterController>().PlayersStartingPositionY <= CheckPoint1Length)
                 {
                     SC.PlayerObject.GetComponent<ChracterController>().PlayersStartingPositionY = CheckPoint1Length;
+                    SC.PlayerObject.GetComponent<ChracterController>().MinWirePosition = 2;
                 }
                 if (checkPoint2Reahced && SC.PlayerObject.GetComponent<ChracterController>().PlayersStartingPositionY <= CheckPoint2Length)
                 {
                     SC.PlayerObject.GetComponent<ChracterController>().PlayersStartingPositionY = CheckPoint2Length;
+                    SC.PlayerObject.GetComponent<ChracterController>().MaxWirePosition = 3;
                 }
                 if (checkPoint3Reahced && SC.PlayerObject.GetComponent<ChracterController>().PlayersStartingPositionY <= CheckPoint3Length)
                 {
                     SC.PlayerObject.GetComponent<ChracterController>().PlayersStartingPositionY = CheckPoint3Length;
+                    SC.PlayerObject.GetComponent<ChracterController>().MaxWirePosition = 2;
                 }
             }
         }
@@ -114,6 +128,8 @@ public class Memory : MonoBehaviour {
                 SceneManager.LoadScene("12_ArcadeScene_MtTest 2");
             }
         }
+	    }
+        
     }
     public void StoreMemory(int x, bool y)
     {
@@ -157,4 +173,5 @@ public class Memory : MonoBehaviour {
     {
         DebbugerControls = true;
     }
+    
 }

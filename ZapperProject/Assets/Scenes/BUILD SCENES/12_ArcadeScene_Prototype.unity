@@ -532,6 +532,7 @@ MonoBehaviour:
   checkPoint1Reahced: 0
   checkPoint2Reahced: 0
   checkPoint3Reahced: 0
+  PlayedMtn_1: 0
   CheckPoint1Length: 0
   CheckPoint2Length: 0
   CheckPoint3Length: 0
@@ -5247,20 +5248,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa59b36efab174bc1889d226690c1308, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SC: {fileID: 0}
   VO_Delay: 0
   Hit_source: {fileID: 0}
   Shoot_source: {fileID: 0}
   FailSound_source: {fileID: 0}
-  VO_source: {fileID: 0}
+  VO_source_1: {fileID: 0}
+  VO_source_2: {fileID: 0}
+  VO_source_3: {fileID: 0}
+  VO_source_4: {fileID: 0}
+  VO_source_5: {fileID: 0}
+  VO_source_6: {fileID: 0}
+  VO_source_7: {fileID: 0}
+  VO_source_8: {fileID: 0}
+  VO_source_9: {fileID: 0}
+  VO_source_10: {fileID: 0}
   Music_source: {fileID: 0}
   Ambient_source: {fileID: 0}
+  MiscSFX_source_1: {fileID: 0}
   Shoot: {fileID: 0}
   Fail: {fileID: 0}
   Hit: {fileID: 0}
   Music: {fileID: 0}
   Ambient: {fileID: 0}
   Wagner: {fileID: 0}
-  NormalAmbient: {fileID: 0}
+  NormalMaster: {fileID: 0}
+  MuteSFXSnapshot: {fileID: 0}
+  NormalSFXSnapshot: {fileID: 0}
+  GainVoSnapshot: {fileID: 0}
+  MuteMusic: {fileID: 0}
+  GainMisc: {fileID: 0}
+  MusicFadeoutDur: 0
+  MusicFadeinDur: 0
 --- !u!4 &932989999
 Transform:
   m_ObjectHideFlags: 0
@@ -5768,7 +5787,6 @@ MonoBehaviour:
     type: 2}
   NewChargeObjects: {fileID: 1539209488794968, guid: aa0f0005512d94fcb9ae3b97facc8aea,
     type: 2}
-  mySpriteRenderer: {fileID: 0}
   CanShoot: 1
   CanMoveLeftRight: 1
   IsUsingCharge_1: 1
@@ -5781,6 +5799,7 @@ MonoBehaviour:
   IsinStartPosition: 0
   wire1: {fileID: 0}
   canInput: 1
+  JoystickInUse: 0
 --- !u!61 &1039467706
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7746,7 +7765,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 405
     y: 91
-    width: 122
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11895,6 +11914,7 @@ MonoBehaviour:
   isPrototype: 1
   isArcade: 1
   PlayerControl: {fileID: 0}
+  AM: {fileID: 0}
   ChargeScript: {fileID: 0}
   Spawner: {fileID: 0}
   SpawnerObject: {fileID: 1761539914}

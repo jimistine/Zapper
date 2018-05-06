@@ -42,7 +42,9 @@ public class Charge : MonoBehaviour {
 
 	bool HasCalledFailFunction; 
 
-	public Animator anim; 
+	public Animator anim;
+
+	public List<GameObject> HitUnits;
 
 
 	// Use this for initialization
@@ -158,9 +160,18 @@ public class Charge : MonoBehaviour {
 		{
 			if (SC.isPrototype && collision.gameObject.tag== "Target")
 			{
-				Destroy(collision.gameObject);
-				Destroy(gameObject);
-
+				
+				HitUnits.Add(collision.gameObject);
+				if (HitUnits.Count == 1)
+				{
+					Destroy(collision.gameObject);
+					Destroy(gameObject);
+				}
+				else if (HitUnits.Count > 1)
+				{
+					Destroy(HitUnits[0]);
+					Destroy(gameObject);
+				}
 			}
 
 			if (collision.gameObject.tag == "Target" && isReturningCharge == false)
@@ -201,8 +212,19 @@ public class Charge : MonoBehaviour {
 
 				if (collision.gameObject.GetComponent<crowMove>().isBird)
 				{
-					collision.gameObject.GetComponent<crowMove>().CrowZap(); //run the function on the crowScript 
+					HitUnits.Add(collision.gameObject);
 
+					if (HitUnits.Count == 1)
+					{
+						collision.gameObject.GetComponent<crowMove>().CrowZap();
+						Destroy(gameObject);
+					}
+					else if (HitUnits.Count > 1)
+					{
+						HitUnits[0].gameObject.GetComponent<crowMove>().CrowZap();
+						HitUnits.Clear();
+						Destroy(gameObject);
+					}
 				}
 
 				if (collision.gameObject.GetComponent<crowMove>().isClock == true ||
