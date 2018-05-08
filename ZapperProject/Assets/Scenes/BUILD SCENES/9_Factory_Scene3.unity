@@ -5747,11 +5747,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -17, y: 47}
+  scrollPos: {x: -126.88194, y: 124.3598}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 1
+  zoom: 0.795079
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -5759,9 +5759,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1268022660}
-  selectedCommands:
-  - {fileID: 1268022676}
+  - {fileID: 1268022669}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -5804,8 +5803,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 239
-    y: 127
+    x: 241.51547
+    y: 116.93811
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -6358,7 +6357,7 @@ MonoBehaviour:
   waitForFrames: 1
 --- !u!114 &1268022685
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -6385,7 +6384,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &1268022686
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -6412,7 +6411,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &1268022687
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -7546,7 +7545,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 875.8, y: 543.8}
+  m_SizeDelta: {x: 1574.2, y: 977.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1487958839
 GameObject:

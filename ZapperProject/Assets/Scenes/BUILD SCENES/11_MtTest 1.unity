@@ -250,7 +250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 52207716}
+  selectedFlowchart: {fileID: 701927456}
 --- !u!4 &14406648
 Transform:
   m_ObjectHideFlags: 1
@@ -312,11 +312,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 177.37791, y: 61.98198}
+  scrollPos: {x: 279.42642, y: 81.30394}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.89995867
+  zoom: 0.70495725
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -325,8 +325,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 52207717}
-  selectedCommands:
-  - {fileID: 52207732}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -352,7 +351,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 120
-    y: 120
+    y: 121.11116
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -736,7 +735,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &52207735
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 52207715}
@@ -2054,9 +2053,6 @@ GameObject:
   - component: {fileID: 701927473}
   - component: {fileID: 701927472}
   - component: {fileID: 701927475}
-  - component: {fileID: 701927477}
-  - component: {fileID: 701927474}
-  - component: {fileID: 701927476}
   - component: {fileID: 701927478}
   - component: {fileID: 701927479}
   - component: {fileID: 701927480}
@@ -2075,6 +2071,7 @@ GameObject:
   - component: {fileID: 701927491}
   - component: {fileID: 701927492}
   - component: {fileID: 701927489}
+  - component: {fileID: 701927474}
   m_Layer: 0
   m_Name: Start Flowchart
   m_TagString: Untagged
@@ -2095,7 +2092,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -184, y: -140}
+  scrollPos: {x: -94, y: -77}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -2107,7 +2104,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 701927473}
+  - {fileID: 701927475}
   selectedCommands: []
   variables: []
   description: 
@@ -2522,7 +2519,7 @@ MonoBehaviour:
   - {fileID: 701927481}
 --- !u!114 &701927474
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 701927455}
@@ -2531,16 +2528,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 16
+  itemId: 41
   indentLevel: 0
   description: 
-  targetObject: {fileID: 1952166443}
-  targetComponentAssemblyName: CreditTextControlelr, Assembly-CSharp, Version=0.0.0.0,
-    Culture=neutral, PublicKeyToken=null
+  targetObject: {fileID: 1582703084}
+  targetComponentAssemblyName: Glitcher, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: CreditTextControlelr
-  targetMethod: Start_Deleting
-  targetMethodText: 'Start_Deleting (): Void'
+  targetComponentText: Glitcher
+  targetMethod: MoveSprite
+  targetMethodText: 'MoveSprite (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
@@ -2560,64 +2557,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 119
-    y: 147
+    x: 34
+    y: 166
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 14
-  blockName: Typing test
+  blockName: tester
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 701927477}
-  - {fileID: 701927476}
   - {fileID: 701927474}
---- !u!114 &701927476
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 701927455}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 17
-  indentLevel: 0
-  _duration:
-    floatRef: {fileID: 0}
-    floatVal: 10
-  durationOLD: 0
---- !u!114 &701927477
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 701927455}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 15
-  indentLevel: 0
-  description: 
-  targetObject: {fileID: 1952166443}
-  targetComponentAssemblyName: CreditTextControlelr, Assembly-CSharp, Version=0.0.0.0,
-    Culture=neutral, PublicKeyToken=null
-  targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: CreditTextControlelr
-  targetMethod: Start_Typing
-  targetMethodText: 'Start_Typing (): Void'
-  methodParameters: []
-  saveReturnValue: 0
-  returnValueVariableKey: 
-  returnValueType: System.Void
-  showInherited: 0
-  callMode: 0
 --- !u!114 &701927478
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5673,7 +5624,7 @@ MonoBehaviour:
   Score: 0
   LevelSelectGateOpen: 0
   CurrentHealth: 3
-  HealthObject: {fileID: 1784129382507516, guid: 491e2e6a7a37d410f892c16f4fd7226e,
+  HealthObject: {fileID: 1784129382507516, guid: c6ef1aeb8625e443aa83f872fdc060eb,
     type: 2}
   HealthOjectOnePos: {x: -7, y: 6}
   ClocksBroken: 0
@@ -5845,6 +5796,7 @@ GameObject:
   - component: {fileID: 1916019380}
   - component: {fileID: 1916019379}
   - component: {fileID: 1916019378}
+  - component: {fileID: 1916019381}
   m_Layer: 5
   m_Name: Credits 2
   m_TagString: Untagged
@@ -5883,8 +5835,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FullTextBox: Design - JIMI STINE]Narrative Design - JIMI STINE]Produced by JIMI
     STINE]Directed by JIMI STINE]Art Direction - JIMI STINE]Featuring JIMI STINE as
-    himself]Lead Writer - JIMI STINE]Marketing - JIMI STINE]Audio Design]JIMI STINE]Insight
-    Officer - JIMI STINE]Most likely to succeed]Jimi Stine
+    himself]Lead Writer - JIMI STINE]Marketing - JIMI STINE]Audio Design - JIMI STINE]Insight
+    Officer - JIMI STINE]Most likely to succeed - JIMI STINE]Best Hair - JIMI STINE]Executive
+    Producer - JIMI STINE
   IntervalPerCharMin: 0.05
   IntervalPerCharMax: 0.09
   StoreStartTime: 0
@@ -5928,6 +5881,30 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1916019376}
+--- !u!114 &1916019381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1916019376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e1195e1fa858402e93b1372151403e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  new_Sprite: {fileID: 0}
+  new_Sprite2: {fileID: 0}
+  Move1: {x: 0, y: -1}
+  Move2: {x: 0, y: 0}
+  MoveSpeed: -7
+  NewScale: {x: 0, y: 0, z: 0}
+  GrowSpeedX: 0
+  GrowSpeedY: 0
+  GrowSpeedZ: 0
+  StartGrow: 0
+  StartMove: 0
+  TimeVisible: 0
+  TimeInisible: 0
 --- !u!1 &1934698338
 GameObject:
   m_ObjectHideFlags: 0
