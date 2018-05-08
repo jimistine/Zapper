@@ -29,7 +29,9 @@ public class ChracterController : MonoBehaviour {
     public bool isFalling = false;
 	public float ChargingAmount;
 	public float ChargingSpeed = 1;
-	public int ChargingLimit = 100;
+    public float delayBeforeShootStore = 0.5f;
+    public float delayBeforeShoot;
+    public int ChargingLimit = 100;
 
 	public float playerY;
 	public float playerX;
@@ -54,6 +56,8 @@ public class ChracterController : MonoBehaviour {
 		PlayersStartingPositionY = SC.WireTwoObject.GetComponent<Wires>().StartPositionBottom;
 
 		IsUsingCharge_1 = true;
+
+        delayBeforeShoot = delayBeforeShootStore;
 
 		//comment
 
@@ -157,14 +161,9 @@ public class ChracterController : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+       
 
-  //      if (Input.GetKeyDown (KeyCode.A)) {
-
-		//	Debug.Log ("falling!"); 
-		//	anim.SetBool ("Rock_Bool", true); 
-		//}
-
-        if(IsinStartPosition == false)
+        if (IsinStartPosition == false)
         {
             ChangeWire();
             IsinStartPosition = true;
@@ -288,30 +287,33 @@ public class ChracterController : MonoBehaviour {
                 // SC.WinLevel();
             }
         }
-		if (Input.GetKey(KeyCode.Space) || Input.GetButtonUp("Jump") && CanShoot == true && Time.timeSinceLevelLoad > 0.5)
+		if (Input.GetKey(KeyCode.Space) || Input.GetButtonUp("Jump") && CanShoot == true && Time.timeSinceLevelLoad > delayBeforeShoot)
 		{
 			ChangeWire();
+            //Debug.Log(Time.timeSinceLevelLoad + "since" + delayBeforeShoot);
 
-			if (ChargingAmount < ChargingLimit)
+            if (ChargingAmount < ChargingLimit)
 			{
 				ChargingAmount += ChargingSpeed*Time.deltaTime;
 			}
 
 		} //instantiate a "Charge" object
-		if (Input.GetKeyUp(KeyCode.Space) || Input.GetButtonUp("Jump") && CanShoot == true && Time.timeSinceLevelLoad >2)
-
+		if (Input.GetKeyUp(KeyCode.Space) || Input.GetButtonUp("Jump"))
         {
-			anim.SetBool ("Pickup_Bool", false); 
-			anim.SetBool ("Shoot_Bool", true); 
-			Debug.Log("Fire Charge");
-			ChargingAmount = 0;
-			CreateChargeObject();
-			StartCoroutine (Anim_shoot ());
-			Debug.Log("Charged to"+ChargingAmount);
-			if (SC.isPrototype == false)
-			{
-				AM.Shoot_source.PlayOneShot(AM.Shoot);
-			}
+            if (CanShoot == true && Time.timeSinceLevelLoad > delayBeforeShoot)
+            {
+                anim.SetBool("Pickup_Bool", false);
+                anim.SetBool("Shoot_Bool", true);
+                //Debug.Log("Fire Charge");
+                ChargingAmount = 0;
+                CreateChargeObject();
+                StartCoroutine(Anim_shoot());
+                //Debug.Log("Charged to" + ChargingAmount);
+                if (SC.isPrototype == false)
+                {
+                    AM.Shoot_source.PlayOneShot(AM.Shoot);
+                }
+            }
 		}
 		//if (Input.GetKeyDown (KeyCode.A)) {
 

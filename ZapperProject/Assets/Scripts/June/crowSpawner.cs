@@ -50,7 +50,7 @@ public class crowSpawner : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-        if (Time.time > DelayBeforeStart)
+        if (Time.timeSinceLevelLoad > DelayBeforeStart)
         {
             getRandY = Random.Range(1, 5);
             if (SC.WireOneObject.GetComponent<Wires>().canSpawn == false && SC.WireTwoObject.GetComponent<Wires>().canSpawn == false && SC.WireThreeObject.GetComponent<Wires>().canSpawn == false && SC.WireFourObject.GetComponent<Wires>().canSpawn == false)

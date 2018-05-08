@@ -3,6 +3,7 @@
 
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 namespace Fungus
 {
@@ -21,6 +22,8 @@ namespace Fungus
         static bool applicationIsQuitting = false;
         static object _lock = new object();
 
+        public static int menuScreenBuildIndex = 0;
+
         void Awake()
         {
             CameraManager = GetComponent<CameraManager>();
@@ -28,7 +31,9 @@ namespace Fungus
             EventDispatcher = GetComponent<EventDispatcher>();
             #if UNITY_5_3_OR_NEWER
             SaveManager = GetComponent<SaveManager>();
-            #endif
+#endif
+
+            //SceneManager.activeSceneChanged += ResetOnReset;
         }
 
         /// <summary>
@@ -43,6 +48,15 @@ namespace Fungus
         {
             applicationIsQuitting = true;
         }
+
+        //void ResetOnReset(Scene oldScene, Scene newScene)
+        //{
+        //    if (newScene.buildIndex == menuScreenBuildIndex)
+        //    {
+        //        AM.RestoreMaster();
+        //        AM.RestoreSFX();
+        //    }
+        //}
 
         #region Public methods
 

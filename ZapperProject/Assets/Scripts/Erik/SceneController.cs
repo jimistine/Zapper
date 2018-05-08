@@ -59,7 +59,7 @@ public class SceneController : MonoBehaviour {
     void Start () {
         AM = FindObjectOfType<AudioManager>();
         PlayerControl = FindObjectOfType<ChracterController>();
-        Spawner = FindObjectOfType<crowSpawner>();
+        Spawner = SpawnerObject.GetComponent<crowSpawner>();
         ScoreUpdate();
         UpdateHealth(); 
 		ChargeScript = FindObjectOfType<Charge> ();
@@ -174,6 +174,7 @@ public class SceneController : MonoBehaviour {
 
         //(for now reset level timer will change once we have a VO)
         PlayerControl.enabled = true;
+        PlayerObject.GetComponent<ChracterController>().delayBeforeShoot = PlayerObject.GetComponent<ChracterController>().delayBeforeShootStore + Time.timeSinceLevelLoad;
         Spawner.enabled = true;
         SpawnerObject.SetActive(true);
         //Score = 0;
