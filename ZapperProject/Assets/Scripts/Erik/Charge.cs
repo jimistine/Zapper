@@ -104,11 +104,6 @@ public class Charge : MonoBehaviour {
                 {
                     if (gameObject.transform.position.x < (SC.PlayerObject.transform.position.x) + 0.2f && gameObject.transform.position.x > (SC.PlayerObject.transform.position.x) - 0.2f)
                     {
-	                    if (SC.isFactory)
-	                    {
-		                    SC.Score++;
-	                    }
-	                    
                         Destroy(gameObject);
                     }
                 }
@@ -205,10 +200,13 @@ public class Charge : MonoBehaviour {
 
 					Destroy(gameObject);
 				}
-				//currently destroying birds on collisions may need to run a function for them to leave scene or some other score behaviours
+                //currently destroying birds on collisions may need to run a function for them to leave scene or some other score behaviours
 
-				SC.Score += collision.gameObject.GetComponent<crowMove>().ScoreForBird;
-				SC.ScoreUpdate();
+                if (SC.isFactory == false)
+                {
+                    SC.Score += collision.gameObject.GetComponent<crowMove>().ScoreForBird;
+                    SC.ScoreUpdate();
+                }
 
 				if (collision.gameObject.GetComponent<crowMove>().isBird)
 				{
@@ -271,8 +269,8 @@ public class Charge : MonoBehaviour {
 
 					Debug.Log ("Collected clock!"); 
 					hasTriggered = true;
-					//SC.Score++;
-					//SC.ScoreUpdate();
+					SC.Score++;
+					SC.ScoreUpdate();
 					Destroy(gameObject);
 					AM.Hit_source.PlayOneShot (AM.Hit);  
 

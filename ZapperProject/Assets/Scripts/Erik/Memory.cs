@@ -40,8 +40,7 @@ public class Memory : MonoBehaviour {
 	    
 	    if (Input.GetKeyDown(KeyCode.R))
 	    {
-	        SceneManager.LoadScene("0_TempTitleScreen");
-	       
+            SceneManager.LoadScene("0_TempTitleScreen");
 	        Destroy(this.gameObject);
 	    }
 	    

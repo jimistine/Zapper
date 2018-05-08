@@ -2591,6 +2591,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1676479805}
   - component: {fileID: 1676479804}
+  - component: {fileID: 1676479806}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -2659,6 +2660,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1676479806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1676479803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fd107b8f9b05a14ea489a51dfbc825b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AM: {fileID: 0}
 --- !u!1 &1714646079
 GameObject:
   m_ObjectHideFlags: 0
@@ -2818,7 +2831,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0.35494995
     y: 70.86994
-    width: 148
+    width: 153
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2853,7 +2866,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 1785316197}
   selectedCommands: []
   variables: []
   description: 
@@ -3524,7 +3538,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 164.50687
     y: 155.57779
-    width: 145
+    width: 151
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3612,7 +3626,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 332.35495
     y: 66.869934
-    width: 139
+    width: 143
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0

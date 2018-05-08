@@ -5698,6 +5698,7 @@ MonoBehaviour:
   isFalling: 0
   ChargingAmount: 0
   ChargingSpeed: 50
+  delayBeforeShoot: 1
   ChargingLimit: 1
   playerY: 0
   playerX: 0
