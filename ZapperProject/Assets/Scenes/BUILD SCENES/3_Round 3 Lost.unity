@@ -226,8 +226,8 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 243098007530816306, guid: d8f21f564eaad40aea199debe00cd414,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: d32bef859b0d745edb22869fffefe6e2, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 0.02
+  m_PlayOnAwake: 0
+  m_Volume: 0.04
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -418,8 +418,8 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 110
-  - 110
+  - 75
+  - 75
   RateOfSpawn:
   - 0
   - 0
@@ -2501,8 +2501,8 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 110
-  - 110
+  - 75
+  - 75
   RateOfSpawn:
   - 0
   - 0
@@ -2836,7 +2836,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243280381997923772, guid: 5ac80df882d8b4bbdb4f27a4b48231fc,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 9fd6649cf05d342d7af7a70ab518187b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 4e3fa249889274f388a4e1646bd5e44c, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.855
   m_Pitch: 1
@@ -3507,7 +3507,7 @@ MonoBehaviour:
   WirePositionTop: 0
   PlayerPositionOffsetY: 0
   ChargesPositionOffsetY: 0
-  canSpawn: 1
+  canSpawn: 0
   canWin: 0
   isSummitWire: 0
   anim: {fileID: 0}
@@ -4865,7 +4865,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 58b80b8325de94bfeab0180ee35e6b7d, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.796
+  m_Volume: 0.574
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5239,7 +5239,7 @@ MonoBehaviour:
   WirePositionTop: 0
   PlayerPositionOffsetY: 0
   ChargesPositionOffsetY: 0
-  canSpawn: 1
+  canSpawn: 0
   canWin: 0
   isSummitWire: 0
   anim: {fileID: 0}
@@ -6275,6 +6275,8 @@ MonoBehaviour:
   isFalling: 0
   ChargingAmount: 0
   ChargingSpeed: 50
+  delayBeforeShootStore: 0.5
+  delayBeforeShoot: 0
   ChargingLimit: 1
   playerY: 0
   playerX: 0
@@ -7823,6 +7825,7 @@ GameObject:
   - component: {fileID: 1268022661}
   - component: {fileID: 1268022690}
   - component: {fileID: 1268022691}
+  - component: {fileID: 1268022692}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -7843,11 +7846,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -122, y: -31}
+  scrollPos: {x: -54.116684, y: 2.4891891}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 1
+  zoom: 0.8765688
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -7856,7 +7859,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1268022660}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1268022691}
   variables: []
   description: 
   stepPause: 0
@@ -7903,7 +7907,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 294.22037
     y: 183
-    width: 203
+    width: 202.29837
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7914,6 +7918,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 1268022661}
   - {fileID: 1268022689}
+  - {fileID: 1268022692}
   - {fileID: 1268022688}
   - {fileID: 1268022687}
   - {fileID: 1268022673}
@@ -7955,7 +7960,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 33
   indentLevel: 0
-  duration: 1
+  duration: 0
   targetAlpha: 1
   waitUntilFinished: 1
   fadeColor: {r: 0, g: 0, b: 0, a: 0}
@@ -7988,7 +7993,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 11.75
+    floatVal: 11.5
   durationOLD: 0
 --- !u!114 &1268022664
 MonoBehaviour:
@@ -8477,7 +8482,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 5
+    floatVal: 3
   durationOLD: 0
 --- !u!114 &1268022687
 MonoBehaviour:
@@ -8512,7 +8517,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
   m_Name: 
@@ -8542,8 +8547,8 @@ MonoBehaviour:
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: AudioManager
-  targetMethod: Play_VO_1
-  targetMethodText: 'Play_VO_1 (): Void'
+  targetMethod: Play_Music
+  targetMethodText: 'Play_Music (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
@@ -8592,8 +8597,35 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 1
+    floatVal: 1.2
   durationOLD: 0
+--- !u!114 &1268022692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1268022657}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 36
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 932989997}
+  targetComponentAssemblyName: AudioManager, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: AudioManager
+  targetMethod: Play_VO_1
+  targetMethodText: 'Play_VO_1 (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!1 &1269346506
 GameObject:
   m_ObjectHideFlags: 0
@@ -9373,8 +9405,8 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 110
-  - 110
+  - 75
+  - 75
   RateOfSpawn:
   - 0
   - 0
@@ -9505,8 +9537,8 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 110
-  - 110
+  - 75
+  - 75
   RateOfSpawn:
   - 0
   - 0
@@ -10266,7 +10298,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 19e7650fdd2c341b2a1e31580b123351, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -12416,7 +12448,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 2069cbe1b43b14402916e01a9db34b1d, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.236
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -12683,7 +12715,7 @@ MonoBehaviour:
   TimeRemainingUI: {fileID: 819539346}
   CameraObj: {fileID: 0}
   plusOne: {fileID: 0}
-  CannotLose: 0
+  CannotLose: 1
   CannotWin: 0
   isMountainLevel: 0
   isFactory: 0

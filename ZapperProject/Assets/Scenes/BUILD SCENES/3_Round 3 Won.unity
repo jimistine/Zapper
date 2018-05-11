@@ -214,7 +214,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 19e7650fdd2c341b2a1e31580b123351, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -418,8 +418,8 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 115
-  - 115
+  - 80
+  - 80
   RateOfSpawn:
   - 0
   - 0
@@ -903,11 +903,11 @@ AudioSource:
   m_GameObject: {fileID: 110068982}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 243395208255712686, guid: d8f21f564eaad40aea199debe00cd414,
+  OutputAudioMixerGroup: {fileID: 243098007530816306, guid: d8f21f564eaad40aea199debe00cd414,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: d32bef859b0d745edb22869fffefe6e2, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 0.02
+  m_PlayOnAwake: 0
+  m_Volume: 0.04
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2129,7 +2129,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243395208255712686, guid: d8f21f564eaad40aea199debe00cd414,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 721901bd60e42423cac8f7fd69d71b51, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 0d8496f54b60b41879aabe954c5cb694, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.655
   m_Pitch: 1
@@ -2618,8 +2618,8 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 115
-  - 115
+  - 80
+  - 80
   RateOfSpawn:
   - 0
   - 0
@@ -3614,9 +3614,9 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243280381997923772, guid: 5ac80df882d8b4bbdb4f27a4b48231fc,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 9fd6649cf05d342d7af7a70ab518187b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 4e3fa249889274f388a4e1646bd5e44c, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.855
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -5884,6 +5884,8 @@ MonoBehaviour:
   isFalling: 0
   ChargingAmount: 0
   ChargingSpeed: 50
+  delayBeforeShootStore: 0.5
+  delayBeforeShoot: 0
   ChargingLimit: 1
   playerY: 0
   playerX: 0
@@ -7437,11 +7439,10 @@ GameObject:
   - component: {fileID: 1268022689}
   - component: {fileID: 1268022688}
   - component: {fileID: 1268022687}
-  - component: {fileID: 1268022675}
-  - component: {fileID: 1268022674}
   - component: {fileID: 1268022691}
   - component: {fileID: 1268022693}
   - component: {fileID: 1268022692}
+  - component: {fileID: 1268022674}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -7475,7 +7476,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1268022659}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1268022688}
   variables: []
   description: 
   stepPause: 0
@@ -7514,6 +7516,7 @@ MonoBehaviour:
   - {fileID: 1268022672}
   - {fileID: 1268022684}
   - {fileID: 1268022686}
+  - {fileID: 1268022674}
   - {fileID: 1268022685}
   - {fileID: 1268022671}
   - {fileID: 1268022676}
@@ -7541,8 +7544,6 @@ MonoBehaviour:
   - {fileID: 1268022687}
   - {fileID: 1268022693}
   - {fileID: 1268022692}
-  - {fileID: 1268022675}
-  - {fileID: 1268022674}
 --- !u!114 &1268022660
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -7758,7 +7759,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &1268022671
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -7814,16 +7815,16 @@ MonoBehaviour:
   waitForFrames: 1
 --- !u!114 &1268022674
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 37
+  itemId: 41
   indentLevel: 0
   description: 
   targetObject: {fileID: 932989997}
@@ -7831,31 +7832,14 @@ MonoBehaviour:
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: AudioManager
-  targetMethod: Fade_Out_Music
-  targetMethodText: 'Fade_Out_Music (): Void'
+  targetMethod: Play_VO_1
+  targetMethodText: 'Play_VO_1 (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
---- !u!114 &1268022675
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1268022657}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 36
-  indentLevel: 0
-  _duration:
-    floatRef: {fileID: 0}
-    floatVal: 50
-  durationOLD: 0
 --- !u!114 &1268022676
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -8036,7 +8020,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &1268022684
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -8054,11 +8038,11 @@ MonoBehaviour:
   fadeTexture: {fileID: 0}
 --- !u!114 &1268022685
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
   m_Name: 
@@ -8071,7 +8055,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &1268022686
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -8088,8 +8072,8 @@ MonoBehaviour:
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: AudioManager
-  targetMethod: Play_VO_1
-  targetMethodText: 'Play_VO_1 (): Void'
+  targetMethod: Play_Music
+  targetMethodText: 'Play_Music (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
@@ -8098,7 +8082,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &1268022687
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -8125,7 +8109,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &1268022688
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -8138,11 +8122,11 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 11.75
+    floatVal: 11.5
   durationOLD: 0
 --- !u!114 &1268022689
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -8169,7 +8153,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &1268022690
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -8182,11 +8166,11 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 10
+    floatVal: 6
   durationOLD: 0
 --- !u!114 &1268022691
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -8202,7 +8186,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &1268022692
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -8229,7 +8213,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &1268022693
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -8877,8 +8861,8 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 115
-  - 115
+  - 80
+  - 80
   RateOfSpawn:
   - 0
   - 0
@@ -9082,8 +9066,8 @@ MonoBehaviour:
   SpawnType: 000000000000000000000000
   BeatTime:
   - 0
-  - 115
-  - 115
+  - 80
+  - 80
   RateOfSpawn:
   - 0
   - 0
@@ -12639,7 +12623,7 @@ MonoBehaviour:
   TimeRemainingUI: {fileID: 0}
   CameraObj: {fileID: 0}
   plusOne: {fileID: 0}
-  CannotLose: 0
+  CannotLose: 1
   CannotWin: 0
   isMountainLevel: 0
   isFactory: 0
@@ -12654,7 +12638,7 @@ MonoBehaviour:
   TotalLevelTime: 0
   Score: 0
   LevelSelectGateOpen: 0
-  CurrentHealth: 3
+  CurrentHealth: 5
   HealthObject: {fileID: 1784129382507516, guid: 491e2e6a7a37d410f892c16f4fd7226e,
     type: 2}
   HealthOjectOnePos: {x: -9, y: 6.5}
