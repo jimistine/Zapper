@@ -6,7 +6,8 @@ AudioMixerController:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: SFX
-  m_OutputGroup: {fileID: 0}
+  m_OutputGroup: {fileID: 243586202683911828, guid: d8f21f564eaad40aea199debe00cd414,
+    type: 2}
   m_MasterGroup: {fileID: 24300002}
   m_Snapshots:
   - {fileID: 24500006}
@@ -77,11 +78,11 @@ AudioMixerSnapshotController:
     9c340d201e06b4e28a853b736033e2e5: -15.421314
     f895ccb0696304c16a62c70cf07bf54d: 7.9871106
     7d8bc3c0786f04100b39c9ce8455213f: -17.938717
-    85167d143b6c64b39af0edbd50aeb124: -14.221897
+    85167d143b6c64b39af0edbd50aeb124: -13.63726
     270439d681d734b25ac0d95781243b78: 0
     496f770d6cd1648c590bc742295d1af1: -21.302511
     c00f47cde843e4c46ba8396928043cd5: -9.332112
-    da89cabe5e715412b887579608dc876d: 3.1596472
+    da89cabe5e715412b887579608dc876d: 0.3945702
     f9d84ebe91def4ebcb3c784477bd77c8: 3.8
   m_TransitionOverrides: {}
 --- !u!243 &243166076895325428

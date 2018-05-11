@@ -91,25 +91,47 @@ public class Glitcher : MonoBehaviour
 		StartGrow = true;
 	}
 	
-	public void Flicker()
+	public void FlickerText()
 	{
-		StartCoroutine(FlickerTimer());
+		StartCoroutine(FlickerTimerText());
 	}
 	
-	IEnumerator FlickerTimer()
+	IEnumerator FlickerTimerText()
 	{
 		yield return new WaitForSeconds(TimeVisible);
 		Debug.Log("invisible");
 		gameObject.GetComponent<Text>().enabled = false;
-		StartCoroutine(SetActive());
+		StartCoroutine(SetActiveText());
 	}
 
-	IEnumerator SetActive()
+	IEnumerator SetActiveText()
 	{
 		yield return new WaitForSeconds(TimeInisible);
 		Debug.Log("visible");
 		gameObject.GetComponent<Text>().enabled = true;
-		StartCoroutine(FlickerTimer());
+		StartCoroutine(FlickerTimerText());
+	}
+	
+	
+	public void FlickerSprite()
+	{
+		StartCoroutine(FlickerTimerSprite());
+	}
+	
+	IEnumerator FlickerTimerSprite()
+	{
+		yield return new WaitForSeconds(TimeVisible);
+		Debug.Log("invisible");
+		gameObject.GetComponent<SpriteRenderer>().enabled = false;
+		StartCoroutine(SetActiveSprite());
+	}
+
+	IEnumerator SetActiveSprite()
+	{
+		yield return new WaitForSeconds(TimeInisible);
+		Debug.Log("visible");
+		gameObject.GetComponent<SpriteRenderer>().enabled = true;
+		StartCoroutine(FlickerTimerSprite());
 	}
 	
 }

@@ -6,11 +6,11 @@ using UnityEngine.SceneManagement;
 
 
 public class Memory : MonoBehaviour {
-    public bool WonFirstRound;
+    public bool WonFirstRound = true;
     public bool WonSecondRound;
     public bool WonThirdRound;
     
-    public bool PlayedFirstRound;
+    public bool PlayedFirstRound = true;
     public bool PlayedSecondRound;
     public bool PlayedThirdRound;
 
@@ -28,6 +28,8 @@ public class Memory : MonoBehaviour {
 
     public bool DebbugerControls = false;
     public bool IsTemp = false;
+    public bool PlayedTop = false;
+    
     // Use this for initialization
     void Start () {
         SC = FindObjectOfType<SceneController>();
@@ -68,8 +70,12 @@ public class Memory : MonoBehaviour {
             {
                 checkPoint3Reahced = true;
                 UnlockDebugger();
-                Debug.Log("PLAY TOP");
-                Flowchart.BroadcastFungusMessage("top");
+                if (PlayedTop == false)
+                {
+                   PlayTop();
+                   PlayedTop = true;
+                }
+
             }
             if (SC.isMountainLevel == true)
             {
@@ -171,6 +177,13 @@ public class Memory : MonoBehaviour {
     public void UnlockDebugger()
     {
         DebbugerControls = true;
+    }
+
+    public void PlayTop()
+    {
+        Debug.Log("PLAY TOP");
+        Flowchart.BroadcastFungusMessage("top");
+        PlayedTop = true;
     }
     
 }

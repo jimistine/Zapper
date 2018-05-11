@@ -3935,6 +3935,8 @@ MonoBehaviour:
   isFalling: 0
   ChargingAmount: 0
   ChargingSpeed: 50
+  delayBeforeShootStore: 0.5
+  delayBeforeShoot: 0
   ChargingLimit: 1
   playerY: 0
   playerX: 0
@@ -5967,8 +5969,8 @@ MonoBehaviour:
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: Glitcher
-  targetMethod: Flicker
-  targetMethodText: 'Flicker (): Void'
+  targetMethod: FlickerText
+  targetMethodText: 'FlickerText (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 

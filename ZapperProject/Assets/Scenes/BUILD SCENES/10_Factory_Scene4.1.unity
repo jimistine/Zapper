@@ -3773,6 +3773,8 @@ MonoBehaviour:
   isFalling: 0
   ChargingAmount: 0
   ChargingSpeed: 50
+  delayBeforeShootStore: 0.5
+  delayBeforeShoot: 0
   ChargingLimit: 1
   playerY: 0
   playerX: 0
@@ -4948,8 +4950,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1268022672}
-  selectedCommands:
-  - {fileID: 1268022753}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
