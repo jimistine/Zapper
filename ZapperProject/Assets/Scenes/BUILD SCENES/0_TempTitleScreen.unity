@@ -2855,7 +2855,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 99.49313, y: 14.422211}
+  scrollPos: {x: 77.49313, y: 100.42221}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 329
@@ -2866,10 +2866,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1785316201}
-  selectedCommands:
-  - {fileID: 1785316170}
+  selectedBlocks: []
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -3657,8 +3655,8 @@ MonoBehaviour:
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: Glitcher
-  targetMethod: Flicker
-  targetMethodText: 'Flicker (): Void'
+  targetMethod: FlickerText
+  targetMethodText: 'FlickerText (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 

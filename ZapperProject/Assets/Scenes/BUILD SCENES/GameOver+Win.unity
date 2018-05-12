@@ -3319,6 +3319,60 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
+--- !u!114 &1462903802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1462903784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 407
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1218779445}
+  targetComponentAssemblyName: AudioManager, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: AudioManager
+  targetMethod: RestoreSFX
+  targetMethodText: 'RestoreSFX (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1462903803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1462903784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 406
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1218779445}
+  targetComponentAssemblyName: AudioManager, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: AudioManager
+  targetMethod: Fade_Out_Music
+  targetMethodText: 'Fade_Out_Music (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!114 &1462903812
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -4870,8 +4924,8 @@ MonoBehaviour:
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: Glitcher
-  targetMethod: Flicker
-  targetMethodText: 'Flicker (): Void'
+  targetMethod: FlickerText
+  targetMethodText: 'FlickerText (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
@@ -4897,8 +4951,8 @@ MonoBehaviour:
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: Glitcher
-  targetMethod: Flicker
-  targetMethodText: 'Flicker (): Void'
+  targetMethod: FlickerText
+  targetMethodText: 'FlickerText (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
@@ -5367,8 +5421,8 @@ MonoBehaviour:
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: AudioManager
-  targetMethod: Fade_Out_Music
-  targetMethodText: 'Fade_Out_Music (): Void'
+  targetMethod: RestoreMaster
+  targetMethodText: 'RestoreMaster (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
@@ -5418,8 +5472,10 @@ MonoBehaviour:
   - {fileID: 1462903894}
   - {fileID: 1462903886}
   - {fileID: 1462903903}
-  - {fileID: 1462903906}
+  - {fileID: 1462903803}
   - {fileID: 1462903905}
+  - {fileID: 1462903906}
+  - {fileID: 1462903802}
   - {fileID: 1462903881}
 --- !u!114 &1462903908
 MonoBehaviour:

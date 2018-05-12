@@ -232,7 +232,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -2018,8 +2018,7 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1411999164}
+  selectedBlocks: []
   selectedCommands: []
   variables: []
   description: 
@@ -4407,8 +4406,8 @@ MonoBehaviour:
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: Glitcher
-  targetMethod: Flicker
-  targetMethodText: 'Flicker (): Void'
+  targetMethod: FlickerText
+  targetMethodText: 'FlickerText (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
@@ -4434,8 +4433,8 @@ MonoBehaviour:
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: Glitcher
-  targetMethod: Flicker
-  targetMethodText: 'Flicker (): Void'
+  targetMethod: FlickerText
+  targetMethodText: 'FlickerText (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
