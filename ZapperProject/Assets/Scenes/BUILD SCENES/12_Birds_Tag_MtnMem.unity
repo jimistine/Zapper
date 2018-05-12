@@ -868,6 +868,100 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1001 &117666623
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2108482168}
+    m_Modifications:
+    - target: {fileID: 444618, guid: 020e37ff76a92f54b8546bb2655ae3f2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 444618, guid: 020e37ff76a92f54b8546bb2655ae3f2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -6.6099997
+      objectReference: {fileID: 0}
+    - target: {fileID: 444618, guid: 020e37ff76a92f54b8546bb2655ae3f2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 444618, guid: 020e37ff76a92f54b8546bb2655ae3f2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 444618, guid: 020e37ff76a92f54b8546bb2655ae3f2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 444618, guid: 020e37ff76a92f54b8546bb2655ae3f2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 444618, guid: 020e37ff76a92f54b8546bb2655ae3f2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 444618, guid: 020e37ff76a92f54b8546bb2655ae3f2, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 144618, guid: 020e37ff76a92f54b8546bb2655ae3f2, type: 2}
+      propertyPath: m_Name
+      value: Snow Effect
+      objectReference: {fileID: 0}
+    - target: {fileID: 444618, guid: 020e37ff76a92f54b8546bb2655ae3f2, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1.3125
+      objectReference: {fileID: 0}
+    - target: {fileID: 19844620, guid: 020e37ff76a92f54b8546bb2655ae3f2, type: 2}
+      propertyPath: InitialModule.startRotationX.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19844620, guid: 020e37ff76a92f54b8546bb2655ae3f2, type: 2}
+      propertyPath: InitialModule.startRotationY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19844620, guid: 020e37ff76a92f54b8546bb2655ae3f2, type: 2}
+      propertyPath: randomSeed
+      value: -129816510
+      objectReference: {fileID: 0}
+    - target: {fileID: 144620, guid: 020e37ff76a92f54b8546bb2655ae3f2, type: 2}
+      propertyPath: m_Name
+      value: snow line
+      objectReference: {fileID: 0}
+    - target: {fileID: 444620, guid: 020e37ff76a92f54b8546bb2655ae3f2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 11.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 19844620, guid: 020e37ff76a92f54b8546bb2655ae3f2, type: 2}
+      propertyPath: InitialModule.gravityModifier.scalar
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 19844620, guid: 020e37ff76a92f54b8546bb2655ae3f2, type: 2}
+      propertyPath: InitialModule.maxNumParticles
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 19844620, guid: 020e37ff76a92f54b8546bb2655ae3f2, type: 2}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 19844620, guid: 020e37ff76a92f54b8546bb2655ae3f2, type: 2}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 19844620, guid: 020e37ff76a92f54b8546bb2655ae3f2, type: 2}
+      propertyPath: simulationSpeed
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 19844620, guid: 020e37ff76a92f54b8546bb2655ae3f2, type: 2}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 2.6
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 020e37ff76a92f54b8546bb2655ae3f2, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &155293670
 GameObject:
   m_ObjectHideFlags: 0
@@ -4431,6 +4525,10 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!4 &777571105 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 444618, guid: 020e37ff76a92f54b8546bb2655ae3f2, type: 2}
+  m_PrefabInternal: {fileID: 117666623}
 --- !u!1 &790181265
 GameObject:
   m_ObjectHideFlags: 0
@@ -5684,6 +5782,8 @@ MonoBehaviour:
   isFalling: 0
   ChargingAmount: 0
   ChargingSpeed: 50
+  delayBeforeShootStore: 0.5
+  delayBeforeShoot: 0
   ChargingLimit: 1
   playerY: 0
   playerX: 0
@@ -12498,7 +12598,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.91, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 777571105}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
