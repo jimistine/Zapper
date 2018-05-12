@@ -112,7 +112,7 @@ public class crowMove : MonoBehaviour {
         SC.CurrentHealth--;
 		if (isClock == true)
 		{
-			SC.ClocksBroken++;
+			//SC.ClocksBroken++;
             goSpeed = 0;
 			StartCoroutine (clockDestructionWait ()); 
 		}
@@ -138,6 +138,7 @@ public class crowMove : MonoBehaviour {
         Debug.Log ("started enum"); 
 		anim.SetBool ("Zap_Bool", true); 
 		yield return new WaitForSeconds (1.2f); 
+		SC.ClocksBroken++;
 		SC.RestartLevel (); 
 
 	}

@@ -23,8 +23,6 @@ public class SceneController : MonoBehaviour {
     public GameObject TimeRemainingUI;
     public GameObject CameraObj;
 
-	public GameObject plusOne; 
-
     public bool CannotLose;
     public bool CannotWin;
     public bool isMountainLevel;
@@ -67,13 +65,7 @@ public class SceneController : MonoBehaviour {
 
 
 
-        //GameObject MemoryObj = GameObject.Find("Memory");
-
-        if (isFactory)
-        {
-            plusOne.GetComponent<SpriteRenderer> ().enabled = false; 
-        }
-        
+        //GameObject MemoryObj = GameObject.Find("Memory")
 	}
     private void Update()
     {

@@ -4266,7 +4266,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 19844620, guid: 020e37ff76a92f54b8546bb2655ae3f2, type: 2}
       propertyPath: InitialModule.startSpeed.scalar
-      value: 2.58
+      value: 2.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 19844620, guid: 020e37ff76a92f54b8546bb2655ae3f2, type: 2}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 19844620, guid: 020e37ff76a92f54b8546bb2655ae3f2, type: 2}
+      propertyPath: simulationSpeed
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 020e37ff76a92f54b8546bb2655ae3f2, type: 2}
