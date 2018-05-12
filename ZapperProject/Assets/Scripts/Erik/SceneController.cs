@@ -159,9 +159,9 @@ public class SceneController : MonoBehaviour {
         
         //reset the delay before play timer
 		if (isMountainLevel) {
-			Spawner.DelayBeforeStart = DelayBeforeStartTime + Time.time + 1;
+			Spawner.DelayBeforeStart = DelayBeforeStartTime + Time.timeSinceLevelLoad + 0.5f;
 		} else {
-			Spawner.DelayBeforeStart = DelayBeforeStartTime + Time.time - 1;
+			Spawner.DelayBeforeStart = DelayBeforeStartTime + Time.timeSinceLevelLoad - 0.5f;
 		}
         Spawner.StoreAddedTime = 0;
         Spawner.spawnRate = Spawner.spawnRateMin - ((Spawner.spawnRateMin - Spawner.spawnRate)/2);
