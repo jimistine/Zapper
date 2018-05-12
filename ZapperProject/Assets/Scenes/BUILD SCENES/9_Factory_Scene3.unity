@@ -354,7 +354,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 638, y: 133}
+  m_AnchoredPosition: {x: 702.1715, y: 190.94281}
   m_SizeDelta: {x: 520.1, y: 63.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &54358772
@@ -378,10 +378,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: ed39e38f753ee4094afb7d6177971abb, type: 3}
-    m_FontSize: 10
+    m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 72
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -389,7 +389,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: CLOCKS BROKEN
+  m_Text: "CLOCKS \nBROKEN"
 --- !u!222 &54358773
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1513,7 +1513,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 477, y: 136.00006}
+  m_AnchoredPosition: {x: 469, y: 159}
   m_SizeDelta: {x: 520.1, y: 63.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &427623404
@@ -1528,7 +1528,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1537,10 +1537,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: ed39e38f753ee4094afb7d6177971abb, type: 3}
-    m_FontSize: 15
+    m_FontSize: 34
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 72
     m_Alignment: 1
     m_AlignByGeometry: 0
@@ -1792,7 +1792,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 319, y: 155.19995}
+  m_AnchoredPosition: {x: 229.7713, y: 158}
   m_SizeDelta: {x: 520.1, y: 63.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &493400705
@@ -1816,7 +1816,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: ed39e38f753ee4094afb7d6177971abb, type: 3}
-    m_FontSize: 50
+    m_FontSize: 34
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -3171,8 +3171,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 698673948}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.329, y: 4.86, z: 0}
-  m_LocalScale: {x: 8.486717, y: 8.886689, z: 1}
+  m_LocalPosition: {x: -1.02, y: 4.78, z: 0}
+  m_LocalScale: {x: 12.424598, y: 9.169879, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 44
@@ -5633,7 +5633,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 638, y: 167.1434}
+  m_AnchoredPosition: {x: 576.8856, y: 190.11426}
   m_SizeDelta: {x: 520.1, y: 63.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1253598677
@@ -5657,10 +5657,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: ed39e38f753ee4094afb7d6177971abb, type: 3}
-    m_FontSize: 10
+    m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 72
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -5668,7 +5668,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: CLOCKS BUILT
+  m_Text: "CLOCKS\n BUILT"
 --- !u!222 &1253598678
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8091,7 +8091,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1591155811}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.403356, y: 5.9625993, z: 0}
+  m_LocalPosition: {x: 5.19, y: 6.95, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8688,7 +8688,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 537, y: 191.00003}
+  m_AnchoredPosition: {x: 465.1715, y: 191}
   m_SizeDelta: {x: 520.1, y: 63.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1800268685
@@ -8712,7 +8712,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: ed39e38f753ee4094afb7d6177971abb, type: 3}
-    m_FontSize: 14
+    m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -8723,7 +8723,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: TIME LEFT
+  m_Text: "TIME \nLEFT"
 --- !u!222 &1800268686
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9816,7 +9816,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 477, y: 171.30582}
+  m_AnchoredPosition: {x: 347, y: 159}
   m_SizeDelta: {x: 520.1, y: 63.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1908365527
@@ -9831,7 +9831,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.025354939, g: 0.7352941, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -9840,10 +9840,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: ed39e38f753ee4094afb7d6177971abb, type: 3}
-    m_FontSize: 15
+    m_FontSize: 34
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 72
     m_Alignment: 1
     m_AlignByGeometry: 0
