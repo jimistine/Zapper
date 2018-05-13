@@ -158,7 +158,7 @@ AudioMixerGroupController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: SpawnClock
+  m_Name: SpawnClock(SFX)
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: 94df225ea996a43c199ef27da27ee23a
   m_Children: []

@@ -7860,7 +7860,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1268022660}
   selectedCommands:
-  - {fileID: 1268022691}
+  - {fileID: 1268022673}
   variables: []
   description: 
   stepPause: 0
@@ -8190,7 +8190,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 8
+    floatVal: 8.5
   durationOLD: 0
 --- !u!114 &1268022674
 MonoBehaviour:
@@ -8482,7 +8482,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 3
+    floatVal: 1
   durationOLD: 0
 --- !u!114 &1268022687
 MonoBehaviour:
