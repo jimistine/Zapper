@@ -130,7 +130,7 @@ public class crowSpawner : MonoBehaviour {
 
         //add in function of escalating spawns and changing type chance over time.
         //need to track time since last reset/begining 
-        TimeSinceFail = Time.time - (BeginingDelay - 1);
+        TimeSinceFail = Time.timeSinceLevelLoad - (BeginingDelay - 1);
         //develop an increment to allow escalation
         if (TimeSinceFail> StoreAddedTime + (DelayBeforeStart + ((TimeSinceFailLevelsCapMax-(TimeSinceFailLevels-1)))))
         {

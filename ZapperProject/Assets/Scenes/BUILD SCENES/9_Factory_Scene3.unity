@@ -8953,7 +8953,6 @@ GameObject:
   - component: {fileID: 1906541686}
   - component: {fileID: 1906541685}
   - component: {fileID: 1906541684}
-  - component: {fileID: 1906541683}
   - component: {fileID: 1906541682}
   - component: {fileID: 1906541681}
   - component: {fileID: 1906541680}
@@ -9012,23 +9011,6 @@ MonoBehaviour:
     stringVal: 10_Factory_Scene4.1
   loadingImage: {fileID: 0}
   sceneNameOLD: 
---- !u!114 &1906541683
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1906541679}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 87
-  indentLevel: 0
-  _duration:
-    floatRef: {fileID: 0}
-    floatVal: 2.5
-  durationOLD: 0
 --- !u!114 &1906541684
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -9655,7 +9637,6 @@ MonoBehaviour:
   - {fileID: 1906541688}
   - {fileID: 1906541687}
   - {fileID: 1906541696}
-  - {fileID: 1906541683}
   - {fileID: 1906541700}
   - {fileID: 1906541693}
   - {fileID: 1906541695}
@@ -9759,7 +9740,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1906541711}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1906541700}
   variables: []
   description: 
   stepPause: 0
