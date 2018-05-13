@@ -1001,7 +1001,7 @@ AudioSource:
   m_GameObject: {fileID: 257783353}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 243280381997923772, guid: 5ac80df882d8b4bbdb4f27a4b48231fc,
+  OutputAudioMixerGroup: {fileID: 243852737019755854, guid: d8f21f564eaad40aea199debe00cd414,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 05cc85d4fed2e49b0a7f58834bda3d7b, type: 3}
   m_PlayOnAwake: 0
@@ -4977,7 +4977,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 592.23755
     y: 146.84387
-    width: 156.33496
+    width: 159.72864
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5861,7 +5861,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 595.26917
     y: 213.58609
-    width: 194.79655
+    width: 199.32144
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10057,7 +10057,6 @@ MonoBehaviour:
   ClocksBrokenUI: {fileID: 0}
   TimeRemainingUI: {fileID: 0}
   CameraObj: {fileID: 0}
-  plusOne: {fileID: 0}
   CannotLose: 0
   CannotWin: 0
   isMountainLevel: 0
@@ -10706,7 +10705,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 1, g: 0.47794116, b: 0.47794116, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0

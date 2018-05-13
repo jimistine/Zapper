@@ -879,7 +879,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 1, g: 0.47794116, b: 0.47794116, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -3123,7 +3123,6 @@ MonoBehaviour:
   ClocksBrokenUI: {fileID: 0}
   TimeRemainingUI: {fileID: 0}
   CameraObj: {fileID: 505271568}
-  plusOne: {fileID: 0}
   CannotLose: 1
   CannotWin: 1
   isMountainLevel: 1

@@ -4401,6 +4401,7 @@ MonoBehaviour:
   SC: {fileID: 0}
   DebbugerControls: 0
   IsTemp: 0
+  PlayedTop: 0
 --- !u!212 &882245101
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5568,6 +5569,8 @@ MonoBehaviour:
   isFalling: 0
   ChargingAmount: 0
   ChargingSpeed: 50
+  delayBeforeShootStore: 0.5
+  delayBeforeShoot: 0
   ChargingLimit: 1
   playerY: 0
   playerX: 0
@@ -11355,7 +11358,6 @@ MonoBehaviour:
   ClocksBrokenUI: {fileID: 0}
   TimeRemainingUI: {fileID: 0}
   CameraObj: {fileID: 0}
-  plusOne: {fileID: 0}
   CannotLose: 0
   CannotWin: 0
   isMountainLevel: 0
@@ -11788,8 +11790,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2064401255}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.227, y: -7.7, z: 0.3}
-  m_LocalScale: {x: 2.188365, y: 1, z: 1}
+  m_LocalPosition: {x: 0.065, y: -7.7, z: 0.3}
+  m_LocalScale: {x: 2.1687593, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 14
