@@ -13,6 +13,9 @@ public class AudioManager : MonoBehaviour
 	public AudioSource Hit_source;
 	public AudioSource Shoot_source;
 	public AudioSource FailSound_source;
+	public AudioSource PlayerHit_source;
+	public AudioSource PlayerDeath_source;
+	
 	public AudioSource VO_source_1;
 	public AudioSource VO_source_2;
 	public AudioSource VO_source_3;
@@ -32,7 +35,10 @@ public class AudioManager : MonoBehaviour
 	public AudioClip Hit;
 	public AudioClip Music;
 	public AudioClip Ambient;
+	public AudioClip PlayerHit;
+	public AudioClip PlayerDeath;
 
+	
 	public AudioMixerSnapshot Wagner;
 	public AudioMixerSnapshot NormalMaster;
 	public AudioMixerSnapshot MuteSFXSnapshot;
@@ -47,15 +53,11 @@ public class AudioManager : MonoBehaviour
 	void Start()
 	{
 		SC = FindObjectOfType<SceneController>();
+	}
 
-//		if (SC.isPrototype)
-//		{
-//			Proto.TransitionTo(0);
-//		}
-//		else
-//		{
-//			NormalMaster.TransitionTo(0);
-//		}
+	void Update()
+	{
+		
 	}
 //
 	public void MuteSFX()

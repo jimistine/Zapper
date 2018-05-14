@@ -1654,6 +1654,8 @@ GameObject:
   - component: {fileID: 1411999137}
   - component: {fileID: 1411999118}
   - component: {fileID: 1411999119}
+  - component: {fileID: 1411999248}
+  - component: {fileID: 1411999247}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -2018,8 +2020,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 1411999138}
+  selectedCommands:
+  - {fileID: 1411999235}
   variables: []
   description: 
   stepPause: 0
@@ -2090,7 +2094,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 95.92728
     y: 89.46789
-    width: 126.33191
+    width: 125.12029
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2178,7 +2182,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -91.60473
     y: 85.59337
-    width: 176.00824
+    width: 173.58499
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2376,7 +2380,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 243.67041
     y: 84.82026
-    width: 128.14934
+    width: 125.12029
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2413,8 +2417,10 @@ MonoBehaviour:
   - {fileID: 1411999238}
   - {fileID: 1411999237}
   - {fileID: 1411999236}
-  - {fileID: 1411999235}
+  - {fileID: 1411999248}
   - {fileID: 1411999234}
+  - {fileID: 1411999235}
+  - {fileID: 1411999247}
   - {fileID: 1411999130}
 --- !u!114 &1411999139
 MonoBehaviour:
@@ -2882,7 +2888,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 237.62921
     y: 152.90894
-    width: 136.63066
+    width: 134.81323
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3277,7 +3283,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 65.3089
     y: 347.10037
-    width: 163.28625
+    width: 161.46881
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3734,7 +3740,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 389.04022
     y: 147.57181
-    width: 298.3816
+    width: 289.90027
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3939,7 +3945,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 390.89825
     y: 80.84771
-    width: 298.3816
+    width: 289.90027
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4262,7 +4268,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 5
+    floatVal: 3
   durationOLD: 0
 --- !u!114 &1411999235
 MonoBehaviour:
@@ -4283,8 +4289,8 @@ MonoBehaviour:
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: AudioManager
-  targetMethod: Fade_Out_Music
-  targetMethodText: 'Fade_Out_Music (): Void'
+  targetMethod: RestoreSFX
+  targetMethodText: 'RestoreSFX (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
@@ -4518,6 +4524,60 @@ MonoBehaviour:
     floatRef: {fileID: 0}
     floatVal: 10
   durationOLD: 0
+--- !u!114 &1411999247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1411999102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 308
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1026155250}
+  targetComponentAssemblyName: AudioManager, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: AudioManager
+  targetMethod: RestoreMaster
+  targetMethodText: 'RestoreMaster (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1411999248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1411999102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 307
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1026155250}
+  targetComponentAssemblyName: AudioManager, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: AudioManager
+  targetMethod: Fade_Out_Music
+  targetMethodText: 'Fade_Out_Music (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!1 &1447769011
 GameObject:
   m_ObjectHideFlags: 1
