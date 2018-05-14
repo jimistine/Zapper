@@ -18,6 +18,7 @@ public class SceneChanger : MonoBehaviour
 	public GameObject HealthText;
 	public int TimeToTurnOnText;
 	public int TimeToTurnOffText;
+	public bool HealthTextRun = false;
 	
 	// Use this for initialization
 	void Start ()
@@ -41,10 +42,11 @@ public class SceneChanger : MonoBehaviour
 	//5 seconds, then turn it back off
 	void Update()
 	{
-		if (SC.CurrentHealth == 0)
+		if (SC.CurrentHealth == 0 && HealthTextRun == false)
 		{
 			
 			StartCoroutine(Text_On_Off());
+			HealthTextRun = true;
 		}
 	}
 
