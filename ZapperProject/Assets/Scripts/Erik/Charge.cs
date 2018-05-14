@@ -184,7 +184,8 @@ public class Charge : MonoBehaviour {
 					if (collision.gameObject.GetComponent<crowMove>().isRock)
 					{
 
-						Debug.Log("shattered!");
+						AM.Hit_source.PlayOneShot(AM.Hit);
+						//Debug.Log("shattered!");
 						anim.SetBool("shatter_bool", true);
 
 
@@ -261,6 +262,7 @@ public class Charge : MonoBehaviour {
 				if (SC.isMountainLevel == true)
 				{
 					hasTriggered = true;
+					AM.PlayerHit_source.PlayOneShot(AM.PlayerHit);  
 					//cause player to fall a specific distance downwards, not below bottom of wire.
 					collision.GetComponent<ChracterController>().isFalling = true;
 				}
@@ -268,11 +270,12 @@ public class Charge : MonoBehaviour {
 				if (SC.isFactory == true && SC.isMountainLevel == false) { 
 
 					Debug.Log ("Collected clock!"); 
+					AM.PlayerHit_source.PlayOneShot(AM.PlayerHit);  
 					hasTriggered = true;
 					SC.Score++;
 					SC.ScoreUpdate();
 					Destroy(gameObject);
-					AM.Hit_source.PlayOneShot (AM.Hit);  
+					
 
 
 				}
@@ -294,6 +297,8 @@ public class Charge : MonoBehaviour {
 			HasCalledFailFunction = true;
 			gameObject.GetComponent<SpriteRenderer>().enabled = false;
 			AM.FailSound_source.PlayOneShot(AM.Fail);
+		//	AM.PlayerDeath_source.PlayOneShot(AM.PlayerDeath);
+
 			//destroy for now will have to change things depeneding on how we record fail states
 
 			//fusebox1.GetComponent<fusebox_script> ().fusebox_zap ();
@@ -464,6 +469,7 @@ public class Charge : MonoBehaviour {
 			SC.ClocksBroken++;
 		}
 		SC.CurrentHealth--;
+		//AM.PlayerDeath_source.PlayOneShot(AM.PlayerDeath);
 		SC.RestartLevel();
 
 

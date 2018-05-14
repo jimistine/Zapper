@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class crowMove : MonoBehaviour {
 	public SceneController SC;
+	public AudioManager AM;
 	public GameObject CurrentWire;
 	public float crowSpeed; 
 	public float startWait; 
@@ -34,6 +35,7 @@ public class crowMove : MonoBehaviour {
 		ChancetoSpawnCurrent = ChancetoSpawnStart;
 		StartCoroutine(wait());
 		SC = FindObjectOfType<SceneController>();
+		AM = FindObjectOfType<AudioManager>();
 		anim = GetComponent<Animator> (); 
 		boxCol = GetComponent<BoxCollider2D> (); 
 
@@ -110,6 +112,7 @@ public class crowMove : MonoBehaviour {
         crowSpeed = 0;
 		Debug.Log("Crows fail state 1");
         SC.CurrentHealth--;
+		AM.PlayerDeath_source.PlayOneShot(AM.PlayerDeath);
 		if (isClock == true)
 		{
 			//SC.ClocksBroken++;
