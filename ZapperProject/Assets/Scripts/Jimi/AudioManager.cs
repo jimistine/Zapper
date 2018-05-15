@@ -38,7 +38,6 @@ public class AudioManager : MonoBehaviour
 	public AudioClip PlayerHit;
 	public AudioClip PlayerDeath;
 
-	
 	public AudioMixerSnapshot Wagner;
 	public AudioMixerSnapshot NormalMaster;
 	public AudioMixerSnapshot MuteSFXSnapshot;
@@ -46,6 +45,7 @@ public class AudioManager : MonoBehaviour
 	public AudioMixerSnapshot GainVoSnapshot;
 	public AudioMixerSnapshot MuteMusic;
 	public AudioMixerSnapshot GainMisc;
+	public AudioMixerSnapshot MuteClocks;
 
 	public float MusicFadeoutDur;
 	public float MusicFadeinDur;
@@ -211,6 +211,11 @@ public class AudioManager : MonoBehaviour
 	public void Wagner_Snapshot()
 	{
 			Wagner.TransitionTo(1);
+	}
+//
+	public void Mute_Clocks()
+	{
+		MuteClocks.TransitionTo(0);
 	}
 	
 }
