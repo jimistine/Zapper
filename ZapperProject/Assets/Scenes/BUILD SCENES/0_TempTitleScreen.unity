@@ -2615,6 +2615,8 @@ MonoBehaviour:
   Hit_source: {fileID: 883252054}
   Shoot_source: {fileID: 489581851}
   FailSound_source: {fileID: 2106163777}
+  PlayerHit_source: {fileID: 0}
+  PlayerDeath_source: {fileID: 0}
   VO_source_1: {fileID: 0}
   VO_source_2: {fileID: 0}
   VO_source_3: {fileID: 0}
@@ -2633,13 +2635,17 @@ MonoBehaviour:
   Hit: {fileID: 8300000, guid: 04d5b3fe5a8004086a53aeec8ae15e3f, type: 3}
   Music: {fileID: 8300000, guid: 22713dde3537448678709e677c238d81, type: 3}
   Ambient: {fileID: 0}
+  PlayerHit: {fileID: 0}
+  PlayerDeath: {fileID: 0}
   Wagner: {fileID: 0}
-  NormalMaster: {fileID: 0}
+  NormalMaster: {fileID: 245744949524360078, guid: d8f21f564eaad40aea199debe00cd414,
+    type: 2}
   MuteSFXSnapshot: {fileID: 0}
-  NormalSFXSnapshot: {fileID: 0}
+  NormalSFXSnapshot: {fileID: 24500006, guid: 5ac80df882d8b4bbdb4f27a4b48231fc, type: 2}
   GainVoSnapshot: {fileID: 0}
   MuteMusic: {fileID: 0}
   GainMisc: {fileID: 0}
+  MuteClocks: {fileID: 0}
   MusicFadeoutDur: 0
   MusicFadeinDur: 0
 --- !u!4 &1676479805
@@ -3964,6 +3970,8 @@ MonoBehaviour:
   Hit_source: {fileID: 0}
   Shoot_source: {fileID: 0}
   FailSound_source: {fileID: 0}
+  PlayerHit_source: {fileID: 0}
+  PlayerDeath_source: {fileID: 0}
   VO_source_1: {fileID: 0}
   VO_source_2: {fileID: 0}
   VO_source_3: {fileID: 0}
@@ -3982,6 +3990,8 @@ MonoBehaviour:
   Hit: {fileID: 0}
   Music: {fileID: 8300000, guid: b9823917fac124845b565fa6710091f6, type: 3}
   Ambient: {fileID: 0}
+  PlayerHit: {fileID: 0}
+  PlayerDeath: {fileID: 0}
   Wagner: {fileID: 0}
   NormalMaster: {fileID: 0}
   MuteSFXSnapshot: {fileID: 0}
@@ -3989,6 +3999,7 @@ MonoBehaviour:
   GainVoSnapshot: {fileID: 0}
   MuteMusic: {fileID: 0}
   GainMisc: {fileID: 0}
+  MuteClocks: {fileID: 0}
   MusicFadeoutDur: 0
   MusicFadeinDur: 0
 --- !u!1 &1994408770

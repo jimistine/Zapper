@@ -1080,9 +1080,9 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243395208255712686, guid: d8f21f564eaad40aea199debe00cd414,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: c1a06846ec8c247b699300abc26b7365, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e6d4fb30f50ee4692b9c88d5f41c83c5, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.663
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1162,7 +1162,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 932989999}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &328688255
 GameObject:
@@ -2264,9 +2264,9 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243395208255712686, guid: d8f21f564eaad40aea199debe00cd414,
     type: 2}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 7f36d289c16b347a08803542ccb42e72, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.504
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2346,7 +2346,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 932989999}
-  m_RootOrder: 17
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &560653868
 GameObject:
@@ -2551,7 +2551,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 932989999}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &611022622
 GameObject:
@@ -2916,7 +2916,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 932989999}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &684201823
 GameObject:
@@ -3675,7 +3675,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 932989999}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &832240817
 GameObject:
@@ -4132,6 +4132,7 @@ MonoBehaviour:
     type: 2}
   MusicFadeoutDur: 0
   MusicFadeinDur: 0
+  hasplayedFail: 0
 --- !u!4 &932989999
 Transform:
   m_ObjectHideFlags: 0
@@ -4152,6 +4153,7 @@ Transform:
   - {fileID: 1947654311}
   - {fileID: 1064995931}
   - {fileID: 1762454044}
+  - {fileID: 541818850}
   - {fileID: 1832400252}
   - {fileID: 593416019}
   - {fileID: 975785805}
@@ -4159,7 +4161,6 @@ Transform:
   - {fileID: 982709376}
   - {fileID: 299418577}
   - {fileID: 663951329}
-  - {fileID: 541818850}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4375,7 +4376,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 932989999}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &982709374
 GameObject:
@@ -4485,7 +4486,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 932989999}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &995414007
 GameObject:
@@ -5736,6 +5737,8 @@ GameObject:
   - component: {fileID: 1268022686}
   - component: {fileID: 1268022685}
   - component: {fileID: 1268022687}
+  - component: {fileID: 1268022688}
+  - component: {fileID: 1268022689}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -5768,9 +5771,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1268022660}
-  selectedCommands:
-  - {fileID: 1268022710}
+  - {fileID: 1268022669}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -5815,7 +5817,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 241.51547
     y: 116.93811
-    width: 120
+    width: 121.7045
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6029,7 +6031,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 429
-    y: 128
+    y: 129.32787
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -6047,6 +6049,8 @@ MonoBehaviour:
   - {fileID: 1268022677}
   - {fileID: 1268022705}
   - {fileID: 1268022703}
+  - {fileID: 1268022688}
+  - {fileID: 1268022689}
   - {fileID: 1268022664}
   - {fileID: 1268022706}
   - {fileID: 1268022704}
@@ -6446,6 +6450,50 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
+--- !u!114 &1268022688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1268022657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 68
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 932989997}
+  targetComponentAssemblyName: AudioManager, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: AudioManager
+  targetMethod: Play_VO_10
+  targetMethodText: 'Play_VO_10 (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1268022689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1268022657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 69
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 22
+  durationOLD: 0
 --- !u!114 &1268022697
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -6567,7 +6615,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 28
+    floatVal: 4
   durationOLD: 0
 --- !u!114 &1268022704
 MonoBehaviour:
@@ -8919,7 +8967,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 932989999}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1852772863
 GameObject:
@@ -9461,7 +9509,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 12
+    floatVal: 11.5
   durationOLD: 0
 --- !u!114 &1906541699
 MonoBehaviour:
@@ -9744,7 +9792,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 392
     y: 341
-    width: 239.97398
+    width: 232.0584
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9842,7 +9890,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 416
     y: 275
-    width: 191.16122
+    width: 183.24564
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9879,8 +9927,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 1906541711}
+  selectedCommands:
+  - {fileID: 1906541698}
   variables: []
   description: 
   stepPause: 0

@@ -1654,6 +1654,8 @@ MonoBehaviour:
   Hit_source: {fileID: 923775781}
   Shoot_source: {fileID: 424975868}
   FailSound_source: {fileID: 373476903}
+  PlayerHit_source: {fileID: 0}
+  PlayerDeath_source: {fileID: 0}
   VO_source_1: {fileID: 67327188}
   VO_source_2: {fileID: 728801470}
   VO_source_3: {fileID: 0}
@@ -1672,6 +1674,8 @@ MonoBehaviour:
   Hit: {fileID: 8300000, guid: 04d5b3fe5a8004086a53aeec8ae15e3f, type: 3}
   Music: {fileID: 8300000, guid: f6115ab4eb8ae4fd3b57495345d17b70, type: 3}
   Ambient: {fileID: 8300000, guid: f6115ab4eb8ae4fd3b57495345d17b70, type: 3}
+  PlayerHit: {fileID: 0}
+  PlayerDeath: {fileID: 0}
   Wagner: {fileID: 245067496763653946, guid: d8f21f564eaad40aea199debe00cd414, type: 2}
   NormalMaster: {fileID: 245744949524360078, guid: d8f21f564eaad40aea199debe00cd414,
     type: 2}
@@ -1683,8 +1687,10 @@ MonoBehaviour:
   MuteMusic: {fileID: 245777860501240480, guid: d8f21f564eaad40aea199debe00cd414,
     type: 2}
   GainMisc: {fileID: 245101799975984254, guid: 5ac80df882d8b4bbdb4f27a4b48231fc, type: 2}
+  MuteClocks: {fileID: 0}
   MusicFadeoutDur: 5
   MusicFadeinDur: 0
+  hasplayedFail: 0
 --- !u!4 &1259521041
 Transform:
   m_ObjectHideFlags: 0
@@ -3050,7 +3056,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243098007530816306, guid: d8f21f564eaad40aea199debe00cd414,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: d32bef859b0d745edb22869fffefe6e2, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6a3d533a7f9ff40ffba5e43009cb859b, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.03
   m_Pitch: 1

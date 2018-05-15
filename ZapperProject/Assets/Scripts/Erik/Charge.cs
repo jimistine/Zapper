@@ -296,7 +296,8 @@ public class Charge : MonoBehaviour {
 
 			HasCalledFailFunction = true;
 			gameObject.GetComponent<SpriteRenderer>().enabled = false;
-			AM.FailSound_source.PlayOneShot(AM.Fail);
+			AM.play_fail();
+		//AM.FailSound_source.PlayOneShot(AM.Fail);
 		//	AM.PlayerDeath_source.PlayOneShot(AM.PlayerDeath);
 
 			//destroy for now will have to change things depeneding on how we record fail states
@@ -495,11 +496,22 @@ public class Charge : MonoBehaviour {
 	public void SetFalse () {
 
 		if (SC.isFactory == true) {
-
-			alarm1.GetComponent<alarmScript> ().alarm_normal (); 
-			alarm2.GetComponent<alarmScript> ().alarm_normal_2 (); 
-			alarm3.GetComponent<alarmScript> ().alarm_normal_3 (); 
-			alarm4.GetComponent<alarmScript> ().alarm_normal_4 (); 
+			if (alarm1 != null)
+			{
+				alarm1.GetComponent<alarmScript> ().alarm_normal (); 
+			}
+			if (alarm1 != null)
+			{
+				alarm2.GetComponent<alarmScript> ().alarm_normal_2 (); 
+			}
+			if (alarm1 != null)
+			{
+				alarm3.GetComponent<alarmScript> ().alarm_normal_3 (); 
+			}
+			if (alarm1 != null)
+			{
+				alarm4.GetComponent<alarmScript> ().alarm_normal_4 (); 
+			}
 			Debug.Log ("charge reset end"); 
 
 		} else if (SC.isMountainLevel == false && SC.isFactory == false) {
