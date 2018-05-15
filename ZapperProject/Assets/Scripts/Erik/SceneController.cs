@@ -165,6 +165,7 @@ public class SceneController : MonoBehaviour {
         Spawner.validChoices.Add(4);
 
         //(for now reset level timer will change once we have a VO)
+        AM.hasplayedFail = false;
         PlayerControl.enabled = true;
         PlayerObject.GetComponent<ChracterController>().delayBeforeShoot = PlayerObject.GetComponent<ChracterController>().delayBeforeShootStore + Time.timeSinceLevelLoad;
         Spawner.enabled = true;

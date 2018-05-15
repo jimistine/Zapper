@@ -50,6 +50,8 @@ public class AudioManager : MonoBehaviour
 	public float MusicFadeoutDur;
 	public float MusicFadeinDur;
 
+	public bool hasplayedFail;
+
 	void Start()
 	{
 		SC = FindObjectOfType<SceneController>();
@@ -75,7 +77,7 @@ public class AudioManager : MonoBehaviour
 	}
 	public void RestoreMaster()
 	{
-		NormalMaster.TransitionTo(1);
+		NormalMaster.TransitionTo(0);
 	}
 //	
 	public void Play_Music()
@@ -216,6 +218,15 @@ public class AudioManager : MonoBehaviour
 	public void Mute_Clocks()
 	{
 		MuteClocks.TransitionTo(0);
+	}
+
+	public void play_fail()
+	{
+		if (hasplayedFail == false)
+		{
+			FailSound_source.PlayOneShot(Fail);
+			hasplayedFail = true;
+		}
 	}
 	
 }

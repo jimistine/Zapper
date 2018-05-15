@@ -3113,6 +3113,8 @@ MonoBehaviour:
   Hit_source: {fileID: 1504388195}
   Shoot_source: {fileID: 1986085758}
   FailSound_source: {fileID: 2080914984}
+  PlayerHit_source: {fileID: 0}
+  PlayerDeath_source: {fileID: 0}
   VO_source_1: {fileID: 0}
   VO_source_2: {fileID: 0}
   VO_source_3: {fileID: 0}
@@ -3131,6 +3133,8 @@ MonoBehaviour:
   Hit: {fileID: 8300000, guid: 04d5b3fe5a8004086a53aeec8ae15e3f, type: 3}
   Music: {fileID: 8300000, guid: 0efdcde9e7a6d4046a4ea732626b92a4, type: 3}
   Ambient: {fileID: 8300000, guid: f6115ab4eb8ae4fd3b57495345d17b70, type: 3}
+  PlayerHit: {fileID: 8300000, guid: 03a7dd8c3704c4f67a87fa2f8f64f843, type: 3}
+  PlayerDeath: {fileID: 0}
   Wagner: {fileID: 245067496763653946, guid: d8f21f564eaad40aea199debe00cd414, type: 2}
   NormalMaster: {fileID: 0}
   MuteSFXSnapshot: {fileID: 0}
@@ -3138,8 +3142,10 @@ MonoBehaviour:
   GainVoSnapshot: {fileID: 0}
   MuteMusic: {fileID: 0}
   GainMisc: {fileID: 0}
+  MuteClocks: {fileID: 0}
   MusicFadeoutDur: 0
   MusicFadeinDur: 0
+  hasplayedFail: 0
 --- !u!4 &932989999
 Transform:
   m_ObjectHideFlags: 0
@@ -6445,9 +6451,9 @@ MonoBehaviour:
   WireThreeObject: {fileID: 560653868}
   WireFourObject: {fileID: 883947133}
   PlayerObject: {fileID: 1039467704}
-  ScoreUI: {fileID: 0}
-  ClocksBrokenUI: {fileID: 0}
-  TimeRemainingUI: {fileID: 0}
+  ScoreUI: {fileID: 615153377}
+  ClocksBrokenUI: {fileID: 277230901}
+  TimeRemainingUI: {fileID: 1036841873}
   CameraObj: {fileID: 0}
   CannotLose: 0
   CannotWin: 0

@@ -1802,11 +1802,11 @@ AudioSource:
   m_GameObject: {fileID: 247713722}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 243280381997923772, guid: 5ac80df882d8b4bbdb4f27a4b48231fc,
+  OutputAudioMixerGroup: {fileID: 243852737019755854, guid: d8f21f564eaad40aea199debe00cd414,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 19e7650fdd2c341b2a1e31580b123351, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.515
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3885,11 +3885,11 @@ AudioSource:
   m_GameObject: {fileID: 596045027}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 243280381997923772, guid: 5ac80df882d8b4bbdb4f27a4b48231fc,
+  OutputAudioMixerGroup: {fileID: 243852737019755854, guid: d8f21f564eaad40aea199debe00cd414,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 19e7650fdd2c341b2a1e31580b123351, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.515
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4679,11 +4679,11 @@ AudioSource:
   m_GameObject: {fileID: 799508782}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 243280381997923772, guid: 5ac80df882d8b4bbdb4f27a4b48231fc,
+  OutputAudioMixerGroup: {fileID: 243852737019755854, guid: d8f21f564eaad40aea199debe00cd414,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 19e7650fdd2c341b2a1e31580b123351, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.515
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4935,11 +4935,11 @@ AudioSource:
   m_GameObject: {fileID: 858282787}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 243280381997923772, guid: 5ac80df882d8b4bbdb4f27a4b48231fc,
+  OutputAudioMixerGroup: {fileID: 243852737019755854, guid: d8f21f564eaad40aea199debe00cd414,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 19e7650fdd2c341b2a1e31580b123351, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.515
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5637,6 +5637,8 @@ MonoBehaviour:
   Hit_source: {fileID: 0}
   Shoot_source: {fileID: 0}
   FailSound_source: {fileID: 0}
+  PlayerHit_source: {fileID: 0}
+  PlayerDeath_source: {fileID: 0}
   VO_source_1: {fileID: 1947654310}
   VO_source_2: {fileID: 1863819404}
   VO_source_3: {fileID: 1131215977}
@@ -5655,6 +5657,8 @@ MonoBehaviour:
   Hit: {fileID: 0}
   Music: {fileID: 0}
   Ambient: {fileID: 0}
+  PlayerHit: {fileID: 0}
+  PlayerDeath: {fileID: 0}
   Wagner: {fileID: 0}
   NormalMaster: {fileID: 245744949524360078, guid: d8f21f564eaad40aea199debe00cd414,
     type: 2}
@@ -5664,8 +5668,10 @@ MonoBehaviour:
     type: 2}
   MuteMusic: {fileID: 0}
   GainMisc: {fileID: 245101799975984254, guid: 5ac80df882d8b4bbdb4f27a4b48231fc, type: 2}
+  MuteClocks: {fileID: 0}
   MusicFadeoutDur: 0
   MusicFadeinDur: 0
+  hasplayedFail: 0
 --- !u!4 &932989999
 Transform:
   m_ObjectHideFlags: 0
@@ -6031,11 +6037,11 @@ AudioSource:
   m_GameObject: {fileID: 1003653581}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 243280381997923772, guid: 5ac80df882d8b4bbdb4f27a4b48231fc,
+  OutputAudioMixerGroup: {fileID: 243852737019755854, guid: d8f21f564eaad40aea199debe00cd414,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 19e7650fdd2c341b2a1e31580b123351, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.515
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -7116,11 +7122,11 @@ AudioSource:
   m_GameObject: {fileID: 1131215975}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 243280381997923772, guid: 5ac80df882d8b4bbdb4f27a4b48231fc,
+  OutputAudioMixerGroup: {fileID: 243852737019755854, guid: d8f21f564eaad40aea199debe00cd414,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 19e7650fdd2c341b2a1e31580b123351, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.515
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -8000,6 +8006,7 @@ GameObject:
   - component: {fileID: 1268022726}
   - component: {fileID: 1268022725}
   - component: {fileID: 1268022727}
+  - component: {fileID: 1268022728}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -8033,7 +8040,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1268022660}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1268022683}
   variables: []
   description: 
   stepPause: 0
@@ -8076,8 +8084,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 206
-    y: 95
+    x: 205
+    y: 94
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -8107,6 +8115,7 @@ MonoBehaviour:
   - {fileID: 1268022721}
   - {fileID: 1268022666}
   - {fileID: 1268022665}
+  - {fileID: 1268022728}
   - {fileID: 1268022683}
   - {fileID: 1268022674}
   - {fileID: 1268022725}
@@ -8369,7 +8378,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
   m_Name: 
@@ -8382,13 +8391,13 @@ MonoBehaviour:
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: AudioManager
-  targetMethod: GainVO
-  targetMethodText: 'GainVO (): Void'
+  targetMethod: RestoreMaster
+  targetMethodText: 'RestoreMaster (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
   returnValueType: System.Void
-  showInherited: 0
+  showInherited: 1
   callMode: 0
 --- !u!114 &1268022675
 MonoBehaviour:
@@ -8559,7 +8568,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 79
+    floatVal: 71
   durationOLD: 0
 --- !u!114 &1268022684
 MonoBehaviour:
@@ -9422,7 +9431,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &1268022725
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -9449,7 +9458,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &1268022726
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -9476,7 +9485,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &1268022727
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
@@ -9491,6 +9500,33 @@ MonoBehaviour:
     floatRef: {fileID: 0}
     floatVal: 1
   durationOLD: 0
+--- !u!114 &1268022728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1268022657}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 102
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 932989997}
+  targetComponentAssemblyName: AudioManager, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: AudioManager
+  targetMethod: GainVO
+  targetMethodText: 'GainVO (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 1
+  callMode: 0
 --- !u!1 &1269346506
 GameObject:
   m_ObjectHideFlags: 0
@@ -11636,11 +11672,11 @@ AudioSource:
   m_GameObject: {fileID: 1588015258}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 243280381997923772, guid: 5ac80df882d8b4bbdb4f27a4b48231fc,
+  OutputAudioMixerGroup: {fileID: 243852737019755854, guid: d8f21f564eaad40aea199debe00cd414,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 19e7650fdd2c341b2a1e31580b123351, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.515
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -13419,11 +13455,11 @@ AudioSource:
   m_GameObject: {fileID: 1893799140}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 243280381997923772, guid: 5ac80df882d8b4bbdb4f27a4b48231fc,
+  OutputAudioMixerGroup: {fileID: 243852737019755854, guid: d8f21f564eaad40aea199debe00cd414,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 19e7650fdd2c341b2a1e31580b123351, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.515
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -13842,7 +13878,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243395208255712686, guid: d8f21f564eaad40aea199debe00cd414,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 97f568692f31441049960a2e8f24d45b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 3e4c1c106790643838d5b99e23eae2c6, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.404
   m_Pitch: 1
@@ -14038,7 +14074,6 @@ MonoBehaviour:
   ClocksBrokenUI: {fileID: 1892035139}
   TimeRemainingUI: {fileID: 1892035139}
   CameraObj: {fileID: 0}
-  plusOne: {fileID: 1301236187}
   CannotLose: 1
   CannotWin: 1
   isMountainLevel: 0
@@ -14103,6 +14138,11 @@ MonoBehaviour:
   NewPlayerColor: {r: 1, g: 0.36764705, b: 0.36764705, a: 1}
   NewPlayerSprite: {fileID: 21300000, guid: 6b424f188d51b4bc99c12a119da9ef8b, type: 3}
   Player_SR: {fileID: 0}
+  SC: {fileID: 0}
+  HealthText: {fileID: 0}
+  TimeToTurnOnText: 0
+  TimeToTurnOffText: 0
+  HealthTextRun: 0
 --- !u!1 &1986085756
 GameObject:
   m_ObjectHideFlags: 0

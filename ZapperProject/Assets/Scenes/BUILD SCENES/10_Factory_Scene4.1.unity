@@ -371,7 +371,7 @@ MonoBehaviour:
   SpawnType: 00000000000000000200000000000000
   BeatTime:
   - 0
-  - 5
+  - 4.5
   - 120
   - 120
   RateOfSpawn:
@@ -575,6 +575,7 @@ GameObject:
   - component: {fileID: 107120560}
   - component: {fileID: 107120562}
   - component: {fileID: 107120561}
+  - component: {fileID: 107120563}
   m_Layer: 5
   m_Name: time left num
   m_TagString: Untagged
@@ -639,6 +640,30 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 107120559}
+--- !u!114 &107120563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 107120559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e1195e1fa858402e93b1372151403e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  new_Sprite: {fileID: 0}
+  new_Sprite2: {fileID: 0}
+  Move1: {x: 0, y: -1}
+  Move2: {x: 0, y: 0}
+  MoveSpeed: 1
+  NewScale: {x: 0, y: 0, z: 0}
+  GrowSpeedX: 0
+  GrowSpeedY: 0
+  GrowSpeedZ: 0
+  StartGrow: 0
+  StartMove: 0
+  TimeVisible: 0
+  TimeInisible: 0
 --- !u!1 &109842812
 GameObject:
   m_ObjectHideFlags: 0
@@ -1528,7 +1553,7 @@ MonoBehaviour:
   SpawnType: 00000000000000000200000000000000
   BeatTime:
   - 0
-  - 5
+  - 4.5
   - 120
   - 120
   RateOfSpawn:
@@ -2414,6 +2439,7 @@ GameObject:
   - component: {fileID: 650340841}
   - component: {fileID: 650340843}
   - component: {fileID: 650340842}
+  - component: {fileID: 650340844}
   m_Layer: 5
   m_Name: clocks built num
   m_TagString: Untagged
@@ -2478,6 +2504,30 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 650340840}
+--- !u!114 &650340844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 650340840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e1195e1fa858402e93b1372151403e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  new_Sprite: {fileID: 0}
+  new_Sprite2: {fileID: 0}
+  Move1: {x: 0, y: 0}
+  Move2: {x: 0, y: 0}
+  MoveSpeed: 0
+  NewScale: {x: 0, y: 0, z: 0}
+  GrowSpeedX: 0
+  GrowSpeedY: 0
+  GrowSpeedZ: 0
+  StartGrow: 0
+  StartMove: 0
+  TimeVisible: 0.05
+  TimeInisible: 4
 --- !u!1 &684201823
 GameObject:
   m_ObjectHideFlags: 0
@@ -3309,8 +3359,10 @@ MonoBehaviour:
     type: 2}
   MuteMusic: {fileID: 0}
   GainMisc: {fileID: 0}
+  MuteClocks: {fileID: 0}
   MusicFadeoutDur: 0
   MusicFadeinDur: 0
+  hasplayedFail: 0
 --- !u!4 &932989999
 Transform:
   m_ObjectHideFlags: 0
@@ -3516,6 +3568,7 @@ GameObject:
   - component: {fileID: 998226125}
   - component: {fileID: 998226127}
   - component: {fileID: 998226126}
+  - component: {fileID: 998226128}
   m_Layer: 5
   m_Name: clocks built text
   m_TagString: Untagged
@@ -3580,6 +3633,30 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 998226124}
+--- !u!114 &998226128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 998226124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e1195e1fa858402e93b1372151403e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  new_Sprite: {fileID: 0}
+  new_Sprite2: {fileID: 0}
+  Move1: {x: 0, y: -1}
+  Move2: {x: 0, y: 0}
+  MoveSpeed: 1
+  NewScale: {x: 0, y: 0, z: 0}
+  GrowSpeedX: 0
+  GrowSpeedY: 0
+  GrowSpeedZ: 0
+  StartGrow: 0
+  StartMove: 0
+  TimeVisible: 0.05
+  TimeInisible: 3
 --- !u!1 &1028582390
 GameObject:
   m_ObjectHideFlags: 0
@@ -3590,6 +3667,7 @@ GameObject:
   - component: {fileID: 1028582391}
   - component: {fileID: 1028582393}
   - component: {fileID: 1028582392}
+  - component: {fileID: 1028582394}
   m_Layer: 5
   m_Name: clocks broken num
   m_TagString: Untagged
@@ -3654,6 +3732,30 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1028582390}
+--- !u!114 &1028582394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1028582390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e1195e1fa858402e93b1372151403e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  new_Sprite: {fileID: 0}
+  new_Sprite2: {fileID: 0}
+  Move1: {x: 0, y: 0}
+  Move2: {x: 0, y: 0}
+  MoveSpeed: 0
+  NewScale: {x: 0, y: 0, z: 0}
+  GrowSpeedX: 0
+  GrowSpeedY: 0
+  GrowSpeedZ: 0
+  StartGrow: 0
+  StartMove: 0
+  TimeVisible: 0
+  TimeInisible: 0
 --- !u!1 &1039467704
 GameObject:
   m_ObjectHideFlags: 0
@@ -4644,7 +4746,6 @@ GameObject:
   - component: {fileID: 1268022672}
   - component: {fileID: 1268022675}
   - component: {fileID: 1268022674}
-  - component: {fileID: 1268022673}
   - component: {fileID: 1268022659}
   - component: {fileID: 1268022666}
   - component: {fileID: 1268022665}
@@ -4773,6 +4874,9 @@ GameObject:
   - component: {fileID: 1268022789}
   - component: {fileID: 1268022790}
   - component: {fileID: 1268022791}
+  - component: {fileID: 1268022792}
+  - component: {fileID: 1268022673}
+  - component: {fileID: 1268022793}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -4806,7 +4910,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1268022672}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1268022752}
   variables: []
   description: 
   stepPause: 0
@@ -4928,7 +5033,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 6
+    floatVal: 1
   durationOLD: 0
 --- !u!114 &1268022665
 MonoBehaviour:
@@ -5095,7 +5200,7 @@ MonoBehaviour:
   itemId: 159
   indentLevel: 0
   description: 
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 107120559}
   targetComponentAssemblyName: Glitcher, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -5136,10 +5241,11 @@ MonoBehaviour:
   - {fileID: 1268022789}
   - {fileID: 1268022674}
   - {fileID: 1268022671}
-  - {fileID: 1268022755}
   - {fileID: 1268022663}
   - {fileID: 1268022750}
   - {fileID: 1268022749}
+  - {fileID: 1268022792}
+  - {fileID: 1268022755}
   - {fileID: 1268022664}
   - {fileID: 1268022756}
   - {fileID: 1268022675}
@@ -5148,16 +5254,17 @@ MonoBehaviour:
   - {fileID: 1268022744}
   - {fileID: 1268022747}
   - {fileID: 1268022746}
-  - {fileID: 1268022752}
+  - {fileID: 1268022673}
   - {fileID: 1268022751}
   - {fileID: 1268022661}
   - {fileID: 1268022788}
   - {fileID: 1268022791}
   - {fileID: 1268022701}
   - {fileID: 1268022665}
-  - {fileID: 1268022673}
   - {fileID: 1268022790}
+  - {fileID: 1268022793}
   - {fileID: 1268022748}
+  - {fileID: 1268022752}
   - {fileID: 1268022660}
   - {fileID: 1268022702}
   - {fileID: 1268022753}
@@ -5165,20 +5272,31 @@ MonoBehaviour:
   - {fileID: 1268022659}
 --- !u!114 &1268022673
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268022657}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 17
+  itemId: 166
   indentLevel: 0
-  soundClip: {fileID: 8300000, guid: 9df8c9cbd09e3441ba6c5a85d3ae6c88, type: 3}
-  volume: 0.743
-  waitUntilFinished: 0
+  description: 
+  targetObject: {fileID: 1192475419}
+  targetComponentAssemblyName: Glitcher, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: Glitcher
+  targetMethod: MoveSprite
+  targetMethodText: 'MoveSprite (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!114 &1268022674
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5684,7 +5802,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 10
+    floatVal: 4
   durationOLD: 0
 --- !u!114 &1268022702
 MonoBehaviour:
@@ -6684,13 +6802,13 @@ MonoBehaviour:
   itemId: 108
   indentLevel: 0
   description: 
-  targetObject: {fileID: 1192475419}
+  targetObject: {fileID: 650340840}
   targetComponentAssemblyName: Glitcher, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: Glitcher
-  targetMethod: MoveSprite
-  targetMethodText: 'MoveSprite (): Void'
+  targetMethod: FlickerText
+  targetMethodText: 'FlickerText (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
@@ -6765,13 +6883,13 @@ MonoBehaviour:
   itemId: 110
   indentLevel: 0
   description: 
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 998226124}
   targetComponentAssemblyName: Glitcher, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: Glitcher
-  targetMethod: MoveSprite
-  targetMethodText: 'MoveSprite (): Void'
+  targetMethod: FlickerText
+  targetMethodText: 'FlickerText (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
@@ -7626,6 +7744,50 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
+--- !u!114 &1268022792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1268022657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 165
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 5
+  durationOLD: 0
+--- !u!114 &1268022793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1268022657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 167
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1666933694}
+  targetComponentAssemblyName: Glitcher, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: Glitcher
+  targetMethod: TranslateSprite_DownRight
+  targetMethodText: 'TranslateSprite_DownRight (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!1 &1288270199
 GameObject:
   m_ObjectHideFlags: 0
@@ -8048,7 +8210,7 @@ MonoBehaviour:
   SpawnType: 00000000000000000200000000000000
   BeatTime:
   - 0
-  - 5
+  - 4.5
   - 120
   - 120
   RateOfSpawn:
@@ -8200,7 +8362,7 @@ MonoBehaviour:
   SpawnType: 00000000000000000200000000000000
   BeatTime:
   - 0
-  - 5
+  - 4.5
   - 120
   - 120
   RateOfSpawn:
@@ -9178,6 +9340,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1666933696}
   - component: {fileID: 1666933695}
+  - component: {fileID: 1666933697}
   m_Layer: 0
   m_Name: tv
   m_TagString: Untagged
@@ -9242,6 +9405,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1666933697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1666933694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e1195e1fa858402e93b1372151403e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  new_Sprite: {fileID: 0}
+  new_Sprite2: {fileID: 0}
+  Move1: {x: 0, y: 0}
+  Move2: {x: 0, y: 0}
+  MoveSpeed: 0
+  NewScale: {x: 0, y: 0, z: 0}
+  GrowSpeedX: 0
+  GrowSpeedY: 0
+  GrowSpeedZ: 0
+  StartGrow: 0
+  StartMove: 0
+  TimeVisible: 0
+  TimeInisible: 0
 --- !u!1 &1677918427
 GameObject:
   m_ObjectHideFlags: 0
@@ -9860,7 +10047,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243395208255712686, guid: d8f21f564eaad40aea199debe00cd414,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 22ce1c758b8944be19423e188fa44a0b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c9c094b84681c4221971b618c8889a08, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

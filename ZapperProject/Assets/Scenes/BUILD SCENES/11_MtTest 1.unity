@@ -975,6 +975,7 @@ MonoBehaviour:
   MuteClocks: {fileID: 0}
   MusicFadeoutDur: 5
   MusicFadeinDur: 0
+  hasplayedFail: 0
 --- !u!4 &203894710
 Transform:
   m_ObjectHideFlags: 0
@@ -8061,7 +8062,7 @@ MonoBehaviour:
   TimeSinceFail: 0
   TimeSinceFailLevels: 1
   TimeSinceFailLevelsCapMin: 1
-  TimeSinceFailLevelsCapMax: 7
+  TimeSinceFailLevelsCapMax: 5
   StoreAddedTime: 0
   IsSpawning: 1
   validChoices: 
