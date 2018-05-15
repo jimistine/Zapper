@@ -972,6 +972,7 @@ MonoBehaviour:
   MuteMusic: {fileID: 245777860501240480, guid: d8f21f564eaad40aea199debe00cd414,
     type: 2}
   GainMisc: {fileID: 245101799975984254, guid: 5ac80df882d8b4bbdb4f27a4b48231fc, type: 2}
+  MuteClocks: {fileID: 0}
   MusicFadeoutDur: 5
   MusicFadeinDur: 0
 --- !u!4 &203894710
@@ -2319,11 +2320,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 16.526445, y: -122.784294}
+  scrollPos: {x: 451.83096, y: -47.323414}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.99863183
+  zoom: 0.5326296
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -2331,7 +2332,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 701927473}
+  - {fileID: 701927494}
   selectedCommands: []
   variables: []
   description: 
@@ -3052,7 +3053,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 21
     y: 267
-    width: 169.16302
+    width: 163.58737
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0

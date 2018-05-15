@@ -666,7 +666,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1268022658}
+  selectedFlowchart: {fileID: 1906541715}
 --- !u!4 &186979947
 Transform:
   m_ObjectHideFlags: 1
@@ -1721,7 +1721,7 @@ VideoPlayer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 444123710}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 862b63e78e16d45fc85624cf7ca522c8, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 350711a7bbfae4ecba5cd0def50efcff, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 2108482167}
@@ -4096,6 +4096,7 @@ MonoBehaviour:
   Shoot_source: {fileID: 1986085758}
   FailSound_source: {fileID: 2080914984}
   PlayerHit_source: {fileID: 1852772864}
+  PlayerDeath_source: {fileID: 0}
   VO_source_1: {fileID: 1947654310}
   VO_source_2: {fileID: 1064995932}
   VO_source_3: {fileID: 1762454045}
@@ -4115,6 +4116,7 @@ MonoBehaviour:
   Music: {fileID: 0}
   Ambient: {fileID: 0}
   PlayerHit: {fileID: 8300000, guid: 03a7dd8c3704c4f67a87fa2f8f64f843, type: 3}
+  PlayerDeath: {fileID: 0}
   Wagner: {fileID: 0}
   NormalMaster: {fileID: 245744949524360078, guid: d8f21f564eaad40aea199debe00cd414,
     type: 2}
@@ -4126,6 +4128,8 @@ MonoBehaviour:
   MuteMusic: {fileID: 245777860501240480, guid: d8f21f564eaad40aea199debe00cd414,
     type: 2}
   GainMisc: {fileID: 245101799975984254, guid: 5ac80df882d8b4bbdb4f27a4b48231fc, type: 2}
+  MuteClocks: {fileID: 245818564969168444, guid: d8f21f564eaad40aea199debe00cd414,
+    type: 2}
   MusicFadeoutDur: 0
   MusicFadeinDur: 0
 --- !u!4 &932989999
@@ -5811,7 +5815,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 241.51547
     y: 116.93811
-    width: 121.7045
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9064,12 +9068,15 @@ GameObject:
   - component: {fileID: 1906541689}
   - component: {fileID: 1906541688}
   - component: {fileID: 1906541687}
-  - component: {fileID: 1906541686}
   - component: {fileID: 1906541685}
   - component: {fileID: 1906541684}
   - component: {fileID: 1906541682}
   - component: {fileID: 1906541681}
   - component: {fileID: 1906541680}
+  - component: {fileID: 1906541683}
+  - component: {fileID: 1906541722}
+  - component: {fileID: 1906541717}
+  - component: {fileID: 1906541686}
   m_Layer: 0
   m_Name: 'Waiting Flowchart '
   m_TagString: Untagged
@@ -9125,6 +9132,23 @@ MonoBehaviour:
     stringVal: 10_Factory_Scene4.1
   loadingImage: {fileID: 0}
   sceneNameOLD: 
+--- !u!114 &1906541683
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1906541679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 90
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 3
+  durationOLD: 0
 --- !u!114 &1906541684
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -9176,7 +9200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 84
+  itemId: 93
   indentLevel: 0
   description: 
   targetObject: {fileID: 932989997}
@@ -9184,8 +9208,8 @@ MonoBehaviour:
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: AudioManager
-  targetMethod: Stop_MiscSFX_1
-  targetMethodText: 'Stop_MiscSFX_1 (): Void'
+  targetMethod: RestoreMaster
+  targetMethodText: 'RestoreMaster (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
@@ -9272,8 +9296,8 @@ MonoBehaviour:
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: AudioManager
-  targetMethod: MuteSFX
-  targetMethodText: 'MuteSFX (): Void'
+  targetMethod: Mute_Clocks
+  targetMethodText: 'Mute_Clocks (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
@@ -9720,7 +9744,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 392
     y: 341
-    width: 232.0584
+    width: 239.97398
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9741,17 +9765,20 @@ MonoBehaviour:
   - {fileID: 1906541692}
   - {fileID: 1906541701}
   - {fileID: 1906541684}
-  - {fileID: 1906541686}
+  - {fileID: 1906541722}
   - {fileID: 1906541699}
   - {fileID: 1906541690}
+  - {fileID: 1906541717}
   - {fileID: 1906541691}
   - {fileID: 1906541685}
   - {fileID: 1906541689}
   - {fileID: 1906541697}
   - {fileID: 1906541688}
-  - {fileID: 1906541687}
+  - {fileID: 1906541683}
   - {fileID: 1906541696}
+  - {fileID: 1906541687}
   - {fileID: 1906541700}
+  - {fileID: 1906541686}
   - {fileID: 1906541693}
   - {fileID: 1906541695}
   - {fileID: 1906541698}
@@ -9815,7 +9842,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 416
     y: 275
-    width: 183.24564
+    width: 191.16122
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9852,10 +9879,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1906541711}
-  selectedCommands:
-  - {fileID: 1906541700}
+  selectedBlocks: []
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -9880,6 +9905,60 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1906541717
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1906541679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 92
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 932989997}
+  targetComponentAssemblyName: AudioManager, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: AudioManager
+  targetMethod: MuteSFX
+  targetMethodText: 'MuteSFX (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1906541722
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1906541679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 91
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 932989997}
+  targetComponentAssemblyName: AudioManager, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: AudioManager
+  targetMethod: Stop_MiscSFX_1
+  targetMethodText: 'Stop_MiscSFX_1 (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!1 &1908365525
 GameObject:
   m_ObjectHideFlags: 0

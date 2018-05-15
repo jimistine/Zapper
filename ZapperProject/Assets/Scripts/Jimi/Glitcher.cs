@@ -24,6 +24,7 @@ public class Glitcher : MonoBehaviour
 	
 	public bool StartGrow;
 	public bool StartMove;
+	//public bool StartFlickerSprite;
 
 	public float TimeVisible;
 	public float TimeInisible;
@@ -123,6 +124,7 @@ public class Glitcher : MonoBehaviour
 		yield return new WaitForSeconds(TimeVisible);
 	//	Debug.Log("invisible");
 		gameObject.GetComponent<SpriteRenderer>().enabled = false;
+		gameObject.SetActive(false);
 		StartCoroutine(SetActiveSprite());
 	}
 
@@ -131,6 +133,7 @@ public class Glitcher : MonoBehaviour
 		yield return new WaitForSeconds(TimeInisible);
 	//	Debug.Log("visible");
 		gameObject.GetComponent<SpriteRenderer>().enabled = true;
+		gameObject.SetActive(true);
 		StartCoroutine(FlickerTimerSprite());
 	}
 	

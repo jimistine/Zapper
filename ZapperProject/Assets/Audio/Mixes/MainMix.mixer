@@ -13,6 +13,7 @@ AudioMixerController:
   - {fileID: 245067496763653946}
   - {fileID: 245993496100636052}
   - {fileID: 245777860501240480}
+  - {fileID: 245818564969168444}
   m_StartSnapshot: {fileID: 245744949524360078}
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
@@ -463,6 +464,37 @@ AudioMixerSnapshotController:
     42415406bf7c54f2392ef1dc024e44de: -39.703533
     bdad789ae4dcb4e129b04cb10a2e1125: -80
     de55f8fee8d5048faae7d797a18efda8: 5.1526933
+  m_TransitionOverrides: {}
+--- !u!245 &245818564969168444
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: MuteClocks
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: da02123c34bd74823a508b1d57cea29b
+  m_FloatValues:
+    f27d0830b5ee44c3d8ed4ebc9b4d6d4a: -40.9
+    ada83450069da49f888aa882855b6e00: 2.44
+    b075d160bcb174da5bf469a17c710b1f: 200
+    4b8376115ea6042a397138542cb6cebf: 3.2
+    9fea3d32302e043f8b7fd574276cff34: -0.02577656
+    674cdfc231bbe4d50934d201418c702b: 2.989
+    9c5522a4cd19e4b60a875a4533181569: -30.8
+    42415406bf7c54f2392ef1dc024e44de: -39.703533
+    5a61bc4675536440e83fb23811a93c0f: -12.2
+    5c0c13384496c4a68ac1f3637bbe8372: 186
+    e33bd8a99e1c0416bb69ec080d6569b1: -26.4
+    ae6f6ef9f5ffe441290154e2f1aad9da: 1.5
+    cbf4742addc18436ea614380086af1ec: 56
+    bdad789ae4dcb4e129b04cb10a2e1125: -0.8840523
+    33216dba9d78b4035b3946ab03861341: 0
+    d5a8dfbaae2b5442e854903625723a72: -80
+    afac99cae7f304eec9e1a63347b98b9e: 2.6
+    d85dd68b0c4dc4b068cc594e2bbaaaff: -29.519157
+    a38a601c7e8584558aea5a6c8935dbe2: 0
+    f26777cecb4cd4884b533bed934d5b54: 12
+    00617afee80504e669defd52eb904ecd: 2.8700004
   m_TransitionOverrides: {}
 --- !u!245 &245993496100636052
 AudioMixerSnapshotController:
