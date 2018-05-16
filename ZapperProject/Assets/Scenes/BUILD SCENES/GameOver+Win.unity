@@ -1930,7 +1930,7 @@ MonoBehaviour:
     type: 2}
   GainMisc: {fileID: 245101799975984254, guid: 5ac80df882d8b4bbdb4f27a4b48231fc, type: 2}
   MuteClocks: {fileID: 0}
-  MusicFadeoutDur: 4
+  MusicFadeoutDur: 5
   MusicFadeinDur: 0
   hasplayedFail: 0
 --- !u!4 &1218779447
@@ -2255,7 +2255,7 @@ Prefab:
         type: 2}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 1462903813}
+      objectReference: {fileID: 1462903907}
     - target: {fileID: 114598376556601752, guid: bf27c202ee50141d69a620111a69480e,
         type: 2}
       propertyPath: nodeRect.y
@@ -2395,7 +2395,7 @@ Prefab:
         type: 2}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 1462903803}
+      objectReference: {fileID: 1462903808}
     - target: {fileID: 114687680074337954, guid: bf27c202ee50141d69a620111a69480e,
         type: 2}
       propertyPath: nodeRect.x
@@ -2884,7 +2884,7 @@ Prefab:
     - target: {fileID: 114953354116052668, guid: bf27c202ee50141d69a620111a69480e,
         type: 2}
       propertyPath: blockViewHeight
-      value: 388
+      value: 633
       objectReference: {fileID: 0}
     - target: {fileID: 114953354116052668, guid: bf27c202ee50141d69a620111a69480e,
         type: 2}
@@ -3539,7 +3539,7 @@ MonoBehaviour:
     booleanVal: 0
   duration:
     floatRef: {fileID: 0}
-    floatVal: 10
+    floatVal: 15
   fadeMode: 0
   targetColor:
     colorRef: {fileID: 0}
@@ -3549,7 +3549,7 @@ MonoBehaviour:
     floatVal: 1
 --- !u!114 &1462903805
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1462903784}
@@ -3562,7 +3562,7 @@ MonoBehaviour:
   message: First VO (Won)
 --- !u!114 &1462903806
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1462903784}
@@ -3587,6 +3587,56 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
+--- !u!114 &1462903807
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1462903784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 410
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 2
+  durationOLD: 0
+--- !u!114 &1462903808
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1462903784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 411
+  indentLevel: 0
+  soundClip: {fileID: 8300000, guid: 15011f05c98f84043a8d5f0047363947, type: 3}
+  volume: 0.443
+  waitUntilFinished: 0
+--- !u!114 &1462903809
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1462903784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 412
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  durationOLD: 0
 --- !u!114 &1462903812
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5215,7 +5265,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 2
+    floatVal: 4
   durationOLD: 0
 --- !u!114 &1462903887
 MonoBehaviour:
@@ -5564,7 +5614,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 287
   indentLevel: 0
-  duration: 3
+  duration: 4
   targetAlpha: 1
   waitUntilFinished: 0
   fadeColor: {r: 1, g: 1, b: 1, a: 1}
@@ -5666,18 +5716,21 @@ MonoBehaviour:
   - {fileID: 1462903888}
   - {fileID: 1462903885}
   - {fileID: 1462903889}
-  - {fileID: 1462903804}
   - {fileID: 1462903884}
   - {fileID: 1462903883}
   - {fileID: 1462903882}
+  - {fileID: 1462903804}
   - {fileID: 1462903908}
   - {fileID: 1462903894}
   - {fileID: 1462903886}
   - {fileID: 1462903903}
-  - {fileID: 1462903803}
+  - {fileID: 1462903809}
+  - {fileID: 1462903808}
   - {fileID: 1462903905}
-  - {fileID: 1462903906}
+  - {fileID: 1462903803}
+  - {fileID: 1462903807}
   - {fileID: 1462903806}
+  - {fileID: 1462903906}
   - {fileID: 1462903802}
   - {fileID: 1462903881}
 --- !u!114 &1462903908
