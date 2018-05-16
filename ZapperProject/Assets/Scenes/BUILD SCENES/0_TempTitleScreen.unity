@@ -2648,6 +2648,7 @@ MonoBehaviour:
   MuteClocks: {fileID: 0}
   MusicFadeoutDur: 0
   MusicFadeinDur: 0
+  hasplayedFail: 0
 --- !u!4 &1676479805
 Transform:
   m_ObjectHideFlags: 0
@@ -4002,6 +4003,7 @@ MonoBehaviour:
   MuteClocks: {fileID: 0}
   MusicFadeoutDur: 0
   MusicFadeinDur: 0
+  hasplayedFail: 0
 --- !u!1 &1994408770
 GameObject:
   m_ObjectHideFlags: 0
@@ -4364,7 +4366,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 22713dde3537448678709e677c238d81, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.075
+  m_Volume: 0.12
   m_Pitch: 1
   Loop: 1
   Mute: 0

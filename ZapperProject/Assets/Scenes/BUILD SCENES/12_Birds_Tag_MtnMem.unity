@@ -5387,6 +5387,8 @@ MonoBehaviour:
   Hit_source: {fileID: 2115370621}
   Shoot_source: {fileID: 60867192}
   FailSound_source: {fileID: 581238692}
+  PlayerHit_source: {fileID: 0}
+  PlayerDeath_source: {fileID: 0}
   VO_source_1: {fileID: 1217853917}
   VO_source_2: {fileID: 0}
   VO_source_3: {fileID: 0}
@@ -5405,6 +5407,8 @@ MonoBehaviour:
   Hit: {fileID: 8300000, guid: 04d5b3fe5a8004086a53aeec8ae15e3f, type: 3}
   Music: {fileID: 0}
   Ambient: {fileID: 0}
+  PlayerHit: {fileID: 0}
+  PlayerDeath: {fileID: 0}
   Wagner: {fileID: 0}
   NormalMaster: {fileID: 0}
   MuteSFXSnapshot: {fileID: 0}
@@ -5412,8 +5416,10 @@ MonoBehaviour:
   GainVoSnapshot: {fileID: 0}
   MuteMusic: {fileID: 0}
   GainMisc: {fileID: 0}
+  MuteClocks: {fileID: 0}
   MusicFadeoutDur: 0
   MusicFadeinDur: 0
+  hasplayedFail: 0
 --- !u!4 &950582301
 Transform:
   m_ObjectHideFlags: 0
@@ -6958,7 +6964,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: b1b24f78821f04f4c93117859f41aed4, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0

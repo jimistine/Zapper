@@ -3003,6 +3003,7 @@ MonoBehaviour:
   Shoot_source: {fileID: 1986085758}
   FailSound_source: {fileID: 2080914984}
   PlayerHit_source: {fileID: 1395912999}
+  PlayerDeath_source: {fileID: 0}
   VO_source_1: {fileID: 1947654310}
   VO_source_2: {fileID: 273989490}
   VO_source_3: {fileID: 0}
@@ -3022,6 +3023,7 @@ MonoBehaviour:
   Music: {fileID: 8300000, guid: 0efdcde9e7a6d4046a4ea732626b92a4, type: 3}
   Ambient: {fileID: 8300000, guid: f6115ab4eb8ae4fd3b57495345d17b70, type: 3}
   PlayerHit: {fileID: 8300000, guid: 03a7dd8c3704c4f67a87fa2f8f64f843, type: 3}
+  PlayerDeath: {fileID: 0}
   Wagner: {fileID: 245067496763653946, guid: d8f21f564eaad40aea199debe00cd414, type: 2}
   NormalMaster: {fileID: 245744949524360078, guid: d8f21f564eaad40aea199debe00cd414,
     type: 2}
@@ -3031,8 +3033,10 @@ MonoBehaviour:
     type: 2}
   MuteMusic: {fileID: 0}
   GainMisc: {fileID: 0}
+  MuteClocks: {fileID: 0}
   MusicFadeoutDur: 0
   MusicFadeinDur: 0
+  hasplayedFail: 0
 --- !u!4 &932989999
 Transform:
   m_ObjectHideFlags: 0
@@ -3975,7 +3979,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1268022660}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1268022668}
   variables: []
   description: 
   stepPause: 0
@@ -4096,7 +4101,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 21
+    floatVal: 22
   durationOLD: 0
 --- !u!114 &1268022664
 MonoBehaviour:
@@ -4187,7 +4192,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 5
+    floatVal: 4
   durationOLD: 0
 --- !u!114 &1268022669
 MonoBehaviour:
@@ -5226,7 +5231,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 576.8857, y: 190.11423}
+  m_AnchoredPosition: {x: 574.4053, y: 190.11423}
   m_SizeDelta: {x: 520.1, y: 63.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1515677792

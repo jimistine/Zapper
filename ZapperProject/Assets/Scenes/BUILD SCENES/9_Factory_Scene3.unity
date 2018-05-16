@@ -1205,7 +1205,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 6162fa176f0fe4e83a6fca5b5d919508, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.6
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2266,7 +2266,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 7f36d289c16b347a08803542ccb42e72, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.504
+  m_Volume: 0.737
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4296,7 +4296,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 6884b51d1749448d7bab8f5f2cbe5a18, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4769,7 +4769,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: c19edb6ca3c264b67ba94bd77c9616df, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.811
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -8475,7 +8475,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 2eb36ee4c752c4569a4ff52c9aa867ae, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -8887,7 +8887,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: d7b1806d4791e4516bdaaf952e32a771, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -9930,7 +9930,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1906541711}
   selectedCommands:
-  - {fileID: 1906541698}
+  - {fileID: 1906541696}
   variables: []
   description: 
   stepPause: 0
@@ -10307,7 +10307,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 58201f2cc14774946ae12ecde9cc422a, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
