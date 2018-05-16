@@ -996,6 +996,8 @@ MonoBehaviour:
   Hit_source: {fileID: 1761584850}
   Shoot_source: {fileID: 368841443}
   FailSound_source: {fileID: 2014046789}
+  PlayerHit_source: {fileID: 0}
+  PlayerDeath_source: {fileID: 0}
   VO_source_1: {fileID: 1463576885}
   VO_source_2: {fileID: 1052272837}
   VO_source_3: {fileID: 0}
@@ -1014,6 +1016,8 @@ MonoBehaviour:
   Hit: {fileID: 8300000, guid: 04d5b3fe5a8004086a53aeec8ae15e3f, type: 3}
   Music: {fileID: 8300000, guid: f6115ab4eb8ae4fd3b57495345d17b70, type: 3}
   Ambient: {fileID: 8300000, guid: f6115ab4eb8ae4fd3b57495345d17b70, type: 3}
+  PlayerHit: {fileID: 0}
+  PlayerDeath: {fileID: 0}
   Wagner: {fileID: 245067496763653946, guid: d8f21f564eaad40aea199debe00cd414, type: 2}
   NormalMaster: {fileID: 0}
   MuteSFXSnapshot: {fileID: 0}
@@ -1022,8 +1026,10 @@ MonoBehaviour:
   MuteMusic: {fileID: 245777860501240480, guid: d8f21f564eaad40aea199debe00cd414,
     type: 2}
   GainMisc: {fileID: 0}
+  MuteClocks: {fileID: 0}
   MusicFadeoutDur: 5
   MusicFadeinDur: 0
+  hasplayedFail: 0
 --- !u!4 &1026155252
 Transform:
   m_ObjectHideFlags: 0
@@ -1074,7 +1080,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: d1db72d66a4f441c6ad1f9b9c8addbbb, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2022,8 +2028,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1411999138}
-  selectedCommands:
-  - {fileID: 1411999235}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0

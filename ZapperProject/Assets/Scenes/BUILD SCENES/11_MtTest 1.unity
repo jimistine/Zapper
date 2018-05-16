@@ -2333,7 +2333,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 701927494}
+  - {fileID: 701927487}
   selectedCommands: []
   variables: []
   description: 
@@ -3054,7 +3054,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 21
     y: 267
-    width: 163.58737
+    width: 173.91351
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3646,7 +3646,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 88c0a6e2acd2d4798bed333096907a07, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0

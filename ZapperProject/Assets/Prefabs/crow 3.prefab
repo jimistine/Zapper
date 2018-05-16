@@ -81,7 +81,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: f8821be20e213416dbb968aeaa3e1b52, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.066
+  m_Volume: 0.04
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -179,6 +179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SC: {fileID: 0}
+  AM: {fileID: 0}
   CurrentWire: {fileID: 0}
   crowSpeed: 0.04
   startWait: 0
