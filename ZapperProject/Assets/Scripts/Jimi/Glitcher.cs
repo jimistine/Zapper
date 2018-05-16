@@ -123,7 +123,14 @@ public class Glitcher : MonoBehaviour
 	{
 		yield return new WaitForSeconds(TimeVisible);
 	//	Debug.Log("invisible");
-		gameObject.GetComponent<SpriteRenderer>().enabled = false;
+		if (gameObject.GetComponent<SpriteRenderer>() != null)
+		{
+			gameObject.GetComponent<SpriteRenderer>().enabled = false;
+		}
+		else
+		{
+			gameObject.GetComponent<Image>().enabled = false;
+		}
 	//	gameObject.SetActive(false);
 		StartCoroutine(SetActiveSprite());
 	}
@@ -132,8 +139,14 @@ public class Glitcher : MonoBehaviour
 	{
 		yield return new WaitForSeconds(TimeInisible);
 	//	Debug.Log("visible");
-		gameObject.GetComponent<SpriteRenderer>().enabled = true;
-	//	gameObject.SetActive(true);
+		if (gameObject.GetComponent<SpriteRenderer>() != null)
+		{
+			gameObject.GetComponent<SpriteRenderer>().enabled = true;
+		}
+		else
+		{
+			gameObject.GetComponent<Image>().enabled = true;
+		}	//	gameObject.SetActive(true);
 		StartCoroutine(FlickerTimerSprite());
 	}
 	
