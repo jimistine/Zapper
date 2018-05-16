@@ -124,7 +124,7 @@ public class Glitcher : MonoBehaviour
 		yield return new WaitForSeconds(TimeVisible);
 	//	Debug.Log("invisible");
 		gameObject.GetComponent<SpriteRenderer>().enabled = false;
-		gameObject.SetActive(false);
+	//	gameObject.SetActive(false);
 		StartCoroutine(SetActiveSprite());
 	}
 
@@ -133,7 +133,7 @@ public class Glitcher : MonoBehaviour
 		yield return new WaitForSeconds(TimeInisible);
 	//	Debug.Log("visible");
 		gameObject.GetComponent<SpriteRenderer>().enabled = true;
-		gameObject.SetActive(true);
+	//	gameObject.SetActive(true);
 		StartCoroutine(FlickerTimerSprite());
 	}
 	
