@@ -278,8 +278,12 @@ public class ChracterController : MonoBehaviour {
             }
             if (Input.GetKey(KeyCode.UpArrow) || Input.GetAxis("Vertical") == 1 && Input.GetAxis("Horizontal") == 0 && transform.position.y < PlayerCurrentWire.GetComponent<Wires>().WirePositionTop)
             {
-                transform.Translate(Vector3.up * Time.deltaTime * PlayerHorizontalSpeed);
-                anim.SetBool("Run_Bool", true);
+	            if (playerY < PlayerCurrentWire.GetComponent<Wires>().WirePositionTop)
+	            {
+		            transform.Translate(Vector3.up * Time.deltaTime * PlayerHorizontalSpeed);
+		            anim.SetBool("Run_Bool", true);
+	            }
+                
             }
 	        if (Input.GetKey(KeyCode.UpArrow) || Input.GetAxis("Vertical") == 1 && Input.GetAxis("Horizontal") == 0 && transform.position.y >= PlayerCurrentWire.GetComponent<Wires>().WirePositionTop && PlayerCurrentWire.GetComponent<Wires>().isSummitWire == true) 
             {
