@@ -170,6 +170,7 @@ public class SceneController : MonoBehaviour {
         PlayerObject.GetComponent<ChracterController>().delayBeforeShoot = PlayerObject.GetComponent<ChracterController>().delayBeforeShootStore + Time.timeSinceLevelLoad;
         Spawner.enabled = true;
         SpawnerObject.SetActive(true);
+        
         //Score = 0;
     }
     public void WinLevel()

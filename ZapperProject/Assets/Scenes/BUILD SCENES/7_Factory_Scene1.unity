@@ -1410,6 +1410,116 @@ MonoBehaviour:
   WillCancleNormalSpawn: 00000000
   WireCoreographer: {fileID: 560653868}
   WireNum: 3
+--- !u!1 &397079842
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 397079843}
+  - component: {fileID: 397079844}
+  m_Layer: 0
+  m_Name: PlayerDeath
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &397079843
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 397079842}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 932989999}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &397079844
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 397079842}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 243892452180332478, guid: 5ac80df882d8b4bbdb4f27a4b48231fc,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 889511fbbbde14676895c7d0d2bd07be, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &445474131
 GameObject:
   m_ObjectHideFlags: 0
@@ -4271,7 +4381,7 @@ MonoBehaviour:
   Shoot_source: {fileID: 1986085758}
   FailSound_source: {fileID: 2080914984}
   PlayerHit_source: {fileID: 299326670}
-  PlayerDeath_source: {fileID: 0}
+  PlayerDeath_source: {fileID: 397079844}
   VO_source_1: {fileID: 1947654310}
   VO_source_2: {fileID: 524834031}
   VO_source_3: {fileID: 0}
@@ -4291,7 +4401,7 @@ MonoBehaviour:
   Music: {fileID: 8300000, guid: f6115ab4eb8ae4fd3b57495345d17b70, type: 3}
   Ambient: {fileID: 8300000, guid: f6115ab4eb8ae4fd3b57495345d17b70, type: 3}
   PlayerHit: {fileID: 8300000, guid: 03a7dd8c3704c4f67a87fa2f8f64f843, type: 3}
-  PlayerDeath: {fileID: 0}
+  PlayerDeath: {fileID: 8300000, guid: 889511fbbbde14676895c7d0d2bd07be, type: 3}
   Wagner: {fileID: 245067496763653946, guid: d8f21f564eaad40aea199debe00cd414, type: 2}
   NormalMaster: {fileID: 245744949524360078, guid: d8f21f564eaad40aea199debe00cd414,
     type: 2}
@@ -4324,6 +4434,7 @@ Transform:
   - {fileID: 758959103}
   - {fileID: 709604450}
   - {fileID: 299326669}
+  - {fileID: 397079843}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5347,7 +5458,6 @@ GameObject:
   - component: {fileID: 1268022662}
   - component: {fileID: 1268022658}
   - component: {fileID: 1268022659}
-  - component: {fileID: 1268022666}
   - component: {fileID: 1268022660}
   - component: {fileID: 1268022661}
   - component: {fileID: 1268022663}
@@ -5361,7 +5471,6 @@ GameObject:
   - component: {fileID: 1268022674}
   - component: {fileID: 1268022673}
   - component: {fileID: 1268022676}
-  - component: {fileID: 1268022685}
   - component: {fileID: 1268022684}
   - component: {fileID: 1268022681}
   - component: {fileID: 1268022682}
@@ -5424,7 +5533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -274.2681, y: 17.000263}
+  scrollPos: {x: -68.17034, y: 14.561236}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -5436,7 +5545,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1268022659}
+  - {fileID: 1268022676}
   selectedCommands: []
   variables: []
   description: 
@@ -5471,7 +5580,7 @@ MonoBehaviour:
   itemId: 0
   blockName: Visuals
   description: 
-  eventHandler: {fileID: 1268022666}
+  eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1268022663}
   - {fileID: 1268022661}
@@ -5622,19 +5731,6 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 0
   targetGameObjectOLD: {fileID: 0}
---- !u!114 &1268022666
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1268022657}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentBlock: {fileID: 1268022659}
-  waitForFrames: 1
 --- !u!114 &1268022667
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5831,14 +5927,14 @@ MonoBehaviour:
     serializedVersion: 2
     x: 234.48767
     y: 215.87808
-    width: 232.92702
+    width: 230.48799
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 15
   blockName: Stop/start spwaning and shooting
   description: 
-  eventHandler: {fileID: 1268022685}
+  eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1268022686}
   - {fileID: 1268022703}
@@ -6064,19 +6160,6 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
---- !u!114 &1268022685
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1268022657}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentBlock: {fileID: 1268022676}
-  waitForFrames: 0
 --- !u!114 &1268022686
 MonoBehaviour:
   m_ObjectHideFlags: 2

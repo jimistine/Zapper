@@ -500,15 +500,15 @@ public class Charge : MonoBehaviour {
 			{
 				alarm1.GetComponent<alarmScript> ().alarm_normal (); 
 			}
-			if (alarm1 != null)
+			if (alarm2 != null)
 			{
 				alarm2.GetComponent<alarmScript> ().alarm_normal_2 (); 
 			}
-			if (alarm1 != null)
+			if (alarm3 != null)
 			{
 				alarm3.GetComponent<alarmScript> ().alarm_normal_3 (); 
 			}
-			if (alarm1 != null)
+			if (alarm4 != null)
 			{
 				alarm4.GetComponent<alarmScript> ().alarm_normal_4 (); 
 			}

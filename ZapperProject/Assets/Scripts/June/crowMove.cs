@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditorInternal;
 using UnityEngine;
 
 public class crowMove : MonoBehaviour {
@@ -26,6 +27,7 @@ public class crowMove : MonoBehaviour {
     public bool isBird;
     public bool isClock;
     public bool isRock;
+	public bool hasplayedPlayerDeathOnce = false;
 
 
 	// Use this for initialization
@@ -37,7 +39,8 @@ public class crowMove : MonoBehaviour {
 		SC = FindObjectOfType<SceneController>();
 		AM = FindObjectOfType<AudioManager>();
 		anim = GetComponent<Animator> (); 
-		boxCol = GetComponent<BoxCollider2D> (); 
+		boxCol = GetComponent<BoxCollider2D> ();
+		hasplayedPlayerDeathOnce = false;
 
 	}
 
@@ -112,7 +115,10 @@ public class crowMove : MonoBehaviour {
         crowSpeed = 0;
 		Debug.Log("Crows fail state 1");
         SC.CurrentHealth--;
-		AM.PlayerDeath_source.PlayOneShot(AM.PlayerDeath);
+		if (SC.isMountainLevel)
+		{
+			AM.PlayerDeath_source.PlayOneShot(AM.PlayerDeath);
+		}
 		if (isClock == true)
 		{
 			//SC.ClocksBroken++;
@@ -140,10 +146,20 @@ public class crowMove : MonoBehaviour {
 
         Debug.Log ("started enum"); 
 		anim.SetBool ("Zap_Bool", true); 
+		PlayPlayerDeathOnce();
 		yield return new WaitForSeconds (1.2f); 
 		SC.ClocksBroken++;
 		SC.RestartLevel (); 
 
+	}
+
+	public void PlayPlayerDeathOnce()
+	{
+		if (hasplayedPlayerDeathOnce == false)
+		{
+			AM.PlayerDeath_source.PlayOneShot(AM.PlayerDeath);
+			hasplayedPlayerDeathOnce = true;
+		}
 	}
 
 	IEnumerator ZapAnim() {
